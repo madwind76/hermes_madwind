@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/wiki-maintenance-operations.md",
+                "file": "queries/ancient-history-final-writeup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wiki-maintenance-operations"
+              "title": "ancient-history-final-writeup"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:ctf",
+                "query": "tag:picoctf tag:#web  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,36 +183,36 @@
   },
   "active": "e40bfe442f3b5b58",
   "lastOpenFiles": [
-    "concepts/wiki-maintenance-checklist.md",
+    "queries/super-serial-final-writeup.md",
+    "queries/web-gauntlet-2-3-sqlite-survey.md",
+    "queries/web-gauntlet-2-final-writeup.md",
+    "queries/web-gauntlet-3-final-writeup.md",
+    "queries/web-gauntlet-final-writeup.md",
+    "queries/x-marks-the-spot-final-writeup.md",
+    "queries/no-sql-injection-final-writeup.md",
+    "queries/java-code-analysis-final-writeup.md",
+    "queries/jauth-final-writeup.md",
+    "queries/it-is-my-birthday-final-writeup.md",
+    "queries/intro-to-burp-final-writeup.md",
+    "queries/elements-final-writeup.md",
     "queries/cookies-final-writeup.md",
+    "queries/bithug-final-writeup.md",
+    "queries/ancient-history-final-writeup.md",
+    "queries/buffer-overflow-0-final-writeup.md",
+    "queries/buffer-overflow-1-final-writeup.md",
+    "queries/bookmarklet-final-writeup.md",
+    "index.md",
+    "log.md",
+    "concepts/prompt-injection-ctf.md",
+    "concepts/wiki-maintenance-operations.md",
+    "concepts/wiki-maintenance-checklist.md",
     "concepts/websocket-message-tampering-ctf-patterns.md",
     "concepts/websocket.md",
     "concepts/webrtc-turn-proxying-ctf-patterns.md",
-    "concepts/web-recon-hidden-file-discovery-onepage.md",
-    "concepts/web-recon-hidden-file-discovery-ctf-hub.md",
-    "concepts/web-recon-hidden-file-discovery-checklist.md",
-    "concepts/web-ctf-writeup-topic-map.md",
-    "concepts/rce.md",
-    "concepts/jinja2-template-engine.md",
-    "queries/3v-l-final-writeup.md",
-    "queries/picoctf-2025-web-exploitation-survey.md",
-    "concepts/wiki-maintenance-operations.md",
-    "concepts/source-inspection-minification-ctf-patterns.md",
     "assets/infosec/source-inspection-minification-ctf-patterns.svg",
-    "queries/unminify-final-writeup.md",
-    "queries/unminify.md",
-    "queries/trickster-final-writeup.md",
-    "queries/trickster.md",
-    "queries/includes-final-writeup.md",
-    "queries/includes.md",
-    "concepts/jinja2-filter-bypass.md",
-    "queries/ssti1-final-writeup.md",
-    "queries/ssti2-final-writeup.md",
     "assets/infosec/jinja2-filter-bypass.svg",
-    "concepts/heap-dump-ctf-patterns.md",
     "assets/infosec/jinja2-template-engine.svg",
     "assets/infosec",
-    "assets",
-    "queries/gcalc-final-writeup.md"
+    "assets"
   ]
 }

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 보안 취약점(CVE), 공격 기법, CTF 문제 유형, 보안 용어의 지식 베이스.
-> 마지막 업데이트: 2026-06-15 | 전체 페이지: 275
+> 마지막 업데이트: 2026-06-15 | 전체 페이지: 282
 
 ## CVE
 
@@ -225,6 +225,10 @@
 ||| [[pachinko-final-writeup]] | Pachinko — picoCTF 2025 web writeup | query | 2026-06-14 |
 ||| [[pachinko-revisited-final-writeup]] | Pachinko Revisited — picoCTF 2025 pwn/rev writeup | query | 2026-06-14 |
 ||| [[pie-time-final-writeup]] | PIE TIME — picoCTF 2025 pwn writeup | query | 2026-06-15 |
+||| [[pie-time-2-final-writeup]] | PIE TIME 2 — picoCTF 2025 pwn writeup | query | 2026-06-15 |
+||| [[echo-valley-final-writeup]] | Echo Valley — picoCTF 2025 pwn writeup | query | 2026-06-15 |
+||| [[hash-only-1-final-writeup]] | hash-only-1 — picoCTF 2025 binary exploitation writeup | query | 2026-06-15 |
+||| [[hash-only-2-final-writeup]] | hash-only-2 — picoCTF 2025 binary exploitation writeup | query | 2026-06-15 |
 ||| [[flag-leak-final-writeup]] | Flag Leak — picoCTF 2022 pwn writeup | query | 2026-06-15 |
 ||| [[handoff-final-writeup]] | Handoff — picoCTF 2025 pwn writeup | query | 2026-06-15 |
 ||| [[ret2reg-executable-stack-ctf-patterns]] | ret2reg / executable stack — CTF patterns | concept | 2026-06-15 |
@@ -248,6 +252,8 @@
 ||| [[intentional-crash-signal-handler-ctf-patterns]] | Intentional crash / signal handler — CTF patterns | concept | 2026-06-15 |
 ||| [[buffer-overflow-1-final-writeup]] | buffer overflow 1 — picoCTF 2022 pwn writeup | query | 2026-06-15 |
 ||| [[saved-return-address-control-ctf-patterns]] | Saved return address control — CTF patterns | concept | 2026-06-15 |
+||| [[heap-0-final-writeup]] | heap 0 — picoCTF 2024 pwn writeup | query | 2026-06-15 |
+||| [[heap-overflow-adjacent-chunk-overwrite-ctf-patterns]] | Heap overflow / adjacent chunk overwrite — CTF patterns | concept | 2026-06-15 |
 ||| [[secure-email-service-final-writeup]] | secure-email-service — picoCTF 2025 web writeup | query | 2026-06-14 |
 ||| [[picoctf-2025-web-exploitation-survey]] | picoCTF 2025 Web writeup survey | query | 2026-06-14 |
 ||| [[webdecode]] | WebDecode — picoCTF 2024 web note | query | 2026-06-13 |

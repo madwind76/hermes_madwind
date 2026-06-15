@@ -1,3 +1,28 @@
+## [2026-06-15] create | heap 0 picoCTF 2024 pwn writeup
+- action: heap 0를 heap overflow / adjacent chunk overwrite 관점으로 정리하고 query + concept 페이지를 추가 생성
+- created: queries/heap-0-final-writeup.md, concepts/heap-overflow-adjacent-chunk-overwrite-ctf-patterns.md
+- updated: index.md, log.md
+- sources: snwau picoCTF 2024 Writeup, Medium picoCTF Binary Exploitation 2024, HackMD picoCTF 2024 Binary Exploitation
+## [2026-06-15] create | PIE TIME 2 picoCTF 2025 pwn writeup
+- action: PIE TIME 2를 format string / PIE-ASLR 관점으로 정리하고 query 페이지를 추가 생성
+- created: queries/pie-time-2-final-writeup.md
+- updated: index.md, log.md
+- sources: System Weakness PIE TIME 2, HackMD picoCTF 2025 Binary Exploitation, Medium walkthrough
+## [2026-06-15] create | hash-only-2 picoCTF 2025 binary exploitation writeup
+- action: hash-only-2를 PATH hijacking + restricted shell bypass 관점으로 정리하고 query 페이지를 추가 생성
+- created: queries/hash-only-2-final-writeup.md
+- updated: index.md, log.md
+- sources: HackMD picoCTF 2025 Binary Exploitation, GitHub hash-only-2 writeup, Medium hash-only-2 writeup
+## [2026-06-15] create | hash-only-1 picoCTF 2025 binary exploitation writeup
+- action: hash-only-1을 PATH hijacking / system() abuse 관점으로 정리하고 query + concept 페이지를 추가 생성
+- created: queries/hash-only-1-final-writeup.md, concepts/path-hijacking-system-abuse-ctf-patterns.md
+- updated: index.md, log.md
+- sources: HackMD picoCTF 2025 Binary Exploitation, Zenn picoCTF 2025 writeup, Medium hash-only writeup
+## [2026-06-15] create | Echo Valley picoCTF 2025 pwn writeup
+- action: Echo Valley를 format string / PIE ASLR 관점으로 정리하고 query 페이지를 추가 생성
+- created: queries/echo-valley-final-writeup.md
+- updated: index.md, log.md
+- sources: System Weakness Echo Valley, habichuela picoCTF 2025 pwn, ztz0 writeup
 ## [2026-06-15] create | buffer overflow 0 picoCTF 2022 pwn writeup
 - action: buffer overflow 0를 intentional crash / signal handler 관점으로 정리하고 query + concept 페이지를 추가 생성
 - created: queries/buffer-overflow-0-final-writeup.md, concepts/intentional-crash-signal-handler-ctf-patterns.md
