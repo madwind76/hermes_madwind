@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .panel { fill: #111827; stroke: #334155; stroke-width: 2; rx: 18; }
+      .box { fill: #1f2937; stroke: #60a5fa; stroke-width: 2; rx: 16; }
+      .box2 { fill: #1f2937; stroke: #34d399; stroke-width: 2; rx: 16; }
+      .box3 { fill: #1f2937; stroke: #f59e0b; stroke-width: 2; rx: 16; }
+      .title { fill: #e5e7eb; font: 700 30px 'Noto Sans KR', sans-serif; }
+      .label { fill: #e5e7eb; font: 600 22px 'Noto Sans KR', sans-serif; }
+      .small { fill: #cbd5e1; font: 400 18px 'Noto Sans KR', sans-serif; }
+      .tiny { fill: #cbd5e1; font: 400 16px 'Noto Sans KR', sans-serif; }
+      .arrow { stroke: #94a3b8; stroke-width: 4; fill: none; marker-end: url(#arrowhead); }
+      .flag { fill: #fde68a; font: 700 22px 'Noto Sans Mono', monospace; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="500" />
+  <rect class="panel" x="20" y="20" width="1160" height="460" rx="22" />
+  <text class="title" x="50" y="62">Source Inspection + Minification CTF Pattern</text>
+  <text class="small" x="50" y="92">화면은 비어 보여도 source, DOM, attribute, hidden element에 답이 남아 있습니다.</text>
+
+  <rect class="box" x="55" y="140" width="250" height="230" rx="18" />
+  <text class="label" x="85" y="185">렌더링 화면</text>
+  <text class="tiny" x="85" y="220">• 평범한 페이지</text>
+  <text class="tiny" x="85" y="250">• 정보가 거의 안 보임</text>
+  <text class="tiny" x="85" y="280">• UI만 보고 끝내면 실패</text>
+  <text class="tiny" x="85" y="310">• 여기는 미끼일 수 있음</text>
+
+  <rect class="box2" x="475" y="120" width="280" height="270" rx="18" />
+  <text class="label" x="505" y="165">HTML source</text>
+  <text class="tiny" x="505" y="200">&lt;p class=&quot;...&quot;&gt;</text>
+  <text class="tiny" x="505" y="230">&lt;!-- hidden comment --&gt;</text>
+  <text class="tiny" x="505" y="260">한 줄 minified 코드</text>
+  <text class="tiny" x="505" y="290">pretty print 전에는 읽기 어려움</text>
+  <text class="flag" x="505" y="330">picoCTF{...}</text>
+
+  <rect class="box3" x="845" y="120" width="300" height="270" rx="18" />
+  <text class="label" x="875" y="165">확인 도구</text>
+  <text class="tiny" x="875" y="200">1. Ctrl+U / view-source</text>
+  <text class="tiny" x="875" y="230">2. DevTools pretty print</text>
+  <text class="tiny" x="875" y="260">3. curl | grep</text>
+  <text class="tiny" x="875" y="290">4. source에서 picoCTF 검색</text>
+  <text class="tiny" x="875" y="320">5. hidden element / attribute 확인</text>
+
+  <path class="arrow" d="M 305 255 C 355 255, 395 255, 455 255" />
+  <path class="arrow" d="M 755 255 C 795 255, 815 255, 835 255" />
+
+  <text class="small" x="75" y="425">핵심: minification은 보안이 아니라 압축일 뿐이며, source inspection이 답입니다.</text>
+</svg>

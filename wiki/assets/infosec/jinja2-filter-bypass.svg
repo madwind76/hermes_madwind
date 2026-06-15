@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="660" viewBox="0 0 1160 660" role="img" aria-labelledby="title desc">
+  <title id="title">Jinja2 필터 우회 흐름</title>
+  <desc id="desc">블랙리스트 필터를 attr과 hex escape로 우회해 Jinja2 내부 객체에 도달하는 흐름을 설명하는 한글 SVG 다이어그램</desc>
+  <style>
+    text { font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; fill: #111827; }
+    .title { font-size: 30px; font-weight: 800; }
+    .subtitle { font-size: 17px; fill: #374151; }
+    .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 16; }
+    .danger { fill: #fef2f2; stroke: #dc2626; }
+    .warn { fill: #fff7ed; stroke: #ea580c; }
+    .safe { fill: #ecfdf5; stroke: #059669; }
+    .engine { fill: #eff6ff; stroke: #2563eb; }
+    .label { font-size: 18px; font-weight: 700; }
+    .small { font-size: 14px; fill: #374151; }
+    .code { font-family: "D2Coding", "Consolas", monospace; font-size: 14px; fill: #1f2937; }
+    .arrow { stroke: #475569; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    .badarrow { stroke: #dc2626; stroke-width: 3; marker-end: url(#badarrow); fill: none; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+    <marker id="badarrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+
+  <rect width="1160" height="660" fill="#ffffff"/>
+  <text x="40" y="55" class="title">Jinja2 Filter Bypass — 블랙리스트를 우회해 템플릿 엔진까지 도달합니다</text>
+  <text x="40" y="84" class="subtitle">SSTI2는 입력 필터가 있어도 attr() · hex escape · __getitem__ 조합으로 내부 객체에 접근하는 문제입니다.</text>
+
+  <rect x="45" y="125" width="300" height="120" class="box danger"/>
+  <text x="70" y="160" class="label">사용자 입력</text>
+  <text x="70" y="190" class="small">템플릿 문법이 섞인 문자열</text>
+  <text x="70" y="220" class="code">{{ request ... }}</text>
+
+  <rect x="395" y="125" width="330" height="120" class="box warn"/>
+  <text x="420" y="160" class="label">필터 / WAF / 블랙리스트</text>
+  <text x="420" y="190" class="small">`.` `_` `[]` `os` `popen` 등을 차단</text>
+  <text x="420" y="220" class="code">직접 쓰면 차단됨</text>
+
+  <rect x="770" y="125" width="340" height="120" class="box safe"/>
+  <text x="795" y="160" class="label">우회용 표현</text>
+  <text x="795" y="190" class="small">attr() · _ · __getitem__</text>
+  <text x="795" y="220" class="code">request|attr('application')</text>
+
+  <path d="M345 185 C360 185 375 185 394 185" class="badarrow"/>
+  <path d="M725 185 C742 185 752 185 769 185" class="arrow"/>
+
+  <rect x="45" y="310" width="300" height="145" class="box danger"/>
+  <text x="70" y="345" class="label">직접 접근 실패</text>
+  <text x="70" y="375" class="small">점(.)·대괄호([])·언더스코어(_)가 막힘</text>
+  <text x="70" y="405" class="code">request.application.__globals__</text>
+  <text x="70" y="432" class="small">→ 필터에 걸려 실패</text>
+
+  <rect x="395" y="310" width="330" height="145" class="box engine"/>
+  <text x="420" y="345" class="label">Jinja2 엔진 내부</text>
+  <text x="420" y="375" class="small">기본 컨텍스트에서 Python 객체를 탐색</text>
+  <text x="420" y="405" class="code">__globals__ → __builtins__ → __import__</text>
+  <text x="420" y="432" class="small">문자열 조작으로 같은 경로를 재구성</text>
+
+  <rect x="770" y="310" width="340" height="145" class="box safe"/>
+  <text x="795" y="345" class="label">최종 효과</text>
+  <text x="795" y="375" class="small">os 모듈 로드 후 명령 실행 가능</text>
+  <text x="795" y="405" class="code">popen('ls') / popen('cat flag')</text>
+  <text x="795" y="432" class="small">결과가 렌더링 페이지에 출력됨</text>
+
+  <path d="M345 383 C360 383 375 383 394 383" class="badarrow"/>
+  <path d="M725 383 C742 383 752 383 769 383" class="arrow"/>
+
+  <rect x="45" y="510" width="1065" height="90" class="box"/>
+  <text x="70" y="545" class="label">방어 핵심:</text>
+  <text x="190" y="545" class="small">검증과 렌더링을 분리하고, blacklist 대신 allowlist·sandbox·최소 권한을 적용합니다. 템플릿 원문에 사용자 입력을 덧붙이지 않습니다.</text>
+  <text x="70" y="575" class="small">CTF에서는 우회 기법 학습에 유용하지만, 실제 서비스에서는 같은 패턴이 곧 서버 측 코드 실행으로 이어질 수 있습니다.</text>
+</svg>

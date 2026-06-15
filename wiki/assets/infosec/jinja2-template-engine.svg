@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Jinja2 템플릿 엔진과 SSTI 흐름</title>
+  <desc id="desc">정상 렌더링과 취약한 템플릿 문자열 조합을 비교하는 한글 SVG 다이어그램</desc>
+  <style>
+    text { font-family: "Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; fill: #111827; }
+    .title { font-size: 30px; font-weight: 800; }
+    .subtitle { font-size: 17px; fill: #374151; }
+    .box { fill: #f8fafc; stroke: #334155; stroke-width: 2; rx: 18; }
+    .safe { fill: #ecfdf5; stroke: #059669; }
+    .danger { fill: #fef2f2; stroke: #dc2626; }
+    .engine { fill: #eff6ff; stroke: #2563eb; }
+    .asset { fill: #fff7ed; stroke: #ea580c; }
+    .label { font-size: 18px; font-weight: 700; }
+    .small { font-size: 14px; fill: #374151; }
+    .code { font-family: "D2Coding", "Consolas", monospace; font-size: 14px; fill: #1f2937; }
+    .arrow { stroke: #475569; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    .badarrow { stroke: #dc2626; stroke-width: 3; marker-end: url(#badarrow); fill: none; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+    <marker id="badarrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+
+  <rect width="1100" height="620" fill="#ffffff"/>
+  <text x="40" y="55" class="title">Jinja2 Template Engine — 데이터와 템플릿 코드를 분리해야 안전합니다</text>
+  <text x="40" y="84" class="subtitle">SSTI는 사용자 입력이 ‘데이터’가 아니라 ‘템플릿 코드’로 합쳐질 때 발생합니다.</text>
+
+  <rect x="45" y="125" width="295" height="115" class="box safe"/>
+  <text x="70" y="160" class="label">정상 입력 데이터</text>
+  <text x="70" y="190" class="small">사용자 이름, 공지 문구</text>
+  <text x="70" y="218" class="code">name = "홍길동"</text>
+
+  <rect x="405" y="125" width="300" height="115" class="box engine"/>
+  <text x="430" y="160" class="label">Jinja2 템플릿 엔진</text>
+  <text x="430" y="190" class="small">고정 템플릿 + 데이터 컨텍스트</text>
+  <text x="430" y="218" class="code">Hello {{ name }}</text>
+
+  <rect x="770" y="125" width="285" height="115" class="box safe"/>
+  <text x="795" y="160" class="label">안전한 렌더링 결과</text>
+  <text x="795" y="190" class="small">입력은 문자열로만 표시</text>
+  <text x="795" y="218" class="code">Hello 홍길동</text>
+
+  <path d="M342 182 C365 182 382 182 404 182" class="arrow"/>
+  <path d="M707 182 C735 182 748 182 769 182" class="arrow"/>
+
+  <rect x="45" y="335" width="295" height="135" class="box danger"/>
+  <text x="70" y="370" class="label">공격자 입력</text>
+  <text x="70" y="400" class="small">템플릿 문법이 섞인 문자열</text>
+  <text x="70" y="428" class="code">{{ 7*7 }}</text>
+  <text x="70" y="452" class="code">{{ ...내부 객체 접근... }}</text>
+
+  <rect x="405" y="335" width="300" height="135" class="box danger"/>
+  <text x="430" y="370" class="label">취약한 문자열 조합</text>
+  <text x="430" y="400" class="small">입력을 템플릿 원문에 직접 붙임</text>
+  <text x="430" y="428" class="code">render("공지: " + content)</text>
+  <text x="430" y="452" class="small">→ 입력이 코드처럼 평가됨</text>
+
+  <rect x="770" y="335" width="285" height="135" class="box asset"/>
+  <text x="795" y="370" class="label">서버 자산 노출</text>
+  <text x="795" y="400" class="small">설정값, 파일, 환경변수</text>
+  <text x="795" y="428" class="small">심하면 RCE로 확대</text>
+  <text x="795" y="452" class="code">결과: 49 / 파일 내용</text>
+
+  <path d="M342 402 C365 402 382 402 404 402" class="badarrow"/>
+  <path d="M707 402 C735 402 748 402 769 402" class="badarrow"/>
+
+  <rect x="45" y="520" width="1010" height="60" class="box"/>
+  <text x="70" y="555" class="label">방어 핵심:</text>
+  <text x="180" y="555" class="small">사용자 입력을 템플릿 원문에 붙이지 말고, 변수 값으로 전달합니다. 필요하면 SandboxedEnvironment와 allowlist를 함께 적용합니다.</text>
+</svg>
