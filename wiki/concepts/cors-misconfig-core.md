@@ -1,7 +1,7 @@
 ---
-title: CORS Misconfiguration — 핵심
+title: CORS Misconfiguration (CORS 설정 오류) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, web, cors, misconfiguration, same-origin-policy, cross-origin, owasp, api-security]
 sources: [https://ko.wikipedia.org/wiki/교차_출처_리소스_공유, https://ko.wikipedia.org/wiki/동일_출처_정책, https://ko.wikipedia.org/wiki/OWASP]

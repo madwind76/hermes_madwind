@@ -1,7 +1,7 @@
 ---
-title: csaw-2020-webrtc — web ctf note
+title: CSAW Quals 2020 WebRTC
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, webrtc, turn, redis, proxy]
 sources: [https://ctftime.org/task/13011, https://ctftime.org/writeup/23439, https://ctftime.org/writeup/23438, https://ctftime.org/writeup/23407, https://ctftime.org/writeup/23410, https://github.com/team0se7en/CTF-Writeups/blob/master/CsawQuals20/WebRTC/README.md, https://github.com/zoeyg/public-write-ups/blob/master/csaw-2020/web-real-time-chat.md]

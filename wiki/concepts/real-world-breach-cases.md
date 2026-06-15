@@ -1,7 +1,7 @@
 ---
-title: 실제 침해 사례 기반 실습 교육 — 종합 가이드
+title: 실제 침해 사례 기반 실습 교육 — 종합 인덱스
 created: 2026-06-10
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, training, lab, real-world, breach, ransomware, apt, supply-chain, cloud, zero-day]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석, 법정 문서, 회사 공개 자료]

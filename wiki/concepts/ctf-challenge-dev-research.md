@@ -1,7 +1,7 @@
 ---
-title: CTF Challenge Development Research — 보안 용어 해설
+title: CTF Challenge Development Research — CTF 챌린지 개발 연구
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, ctf, challenge-development, research, education]
 sources: [https://arxiv.org/abs/2601.17543, https://arxiv.org/abs/2603.22511, https://arxiv.org/abs/2603.21551, https://arxiv.org/abs/2512.01233]

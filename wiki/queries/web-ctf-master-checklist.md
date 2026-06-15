@@ -1,7 +1,7 @@
 ---
-title: web ctf master checklist — 진행 체크리스트
+title: Web CTF Master Checklist
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: []

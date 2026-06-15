@@ -1,7 +1,7 @@
 ---
-title: XSS — Cross-Site Scripting
-created: 2026-06-10
-updated: 2026-06-14
+title: XSS (Cross-Site Scripting) — 보안 용어 해설
+created: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [vulnerability, xss, web, injection, owasp]
 sources: [raw/articles/xss-glossary-original.md]

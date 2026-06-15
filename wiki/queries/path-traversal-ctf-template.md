@@ -1,7 +1,7 @@
 ---
-title: path traversal ctf template — 진행 노트
+title: Path Traversal CTF Template
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, path-traversal]
 sources: []

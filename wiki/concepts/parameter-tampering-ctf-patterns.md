@@ -1,7 +1,7 @@
 ---
-title: parameter tampering — web ctf patterns
+title: Parameter Tampering
 created: 2026-06-13
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, burp, parameter-tampering]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]

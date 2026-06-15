@@ -1,7 +1,7 @@
 ---
-title: ssti ctf template — 진행 노트
+title: SSTI CTF Template
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, ssti]
 sources: []

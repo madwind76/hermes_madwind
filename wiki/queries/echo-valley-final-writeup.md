@@ -59,6 +59,20 @@ return address -> binary base -> print_flag()
 
 순서로 역산합니다.
 
+## 재현 절차
+1. `printf(buf)`로 leak과 write 가능 여부를 확인합니다.
+2. `%p` 계열로 스택과 코드 주소를 누출합니다.
+3. 누출된 값으로 `print_flag()` 런타임 주소를 계산합니다.
+4. 저장된 리턴 주소를 덮어 흐름을 넘깁니다.
+
+```bash
+# format string leak이 되는지 확인합니다.
+printf '%%p %%p %%p %%p\n' | ./echo-valley
+
+# 반복 루프와 스택 상태를 디버그합니다.
+gdb -q ./echo-valley
+```
+
 ## 6. 익스플로잇 예시
 
 ```python

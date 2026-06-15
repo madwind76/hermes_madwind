@@ -1,7 +1,7 @@
 ---
-title: C2 — 핵심
+title: Command & Control (C2, 명령 및 제어) — 사이버 킬 체인 6단계
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, cyber-kill-chain, c2, command-and-control, beacon, implant, c2-framework, covert-channel]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/명령_제어]

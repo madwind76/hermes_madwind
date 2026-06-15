@@ -1,7 +1,7 @@
 ---
-title: Broken Authentication — 인증 체계 결함
+title: Broken Authentication (인증 체계 결함) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, web, broken-auth, authentication, session, owasp, credential-stuffing, brute-force, mfa-bypass]
 sources: [https://ko.wikipedia.org/wiki/인증, https://ko.wikipedia.org/wiki/OWASP]

@@ -1,7 +1,7 @@
 ---
-title: Broken Access Control — 핵심
+title: Broken Access Control (접근 제어 결함) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, web, broken-access-control, access-control, authorization, idor, privilege-escalation, owasp]
 sources: [https://ko.wikipedia.org/wiki/접근_제어, https://ko.wikipedia.org/wiki/OWASP]

@@ -1,5 +1,5 @@
 ---
-title: API Security — 보안 용어 해설
+title: API Security (API 보안)
 created: 2026-06-13
 updated: 2026-06-13
 type: concept

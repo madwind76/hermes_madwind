@@ -1,7 +1,7 @@
 ---
-title: CIA Triad — 보안 용어 해설
+title: CIA Triad (CIA 트라이어드) — 정보보안의 3대 핵심 원칙
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, cia, confidentiality, integrity, availability, triad, iso27001, nist, parkerian-hexad]
 sources: [https://ko.wikipedia.org/wiki/CIA_트라이어드, https://ko.wikipedia.org/wiki/정보보안, https://ko.wikipedia.org/wiki/ISO/IEC_27001, https://ko.wikipedia.org/wiki/미국_국립표준기술연구소, https://ko.wikipedia.org/wiki/암호학, https://ko.wikipedia.org/wiki/고가용성, https://ko.wikipedia.org/wiki/파커리안_헥사드]

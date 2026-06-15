@@ -1,5 +1,5 @@
 ---
-title: DoS — 보안 용어 해설
+title: DoS (Denial of Service) — 서비스 거부 공격
 created: 2026-06-13
 updated: 2026-06-13
 type: concept

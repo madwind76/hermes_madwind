@@ -1,7 +1,7 @@
 ---
-title: file upload ctf patterns — web ctf 전용 패턴 초안
+title: File Upload CTF Patterns
 created: 2026-06-13
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, file-upload, research]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md, https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18, https://dev.to/yowise/trickster-picoctf-2024-1j5j, https://brandon-t-elliott.github.io/trickster]

@@ -1,7 +1,7 @@
 ---
-title: Agent/Tool Security CTF 문제 유형 상세
-created: 2026-06-10
-updated: 2026-06-10
+title: Agent/Tool Security (에이전트 보안) — CTF 문제 유형
+created: 2026-06-13
+updated: 2026-06-16
 type: ctf-challenge
 tags: [ai-ctf, ctf, agent-security, llm, ctf-challenge, supply-chain, rce]
 sources: [raw/20260610_AI_CTF_challenge_types.md]

@@ -1,7 +1,7 @@
 ---
-title: base64 decoding — web ctf patterns
+title: Base64 Decoding
 created: 2026-06-13
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, base64, encoding]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6, https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803]

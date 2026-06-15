@@ -1,7 +1,7 @@
 ---
-title: Actions on Objectives — 목표 달성
+title: Actions on Objectives (목표 달성) — 사이버 킬 체인 7단계
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, cyber-kill-chain, actions-on-objectives, data-exfiltration, ransomware, wiper, espionage, sabotage, impact]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/데이터_유출]

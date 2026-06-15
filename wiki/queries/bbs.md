@@ -1,7 +1,7 @@
 ---
-title: bbs — web ctf note
+title: BBS
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://kt.gy/blog/2018/06/googlectf-2018-quals-web-bbs/, https://ctftime.org/writeup/10369, https://ctftime.org/writeup/10366]

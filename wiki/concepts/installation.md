@@ -1,7 +1,7 @@
 ---
-title: Installation — 설치
+title: Installation (설치) — 사이버 킬 체인 5단계
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, cyber-kill-chain, installation, persistence, backdoor, rootkit, bootkit, c2]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/백도어]

@@ -1,7 +1,7 @@
 ---
-title: sourceless — web ctf note
+title: Sourceless
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508, https://ctftime.org/event/2718/tasks/, https://ctftime.org/team/23929/]

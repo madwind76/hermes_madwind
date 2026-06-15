@@ -1,7 +1,7 @@
 ---
-title: boomshop — web ctf note
+title: BoomShop
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: []

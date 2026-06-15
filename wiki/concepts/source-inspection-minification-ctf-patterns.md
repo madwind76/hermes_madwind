@@ -1,7 +1,7 @@
 ---
-title: Source Inspection + Minification — CTF patterns
+title: Source Inspection + Minification
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, source-analysis, inspector]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md, https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md, https://developer.chrome.com/docs/devtools/, https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools]

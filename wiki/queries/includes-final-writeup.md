@@ -91,6 +91,7 @@ Medium writeup과 CTFtime writeup 모두 **page source를 확인하라**는 점�
 
 ## 9. 관련 페이지
 
+- [[includes]] — 본 노트의 짧은 진행 메모/전단계 페이지
 - [[web-ctf-writeup-client-side]]
 - [[web-ctf-writeup-topic-map]]
 - [[web-inspector-ctf-patterns]]

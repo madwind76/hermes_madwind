@@ -1,5 +1,5 @@
 ---
-title: XXE — 핵심
+title: XXE (XML External Entity, XML 외부 엔터티 주입) — 보안 용어 해설
 created: 2026-06-12
 updated: 2026-06-13
 type: concept

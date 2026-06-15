@@ -1,5 +1,5 @@
 ---
-title: postviewer-v5 — final writeup sample
+title: Postviewer v5 — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query

@@ -1,7 +1,7 @@
 ---
-title: log4j — web ctf note
+title: Log4J
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/34548, https://www.sigflag.at/blog/2022/writeup-googlectf2022-log4j/, https://intrigus.org/research/2022/07/18/google-ctf-2022-log4j2-writeup/]

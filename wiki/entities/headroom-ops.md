@@ -9,6 +9,8 @@ confidence: high
 ---
 > [[headroom]]의 분할 페이지입니다.
 
+# Headroom — 운영 및 모니터링
+
 ## 성능 벤치마크
 
 ### 실제 워크로드 토큰 절약

@@ -1,7 +1,7 @@
 ---
-title: DNS rebinding — CTF patterns
+title: DNS Rebinding
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, dns, rebinding, localhost]
 sources: [https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/, https://ctftime.org/task/18312, https://ctftime.org/writeup/31677, https://github.com/orangetw/My-CTF-Web-Challenges]

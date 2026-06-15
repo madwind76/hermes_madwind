@@ -1,7 +1,7 @@
 ---
-title: n0s4n1ty 1 — picoCTF 2025 web ctf note
+title: n0s4n1ty 1
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, file-upload, rce]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md, https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a, https://www.youtube.com/watch?v=duP8S-IqVuQ]

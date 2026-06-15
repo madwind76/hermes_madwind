@@ -63,6 +63,27 @@ sha256: <본문의 SHA256>
 
 규칙: 모든 태그는 이 분류에 있어야 함. 새 태그가 필요하면 여기에 먼저 추가한 후 사용.
 
+### Wiki-curated tags
+- accept-language, adjacency, adjacent-chunk, arbitrary-write, array-bounds, aslr, automation, bash, binary-exploitation, bit-flipping
+- picoctf2024, picoctf2025
+- browser, browser-history, buffer-overflow, cbc, cdecl, checklist, command-abuse, concurrency, control-flow-hijack, cookie
+- cookies, cpu, crash, crypto, curl, custom-cpu, decompilation, deserialization, directory-discovery, dnt
+- ds-store, email, endianness, enumeration, environment, environment-abuse, eval, executable-stack, execve, filter-bypass
+- flask, flask-session, fmtstr, format-string, function-arguments, function-pointer, function-prologue, game-state, get, gets
+- git, global-variable, got-overwrite, hash-collision, head, headers, heap, heap-layout, heap-overflow, hidden-directory
+- hidden-file, hidden-path, hidden-request, history-api, htaccess, http, import-abuse, info-leak, int-0x80, integer-overflow
+- intentional-crash, javascript, jwt, libc-leak, logic-bug, login, login-bypass, maintenance, malleability, md5
+- memory-disclosure, method-manipulation, methods, mime, minification, mirror, mmap, module-hijack, mongodb, movement
+- no-canary, nopie, nosql, nx, nx-bypass, object-injection, onepage, oob, operations, oracle
+- out-of-bounds, parser-template, partial-overwrite, path-hijack, picoctf, picoctf2023, pie, post-auth, printf, prng
+- pwn, python, rbash, referer, regex, register-control, restricted-shell, ret2reg, ret2win, return-address
+- rev, reverse-engineering, robots-txt, safe_var, saved-return-address, secrets, segfault, session-forgery, setcontext, setuid
+- shell, signal-handler, signing, sigsegv, smime, soap, source-inspection, sql-injection, sqli, sqlite
+- stack-alignment, stack-canary, stack-layout, stack-leak, stack-overflow, strcpy, strstr, substring, survey, syscalls
+- system-abuse, tampering, tcache, tcache-poisoning, timing, tls, token-forgery, top-chunk, traffic-inspection, type-juggling
+- underflow, union-based-sqli, unserialize, upload-bypass, use-after-free, user-agent, validation, wasm, webhook, websocket
+- wiki, win-function, workflow, x-forwarded-for, x64, x86
+
 ## Page Types
 
 ### CVE Pages (type: cve)

@@ -1,5 +1,5 @@
 ---
-title: burp suite — entity
+title: Burp Suite
 created: 2026-06-13
 updated: 2026-06-13
 type: entity

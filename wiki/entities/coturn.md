@@ -1,7 +1,7 @@
 ---
-title: coturn — turn server entity
+title: Coturn
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: entity
 tags: [tool, coturn, turn, stun, webrtc]
 sources: [https://github.com/coturn/coturn, https://github.com/coturn/coturn/wiki/turnserver, https://ctftime.org/task/13011]

@@ -1,7 +1,7 @@
 ---
-title: API Security — 보안 용어 해설 (실전 대응)
+title: API Security (API 보안) — 실전 대응
 created: 2026-06-13
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [security, api, api-security, waf, scanner]
 sources: [https://owasp.org/www-project-api-security/, https://owasp.org/API-Security/editions/2023/en/0x11-t10/]

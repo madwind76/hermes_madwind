@@ -58,6 +58,19 @@ confidence: medium
 - `Pachinko Revisited`는 **실행 모델과 바이너리 의미 복원**이 중심입니다.
 - 따라서 Web writeup 묶음에서는 분리하고, **pwn/rev 보조 항목**으로 다루는 편이 맞습니다.
 
+## 재현 절차
+1. WASM/커스텀 CPU 상태 맵과 입력 포트를 확인합니다.
+2. `nand_checker.bin`의 분기와 프로그램 상태를 추적합니다.
+3. 실행 상태를 조작해 `flag_magic` 경로로 진입합니다.
+
+```bash
+# 커스텀 CPU/WASM 바이너리를 분석할 때 사용합니다.
+./pachinko-revisited
+
+# 상태 맵과 분기를 디버깅합니다.
+gdb -q ./pachinko-revisited
+```
+
 ## 7. 같이 보면 좋은 페이지
 
 - [[custom-cpu-reverse-engineering-ctf-patterns]] — 커스텀 CPU / VM 역공학 패턴

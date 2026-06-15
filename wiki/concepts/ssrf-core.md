@@ -1,7 +1,7 @@
 ---
-title: SSRF — 핵심
+title: SSRF (Server-Side Request Forgery, 서버 측 요청 위조) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, web, ssrf, server-side, request-forgery, cloud-metadata, bypass, owasp]
 sources: [https://ko.wikipedia.org/wiki/SSRF, https://ko.wikipedia.org/wiki/OWASP]

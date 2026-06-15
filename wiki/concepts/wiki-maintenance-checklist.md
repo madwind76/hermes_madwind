@@ -26,11 +26,11 @@ confidence: high
 ## 2. 실제 점검 체크리스트
 
 ### 2.1 Broken wikilinks
-- [ ] `[[wikilink]]` 대상 페이지가 실제로 존재하는가
+- [ ] `wikilink` 대상 페이지가 실제로 존재하는가
 - [ ] 존재하지 않는 링크는 대체 페이지로 교체했는가
 - [ ] 대체 대상이 없으면 일반 텍스트로 바꿨는가
 - [ ] 자기참조 링크는 남기지 않았는가
-- [ ] 외부 URL을 `[[...]]`로 잘못 감싸지 않았는가
+- [ ] 외부 URL을 `...`로 잘못 감싸지 않았는가
 
 ### 2.2 Reciprocal links
 - [ ] hub page에서 하위 페이지로 링크했는가
@@ -72,9 +72,9 @@ confidence: high
 ## 3. 검증 명령 예시
 
 ```bash
-# wiki 전체에서 깨진 링크 후보를 빠르게 훑습니다.
+# wiki 전체에서 wikilink 후보를 빠르게 훑습니다.
 # 예상 출력: 링크 문자열 목록 또는 매칭 라인
-search_files --pattern '\[\[[^]]+\]\]' --path /home/kisec/wiki  # 실제 환경에서는 search_files 도구 사용을 권장합니다.
+search_files --pattern 'wikilink' --path /home/kisec/wiki  # 실제 환경에서는 search_files 도구 사용을 권장합니다.
 
 # index.md의 페이지 수와 마지막 업데이트를 확인합니다.
 # 예상 출력: "마지막 업데이트" / "전체 페이지" 라인

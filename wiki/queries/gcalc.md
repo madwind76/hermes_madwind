@@ -1,7 +1,7 @@
 ---
-title: gcalc — web ctf note
+title: gCalc
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.orange.tw/2018/06/google-ctf-2018-quals-web-gcalc.html, https://orange-tw.blogspot.com/2018/06/?m=1, https://github.com/eskildsen/google-ctf-2018, https://github.com/EmpireCTF/empirectf/blob/master/writeups/2018-06-23-Google-CTF-Quals/README.md]

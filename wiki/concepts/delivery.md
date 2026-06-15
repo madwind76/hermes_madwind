@@ -1,5 +1,5 @@
 ---
-title: Delivery — 전달
+title: Delivery (전달) — 사이버 킬 체인 3단계
 created: 2026-06-12
 updated: 2026-06-12
 type: concept

@@ -1,7 +1,7 @@
 ---
-title: ARP — Address Resolution Protocol
+title: ARP (Address Resolution Protocol) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, arp, network, protocol, layer2, spoofing, mitm]
 sources: [https://ko.wikipedia.org/wiki/ARP, https://ko.wikipedia.org/wiki/주소_분석_프로토콜]

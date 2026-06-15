@@ -1,5 +1,5 @@
 ---
-title: webdecode — final writeup sample
+title: WebDecode — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query

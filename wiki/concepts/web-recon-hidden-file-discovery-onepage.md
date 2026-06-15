@@ -1,7 +1,7 @@
 ---
-title: Web reconnaissance and hidden file discovery one-page summary
+title: 정찰형 Web CTF 실전 1페이지 요약
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, reconnaissance, onepage, robots-txt, hidden-file, directory-discovery]
 sources: [/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-checklist.md, /home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md]

@@ -9,6 +9,7 @@ confidence: high
 ---
 > [[headroom]]의 분할 페이지입니다.
 
+# Headroom — 설치 및 아키텍처
 
 # Headroom — LLM Context Compression Layer
 

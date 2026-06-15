@@ -1,7 +1,7 @@
 ---
-title: command injection ctf template — 진행 노트
+title: Command Injection CTF Template
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, command-injection]
 sources: []

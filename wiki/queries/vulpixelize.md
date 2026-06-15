@@ -1,7 +1,7 @@
 ---
-title: vulpixelize — web ctf note
+title: Vulpixelize
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/, https://ctftime.org/task/18312, https://ctftime.org/writeup/31677, https://github.com/orangetw/My-CTF-Web-Challenges]

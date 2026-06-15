@@ -1,7 +1,7 @@
 ---
-title: LFI/RFI — 보안 용어 해설 (핵심)
+title: LFI/RFI (Local/Remote File Inclusion) — 핵심 메커니즘
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, lfi, rfi, file-inclusion, path-traversal, php]
 sources: [https://owasp.org/www-community/attacks/Path_Traversal, https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Inclusion]

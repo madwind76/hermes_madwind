@@ -1,7 +1,7 @@
 ---
-title: game-arcade — web ctf note
+title: Game Arcade
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/39221, https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc, https://ctftime.org/task/28606]

@@ -1,3 +1,24 @@
+## [2026-06-16] lint | orphan cleanup and topic-map split
+- fixed: connected concepts/command-injection-ctf-patterns.md and queries/includes.md via existing topic/writeup hub pages
+- split: concepts/web-ctf-writeup-topic-map.md into main topic map + appendix page to reduce page size
+- created: concepts/web-ctf-writeup-topic-map-appendix.md
+- updated: concepts/web-ctf-writeup-topic-map.md, queries/includes-final-writeup.md, index.md, log.md
+## [2026-06-16] lint | wiki cleanup after llm-wiki lint
+- fixed: added missing frontmatter sources to 4 concept pages, repaired broken wikilink examples in maintenance docs, expanded SCHEMA tag taxonomy, added picoCTF pwn survey hub, and updated index entries for missing pages
+- created: queries/picoctf-pwn-survey.md
+- updated: SCHEMA.md, concepts/python-module-hijack-ctf-patterns.md, concepts/environment-command-abuse-ctf-patterns.md, concepts/integer-overflow-logic-bug-ctf-patterns.md, concepts/heap-tcache-poisoning-ctf-patterns.md, concepts/wiki-maintenance-checklist.md, concepts/wiki-maintenance-operations.md, queries/picoctf-2023-pwn-survey.md, index.md, log.md
+## [2026-06-15] add | picoCTF 2025 pwn writeups reproducible steps
+- action: PIE TIME, PIE TIME 2, Echo Valley, Handoff, hash-only-1, hash-only-2, Pachinko Revisited 문서에 재현 절차 및 PoC/명령 예시를 추가
+- updated: queries/pie-time-final-writeup.md, queries/pie-time-2-final-writeup.md, queries/echo-valley-final-writeup.md, queries/handoff-final-writeup.md, queries/hash-only-1-final-writeup.md, queries/hash-only-2-final-writeup.md, queries/pachinko-revisited-final-writeup.md
+## [2026-06-15] add | picoCTF 2024 pwn writeups reproducible steps
+- action: format string 0~3, heap 0~3, babygame03, high frequency troubles 문서에 재현 절차 및 PoC 명령 예시를 추가
+- updated: queries/format-string-0-final-writeup.md, queries/format-string-1-final-writeup.md, queries/heap-0-final-writeup.md, queries/heap-1-final-writeup.md, queries/heap-2-final-writeup.md, queries/heap-3-final-writeup.md, queries/format-string-2-final-writeup.md, queries/format-string-3-final-writeup.md, queries/babygame03-final-writeup.md, queries/high-frequency-troubles-final-writeup.md
+## [2026-06-15] add | picoCTF 2023 pwn writeups reproducible steps
+- action: babygame01/two-sum/babygame02/hijacking/tic-tac/VNE/Horsetrack 문서에 재현 절차 및 PoC 명령 예시를 추가
+- updated: queries/babygame01-final-writeup.md, queries/two-sum-final-writeup.md, queries/babygame02-final-writeup.md, queries/hijacking-final-writeup.md, queries/tic-tac-final-writeup.md, queries/vne-final-writeup.md, queries/horsetrack-final-writeup.md
+- action: picoCTF 2023 Binary Exploitation 7개를 query + survey + concept 페이지로 정리하고 index/log를 동기화
+- created: queries/babygame01-final-writeup.md, queries/two-sum-final-writeup.md, queries/babygame02-final-writeup.md, queries/hijacking-final-writeup.md, queries/tic-tac-final-writeup.md, queries/vne-final-writeup.md, queries/horsetrack-final-writeup.md, queries/picoctf-2023-pwn-survey.md, concepts/integer-overflow-logic-bug-ctf-patterns.md, concepts/python-module-hijack-ctf-patterns.md, concepts/environment-command-abuse-ctf-patterns.md, concepts/heap-tcache-poisoning-ctf-patterns.md
+- sources: snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup, play.picoctf.org participant profiles, Horsetrack tcache poisoning writeups
 ## [2026-06-15] create | heap 0 picoCTF 2024 pwn writeup
 - action: heap 0를 heap overflow / adjacent chunk overwrite 관점으로 정리하고 query + concept 페이지를 추가 생성
 - created: queries/heap-0-final-writeup.md, concepts/heap-overflow-adjacent-chunk-overwrite-ctf-patterns.md
@@ -837,3 +858,26 @@
 - updated: queries/web-ctf-writeup-curation.md, concepts/web-ctf-writeup-topic-map.md, index.md, log.md
 - sources: Ahmed Narmer Scavenger Hunt, Anthony Tolentino Scavenger Hunt, bl0ss0mx5 Scavenger Hunt
 - index: Queries 1개 등록 (전체 페이지 카운트 205→206)
+## [2026-06-16] lint | reduce wiki lint info noise
+- updated: concepts/python-module-hijack-ctf-patterns.md, concepts/environment-command-abuse-ctf-patterns.md, concepts/integer-overflow-logic-bug-ctf-patterns.md, concepts/heap-tcache-poisoning-ctf-patterns.md
+- added confidence: medium to the four single-source concept pages flagged by lint
+## [2026-06-16] update | title-h1 normalization batch
+- updated: entities/burp-suite.md, entities/cyberchef.md
+- updated: concepts/api-security.md, concepts/ddos.md, concepts/drm.md, concepts/lfi-rfi.md, concepts/tcp.md, concepts/udp.md
+- updated: queries/vulpixelize-final-writeup.md, queries/webdecode-final-writeup.md, queries/urlapp-final-writeup.md, queries/bbs-final-writeup.md, queries/boomshop-final-writeup.md, queries/game-arcade-final-writeup.md, queries/gcalc-final-writeup.md, queries/sourceless-final-writeup.md, queries/log4j-final-writeup.md, queries/postviewer-v5-final-writeup.md, queries/under-construction-final-writeup.md, queries/csaw-2020-webrtc-final-writeup.md, queries/one-line-php-challenge-final-writeup.md
+## [2026-06-16] update | title-h1 normalization batch 2
+- updated: concepts/dos.md, concepts/xxe-core.md, concepts/delivery.md, concepts/exploitation.md, concepts/ssti-core.md
+## [2026-06-16] update | title-h1 normalization batch 3
+- updated: queries/game-arcade.md, queries/bbs.md, queries/postviewer-v5.md, queries/boomshop-example.md, queries/csaw-2020-webrtc.md, queries/one-line-php-challenge.md, queries/urlapp.md, queries/sourceless.md, queries/web-ctf-master-checklist.md, queries/file-upload-ctf-template.md, queries/ssrf-ctf-template.md, queries/command-injection-ctf-template.md, queries/path-traversal-ctf-template.md, queries/idor-ctf-template.md, queries/ssti-ctf-template.md
+- updated: concepts/reconnaissance.md, concepts/vpn.md, concepts/ips.md, concepts/rce.md, concepts/cia.md, concepts/ctf-challenge-dev-research.md, concepts/api-security-core.md, concepts/api-security-defense.md, concepts/lfi-rfi-core.md, concepts/lfi-rfi-defense.md
+## [2026-06-16] update | title-h1 normalization batch 4
+- updated: queries/webdecode.md, queries/unminify.md, queries/trickster.md, queries/n0s4n1ty-1.md, queries/web-ctf-starter.md
+- updated: concepts/dns-rebinding-ctf-patterns.md, concepts/scf-sandbox-ctf-patterns.md, concepts/source-inspection-minification-ctf-patterns.md, concepts/xssi-file-exfiltration-ctf-patterns.md, concepts/redis-ssrf-command-injection-ctf-patterns.md
+- updated: concepts/breach-cases-cloud.md, concepts/breach-cases-ransomware.md, concepts/breach-cases-supply-chain.md, concepts/real-world-breach-cases.md
+## [2026-06-16] update | title-h1 normalization batch 5
+- updated: concepts/agent-security-ctf.md, concepts/prompt-injection-ctf.md, concepts/web-recon-hidden-file-discovery-checklist.md, concepts/ssrf-core.md, concepts/xss.md, concepts/adversarial-ml-ctf.md, concepts/web-recon-hidden-file-discovery-onepage.md, concepts/arp.md, concepts/actions-on-objectives.md, concepts/privilege-escalation-core.md, concepts/dlp-core.md, concepts/installation.md, concepts/path-traversal-core.md, concepts/edr-core.md, concepts/idor-core.md, concepts/ids.md, concepts/cors-misconfig-core.md, concepts/command-injection-core.md, concepts/file-upload-core.md, concepts/csrf.md, concepts/broken-auth.md
+## [2026-06-16] update | title-h1 normalization batch 6
+- updated: concepts/c2-core.md, concepts/broken-access-control-core.md, concepts/weaponization.md, queries/intro-to-burp.md
+## [2026-06-16] update | title-h1 normalization batch 7
+- updated: entities/headroom-performance.md, entities/headroom-setup.md, entities/headroom-ops.md, concepts/cors-misconfig-defense.md
+- inserted matching H1 headings to align page structure with titles and remove false-positive mismatch detections

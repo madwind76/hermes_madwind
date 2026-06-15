@@ -1,7 +1,7 @@
 ---
-title: urlapp — web ctf note
+title: urlapp
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/task/10636, https://ctftime.org/writeup/18603, https://whitesnake1004.tistory.com/704, https://furutsuki.hatenablog.com/entry/2020/03/13/112204]

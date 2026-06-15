@@ -1,7 +1,7 @@
 ---
-title: 실제 침해 사례 — 랜섬웨어 — 보안 사례 분석
+title: 실제 침해 사례 — 랜섬웨어 (주요 사례)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, ransomware, breach, real-world]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석, 법정 문서, 회사 공개 자료]

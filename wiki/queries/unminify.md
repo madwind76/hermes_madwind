@@ -1,7 +1,7 @@
 ---
-title: Unminify — picoCTF 2024 web note
+title: Unminify
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research, writeup, source-analysis, minification]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md, https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md]

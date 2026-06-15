@@ -1,7 +1,7 @@
 ---
-title: one-line-php-challenge — web ctf note
+title: One Line PHP Challenge
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://github.com/orangetw/My-CTF-Web-Challenges, https://blog.kaibro.tw/2018/10/24/HITCON-CTF-2018-Web/, https://hacktricks.wiki/en/pentesting-web/file-inclusion/via-php_session_upload_progress.html]

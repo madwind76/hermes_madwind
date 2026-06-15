@@ -1,7 +1,7 @@
 ---
-title: Privilege Escalation — 핵심
+title: Privilege Escalation (권한 상승) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, privilege-escalation, local, remote, vertical, horizontal, linux, windows, kernel, exploit]
 sources: [https://ko.wikipedia.org/wiki/권한_상승, https://ko.wikipedia.org/wiki/커널_취약점]

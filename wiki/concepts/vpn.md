@@ -1,7 +1,7 @@
 ---
-title: VPN — 보안 용어 해설
+title: VPN (Virtual Private Network) — 가상 사설망
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, vpn, encryption, tunneling, network-security, remote-access, wireguard, ipsec]
 sources: [https://ko.wikipedia.org/wiki/가상_사설망, https://ko.wikipedia.org/wiki/IPsec, https://ko.wikipedia.org/wiki/OpenVPN, https://ko.wikipedia.org/wiki/WireGuard, https://ko.wikipedia.org/wiki/암호화, https://ko.wikipedia.org/wiki/터널링_프로토콜, https://ko.wikipedia.org/wiki/제로_트러스트_보안]

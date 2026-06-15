@@ -1,5 +1,5 @@
 ---
-title: urlapp — final writeup sample
+title: urlapp — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query

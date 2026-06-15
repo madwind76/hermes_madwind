@@ -80,6 +80,19 @@ print(hex(main - win))  # 예상 출력: 0x96
 - `Pachinko Revisited`처럼 실행 모델 자체를 역추적하는 문제와는 다릅니다.
 - `win()` 호출 주소를 찾는 데는 취약점 체인보다 **컴파일/링크 레이아웃 이해**가 더 중요합니다.
 
+## 재현 절차
+1. `main()` 주소 출력과 함수 포인터 입력 흐름을 확인합니다.
+2. 로컬 심볼 오프셋으로 `main()`과 `win()` 차이를 계산합니다.
+3. 누출된 주소에서 오프셋을 빼서 `win()`으로 점프합니다.
+
+```bash
+# 바이너리를 실행해 main 주소 출력과 입력 프롬프트를 확인합니다.
+./pie-time
+
+# 정적 분석으로 main/win 심볼과 오프셋을 봅니다.
+readelf -s ./pie-time | grep -E ' main$| win$'
+```
+
 ## 8. 참고 자료
 
 - [Biswajit Rout — PicoCTF Write-up: PIE TIME](https://medium.com/@routbiswajit70681/picoctf-write-up-pie-time-37ffcdc29b71)

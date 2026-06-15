@@ -1,5 +1,5 @@
 ---
-title: UDP — 보안 용어 해설
+title: UDP (User Datagram Protocol)
 created: 2026-06-13
 updated: 2026-06-13
 type: concept

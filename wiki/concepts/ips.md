@@ -1,7 +1,7 @@
 ---
-title: IPS — 보안 용어 해설
+title: IPS (Intrusion Prevention System) — 침입 방지 시스템
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, ips, ids, intrusion-prevention, network-security, inline, snort, suricata, ngfw]
 sources: [https://ko.wikipedia.org/wiki/침입_차단_시스템, https://ko.wikipedia.org/wiki/침입_탐지_시스템, https://ko.wikipedia.org/wiki/Snort_(소프트웨어), https://ko.wikipedia.org/wiki/방화벽_(네트워킹), https://ko.wikipedia.org/wiki/차세대_방화벽, https://ko.wikipedia.org/wiki/분산_서비스_거부_공격, https://ko.wikipedia.org/wiki/사이버_보안_관제_센터]

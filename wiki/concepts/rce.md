@@ -1,7 +1,7 @@
 ---
-title: RCE — 보안 용어 해설
+title: RCE (Remote Code Execution) — 원격 코드 실행
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, rce, remote-code-execution, vulnerability, critical]
 sources: [https://ko.wikipedia.org/wiki/원격_코드_실행, https://ko.wikipedia.org/wiki/임의_코드_실행, https://ko.wikipedia.org/wiki/버퍼_오버플로, https://ko.wikipedia.org/wiki/Log4Shell]

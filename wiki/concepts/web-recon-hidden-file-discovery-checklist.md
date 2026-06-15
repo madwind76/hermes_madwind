@@ -1,7 +1,7 @@
 ---
-title: Web reconnaissance and hidden file discovery checklist
+title: 정찰형 Web CTF 체크리스트
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, reconnaissance, checklist, robots-txt, hidden-file, directory-discovery]
 sources: [/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md, /home/kisec/wiki/concepts/hidden-directory-discovery-ctf-patterns.md, /home/kisec/wiki/queries/web-ctf-master-checklist.md]

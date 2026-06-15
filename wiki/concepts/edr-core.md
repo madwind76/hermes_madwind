@@ -1,7 +1,7 @@
 ---
-title: EDR — 핵심
+title: EDR (Endpoint Detection and Response, 엔드포인트 탐지 및 대응) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [security, glossary, edr, endpoint, detection, response, xdr, mdr, antivirus, epp]
 sources: [https://ko.wikipedia.org/wiki/엔드포인트_탐지_및_대응, https://ko.wikipedia.org/wiki/안티바이러스_소프트웨어]

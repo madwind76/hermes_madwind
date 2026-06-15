@@ -1,5 +1,5 @@
 ---
-title: one-line-php-challenge — final writeup sample
+title: One Line PHP Challenge — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > 보안 취약점(CVE), 공격 기법, CTF 문제 유형, 보안 용어의 지식 베이스.
-> 마지막 업데이트: 2026-06-15 | 전체 페이지: 282
+> 마지막 업데이트: 2026-06-15 | 전체 페이지: 297
 
 ## CVE
 
@@ -39,6 +39,7 @@
 |||| [[source-inspection-minification-ctf-patterns]] | Source Inspection + Minification | concept | 2026-06-14 |
 |||| [[web-ctf-writeup-resources]] | Web CTF Writeup 리소스 가이드 및 학습 로드맵 | concept | 2026-06-13 |
 |||| [[web-ctf-writeup-topic-map]] | Web CTF Writeup Topic Map | concept | 2026-06-14 |
+||||| [[web-ctf-writeup-topic-map-appendix]] | Web CTF Writeup Topic Map Appendix | concept | 2026-06-16 |
 |||| [[scf-sandbox-ctf-patterns]] | SafeContentFrame sandbox — CTF patterns | concept | 2026-06-13 |
 |||| [[xssi-file-exfiltration-ctf-patterns]] | XSSI / file exfiltration — CTF patterns | concept | 2026-06-13 |
 
@@ -46,6 +47,13 @@
 ||| [[redis-ssrf-command-injection-ctf-patterns]] | Redis SSRF / command injection — CTF patterns | concept | 2026-06-13 |
 ||| [[webrtc-turn-proxying-ctf-patterns]] | WebRTC TURN Proxying | concept | 2026-06-13 |
 |||| [[websocket-message-tampering-ctf-patterns]] | WebSocket Message Tampering — 보안 용어 해설과 Web CTF 패턴 | concept | 2026-06-14 |
+
+|||| [[path-hijacking-system-abuse-ctf-patterns]] | Path Hijacking / System Abuse — CTF patterns | concept | 2026-06-16 |
+|||| [[http-method-manipulation-ctf-patterns]] | HTTP method manipulation — CTF patterns | concept | 2026-06-16 |
+|||| [[advanced-heap-top-chunk-mmap-tls-ctf-patterns]] | Advanced heap / top chunk / mmap / TLS — CTF patterns | concept | 2026-06-16 |
+|||| [[browser-history-manipulation-ctf-patterns]] | Browser history manipulation — CTF patterns | concept | 2026-06-16 |
+|||| [[oob-movement-game-state-corruption-ctf-patterns]] | OOB movement / game-state corruption — CTF patterns | concept | 2026-06-16 |
+|||| [[wasm-reverse-engineering-ctf-patterns]] | WASM reverse engineering — CTF patterns | concept | 2026-06-16 |
 
 > **보안 뉴스 다이제스트**: 일간 보안 뉴스 요약은 raw/articles/에만 보관 (위키 페이지 미생성).
 > 최신: [2026-06-10](raw/articles/20260610_security_news_digest.md)
@@ -252,6 +260,18 @@
 ||| [[intentional-crash-signal-handler-ctf-patterns]] | Intentional crash / signal handler — CTF patterns | concept | 2026-06-15 |
 ||| [[buffer-overflow-1-final-writeup]] | buffer overflow 1 — picoCTF 2022 pwn writeup | query | 2026-06-15 |
 ||| [[saved-return-address-control-ctf-patterns]] | Saved return address control — CTF patterns | concept | 2026-06-15 |
+||| [[babygame01-final-writeup]] | babygame01 — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[two-sum-final-writeup]] | two-sum — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[babygame02-final-writeup]] | babygame02 — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[hijacking-final-writeup]] | hijacking — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[tic-tac-final-writeup]] | tic-tac — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[vne-final-writeup]] | VNE — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[horsetrack-final-writeup]] | Horsetrack — picoCTF 2023 pwn writeup | query | 2026-06-15 |
+||| [[picoctf-2023-pwn-survey]] | picoCTF 2023 pwn survey | query | 2026-06-15 |
+||| [[integer-overflow-logic-bug-ctf-patterns]] | Integer overflow / logic bug — CTF patterns | concept | 2026-06-15 |
+||| [[python-module-hijack-ctf-patterns]] | Python module hijack — CTF patterns | concept | 2026-06-15 |
+||| [[environment-command-abuse-ctf-patterns]] | Environment / command abuse — CTF patterns | concept | 2026-06-15 |
+||| [[heap-tcache-poisoning-ctf-patterns]] | Heap tcache poisoning — CTF patterns | concept | 2026-06-15 |
 ||| [[heap-0-final-writeup]] | heap 0 — picoCTF 2024 pwn writeup | query | 2026-06-15 |
 ||| [[heap-overflow-adjacent-chunk-overwrite-ctf-patterns]] | Heap overflow / adjacent chunk overwrite — CTF patterns | concept | 2026-06-15 |
 ||| [[secure-email-service-final-writeup]] | secure-email-service — picoCTF 2025 web writeup | query | 2026-06-14 |
@@ -307,3 +327,13 @@
 ||| [[web-ctf-writeup-storage-upload]] | Web CTF Writeup — 파일 업로드/스토리지/클라우드 | query | 2026-06-14 |
 ||| [[web-ctf-writeup-internal-service]] | Web CTF Writeup — 내부 서비스/프로토콜 악용 | query | 2026-06-14 |
 ||| [[web-ctf-starter]] | Web CTF 진행 노트 초안 템플릿 | query | 2026-06-13 |
+|||| [[picoctf-pwn-survey]] | picoCTF pwn survey | query | 2026-06-16 |
+|||| [[format-string-0-final-writeup]] | format string 0 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[format-string-1-final-writeup]] | format string 1 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[format-string-2-final-writeup]] | format string 2 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[format-string-3-final-writeup]] | format string 3 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[heap-1-final-writeup]] | heap 1 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[heap-2-final-writeup]] | heap 2 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[heap-3-final-writeup]] | heap 3 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[babygame03-final-writeup]] | babygame03 — picoCTF 2024 pwn writeup | query | 2026-06-16 |
+|||| [[high-frequency-troubles-final-writeup]] | high frequency troubles — picoCTF 2024 pwn writeup | query | 2026-06-16 |

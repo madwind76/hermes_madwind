@@ -1,7 +1,7 @@
 ---
-title: postviewer-v5 — web ctf note
+title: Postviewer v5
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/40351, https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8, https://ctftime.org/event/2718/tasks/]

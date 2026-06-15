@@ -1,5 +1,5 @@
 ---
-title: csaw-2020-webrtc — final writeup sample
+title: CSAW Quals 2020 WebRTC — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query

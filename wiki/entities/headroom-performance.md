@@ -9,6 +9,8 @@ confidence: high
 ---
 > [[headroom]]의 분할 페이지입니다.
 
+# Headroom — 성능 및 비교
+
 ## 아키텍처
 
 ### 6가지 압축 알고리즘

@@ -1,7 +1,7 @@
 ---
-title: Redis SSRF / command injection — CTF patterns
+title: Redis SSRF / Command Injection
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, redis, ssrf, command-injection]
 sources: [https://ctftime.org/task/10636, https://ctftime.org/writeup/18603, https://whitesnake1004.tistory.com/704, https://furutsuki.hatenablog.com/entry/2020/03/13/112204]

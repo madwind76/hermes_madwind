@@ -1,5 +1,5 @@
 ---
-title: SSTI — 핵심
+title: SSTI (Server-Side Template Injection, 서버 사이드 템플릿 주입) — 보안 용어 해설
 created: 2026-06-12
 updated: 2026-06-14
 type: concept

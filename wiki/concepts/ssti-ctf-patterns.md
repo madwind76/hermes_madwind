@@ -1,7 +1,7 @@
 ---
-title: ssti ctf patterns — web ctf 전용 패턴 초안
+title: SSTI CTF Patterns
 created: 2026-06-13
-updated: 2026-06-14
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, ssti, research]
 sources: []

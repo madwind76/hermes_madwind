@@ -1,7 +1,7 @@
 ---
-title: command injection ctf patterns — web ctf 전용 패턴 초안
+title: Command Injection CTF Patterns
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, command-injection, research]
 sources: []

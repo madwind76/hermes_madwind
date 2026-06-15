@@ -1,7 +1,7 @@
 ---
-title: under-construction — web ctf note
+title: Under Construction
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2023/, https://ctftime.org/writeup/37351, https://ctftime.org/writeup/37549, https://ctftime.org/writeup/37330]

@@ -1,7 +1,7 @@
 ---
-title: web ctf starter — 진행 노트 템플릿
+title: Web CTF Starter
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: query
 tags: [ctf, web, research]
 sources: []

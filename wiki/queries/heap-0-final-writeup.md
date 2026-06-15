@@ -67,6 +67,19 @@ PY
 - 힙에 중요한 검증 변수(`safe_var`)를 두지 않습니다.
 - 입력 길이 검사를 항상 수행합니다.
 
+## 재현 절차
+1. 힙에 어떤 순서로 할당되는지 확인합니다.
+2. `input_data`와 `safe_var`의 간격을 계산합니다.
+3. 경계까지 입력을 채워 `safe_var`를 덮는지 확인합니다.
+
+```bash
+# 문제 바이너리를 실행해 메뉴와 힙 할당 순서를 확인합니다.
+./heap-0
+
+# 디버거에서 chunk 배치를 관찰합니다.
+gdb -q ./heap-0
+```
+
 ## 8. 참고 자료
 
 - [picoCTF-2024-Writeup/heap 0](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%200/heap%200.md)

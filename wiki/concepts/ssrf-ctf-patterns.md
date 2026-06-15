@@ -1,7 +1,7 @@
 ---
-title: ssrf ctf patterns — web ctf 전용 패턴 초안
+title: SSRF CTF Patterns
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 type: concept
 tags: [ctf, web, ssrf, research]
 sources: []

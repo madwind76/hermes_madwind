@@ -9,6 +9,8 @@ confidence: high
 ---
 > [[cors-misconfig]]의 후반부입니다.
 
+# CORS Misconfiguration — 방어
+
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### 안전한 CORS 구현 패턴
 

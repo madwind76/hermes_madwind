@@ -1,5 +1,5 @@
 ---
-title: sourceless — final writeup sample
+title: Sourceless — Final Writeup Sample
 created: 2026-06-13
 updated: 2026-06-13
 type: query
