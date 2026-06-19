@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup Topic Map
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-19
 type: concept
 tags: [web, ctf, research, reference]
 sources: [raw/articles/20260613_web-ctf-writeup-curated.md, /home/kisec/wiki/index.md]
@@ -19,6 +19,7 @@ confidence: high
 
 1. **리소스/가이드 층**
    - [[web-ctf-writeup-resources]]: 외부 writeup 소스와 학습 로드맵
+   - [[ctf-writeup-ingestion-workflow]]: 공개 writeup을 조사 → 분류 → 저장하는 절차
    - [[web-ctf-writeup-curation]]: 공개 writeup을 다시 묶은 큐레이션 허브
 
 2. **유형별 분류 층**

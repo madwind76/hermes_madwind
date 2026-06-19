@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "queries/ancient-history-final-writeup.md",
+                "file": "concepts/rce.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ancient-history-final-writeup"
+              "title": "rce"
             }
           }
         ]
@@ -74,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 343.5
+    "width": 343.5,
+    "collapsed": true
   },
   "right": {
     "id": "51c317a744ede651",
@@ -183,32 +183,32 @@
   },
   "active": "e40bfe442f3b5b58",
   "lastOpenFiles": [
-    "queries/super-serial-final-writeup.md",
-    "queries/web-gauntlet-2-3-sqlite-survey.md",
-    "queries/web-gauntlet-2-final-writeup.md",
-    "queries/web-gauntlet-3-final-writeup.md",
-    "queries/web-gauntlet-final-writeup.md",
-    "queries/x-marks-the-spot-final-writeup.md",
-    "queries/no-sql-injection-final-writeup.md",
-    "queries/java-code-analysis-final-writeup.md",
-    "queries/jauth-final-writeup.md",
-    "queries/it-is-my-birthday-final-writeup.md",
-    "queries/intro-to-burp-final-writeup.md",
-    "queries/elements-final-writeup.md",
-    "queries/cookies-final-writeup.md",
-    "queries/bithug-final-writeup.md",
-    "queries/ancient-history-final-writeup.md",
-    "queries/buffer-overflow-0-final-writeup.md",
-    "queries/buffer-overflow-1-final-writeup.md",
-    "queries/bookmarklet-final-writeup.md",
+    "concepts/ctf-writeup-ingestion-workflow.md",
+    "queries/proxy-mirror-final-writeup.md",
+    "concepts/exploitation.md",
+    "queries/babygame02-final-writeup.md",
+    "queries/perplexed-final-writeup.md",
+    "queries/tap-into-hash-final-writeup.md",
+    "queries/quantum-scrambler-final-writeup.md",
+    "queries/chronohack-final-writeup.md",
+    "queries/binary-instrumentation-2-final-writeup.md",
+    "queries/binary-instrumentation-1-final-writeup.md",
+    "queries/flag-hunters-final-writeup.md",
+    "queries/picoctf-2025-rec-survey.md",
+    "concepts/prng-seed-bruteforce-ctf-patterns.md",
+    "concepts/windows-api-instrumentation-ctf-patterns.md",
+    "concepts/reverse-engineering-ctf-patterns.md",
+    "concepts/oob-movement-game-state-corruption-ctf-patterns.md",
     "index.md",
-    "log.md",
-    "concepts/prompt-injection-ctf.md",
-    "concepts/wiki-maintenance-operations.md",
-    "concepts/wiki-maintenance-checklist.md",
-    "concepts/websocket-message-tampering-ctf-patterns.md",
-    "concepts/websocket.md",
-    "concepts/webrtc-turn-proxying-ctf-patterns.md",
+    "queries/web-ctf-writeup-internal-service.md",
+    "concepts/redis-ssrf-command-injection-ctf-patterns.md",
+    "queries/urlapp.md",
+    "queries/web-ctf-starter.md",
+    "queries/picoctf-pwn-survey.md",
+    "queries/picoctf-2022-pwn-survey.md",
+    "queries/heap-1-final-writeup.md",
+    "queries/ancient-history-final-writeup.md",
+    "queries/super-serial-final-writeup.md",
     "assets/infosec/source-inspection-minification-ctf-patterns.svg",
     "assets/infosec/jinja2-filter-bypass.svg",
     "assets/infosec/jinja2-template-engine.svg",

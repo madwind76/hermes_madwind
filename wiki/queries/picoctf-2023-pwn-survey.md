@@ -1,7 +1,7 @@
 ---
 title: picoCTF 2023 pwn survey
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, survey, picoctf, picoctf2023]
 sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup, participant profiles]
@@ -10,6 +10,7 @@ sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup, participant
 # picoCTF 2023 pwn survey
 
 > picoCTF 2023 Binary Exploitation의 전체 문제를 한 번에 보는 요약 페이지입니다.
+> 현재 위키에는 **7/7 문제**가 모두 정리되어 있습니다.
 > 상위 허브: [[picoctf-pwn-survey]]
 
 | # | 문제 | 상태 | 핵심 primitive | 연결 문서 |
@@ -20,7 +21,7 @@ sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup, participant
 | 4 | hijacking | solved | module hijack / environment abuse | [[hijacking-final-writeup]] |
 | 5 | tic-tac | solved | buffer overflow / saved return address | [[tic-tac-final-writeup]] |
 | 6 | VNE | solved | environment / command abuse | [[vne-final-writeup]] |
-| 7 | Horsetrack | progress writeup / solved in profiles | heap / tcache poisoning | [[horsetrack-final-writeup]] |
+| 7 | Horsetrack | solved | heap / tcache poisoning | [[horsetrack-final-writeup]] |
 
 ## 문제 묶음별 해석
 ### 1) 게임 상태 변조 계열

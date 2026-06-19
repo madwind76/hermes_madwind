@@ -1,7 +1,7 @@
 ---
 title: Web Gauntlet — picoCTF 2020 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, web, sqlite, sqli, filter-bypass, picoctf]
 sources: [https://github.com/onealmond/hacking-lab/blob/master/picoctf-2020/web-gauntlet/writeup.md, https://medium.com/@sobatistacyber/picoctf-writeup-web-gauntlet-7c3b8c7c7946, https://www.youtube.com/watch?v=ZQj5tSwaG0k]
@@ -52,10 +52,30 @@ confidence: high
 - SQLite 쿼리를 직접 붙여 쓰면 필터 우회가 매우 쉽게 생깁니다.
 - 라운드별 다른 필터를 적용하더라도 근본 해결은 아닙니다.
 
+## 재현 절차
+
+1. 로그인 폼의 요청을 확인합니다.
+```bash
+# Burp Suite나 curl로 요청 파라미터와 필터 동작을 관찰합니다.
+curl -i 'http://example.com/login'   # 예상: 로그인 페이지 HTML 또는 redirect 응답이 출력됩니다.
+```
+2. SQLite 문자열 결합과 주석을 이용한 우회 문자열을 실험합니다.
+```bash
+# 문자열을 쪼개고 주석을 붙여 admin 조건을 우회하는 예시입니다.
+echo "ad'||'min' --"                # 예상: 필터가 막는 admin 문자열을 분해한 형태가 출력됩니다.
+```
+3. 라운드별 필터 차이를 비교하며 짧은 payload를 맞춥니다.
+```python
+# 각 라운드에서 허용되는 문자 집합을 기준으로 payload를 줄입니다.
+payload = "ad'||'min"               # 예상: SQLite에서 admin 문자열로 이어집니다.
+print(payload)
+```
+
 ## 6. 같이 보면 좋은 페이지
 - [[web-gauntlet-2-final-writeup]]
 - [[web-gauntlet-3-final-writeup]]
 - [[web-gauntlet-2-3-sqlite-survey]]
+- [[picoctf-2020-web-survey]]
 - [[sqlite-sqli-filter-bypass-ctf-patterns]]
 
 ## 7. 참고 소스

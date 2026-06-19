@@ -1,7 +1,7 @@
 ---
 title: SSRF CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-19
 type: concept
 tags: [ctf, web, ssrf, research]
 sources: []
@@ -44,3 +44,4 @@ Web CTF에서 SSRF는 **서버가 대신 외부 요청을 수행하는 입력점
 - [[ssrf-core]]
 - [[ssrf-defense]]
 - [[broken-access-control]]
+- [[proxy-mirror-final-writeup]]

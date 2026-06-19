@@ -1,7 +1,7 @@
 ---
 title: RPS — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, logic-bug, strstr, prng, picoctf]
 sources: [https://ctftime.org/writeup/33269, https://cryptocat.me/blog/ctf/2022/pico/pwn/rps/, https://hhyleung.github.io/writeups/picoctf-2022-binary/]
@@ -66,6 +66,22 @@ for _ in range(5):
 io.interactive()  # flag 출력 이후 상호작용합니다.
 ```
 
+
+## 재현 절차
+
+1. 게임 입력과 승리 조건을 확인합니다.
+```bash
+# 프로그램의 입력 형식을 먼저 확인합니다.
+./vuln                   # 예상: rock / paper / scissors 선택 프롬프트가 출력됩니다.
+```
+2. 문자열 비교 로직을 우회하는 입력을 준비합니다.
+```python
+# substring 비교에 맞는 입력 후보를 점검합니다.
+choices = [b"rock", b"paper", b"scissors"]
+for c in choices:
+    print(c.decode())     # 예상: 각각의 후보 문자열이 출력됩니다.
+```
+3. 조건을 만족하는 응답을 보내 flag가 나오는지 확인합니다.
 ## 6. 방어 관점 메모
 
 - 승리 판정은 부분 문자열이 아니라 **정확한 값 비교**로 해야 합니다.

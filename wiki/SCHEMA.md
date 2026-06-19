@@ -65,7 +65,7 @@ sha256: <본문의 SHA256>
 
 ### Wiki-curated tags
 - accept-language, adjacency, adjacent-chunk, arbitrary-write, array-bounds, aslr, automation, bash, binary-exploitation, bit-flipping
-- picoctf2024, picoctf2025
+- picoctf2020, picoctf2022, picoctf2024, picoctf2025
 - browser, browser-history, buffer-overflow, cbc, cdecl, checklist, command-abuse, concurrency, control-flow-hijack, cookie
 - cookies, cpu, crash, crypto, curl, custom-cpu, decompilation, deserialization, directory-discovery, dnt
 - ds-store, email, endianness, enumeration, environment, environment-abuse, eval, executable-stack, execve, filter-bypass

@@ -1,7 +1,7 @@
 ---
 title: Stack Cache — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, stack-leak, ret2win, rop, buffer-overflow, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/stack-cache, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/stack%20cache/script.py, https://blog.maple3142.net/2022/03/29/picoctf-2022-writeups/]
@@ -80,6 +80,22 @@ flag = re.search(rb'picoCTF\{.*?\}', output).group().decode()
 print(flag)  # 예상 출력: picoCTF{...}
 ```
 
+
+## 재현 절차
+
+1. 누출되는 스택 값을 먼저 확인합니다.
+```bash
+# 프로그램 출력에 스택 주소나 힌트가 있는지 확인합니다.
+./vuln                   # 예상: cache / leak 관련 문자열이 출력됩니다.
+```
+2. 누출값으로 ret2win에 필요한 주소를 계산합니다.
+```python
+# 누출값을 이용해 최종 주소를 계산하는 흐름입니다.
+leak = 0x7fffffffe000      # 예시: 스택 누출값입니다.
+win  = leak - 0x120       # 예시: 오프셋을 적용합니다.
+print(hex(win))           # 예상: win 함수 관련 주소가 출력됩니다.
+```
+3. 계산한 주소로 flag 출력 경로를 호출합니다.
 ## 6. 방어 관점 메모
 
 - 한 번의 취약 입력으로 주소 누출과 제어 흐름 변조가 모두 가능하면 매우 위험합니다.

