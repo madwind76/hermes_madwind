@@ -1,7 +1,7 @@
 ---
 title: Reconnaissance (정찰) — 사이버 공격의 첫 단계, 정보 수집의 기술
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, reconnaissance, recon, cyber-kill-chain, mitre-attck, osint, passive-recon, active-recon]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/포트_스캔, https://ko.wikipedia.org/wiki/오픈_소스_인텔리전스, https://ko.wikipedia.org/wiki/MITRE_ATT%26CK, https://ko.wikipedia.org/wiki/사회공학_(보안), https://ko.wikipedia.org/wiki/취약점_스캐너]
@@ -9,6 +9,14 @@ confidence: high
 ---
 
 # Reconnaissance (정찰) — 사이버 공격의 첫 단계, 정보 수집의 기술
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_킬_체인)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/포트_스캔)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/오픈_소스_인텔리전스)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/MITRE_ATT%26CK)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사회공학_(보안))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/취약점_스캐너)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

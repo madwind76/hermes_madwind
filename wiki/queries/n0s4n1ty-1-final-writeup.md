@@ -1,7 +1,7 @@
 ---
 title: n0s4n1ty 1 — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, file-upload, rce, privilege-escalation]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md, https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a, https://medium.com/@inferiorak/n0s4n1ty-1-web-exploitation-picoctf-2025-edcde6045088, https://www.youtube.com/watch?v=duP8S-IqVuQ]
@@ -11,6 +11,13 @@ confidence: medium
 # n0s4n1ty 1 — picoCTF 2025 web writeup
 
 > 프로필 사진 업로드 기능처럼 보이는 입력 지점에서 파일 업로드 검증이 약하고, 업로드된 파일이 실제로 실행되어 RCE와 권한 상승으로 이어지는 picoCTF 2025 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md)
+- [medium.com](https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a)
+- [medium.com](https://medium.com/@inferiorak/n0s4n1ty-1-web-exploitation-picoctf-2025-edcde6045088)
+- [www.youtube.com](https://www.youtube.com/watch?v=duP8S-IqVuQ)
+
 
 ## 1. 핵심 요약
 

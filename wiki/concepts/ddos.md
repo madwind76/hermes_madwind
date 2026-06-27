@@ -1,7 +1,7 @@
 ---
 title: DoS / DDoS (서비스 거부 / 분산 서비스 거부 공격)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, dos, ddos, denial-of-service, botnet, amplification, network-security, cloudflare, mirai]
 sources: [https://ko.wikipedia.org/wiki/분산_서비스_거부_공격, https://ko.wikipedia.org/wiki/서비스_거부_공격, https://ko.wikipedia.org/wiki/봇넷, https://ko.wikipedia.org/wiki/Mirai_(악성코드), https://ko.wikipedia.org/wiki/SYN_플러드, https://ko.wikipedia.org/wiki/DNS_증폭_공격, https://ko.wikipedia.org/wiki/클라우드플레어]
@@ -9,6 +9,15 @@ confidence: high
 ---
 
 # DoS / DDoS (서비스 거부 / 분산 서비스 거부 공격)
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/분산_서비스_거부_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/서비스_거부_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/봇넷)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/Mirai_(악성코드))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/SYN_플러드)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/DNS_증폭_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/클라우드플레어)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

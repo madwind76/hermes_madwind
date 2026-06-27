@@ -1,14 +1,20 @@
 ---
 title: Command Injection CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, command-injection]
-sources: []
+sources: [https://raw.githubusercontent.com/Yahyahcini/hacker101-ctf-writeups/main/Photo%20Gallery/README.md, https://ctftime.org/task/10636, https://ctftime.org/writeup/18603]
 confidence: medium
 ---
 
 # Command Injection CTF Template
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/Yahyahcini/hacker101-ctf-writeups/main/Photo%20Gallery/README.md)
+- [CTFtime writeup](https://ctftime.org/task/10636)
+- [CTFtime writeup](https://ctftime.org/writeup/18603)
+
 
 ## 1. 요약
 - 플랫폼:

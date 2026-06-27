@@ -1,7 +1,7 @@
 ---
 title: IDOR (Insecure Direct Object Reference, 안전하지 않은 직접 객체 참조) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, idor, broken-access-control, authorization, owasp, horizontal-privilege-escalation, vertical-privilege-escalation]
 sources: [https://ko.wikipedia.org/wiki/OWASP, https://ko.wikipedia.org/wiki/접근_제어]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # IDOR (Insecure Direct Object Reference, 안전하지 않은 직접 객체 참조) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/접근_제어)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

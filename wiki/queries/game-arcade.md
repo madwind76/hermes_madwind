@@ -1,7 +1,7 @@
 ---
 title: Game Arcade
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/39221, https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc, https://ctftime.org/task/28606]
@@ -11,6 +11,12 @@ confidence: medium
 # Game Arcade
 
 > 이 페이지는 **Google CTF 2024 Game Arcade 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/39221)
+- [Gist](https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc)
+- [CTFtime writeup](https://ctftime.org/task/28606)
+
 
 ## 1. 요약
 - 플랫폼: Google CTF 2024

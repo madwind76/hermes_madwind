@@ -1,7 +1,7 @@
 ---
 title: JAuth — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, jwt, authentication, token-forgery, picoctf]
 sources: [https://brandon-t-elliott.github.io/ctf-challenge-writeup-picoctf-jauth, https://www.probablynotimportant.com/posts/2021-08-17-picoctf2021-jauth, https://github.com/faisalmemon/picoCTF-JAuth-writeup, https://www.youtube.com/watch?v=VpsGAv5fwDQ]
@@ -11,6 +11,13 @@ confidence: high
 # JAuth — picoCTF 2021 web writeup
 
 > `JAuth`는 **JWT 시크릿이 너무 약해서 관리자 토큰을 위조할 수 있는 picoCTF 2021 Web 문제**입니다. 공개 writeup들은 공통적으로 소스 코드에서 시크릿 생성 로직을 확인하고, `1234` 같은 기본값을 이용해 관리자 권한 토큰을 다시 서명하는 흐름을 보여줍니다.
+
+## 참고 URL
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/ctf-challenge-writeup-picoctf-jauth)
+- [www.probablynotimportant.com](https://www.probablynotimportant.com/posts/2021-08-17-picoctf2021-jauth)
+- [faisalmemon/picoCTF-JAuth-writeup](https://github.com/faisalmemon/picoCTF-JAuth-writeup)
+- [www.youtube.com](https://www.youtube.com/watch?v=VpsGAv5fwDQ)
+
 
 ## 1. 한 줄 요약
 - 로그인용 계정(`user:user`)으로 먼저 접속합니다.

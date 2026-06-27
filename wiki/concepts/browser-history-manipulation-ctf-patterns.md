@@ -1,7 +1,7 @@
 ---
 title: Browser history manipulation — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, browser-history, client-side, history-api]
 sources: [https://ctftime.org/writeup/27367, https://picoctf2021.haydenhousen.com/web-exploitation/ancient-history]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Browser history manipulation — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27367)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/ancient-history)
 
 ## 1. 정의
 **Browser history manipulation**은 브라우저의 `history` 스택, `back/forward` 동작, `pushState/replaceState`를 이용해 이전 상태나 숨겨진 화면을 되찾는 패턴입니다. 서버 취약점이 아니라, 클라이언트 상태 관리가 안전하지 않을 때 발생합니다.

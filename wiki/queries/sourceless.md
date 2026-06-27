@@ -1,7 +1,7 @@
 ---
 title: Sourceless
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508, https://ctftime.org/event/2718/tasks/, https://ctftime.org/team/23929/]
@@ -11,6 +11,12 @@ confidence: medium
 # Sourceless
 
 > 이 페이지는 **Google CTF 2025 Sourceless 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [Gist](https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508)
+- [CTFtime writeup](https://ctftime.org/event/2718/tasks/)
+- [CTFtime writeup](https://ctftime.org/team/23929/)
+
 
 ## 1. 요약
 - 플랫폼: Google CTF 2025

@@ -1,7 +1,7 @@
 ---
 title: Postviewer v5 — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/40351, https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8, https://ctftime.org/event/2718/tasks/]
@@ -11,6 +11,12 @@ confidence: medium
 # Postviewer v5 — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/40351)
+- [Gist](https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8)
+- [CTFtime writeup](https://ctftime.org/event/2718/tasks/)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2025

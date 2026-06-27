@@ -1,7 +1,7 @@
 ---
 title: Actions on Objectives (목표 달성) — 사이버 킬 체인 7단계
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-24
 type: concept
 tags: [security, glossary, cyber-kill-chain, actions-on-objectives, data-exfiltration, ransomware, wiper, espionage, sabotage, impact]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/데이터_유출]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Actions on Objectives (목표 달성) — 사이버 킬 체인 7단계
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_킬_체인)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/데이터_유출)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 
@@ -153,46 +157,12 @@ confidence: high
 | **APT/장기 첩보 탐지** | UEBA(사용자/엔티티 행위 분석), 수평 이동 탐지(Pass-the-Hash, Kerberos, WMI, RDP), 크리덴셜 덤프 탐지(LSASS 접근, DCSync), 위협 헌팅(MITRE ATT&CK 매핑) |
 | **사고 대응 (IR)** | 플레이북(랜섬웨어, 데이터 유출, 와이퍼, BEC), 포렌식 준비(메모리/디스크/네트워크/로그), 법적/규제 신고(72시간 내), 위기 커뮤니케이션 |
 
-### MITRE ATT&CK 매핑 (Impact / Exfiltration 관련)
-
-| Tactic | Technique ID | Technique Name |
-|--------|-------------|----------------|
-| **Exfiltration** | **T1041** | Exfiltration Over Command and Control Channel |
-| | **T1048** | Exfiltration Over Alternative Protocol |
-| | **T1048.001** | Exfiltration Over Symmetric Encrypted Non-C2 Protocol |
-| | **T1048.002** | Exfiltration Over Asymmetric Encrypted Non-C2 Protocol |
-| | **T1048.003** | Exfiltration Over Unencrypted Non-C2 Protocol |
-| | **T1567** | Exfiltration Over Web Service |
-| | **T1567.001** | Exfiltration to Code Repository |
-| | **T1567.002** | Exfiltration to Cloud Storage |
-| | **T1567.003** | Exfiltration to Webhook |
-| **Impact** | **T1485** | Data Destruction |
-| | **T1486** | Data Encrypted for Impact (Ransomware) |
-| | **T1489** | Service Stop |
-| | **T1490** | Inhibit System Recovery |
-| | **T1491** | Defacement |
-| | **T1491.001** | Internal Defacement |
-| | **T1491.002** | External Defacement |
-| | **T1498** | Network Denial of Service |
-| | **T1529** | System Shutdown/Reboot |
-| | **T1531** | Account Access Removal |
-
----
+## 심화 자료
+- [[actions-on-objectives-impact-reference]] — MITRE ATT&CK 매핑, 방어 요약, 참고 문헌
 
 ## 관련 위키 링크
-
 - [[command-and-control]] — 명령 및 제어 (목표 달성 선행 단계: C2 채널로 명령/데이터 전송)
 - [[installation]] — 설치 (임플란트/지속성 확보로 목표 달성 기반 마련)
 - [[exploitation]] — 익스플로잇 (초기 접근으로 목표 달성 진입로 확보)
 - [[rce]] — 원격 코드 실행 (목표 달성 위한 코드 실행 기반)
 - [[real-world-breach-cases]] — 실제 침해 사례 (목표 달성 유형별 44개 사례 분석)
-
----
-
-## 참고 문헌
-
-- 한국어 위키백과: [사이버 킬 체인](https://ko.wikipedia.org/wiki/사이버_킬_체인)
-- 한국어 위키백과: [데이터 유출](https://ko.wikipedia.org/wiki/데이터_유출)
-- 한국어 위키백과: [랜섬웨어](https://ko.wikipedia.org/wiki/랜섬웨어)
-- 한국어 위키백과: [와이퍼 (악성코드)](https://ko.wikipedia.org/wiki/와이퍼_(악성코드))
-- 한국어 위키백과: [사이버 스파이 활동](https://ko.wikipedia.org/wiki/사이버_스파이활동)

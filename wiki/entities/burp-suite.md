@@ -1,7 +1,7 @@
 ---
 title: Burp Suite
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: entity
 tags: [tool, burp, proxy, web]
 sources: [https://portswigger.net/burp, https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Burp Suite
+
+## 참고 URL
+- [PortSwigger](https://portswigger.net/burp)
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md)
+- [Medium article](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e)
 
 ## 정의
 웹 요청을 가로채고 수정하는 데 사용하는 HTTP 프록시 기반 테스트 도구입니다.

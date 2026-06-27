@@ -1,7 +1,7 @@
 ---
 title: format string 1 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, format-string, stack-leak, endianness, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/format%20string%201/format%20string%201.md, https://hackmd.io/@Zzzzek/r14x13FRp, https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be]
@@ -11,6 +11,12 @@ confidence: high
 # format string 1 — picoCTF 2024 pwn writeup
 
 > `format string 1`는 전형적인 **format string leak** 문제입니다. `printf(user_input)`로 인해 스택 값을 읽어내고, 그중 flag가 들어 있는 값을 재조립합니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/format%20string%201/format%20string%201.md)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+- [medium.com](https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be)
+
 
 ## 핵심 요약
 - 프로그램은 여러 문자열을 메모리에 올려둡니다.

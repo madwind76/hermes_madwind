@@ -1,7 +1,7 @@
 ---
 title: BBS — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://kt.gy/blog/2018/06/googlectf-2018-quals-web-bbs/, https://ctftime.org/writeup/10369, https://ctftime.org/writeup/10366]
@@ -11,6 +11,12 @@ confidence: medium
 # BBS — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [kt.gy](https://kt.gy/blog/2018/06/googlectf-2018-quals-web-bbs/)
+- [CTFtime writeup](https://ctftime.org/writeup/10369)
+- [CTFtime writeup](https://ctftime.org/writeup/10366)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2018 Quals

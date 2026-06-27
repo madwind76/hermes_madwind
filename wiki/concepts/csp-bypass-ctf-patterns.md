@@ -1,7 +1,7 @@
 ---
 title: CSP bypass — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, xss, csp, client-side, browser]
 sources: [https://www.justinsteven.com/posts/2024/04/02/picoctf-2024-elements-csp-bypass/, https://blog.jettchen.me/posts/elements/]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # CSP bypass — CTF patterns
+
+## 참고 URL
+- [www.justinsteven.com](https://www.justinsteven.com/posts/2024/04/02/picoctf-2024-elements-csp-bypass/)
+- [blog.jettchen.me](https://blog.jettchen.me/posts/elements/)
 
 ## 1. 정의
 **CSP bypass**는 Content Security Policy가 켜져 있어도, 정책이 허용하는 경로 또는 브라우저의 예외 동작을 이용해 스크립트 실행 결과를 밖으로 빼내는 패턴입니다. `XSS`가 있어도 CSP 때문에 바로 끝나지 않을 때 자주 등장합니다.

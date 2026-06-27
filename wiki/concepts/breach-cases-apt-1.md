@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — APT / 데이터 유출 (Part 1)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, breach, apt, data-exfiltration, real-world]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석]
@@ -107,6 +107,11 @@ confidence: high
 | **배후** | NSA Equation Group (미국) — 취약점 개발. Shadow Brokers (러시아 지원 추정) — 유출 |
 
 
+
+## 참고 URL
+- [Reference](FBI/CISA 경보)
+- [Reference](Mandiant/FireEye 보고서)
+- [Reference](Kaspersky/ESET/CrowdStrike 분석)
 
 ## 관련 위키 링크
 - [[breach-cases-apt]] — APT / 데이터 유출 메인 페이지

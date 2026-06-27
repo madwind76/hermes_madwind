@@ -1,7 +1,7 @@
 ---
 title: CBC bit flipping — Web CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, crypto, cbc, bit-flipping, malleability, cookies]
 sources: [https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/More%20Cookies/README.md, https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Web/MostCookies.md, https://www.youtube.com/watch?v=i9KiOjeE-VY]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # CBC bit flipping — Web CTF patterns
+
+## 참고 URL
+- [Original source](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/More%20Cookies/README.md)
+- [Original source](https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Web/MostCookies.md)
+- [www.youtube.com](https://www.youtube.com/watch?v=i9KiOjeE-VY)
 
 ## 1. 정의
 **CBC bit flipping**은 CBC(Cipher Block Chaining) 모드의 말변성(malleability)을 이용해, 이전 ciphertext 블록의 비트를 바꿔 다음 블록의 평문 일부를 원하는 값으로 조작하는 패턴입니다. Web CTF에서는 암호화된 쿠키, 세션 토큰, role 문자열 조작에 자주 등장합니다.

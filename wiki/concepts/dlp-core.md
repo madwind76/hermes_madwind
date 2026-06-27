@@ -1,7 +1,7 @@
 ---
 title: DLP (Data Loss Prevention, 데이터 유출 방지) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, dlp, data-loss-prevention, data-exfiltration, compliance, gdpr, hipaa, insider-threat]
 sources: [https://ko.wikipedia.org/wiki/데이터_유출_방지, https://ko.wikipedia.org/wiki/정보_보호]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # DLP (Data Loss Prevention, 데이터 유출 방지) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/데이터_유출_방지)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/정보_보호)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

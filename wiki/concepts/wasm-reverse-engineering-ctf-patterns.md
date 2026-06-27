@@ -1,7 +1,7 @@
 ---
 title: WASM reverse engineering — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, wasm, reverse-engineering, javascript, decompilation]
 sources: [https://ctftime.org/writeup/27181, https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-3, https://ctftime.org/writeup/27505]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # WASM reverse engineering — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27181)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-3)
+- [CTFtime writeup](https://ctftime.org/writeup/27505)
 
 ## 1. 정의
 **WASM reverse engineering**은 브라우저가 불러온 WebAssembly 모듈을 디컴파일/디스어셈블해서 내부 함수, 상수 배열, 변환 로직을 복원하는 CTF 패턴입니다.

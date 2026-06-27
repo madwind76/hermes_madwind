@@ -1,7 +1,7 @@
 ---
 title: Pachinko Revisited — picoCTF 2025 pwn/rev writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, rev, reverse-engineering, wasm, custom-cpu]
 sources: [https://unvariant.pages.dev/writeups/picoctf-2025/pwn-pachinko-revisited/, https://github.com/snwau/picoCTF-2025-Writeup, https://corgi.rip/posts/secure-email-service/]
@@ -11,6 +11,12 @@ confidence: medium
 # Pachinko Revisited — picoCTF 2025 pwn/rev writeup
 
 > `Pachinko`의 후속 문제이지만, 분류는 **Web**이 아니라 **pwn/rev**에 가깝습니다. 커스텀 CPU / WASM / 메모리 맵을 역공학해 `nand_checker.bin`의 실행 경로를 바꾸는 문제로 정리하는 것이 맞습니다.
+
+## 참고 URL
+- [unvariant.pages.dev](https://unvariant.pages.dev/writeups/picoctf-2025/pwn-pachinko-revisited/)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+- [corgi.rip](https://corgi.rip/posts/secure-email-service/)
+
 
 ## 1. 핵심 요약
 

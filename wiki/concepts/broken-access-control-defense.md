@@ -1,13 +1,17 @@
 ---
 title: Broken Access Control — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, broken-access-control, access-control, authorization, idor, privilege-escalation, owasp]
 sources: [https://ko.wikipedia.org/wiki/접근_제어, https://ko.wikipedia.org/wiki/OWASP]
 confidence: high
 ---
 > [[broken-access-control]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/접근_제어)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### Broken Access Control 방어 기법 (심층 방어)

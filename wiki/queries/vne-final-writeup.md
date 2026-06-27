@@ -11,6 +11,11 @@ sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup]
 
 > `VNE`는 **실행 환경과 셸/명령 호출을 악용하는 문제**입니다. 핵심은 **environment abuse + command execution**입니다.
 
+## 참고 URL
+- [snwau/picoCTF-2023-Writeup](snwau/picoCTF-2023-Writeup)
+- [DanArmor/picoCTF-2023-writeup](DanArmor/picoCTF-2023-writeup)
+
+
 ## 요약
 - 분류: pwn
 - 핵심 primitive: environment / command abuse

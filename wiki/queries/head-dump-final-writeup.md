@@ -1,7 +1,7 @@
 ---
 title: head-dump — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, api, source-analysis, storage]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/head-dump/head-dump.md, https://medium.com/@rahmeez/picoctf-head-dump-writeup-2455761c362d, https://medium.owasp-cebu.org/head-dump-web-exploitation-3d378f5cfddb, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/]
@@ -11,6 +11,13 @@ confidence: high
 # head-dump — picoCTF 2025 web writeup
 
 > API 문서에서 진단 엔드포인트를 찾아 heap snapshot을 내려받고, 메모리 덤프 안에서 flag prefix를 검색하는 picoCTF 2025 Web Exploitation 입문 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/head-dump/head-dump.md)
+- [medium.com](https://medium.com/@rahmeez/picoctf-head-dump-writeup-2455761c362d)
+- [medium.owasp-cebu.org](https://medium.owasp-cebu.org/head-dump-web-exploitation-3d378f5cfddb)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+
 
 ## 1. 한 줄 요약
 - 블로그형 사이트 안의 **API Documentation** 링크가 `/api-docs`로 이어집니다.

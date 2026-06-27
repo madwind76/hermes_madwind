@@ -1,7 +1,7 @@
 ---
 title: Sourceless — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508, https://ctftime.org/event/2718/tasks/, https://ctftime.org/team/23929/]
@@ -11,6 +11,12 @@ confidence: medium
 # Sourceless — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [Gist](https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508)
+- [CTFtime writeup](https://ctftime.org/event/2718/tasks/)
+- [CTFtime writeup](https://ctftime.org/team/23929/)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2025

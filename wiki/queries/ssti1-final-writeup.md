@@ -1,7 +1,7 @@
 ---
 title: SSTI1 — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, writeup, ssti, template-injection, template, rce]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-12-df893a7035fe, https://www.deniswambold.com/writeups/ssti1/, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://medium.com/@pragusga/picoctf-write-up-ssti1-server-side-template-injection-38702986091d, https://jinja.palletsprojects.com/, https://portswigger.net/web-security/server-side-template-injection, https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection]
@@ -11,6 +11,16 @@ confidence: high
 # SSTI1 — picoCTF 2025 web writeup
 
 > 사용자가 입력한 공지 문구가 서버 측 템플릿 엔진에서 평가되는지 확인하고, [[jinja2-template-engine|Jinja2]] 문법을 통해 [[ssti|SSTI]]를 증명한 뒤 서버 파일을 읽는 picoCTF 2025 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-12-df893a7035fe)
+- [www.deniswambold.com](https://www.deniswambold.com/writeups/ssti1/)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [medium.com](https://medium.com/@pragusga/picoctf-write-up-ssti1-server-side-template-injection-38702986091d)
+- [jinja.palletsprojects.com](https://jinja.palletsprojects.com/)
+- [portswigger.net](https://portswigger.net/web-security/server-side-template-injection)
+- [owasp.org](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection)
+
 
 ## 1. 한 줄 요약
 

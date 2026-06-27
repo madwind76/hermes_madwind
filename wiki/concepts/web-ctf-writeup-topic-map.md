@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup Topic Map
 created: 2026-06-14
-updated: 2026-06-19
+updated: 2026-06-21
 type: concept
 tags: [web, ctf, research, reference]
 sources: [raw/articles/20260613_web-ctf-writeup-curated.md, /home/kisec/wiki/index.md]
@@ -12,6 +12,10 @@ confidence: high
 
 > 현재 wiki에 축적된 Web CTF writeup 정보를 **주제별로 재배열한 상위 지도**입니다.
 > 목적은 개별 writeup을 찾는 것이 아니라, 어떤 문제를 어떤 분류로 읽어야 하는지 빠르게 잡는 것입니다.
+
+## 참고 URL
+- [Reference](raw/articles/20260613_web-ctf-writeup-curated.md)
+- [Reference](/home/kisec/wiki/index.md)
 
 ## 1. 현재 wiki의 구조 요약
 
@@ -60,6 +64,7 @@ confidence: high
 브라우저 상태, nonce, CSP, window.name, JSONP가 얽히는 문제입니다.
 
 - [[elements-final-writeup]]
+- [[dom-xss-writeup-survey]]
 - [[websockfish-final-writeup]]
 - [[web-ctf-writeup-client-side]]
 - 관련 개념: [[xss]], [[csrf]], [[web-inspector-ctf-patterns]], [[cors-misconfig]], [[csp-bypass-ctf-patterns]]
@@ -144,12 +149,12 @@ SQLite 같은 DBMS 차이와 블랙리스트 필터 우회를 함께 읽는 분�
 
 유형 허브에서 실제 풀이 노트로 내려갈 때는 아래 페이지를 함께 보면 좋습니다.
 
-- 인증/세션/권한: [[intro-to-burp-final-writeup]], [[urlapp-final-writeup]], [[bbs-final-writeup]], [[cookies-final-writeup]], [[most-cookies-final-writeup]], [[super-serial-final-writeup]]
+- 인증/세션/권한: [[intro-to-burp-final-writeup]], [[urlapp-final-writeup]], [[bbs-final-writeup]], [[cookies-final-writeup]], [[most-cookies-final-writeup]], [[super-serial-final-writeup]], [[cookie-tampering-writeup-survey]]
 - 클라이언트 사이드: [[bookmarklet-final-writeup]], [[bookmarklet-execution-ctf-patterns]], [[webdecode-final-writeup]], [[csaw-2020-webrtc-final-writeup]], [[some-assembly-required-1-final-writeup]], [[some-assembly-required-2-final-writeup]], [[some-assembly-required-3-final-writeup]], [[some-assembly-required-4-final-writeup]], [[ancient-history-final-writeup]]
 - 파서/템플릿/검증기 우회: [[under-construction-final-writeup]], [[gcalc-final-writeup]], [[soap-final-writeup]], [[x-marks-the-spot-final-writeup]]
 - 파일 업로드/스토리지: [[boomshop-final-writeup]], [[one-line-php-challenge-final-writeup]], [[it-is-my-birthday-final-writeup]]
-- 내부 서비스/프로토콜: [[csaw-2020-webrtc-final-writeup]], [[sourceless-final-writeup]], [[secure-email-service-final-writeup]]
-- 정찰/숨은 파일: [[web-recon-hidden-file-discovery-ctf-hub]], [[where-are-the-robots-final-writeup]], [[roboto-sans-final-writeup]], [[scavenger-hunt-final-writeup]], [[secrets-final-writeup]]
+- 내부 서비스/프로토콜: [[csaw-2020-webrtc-final-writeup]], [[sourceless-final-writeup]], [[secure-email-service-final-writeup]], [[ssrf-internal-service-writeup-survey]]
+- 정찰/숨은 파일: [[web-recon-hidden-file-discovery-ctf-hub]], [[where-are-the-robots-final-writeup]], [[roboto-sans-final-writeup]], [[scavenger-hunt-final-writeup]], [[secrets-final-writeup]], [[source-inspection-hidden-file-writeup-survey]]
 
 ## 8. 결론
 

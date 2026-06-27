@@ -1,7 +1,7 @@
 ---
 title: login — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, client-side, source-inspection, base64, javascript, login]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-37-9587a06c6498, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://hackmd.io/@fearnot/picoCTF_Web]
@@ -11,6 +11,12 @@ confidence: high
 # login — picoCTF 2025 web writeup
 
 > 로그인 폼 자체를 공격하는 문제가 아니라, **클라이언트 측 JavaScript 안에 Base64로 숨은 자격 증명**을 찾아 디코딩하는 picoCTF 2025 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-37-9587a06c6498)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [hackmd.io](https://hackmd.io/@fearnot/picoCTF_Web)
+
 
 ## 1. 한 줄 요약
 - UI는 평범한 로그인 폼처럼 보이지만, 실제 단서는 **page source와 JS 파일**에 있습니다.

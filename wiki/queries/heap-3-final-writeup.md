@@ -1,7 +1,7 @@
 ---
 title: heap 3 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, use-after-free, tcache, heap, memory-corruption, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%203/heap%203.md, https://qiita.com/colza_/items/cacc3999c02b6519ae91, https://yun.ng/c/ctf/picoctf/pwn/heap-3]
@@ -11,6 +11,12 @@ confidence: high
 # heap 3 — picoCTF 2024 pwn writeup
 
 > `heap 3`는 **use-after-free 기반 heap exploitation**으로 정리할 수 있습니다. freed chunk를 다시 할당받아, 남아 있는 데이터를 덮어 목적 문자열을 바꾸는 형태입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%203/heap%203.md)
+- [qiita.com](https://qiita.com/colza_/items/cacc3999c02b6519ae91)
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/heap-3)
+
 
 ## 핵심 요약
 - 객체를 `free()`한 뒤에도 동일 chunk를 다시 얻을 수 있습니다.

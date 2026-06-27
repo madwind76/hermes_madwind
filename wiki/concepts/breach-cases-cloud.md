@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — 클라우드 보안 (주요 사례)
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, cloud, breach, real-world]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석, 법정 문서, 회사 공개 자료]
@@ -15,6 +15,13 @@ confidence: high
 > 평가 기준: ⭐⭐⭐(즉시 사용) / ⭐⭐(일부 구성) / ⭐(PoC 수준)
 
 ---
+## 참고 URL
+- [Reference](FBI/CISA 경보)
+- [Reference](Mandiant/FireEye 보고서)
+- [Reference](Kaspersky/ESET/CrowdStrike 분석)
+- [Reference](법정 문서)
+- [Reference](회사 공개 자료)
+
 ## ☁️ 클라우드 보안 (3건)
 
 ### 20. Tesla K8s (2018) ⭐⭐⭐

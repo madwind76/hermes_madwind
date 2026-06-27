@@ -1,7 +1,7 @@
 ---
 title: TCP (Transmission Control Protocol)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, protocol, tcp, network]
 sources: [https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C, https://ko.wikipedia.org/wiki/%ED%95%B8%EB%93%9C%EC%85%B0%EC%9D%B4%ED%82%B9]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # TCP (Transmission Control Protocol)
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/%ED%95%B8%EB%93%9C%EC%85%B0%EC%9D%B4%ED%82%B9)
 
 ## 1. 단어 직역 및 쉬운 비유
 

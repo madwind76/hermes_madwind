@@ -1,7 +1,7 @@
 ---
 title: Cookie Monster Secret Recipe — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, auth, session, encoding]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/Cookie%20Monster%20Secret%20Recipe/Cookie%20Monster%20Secret%20Recipe.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-cookie-monster-secret-recipe-4c1776da9251, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/]
@@ -11,6 +11,12 @@ confidence: high
 # Cookie Monster Secret Recipe — picoCTF 2025 web writeup
 
 > 브라우저 쿠키에 숨겨진 값을 찾아 `URL decode → Base64 decode` 순서로 복원하는 picoCTF 2025 Web Exploitation 입문 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/Cookie%20Monster%20Secret%20Recipe/Cookie%20Monster%20Secret%20Recipe.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-cookie-monster-secret-recipe-4c1776da9251)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+
 
 ## 1. 한 줄 요약
 - 로그인 폼에 임의 값을 넣으면 실패 응답과 함께 **쿠키를 확인하라**는 힌트가 나옵니다.

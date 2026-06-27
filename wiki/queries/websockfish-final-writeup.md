@@ -1,7 +1,7 @@
 ---
 title: WebSockFish — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, websocket, research, writeup, request-manipulation, input-validation, client-side]
 sources: [https://medium.com/@mihasha/websockfish-picoctf-2025-write-up-e7d4711ecfd3, https://medium.com/@ahmednarmer1/ctf-day-22-e303ac9df89b, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://hackmd.io/HtXENiZJQG-w1EsEOZINpg]
@@ -11,6 +11,13 @@ confidence: high
 # WebSockFish — picoCTF 2025 web writeup
 
 > 체스 봇을 정상적으로 이기는 문제가 아니라, [[websocket|WebSocket]]으로 오가는 `[[eval|eval]]` 값을 [[tampering|조작]]해 서버가 클라이언트 제공 평가값을 신뢰하는지 확인하는 picoCTF 2025 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@mihasha/websockfish-picoctf-2025-write-up-e7d4711ecfd3)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-22-e303ac9df89b)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [hackmd.io](https://hackmd.io/HtXENiZJQG-w1EsEOZINpg)
+
 
 ## 1. 한 줄 요약
 - 문제명 `WebSockFish`는 **[[websocket|WebSocket]]**과 **Stockfish** 체스 엔진을 동시에 암시합니다.

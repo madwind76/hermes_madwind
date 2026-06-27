@@ -1,7 +1,7 @@
 ---
 title: UDP (User Datagram Protocol)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, protocol, udp, network]
 sources: [https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C, https://ko.wikipedia.org/wiki/TCP/UDP%EC%9D%98_%ED%8F%AC%ED%8A%B8_%EB%AA%A9%EB%A1%9D]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # UDP (User Datagram Protocol)
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/TCP/UDP%EC%9D%98_%ED%8F%AC%ED%8A%B8_%EB%AA%A9%EB%A1%9D)
 
 ## 1. 단어 직역 및 쉬운 비유
 

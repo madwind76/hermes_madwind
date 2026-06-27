@@ -1,7 +1,7 @@
 ---
 title: Binary Instrumentation 2 — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, windows, automation, rev, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Binary%20Instrumentation%202/Binary%20Instrumentation%202.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: high
 # Binary Instrumentation 2 — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 파일 생성/쓰기 API를 계측해서, 프로그램이 실제로 어떤 경로와 내용을 쓰는지 복원하는 Windows reverse engineering 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Binary%20Instrumentation%202/Binary%20Instrumentation%202.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - 설명상으로는 파일에 flag를 직접 저장해야 하는 프로그램입니다.

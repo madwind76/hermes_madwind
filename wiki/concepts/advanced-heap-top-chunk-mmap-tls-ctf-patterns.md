@@ -1,7 +1,7 @@
 ---
 title: Advanced heap exploitation / top chunk / TLS hijack — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, heap, top-chunk, mmap, tls, tcache, setcontext]
 sources: [https://eth007.me/blog/posts/high-frequency-troubles/, https://hackmd.io/@Zzzzek/r14x13FRp]
@@ -11,6 +11,10 @@ confidence: medium
 # Advanced heap exploitation / top chunk / TLS hijack — CTF patterns
 
 > 이 패턴은 단순 heap overflow를 넘어, **allocator 메타데이터와 TLS/tcache 구조를 연쇄적으로 조작**해 libc leak과 셸 실행까지 이어지는 고급 heap 체인입니다.
+
+## 참고 URL
+- [eth007.me](https://eth007.me/blog/posts/high-frequency-troubles/)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
 
 ## 패턴
 - top chunk 크기 훼손으로 비정상적인 allocator 동작을 유도합니다.

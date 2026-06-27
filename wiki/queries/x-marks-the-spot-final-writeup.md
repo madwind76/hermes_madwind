@@ -1,7 +1,7 @@
 ---
 title: X marks the spot — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, xpath, injection, login-bypass, picoctf]
 sources: [https://picoctf2021.haydenhousen.com/web-exploitation/x-marks-the-spot, https://ctftime.org/writeup/27158, https://ctftime.org/writeup/27171, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/X%20marks%20the%20spot/script.py]
@@ -11,6 +11,13 @@ confidence: high
 # X marks the spot — picoCTF 2021 web writeup
 
 > `X marks the spot`는 **blind XPath injection**으로 로그인 검증을 우회하고, 응답 차이를 이용해 사용자 정보와 flag를 점차 복원하는 picoCTF 2021 Web 문제입니다. 핵심은 SQLi와 비슷해 보이지만, 실제로는 **XML/XPath 쿼리 문법**을 공격하는 점입니다.
+
+## 참고 URL
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/x-marks-the-spot)
+- [CTFtime writeup](https://ctftime.org/writeup/27158)
+- [CTFtime writeup](https://ctftime.org/writeup/27171)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/X%20marks%20the%20spot/script.py)
+
 
 ## 1. 한 줄 요약
 - 서버는 로그인 확인을 XML/XPath 질의로 처리합니다.

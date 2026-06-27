@@ -1,7 +1,7 @@
 ---
 title: Saved return address control — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, ret2win, stack-overflow, saved-return-address, buffer-overflow, nx, pie]
 sources: [https://colej.net/picoctf-2022-buffer-overflow-1, https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-1-3e48f4a61876, https://ctftime.org/writeup/32919]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Saved return address control — CTF patterns
+
+## 참고 URL
+- [colej.net](https://colej.net/picoctf-2022-buffer-overflow-1)
+- [medium.com](https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-1-3e48f4a61876)
+- [CTFtime writeup](https://ctftime.org/writeup/32919)
 
 ## Step 1. 단어 풀이
 - **Saved return address**: 함수가 끝난 뒤 돌아갈 주소입니다.
@@ -40,6 +45,7 @@ overflow -> saved return address overwrite -> win() -> flag
 - [[buffer-overflow-1-final-writeup]]
 
 ## 같이 보면 좋은 개념
+- [[buffer-overflow-ctf-patterns]]
 - [[ret2win-with-arguments-ctf-patterns]]
 - [[ret2win-64bit-stack-alignment-ctf-patterns]]
 - [[stack-canary-bruteforce-ctf-patterns]]

@@ -1,7 +1,7 @@
 ---
 title: Stack Cache — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, stack-leak, ret2win, rop, buffer-overflow, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/stack-cache, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/stack%20cache/script.py, https://blog.maple3142.net/2022/03/29/picoctf-2022-writeups/]
@@ -11,6 +11,12 @@ confidence: high
 # Stack Cache — picoCTF 2022 pwn writeup
 
 > `Stack Cache`는 **스택 오버플로를 이용해 먼저 스택 주소를 누출하고, 그 뒤 `win()`으로 되돌아가 flag를 출력하는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **stack leak + ret2win + ROP padding**입니다.
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/stack-cache)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/stack%20cache/script.py)
+- [blog.maple3142.net](https://blog.maple3142.net/2022/03/29/picoctf-2022-writeups/)
+
 
 ## 1. 핵심 요약
 

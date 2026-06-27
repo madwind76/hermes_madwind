@@ -1,7 +1,7 @@
 ---
 title: ROPfu — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, rop, nx, execve, int-0x80, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/ropfu, https://cryptocat.me/blog/ctf/2022/pico/pwn/ropfu/]
@@ -11,6 +11,11 @@ confidence: high
 # ROPfu — picoCTF 2022 pwn writeup
 
 > `ROPfu`는 **NX가 켜진 32-bit 바이너리에서 ROP 가젯으로 `/bin/sh` 문자열을 `.data`에 쓰고, `int 0x80`으로 `execve`를 호출하는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **classic ROP chain 구성**입니다.
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/ropfu)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/ropfu/)
+
 
 ## 1. 핵심 요약
 

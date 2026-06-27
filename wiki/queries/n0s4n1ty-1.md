@@ -1,7 +1,7 @@
 ---
 title: n0s4n1ty 1
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, file-upload, rce]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md, https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a, https://www.youtube.com/watch?v=duP8S-IqVuQ]
@@ -11,6 +11,12 @@ confidence: medium
 # n0s4n1ty 1
 
 > 이 페이지는 **picoCTF 2025 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md)
+- [medium.com](https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a)
+- [www.youtube.com](https://www.youtube.com/watch?v=duP8S-IqVuQ)
+
 
 ## 1. 요약
 - 플랫폼: picoCTF 2025

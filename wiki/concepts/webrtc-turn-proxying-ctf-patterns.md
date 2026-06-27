@@ -1,7 +1,7 @@
 ---
 title: WebRTC TURN Proxying
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, webrtc, turn, proxy, redis]
 sources: [https://ctftime.org/task/13011, https://ctftime.org/writeup/23439, https://ctftime.org/writeup/23438, https://ctftime.org/writeup/23407, https://ctftime.org/writeup/23410, https://github.com/coturn/coturn, https://github.com/team0se7en/CTF-Writeups/blob/master/CsawQuals20/WebRTC/README.md, https://github.com/zoeyg/public-write-ups/blob/master/csaw-2020/web-real-time-chat.md]
@@ -9,6 +9,16 @@ confidence: medium
 ---
 
 # WebRTC TURN Proxying
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/13011)
+- [CTFtime writeup](https://ctftime.org/writeup/23439)
+- [CTFtime writeup](https://ctftime.org/writeup/23438)
+- [CTFtime writeup](https://ctftime.org/writeup/23407)
+- [CTFtime writeup](https://ctftime.org/writeup/23410)
+- [coturn/coturn](https://github.com/coturn/coturn)
+- [Original source](https://github.com/team0se7en/CTF-Writeups/blob/master/CsawQuals20/WebRTC/README.md)
+- [Original source](https://github.com/zoeyg/public-write-ups/blob/master/csaw-2020/web-real-time-chat.md)
 
 ## 정의
 TURN(Traversal Using Relays around NAT)은 NAT 뒤의 피어 간 통신을 중계하는 프로토콜입니다. CTF에서는 이 relay가 내부 서비스로의 TCP proxy로 오용되는 경우가 많습니다.

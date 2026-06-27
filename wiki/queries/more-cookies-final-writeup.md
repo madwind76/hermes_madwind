@@ -1,7 +1,7 @@
 ---
 title: More Cookies — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, cookies, crypto, cbc, bit-flipping, flask-session]
 sources: [https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/More%20Cookies/README.md, https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Web/MostCookies.md, https://www.youtube.com/watch?v=i9KiOjeE-VY, https://ctftime.org/task/15305]
@@ -11,6 +11,13 @@ confidence: high
 # More Cookies — picoCTF 2021 web writeup
 
 > `More Cookies`는 **암호화된 쿠키가 있어도, CBC의 말변성(malleability)을 이용하면 내용 일부를 조작할 수 있다**는 점을 보여주는 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/More%20Cookies/README.md)
+- [Original writeup](https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Web/MostCookies.md)
+- [www.youtube.com](https://www.youtube.com/watch?v=i9KiOjeE-VY)
+- [CTFtime writeup](https://ctftime.org/task/15305)
+
 
 ## 1. 한 줄 요약
 - 쿠키 이름은 `auth_name`입니다.

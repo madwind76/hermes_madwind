@@ -1,7 +1,7 @@
 ---
 title: File Upload (파일 업로드 취약점, 제한 없는 파일 업로드) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, file-upload, unrestricted-upload, webshell, malware, owasp, mime-type, magic-bytes]
 sources: [https://ko.wikipedia.org/wiki/파일_업로드_취약점, https://ko.wikipedia.org/wiki/웹_애플리케이션_보안]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # File Upload (파일 업로드 취약점, 제한 없는 파일 업로드) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/파일_업로드_취약점)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/웹_애플리케이션_보안)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

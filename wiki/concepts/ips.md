@@ -1,7 +1,7 @@
 ---
 title: IPS (Intrusion Prevention System) — 침입 방지 시스템
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-24
 type: concept
 tags: [security, glossary, ips, ids, intrusion-prevention, network-security, inline, snort, suricata, ngfw]
 sources: [https://ko.wikipedia.org/wiki/침입_차단_시스템, https://ko.wikipedia.org/wiki/침입_탐지_시스템, https://ko.wikipedia.org/wiki/Snort_(소프트웨어), https://ko.wikipedia.org/wiki/방화벽_(네트워킹), https://ko.wikipedia.org/wiki/차세대_방화벽, https://ko.wikipedia.org/wiki/분산_서비스_거부_공격, https://ko.wikipedia.org/wiki/사이버_보안_관제_센터]
@@ -9,6 +9,15 @@ confidence: high
 ---
 
 # IPS (Intrusion Prevention System) — 침입 방지 시스템
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/침입_차단_시스템)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/침입_탐지_시스템)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/Snort_(소프트웨어))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/방화벽_(네트워킹))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/차세대_방화벽)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/분산_서비스_거부_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_보안_관제_센터)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 
@@ -119,74 +128,12 @@ confidence: high
 > - **Fail-open**: IPS 장애 시 트래픽 우회 허용 — 가용성 우선, 보안 약화
 > - **Fail-close**: IPS 장애 시 모든 트래픽 차단 — 보안 우선, 가용성 저하
 
-### IPS 차단 동작 유형
-
-| 동작 | 설명 | 계층 |
-|------|------|------|
-| **Drop** | 패킷을 무시하고 폐기, 응답 없음 | L3 (IP) |
-| **Reject** | 패킷 폐기 + 송신자에 ICMP Unreachable 전송 | L3 (ICMP) |
-| **Reset** | TCP RST 플래그 전송 → 연결 강제 종료 | L4 (TCP) |
-| **Shun** | 특정 IP/포트를 일정 시간 동안 모든 트래픽 차단 | L3-L4 |
-| **Quarantine** | 감염 호스트를 격리 VLAN으로 이동 (SDN 연계) | L2-L3 |
-
-### IPS 탐지 및 차단 방식
-
-| 방식 | 설명 | 장점 | 단점 |
-|------|------|------|------|
-| **시그니처 기반 차단** | 알려진 공격 패턴 매칭 → 즉시 드롭 | 빠름, 정확, 증거력 높음 | 변종/제로데이 미탐지 |
-| **프로토콜 이상 탐지 + 차단** | RFC 위반 프로토콜 행위 탐지 후 차단 | 프로토콜 레벨 공격 차단 | 커스텀 프로토콜 미지원 |
-| **레이트 리미팅** | 특정 IP/세션의 초과 요청 제한 | DDoS/무차별 대입 차단 | 정상 대량 트래픽도 제한 가능 |
-| **리피테이션** | IP 평판 DB 기반 차단 (위협 인텔리전스 피드) | 알려진 악성 IP 사전 차단 | FP 가능, DB 업데이트 의존 |
-| **Geo-IP 차단** | 국가별 IP 블록 | 특정 국가 기반 공격 차단 | VPN 우회 가능 |
-| **ML/AI 기반 차단** | ML 모델이 실시간 트래픽 분류 후 차단 | 제로데이/변종 탐지 가능 | 블랙박스 의사결정, 튜닝 난이도 높음 |
-
-### IPS 우회 (Evasion) 및 한계
-
-| 우회 기법 | 설명 | 대응 한계 |
-|-----------|------|-----------|
-| **암호화 트래픽 (TLS)** | HTTPS로 공격 전송 → 페이로드 분석 불가 | TLS 복호화 프록시 필요, 개인정보 이슈 |
-| **분할 공격 (Fragmentation)** | 공격을 작은 조각으로 분할 → 재조립 부하 | 리소스 집약적, 일부 IPS 생략 |
-| **워터링 홀** | 합법 사이트 경유 공격 → IPS 차단 어려움 | URL 평판 + 행위 분석 병행 |
-| **0-Day / 변종** | 알려지지 않은 공격 → 시그니처 없음 | 이상 행위 탐지 + 샌드박싱 연계 필요 |
-| **IPS 자체 공격** | IPS에 DoS/DDoS → Fail-open 강제 후 우회 | 관리 인터페이스 분리, HA 구성 |
-
-### 대표 IPS 솔루션
-
-| 솔루션 | 유형 | 특징 |
-|--------|------|------|
-| **Snort (inline mode)** | 오픈소스 NIPS | Snort 2.9+ inline, DAQ, NFQUEUE |
-| **Suricata (IPS mode)** | 오픈소스 NIPS | **차세대 표준**, 10Gbps+, AF_PACKET/NFQUEUE, Lua 스크립트 |
-| **Palo Alto Networks** | 상용 NGFW | IPS 통합 차세대 방화벽, WildFire 샌드박싱 |
-| **Cisco Firepower/NGIPS** | 상용 NIPS | Snort 기반, Talos 위협 인텔리전스 통합 |
-| **Fortinet FortiGate** | 상용 UTM | IPS + 방화벽 + 안티바이러스 통합, ASIC 가속 |
-| **Check Point IPS** | 상용 NIPS | 휴리스틱 + 시그니처 + 행위 분석, SandBlast |
-
-### IPS 구축 운영 모범 사례
-
-| 영역 | 권장 사항 |
-|------|----------|
-| **초기 배포** | "모니터 모드"(Alert Only)로 1-2주 운영 → 오탐 분석 후 차단 활성화 |
-| **오탐 관리** | FP 분석 SLA: Critical 1h / High 4h / Medium 24h 이내 |
-| **튜닝** | 특정 IP/포트 예외(whitelist), 임계값 조정, 시그니처 커스터마이징 |
-| **차단 정책** | 기본 차단보다 허용 목록(Allowlist) 기반 권장 |
-| **HA 구성** | Active-Active IPS 클러스터, 세션 동기화 |
-| **SIEM/SOAR 연동** | IPS 차단 알림 → SIEM 상관분석 → SOAR 자동 대응 플레이북 |
-
----
-
-### 출처
-- 한국어 위키백과: ["침입 차단 시스템"](https://ko.wikipedia.org/wiki/침입_차단_시스템) — IPS 정의 및 IDS/IPS 비교
-- 한국어 위키백과: ["침입 탐지 시스템"](https://ko.wikipedia.org/wiki/침입_탐지_시스템) — IDS(IPS의 전신) 상세
-- 한국어 위키백과: ["Snort"](https://ko.wikipedia.org/wiki/Snort_(소프트웨어)) — 오픈소스 IDS/IPS 표준
-- 한국어 위키백과: ["방화벽 (네트워킹)"](https://ko.wikipedia.org/wiki/방화벽_(네트워킹)) — IPS와 방화벽 관계
-- 한국어 위키백과: ["차세대 방화벽"](https://ko.wikipedia.org/wiki/차세대_방화벽) — IPS 통합 NGFW 개념
-- 한국어 위키백과: ["분산 서비스 거부 공격"](https://ko.wikipedia.org/wiki/분산_서비스_거부_공격) — IPS가 방어하는 주요 위협
-- 한국어 위키백과: ["사이버 보안 관제 센터"](https://ko.wikipedia.org/wiki/사이버_보안_관제_센터) — IPS가 운영되는 보안 관제 환경
-
----
+## 심화 자료
+- [[ips-operational-notes]] — 차단 동작, 탐지/차단 방식, 솔루션, 운영 모범 사례
 
 ## 관련 위키 링크
 - [[ids]] — IDS (Intrusion Detection System) — IPS의 전신, 탐지만 수행하는 수동적 시스템
 - [[vpn]] — VPN (가상 사설망) — IPS가 보호하는 네트워크 접근 통로
 - [[rce]] — RCE (원격 코드 실행) — IPS가 차단해야 할 가장 위험한 공격 유형
 - [[cia]] — CIA Triad (가용성) — IPS 오탐 시 가용성에 직접적 영향
+

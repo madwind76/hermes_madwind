@@ -1,7 +1,7 @@
 ---
 title: SQLite UNION-based SQLi — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, sqli, sqlite, union-based-sqli, sql-injection]
 sources: [https://siunam321.github.io/ctf/picoCTF-2023/Web-Exploitation/More-SQLi/, https://github.com/DanArmor/picoCTF-2023-writeup/blob/main/Web%20Exploitation/More%20SQLi/More-SQLi.md]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # SQLite UNION-based SQLi — CTF patterns
+
+## 참고 URL
+- [siunam321.github.io](https://siunam321.github.io/ctf/picoCTF-2023/Web-Exploitation/More-SQLi/)
+- [Original source](https://github.com/DanArmor/picoCTF-2023-writeup/blob/main/Web%20Exploitation/More%20SQLi/More-SQLi.md)
 
 ## 1. 정의
 **SQLite UNION-based SQLi**는 SQLite 기반 애플리케이션에서 `UNION SELECT`를 이용해 원래 쿼리 결과에 추가 행을 덧붙이고, `sqlite_master` 같은 메타 테이블을 통해 스키마를 열거하는 패턴입니다.

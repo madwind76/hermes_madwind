@@ -1,7 +1,7 @@
 ---
 title: Unminify — picoCTF 2024 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, writeup, source-analysis, minification, client-side]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md, https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md]
@@ -11,6 +11,13 @@ confidence: high
 # Unminify — picoCTF 2024 web writeup
 
 > **보이는 화면이 아니라 HTML source에 플래그가 박혀 있는** 아주 전형적인 source-inspection 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md)
+- [medium.com](https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5)
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md)
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md)
+
 
 ## 1. 한 줄 요약
 

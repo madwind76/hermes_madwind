@@ -1,7 +1,7 @@
 ---
 title: Path Traversal CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, path-traversal, research]
 sources: []
@@ -9,6 +9,9 @@ confidence: medium
 ---
 
 # Path Traversal CTF Patterns
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## 정의
 Web CTF에서 Path Traversal은 **파일 경로 입력을 조작해 의도하지 않은 파일을 읽게 만드는 문제 유형**입니다.

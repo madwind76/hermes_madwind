@@ -1,7 +1,7 @@
 ---
 title: Function pointer overwrite — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, function-pointer, arbitrary-write, out-of-bounds, control-flow-hijack]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/function-overwrite, https://cryptocat.me/blog/ctf/2022/pico/pwn/function_overwrite/]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Function pointer overwrite — CTF patterns
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/function-overwrite)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/function_overwrite/)
 
 ## Step 1. 단어 풀이
 - **Function pointer**: 함수를 가리키는 포인터입니다.

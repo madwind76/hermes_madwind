@@ -1,7 +1,7 @@
 ---
 title: IDS (Intrusion Detection System) — 침입 탐지 시스템
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, ids, ips, intrusion-detection, network-security, hids, nids, snort, suricata, zeek]
 sources: [https://ko.wikipedia.org/wiki/침입_탐지_시스템, https://ko.wikipedia.org/wiki/Snort_(소프트웨어), https://ko.wikipedia.org/wiki/OSSEC, https://ko.wikipedia.org/wiki/방화벽_(네트워킹), https://ko.wikipedia.org/wiki/침입_차단_시스템, https://ko.wikipedia.org/wiki/SIEM, https://ko.wikipedia.org/wiki/사이버_보안_관제_센터]
@@ -9,6 +9,15 @@ confidence: high
 ---
 
 # IDS (Intrusion Detection System) — 침입 탐지 시스템
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/침입_탐지_시스템)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/Snort_(소프트웨어))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OSSEC)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/방화벽_(네트워킹))
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/침입_차단_시스템)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/SIEM)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_보안_관제_센터)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

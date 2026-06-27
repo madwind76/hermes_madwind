@@ -1,7 +1,7 @@
 ---
 title: WebSocket Message Tampering — 보안 용어 해설과 Web CTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ctf, request-manipulation, input-validation, api]
 sources: [https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API, https://portswigger.net/web-security/websockets, https://portswigger.net/burp/documentation/desktop/testing-workflow/vulnerabilities/websockets/manipulating-websocket-messages, https://medium.com/@mihasha/websockfish-picoctf-2025-write-up-e7d4711ecfd3]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # WebSocket Message Tampering — 보안 용어 해설과 Web CTF 패턴
+
+## 참고 URL
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [portswigger.net](https://portswigger.net/web-security/websockets)
+- [portswigger.net](https://portswigger.net/burp/documentation/desktop/testing-workflow/vulnerabilities/websockets/manipulating-websocket-messages)
+- [medium.com](https://medium.com/@mihasha/websockfish-picoctf-2025-write-up-e7d4711ecfd3)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

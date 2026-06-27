@@ -1,7 +1,7 @@
 ---
 title: Format String — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, format-string, printf, stack-leak, memory-disclosure]
 sources: [https://ctftime.org/writeup/32816, https://picoctf2022.haydenhousen.com/binary-exploitation/flag-leak, https://medium.com/@zeyadsalah686/flag-leak-picoctf-writeup-e7b53f3273e2]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Format String — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32816)
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/flag-leak)
+- [medium.com](https://medium.com/@zeyadsalah686/flag-leak-picoctf-writeup-e7b53f3273e2)
 
 ## Step 1. 단어 풀이
 - **Format string**: 문자열에 들어 있는 `%p`, `%x`, `%s` 같은 서식 지정자입니다.

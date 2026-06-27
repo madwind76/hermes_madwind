@@ -1,7 +1,7 @@
 ---
 title: PHP array input + null hash comparison — picoCTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, php, authentication, parameter-tampering, type-juggling]
 sources: [https://medium.com/@mihasha/apriti-sesamo-picoctf-2025-write-up-7f3d4bfd6085, https://medium.com/@ahmednarmer1/ctf-day-23-595078e28d0f, https://hackmd.io/@fearnot/picoCTF_Web]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # PHP array input + null hash comparison — picoCTF 패턴
+
+## 참고 URL
+- [medium.com](https://medium.com/@mihasha/apriti-sesamo-picoctf-2025-write-up-7f3d4bfd6085)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-23-595078e28d0f)
+- [hackmd.io](https://hackmd.io/@fearnot/picoCTF_Web)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **PHP에서 스칼라 문자열을 기대하는 코드에 배열을 넣어 함수 반환값을 `null`로 만들고, 그 결과를 느슨하게 또는 동일성 비교로 우회하는 문제 유형**입니다.

@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup 리소스 가이드
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [ctf, ctf-challenge, web, reference, tutorial]
 sources: [raw/articles/20260613_web-ctf-writeup-resources.md]
@@ -11,6 +11,9 @@ confidence: high
 # Web CTF Writeup 리소스 가이드
 
 Web CTF 문제 풀이 학습을 위한 **검증된 Writeup 리소스**와 **체계적 학습 로드맵**을 정리한 페이지입니다.
+
+## 참고 URL
+- [Reference](raw/articles/20260613_web-ctf-writeup-resources.md)
 
 ## 개요
 

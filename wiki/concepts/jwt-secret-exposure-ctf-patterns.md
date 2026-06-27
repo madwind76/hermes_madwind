@@ -1,7 +1,7 @@
 ---
 title: JWT secret exposure / token forgery — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, jwt, token-forgery, source-inspection, authentication]
 sources: [https://brandon-t-elliott.github.io/java-code-analysis, https://cseciitb.github.io/posts/PicoCTFJavaCodeAnalysis/, https://zarrarkolachi.medium.com/java-code-analysis-picoctf-2023-e4ab29d4743e]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # JWT secret exposure / token forgery — CTF patterns
+
+## 참고 URL
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/java-code-analysis)
+- [cseciitb.github.io](https://cseciitb.github.io/posts/PicoCTFJavaCodeAnalysis/)
+- [zarrarkolachi.medium.com](https://zarrarkolachi.medium.com/java-code-analysis-picoctf-2023-e4ab29d4743e)
 
 ## 1. 정의
 **JWT secret exposure**는 서버가 JWT를 서명하는 비밀키를 소스 코드, 설정 파일, 디버그 출력, 하드코딩 fallback 등에서 노출해 버리는 패턴입니다. 공격자는 이 시크릿으로 토큰을 다시 서명해 관리자 권한이나 다른 클레임을 위조할 수 있습니다.

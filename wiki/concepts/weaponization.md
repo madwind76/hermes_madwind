@@ -1,7 +1,7 @@
 ---
 title: Weaponization (무기화) — 사이버 킬 체인 2단계
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, cyber-kill-chain, weaponization, malware, exploit, payload]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/악성_소프트웨어]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Weaponization (무기화) — 사이버 킬 체인 2단계
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_킬_체인)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/악성_소프트웨어)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

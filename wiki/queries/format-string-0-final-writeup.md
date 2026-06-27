@@ -1,7 +1,7 @@
 ---
 title: format string 0 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, format-string, buffer-overflow, crash, signal-handler, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/format%20string%200/format%20string%200.md, https://www.youtube.com/watch?v=bkCV44NdNh0, https://hackmd.io/@Zzzzek/r14x13FRp]
@@ -11,6 +11,12 @@ confidence: high
 # format string 0 — picoCTF 2024 pwn writeup
 
 > `format string 0`는 공개 풀이마다 표현이 조금 다르지만, 핵심은 **버거 메뉴의 선택 문자열/입력이 잘못 처리되어 flag 경로가 열리는 문제**입니다. 공개 writeup에서는 **format specifier가 포함된 선택지**와 **충분한 길이의 입력으로 크래시를 유도하는 방식**이 함께 강조됩니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/format%20string%200/format%20string%200.md)
+- [www.youtube.com](https://www.youtube.com/watch?v=bkCV44NdNh0)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+
 
 ## 핵심 요약
 - 메뉴형 바이너리입니다.

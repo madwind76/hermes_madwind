@@ -1,7 +1,7 @@
 ---
 title: API Security (API 보안)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, api, api-security]
 sources: [https://owasp.org/www-project-api-security/]
@@ -12,6 +12,9 @@ confidence: high
 
 > 이 페이지는 API 보안 전체의 **인덱스**입니다.
 > 상세 설명은 [[api-security-core]]와 [[api-security-defense]]를 참고합니다.
+
+## 참고 URL
+- [owasp.org](https://owasp.org/www-project-api-security/)
 
 ## 핵심 페이지
 - [[api-security-core]] — 핵심 메커니즘: 인증/인가, 레이트 리미팅, 아키텍처

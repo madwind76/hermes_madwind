@@ -1,7 +1,7 @@
 ---
 title: SSRF CTF Patterns
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, ssrf, research]
 sources: []
@@ -9,6 +9,9 @@ confidence: medium
 ---
 
 # SSRF CTF Patterns
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## 정의
 Web CTF에서 SSRF는 **서버가 대신 외부 요청을 수행하는 입력점**을 찾고, 그 요청을 내부 네트워크나 메타데이터 서비스로 유도하는 문제 유형입니다.
@@ -40,8 +43,10 @@ Web CTF에서 SSRF는 **서버가 대신 외부 요청을 수행하는 입력점
 - 메타데이터 보호
 
 ## 연결 개념
+- [[ssrf-internal-service-writeup-survey]]
 - [[ssrf]]
 - [[ssrf-core]]
 - [[ssrf-defense]]
 - [[broken-access-control]]
 - [[proxy-mirror-final-writeup]]
+- [[url-to-pdf-ssrf-final-writeup]]

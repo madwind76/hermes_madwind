@@ -1,10 +1,10 @@
 ---
 title: Bookmarklet — picoCTF 2024 web writeup
 created: 2026-06-14
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, client-side, research]
-sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96, https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn, https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Bookmarklet.md]
+sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96, https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn, https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Bookmarklet.md, https://medium.com/@rachael_muga/picoctf-bookmarklet-web-exploitation-3cff31a6c1dc, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-bookmarklet-506a480fd17f, https://medium.com/@viscidCTF/picoctf-2024-bookmarklet-502c08e5659a, https://medium.com/@ahmednarmer1/ctf-day-4-76c165186a3a, https://qiita.com/colza_/items/ad51902cf9abc999b227, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99, https://infosecwriteups.com/%EF%B8%8F-picoctf-2024-bookmarklet-web-exploitation-challenge-834b3ce821e2, https://www.linkedin.com/pulse/picoctf-introduction-bookmarklet-sreedeep-cv-7vluc, https://www.youtube.com/watch?v=9UF6OVORbuY, https://www.youtube.com/watch?v=vGH76PEFtaQ, https://hackmd.io/@urchinsec/rJgMIgJRT, https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/]
 confidence: high
 ---
 
@@ -12,6 +12,26 @@ confidence: high
 
 > 브라우저 북마클릿(bookmarklet)을 직접 실행해 페이지가 숨긴 JavaScript를 재현하는 picoCTF Web Exploitation 문제입니다.
 > 이 문제는 `javascript:` 스킴을 이용해 **현재 페이지 맥락에서 JavaScript를 실행**하는 흐름을 이해하는 것이 핵심입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96)
+- [dev.to](https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn)
+- [medium.com](https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c)
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Bookmarklet.md)
+- [medium.com](https://medium.com/@rachael_muga/picoctf-bookmarklet-web-exploitation-3cff31a6c1dc)
+- [medium.com](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-bookmarklet-506a480fd17f)
+- [medium.com](https://medium.com/@viscidCTF/picoctf-2024-bookmarklet-502c08e5659a)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-4-76c165186a3a)
+- [qiita.com](https://qiita.com/colza_/items/ad51902cf9abc999b227)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+- [infosecwriteups.com](https://infosecwriteups.com/%EF%B8%8F-picoctf-2024-bookmarklet-web-exploitation-challenge-834b3ce821e2)
+- [www.linkedin.com](https://www.linkedin.com/pulse/picoctf-introduction-bookmarklet-sreedeep-cv-7vluc)
+- [www.youtube.com](https://www.youtube.com/watch?v=9UF6OVORbuY)
+- [www.youtube.com](https://www.youtube.com/watch?v=vGH76PEFtaQ)
+- [hackmd.io](https://hackmd.io/@urchinsec/rJgMIgJRT)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/)
+
 
 ## 1. 한 줄 요약
 - 사용자가 페이지에 표시된 JavaScript를 **북마크에 저장한 뒤 실행**하면, 브라우저가 플래그를 포함한 동작을 수행합니다.
@@ -52,10 +72,24 @@ confidence: high
 
 ## 7. 참고 소스
 - [GitHub writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md)
-- [Medium writeup](https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96)
-- [DEV writeup](https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn)
-- [Rachael Muga writeup](https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c)
+- [Kamal S — Medium](https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96)
+- [DEV Community](https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn)
+- [Rachael Muga — Local Authority](https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c)
+- [Cajac GitHub writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Bookmarklet.md)
+- [Rachael Muga — Bookmarklet](https://medium.com/@rachael_muga/picoctf-bookmarklet-web-exploitation-3cff31a6c1dc)
+- [Bl4cky — Bookmarklet](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-bookmarklet-506a480fd17f)
+- [viscidCTF — Bookmarklet](https://medium.com/@viscidCTF/picoctf-2024-bookmarklet-502c08e5659a)
+- [Ahmed Narmer — CTF Day(4)](https://medium.com/@ahmednarmer1/ctf-day-4-76c165186a3a)
+- [Qiita — Bookmarklet](https://qiita.com/colza_/items/ad51902cf9abc999b227)
+- [InfoSecWriteups — picoCTF 2024 Web](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+- [InfoSecWriteups — Bookmarklet challenge](https://infosecwriteups.com/%EF%B8%8F-picoctf-2024-bookmarklet-web-exploitation-challenge-834b3ce821e2)
+- [LinkedIn — PicoCTF an Introduction to Bookmarklet](https://www.linkedin.com/pulse/picoctf-introduction-bookmarklet-sreedeep-cv-7vluc)
+- [YouTube — picoGym Exercise: Bookmarklet](https://www.youtube.com/watch?v=9UF6OVORbuY)
+- [YouTube — Bookmarklet Pico CTF 2024 Walkthrough](https://www.youtube.com/watch?v=vGH76PEFtaQ)
+- [HackMD — picoCTF 2024 writeup](https://hackmd.io/@urchinsec/rJgMIgJRT)
+- [QZ.sg picoCTF 2024 web writeups](https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/)
 
 ## 8. 다음 연결
 - `IntroToBurp`처럼 브라우저 도구를 활용하는 문제와 함께 보면 좋습니다.
 - `WebDecode`처럼 사용자 입력이 브라우저에서 해석되는 흐름과 비교하면 학습 효과가 큽니다.
+- `[[bookmarklet-execution-ctf-patterns]]`를 함께 보면 bookmarklet이 왜 클라이언트 사이드 패턴인지 정리됩니다.

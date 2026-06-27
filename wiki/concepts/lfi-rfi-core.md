@@ -1,7 +1,7 @@
 ---
 title: LFI/RFI (Local/Remote File Inclusion) — 핵심 메커니즘
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, lfi, rfi, file-inclusion, path-traversal, php]
 sources: [https://owasp.org/www-community/attacks/Path_Traversal, https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Inclusion]
@@ -11,6 +11,10 @@ confidence: high
 # LFI/RFI (Local/Remote File Inclusion) — 핵심 메커니즘
 
 > [[lfi-rfi]]의 공격 원리와 확장 기법을 다루는 분할 페이지입니다.
+
+## 참고 URL
+- [owasp.org](https://owasp.org/www-community/attacks/Path_Traversal)
+- [owasp.org](https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Inclusion)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### LFI/RFI (Local/Remote File Inclusion, 로컬/원격 파일 포함)

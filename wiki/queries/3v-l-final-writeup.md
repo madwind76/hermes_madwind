@@ -1,7 +1,7 @@
 ---
 title: 3v@l — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, python, eval, research, writeup, injection, rce]
 sources: [https://medium.com/@gbahenrijoel/picoctf-2025-web-3v-l-87fdd25094b4, https://medium.com/@adonisdavids52/picoctf-3v-l-challenge-write-up-37ae762d9715, https://www.youtube.com/watch?v=U5Glr81pXnM, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://hackmd.io/@fearnot/picoCTF_Web]
@@ -11,6 +11,14 @@ confidence: high
 # 3v@l — picoCTF 2025 web writeup
 
 > Python `eval()` 기반 계산기에서 키워드/정규식 필터를 우회해 `/flag.txt`를 읽는 picoCTF 2025 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@gbahenrijoel/picoctf-2025-web-3v-l-87fdd25094b4)
+- [medium.com](https://medium.com/@adonisdavids52/picoctf-3v-l-challenge-write-up-37ae762d9715)
+- [www.youtube.com](https://www.youtube.com/watch?v=U5Glr81pXnM)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [hackmd.io](https://hackmd.io/@fearnot/picoCTF_Web)
+
 
 ## 1. 핵심 요약
 

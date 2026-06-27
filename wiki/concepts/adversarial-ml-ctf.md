@@ -1,7 +1,7 @@
 ---
 title: Adversarial ML & Model Inversion — CTF 문제 유형
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: ctf-challenge
 tags: [ai-ctf, ctf, adversarial-ml, model-inversion, data-poisoning, model-extraction, ctf-challenge, serialization]
 sources: [raw/20260610_AI_CTF_challenge_types.md]
@@ -11,6 +11,9 @@ confidence: high
 # Adversarial ML & Model Inversion — CTF 문제 유형
 
 > 전통적인 ML 보안 CTF의 핵심에서 최신 AI 공급망 위협까지. 전체 AI CTF 문제의 **~27%**를 차지합니다 (🅲+🅳+🅴+🅵+🅷).
+
+## 참고 URL
+- [Reference](raw/20260610_AI_CTF_challenge_types.md)
 
 ## 개요
 

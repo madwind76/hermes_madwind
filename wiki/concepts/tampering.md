@@ -1,7 +1,7 @@
 ---
 title: Tampering — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, request-manipulation, parameter-tampering, input-validation, web]
 sources: [https://portswigger.net/web-security/logic-flaws/examples, https://portswigger.net/web-security/websockets, https://owasp.org/www-project-top-ten/]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Tampering — 보안 용어 해설
+
+## 참고 URL
+- [portswigger.net](https://portswigger.net/web-security/logic-flaws/examples)
+- [portswigger.net](https://portswigger.net/web-security/websockets)
+- [owasp.org](https://owasp.org/www-project-top-ten/)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

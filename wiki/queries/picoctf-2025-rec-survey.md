@@ -1,7 +1,7 @@
 ---
 title: picoCTF 2025 reverse engineering survey
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, survey, picoctf, picoctf2025, windows, prng, wasm]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup, https://github.com/noamgariani11/picoCTF-2025-Writeup, concepts/reverse-engineering-ctf-patterns.md]
@@ -11,6 +11,12 @@ confidence: high
 # picoCTF 2025 reverse engineering survey
 
 > picoCTF 2025의 Reverse Engineering 문제를 한 번에 훑는 상위 허브입니다. 공개 writeup 기준으로 문제 목록, 사용한 기법, 재사용 가능한 패턴을 한 페이지에서 연결합니다.
+
+## 참고 URL
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+- [noamgariani11/picoCTF-2025-Writeup](https://github.com/noamgariani11/picoCTF-2025-Writeup)
+- [concepts/reverse-engineering-ctf-patterns.md](concepts/reverse-engineering-ctf-patterns.md)
+
 
 ## 1. 범위
 - **포함**: picoCTF 2025 Reverse Engineering 공개 writeup

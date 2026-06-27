@@ -1,7 +1,7 @@
 ---
 title: Path Traversal (경로 순회, 디렉토리 순회) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, path-traversal, directory-traversal, lfi, rfi, file-inclusion, owasp]
 sources: [https://ko.wikipedia.org/wiki/경로_순회_공격, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Path Traversal (경로 순회, 디렉토리 순회) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/경로_순회_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

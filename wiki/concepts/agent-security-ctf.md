@@ -1,7 +1,7 @@
 ---
 title: Agent/Tool Security (에이전트 보안) — CTF 문제 유형
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: ctf-challenge
 tags: [ai-ctf, ctf, agent-security, llm, ctf-challenge, supply-chain, rce]
 sources: [raw/20260610_AI_CTF_challenge_types.md]
@@ -11,6 +11,9 @@ confidence: high
 # Agent/Tool Security (에이전트 보안) — CTF 문제 유형
 
 > 2025-2026년 급부상 분야. LangChain, MCP, A2A 프로토콜 등장으로 AI CTF의 주요 축으로 부상. 전체 AI CTF 문제의 **~19%**를 차지합니다.
+
+## 참고 URL
+- [Reference](raw/20260610_AI_CTF_challenge_types.md)
 
 ## 개요
 

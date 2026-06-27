@@ -1,7 +1,7 @@
 ---
 title: XSS (Cross-Site Scripting) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [vulnerability, xss, web, injection, owasp]
 sources: [raw/articles/xss-glossary-original.md]
@@ -9,6 +9,9 @@ confidence: high
 ---
 
 # XSS (Cross-Site Scripting) — 보안 용어 해설
+
+## 참고 URL
+- [Reference](raw/articles/xss-glossary-original.md)
 
 ## 약자 풀이
 

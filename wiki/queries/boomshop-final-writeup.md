@@ -1,16 +1,21 @@
 ---
 title: BoomShop Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
-sources: []
+sources: [https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md, https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/petshop-pro/README.md]
 confidence: medium
 ---
 
 # BoomShop Final Writeup Sample
 
 > 이 문서는 **실제 문제를 가정한 최종 writeup 예시**입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md)
+- [Original writeup](https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/petshop-pro/README.md)
+
 
 ## 1. 문제 요약
 - 플랫폼: Example CTF

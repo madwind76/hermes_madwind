@@ -1,7 +1,7 @@
 ---
 title: IntroToBurp — picoCTF 2024 web writeup
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, burp, parameter-tampering, picoctf]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e, https://medium.com/@Kamal_S/picoctf-web-exploitation-introtoburp-a2b50bf8e985, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]
@@ -11,6 +11,13 @@ confidence: high
 # IntroToBurp — picoCTF 2024 web writeup
 
 > `IntroToBurp`는 **Burp Suite로 요청 구조를 관찰한 뒤, OTP 파라미터를 완전히 제거해서 우회하는 picoCTF 2024 Web 문제**입니다. 값 자체를 맞히는 문제가 아니라, **서버가 필수 파라미터 존재 여부를 제대로 검증하는지**를 확인하는 것이 핵심입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md)
+- [medium.com](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-introtoburp-a2b50bf8e985)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+
 
 ## 1. 한 줄 요약
 - 등록 후 `/dashboard`의 OTP 제출 요청을 Burp Suite로 가로챕니다.

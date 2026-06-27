@@ -1,7 +1,7 @@
 ---
 title: Signed HTML Email — 보안 용어 해설과 Web CTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ctf, email, mime, smime, xss]
 sources: [https://corgi.rip/posts/secure-email-service/, https://hackmd.io/@hibwyli/rJ8K23JT1x, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://datatracker.ietf.org/doc/html/rfc2045, https://datatracker.ietf.org/doc/html/rfc2047, https://datatracker.ietf.org/doc/html/rfc5751]
@@ -9,6 +9,14 @@ confidence: high
 ---
 
 # Signed HTML Email — 보안 용어 해설과 Web CTF 패턴
+
+## 참고 URL
+- [corgi.rip](https://corgi.rip/posts/secure-email-service/)
+- [hackmd.io](https://hackmd.io/@hibwyli/rJ8K23JT1x)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [datatracker.ietf.org](https://datatracker.ietf.org/doc/html/rfc2045)
+- [datatracker.ietf.org](https://datatracker.ietf.org/doc/html/rfc2047)
+- [datatracker.ietf.org](https://datatracker.ietf.org/doc/html/rfc5751)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

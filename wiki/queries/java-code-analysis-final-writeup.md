@@ -1,7 +1,7 @@
 ---
 title: Java Code Analysis!?! — picoCTF 2023 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, jwt, token-forgery, source-inspection, picoctf]
 sources: [https://zarrarkolachi.medium.com/java-code-analysis-picoctf-2023-e4ab29d4743e, https://brandon-t-elliott.github.io/java-code-analysis, https://cseciitb.github.io/posts/PicoCTFJavaCodeAnalysis/, https://hackmd.io/@ancorn/HyGTfwQG6]
@@ -11,6 +11,13 @@ confidence: high
 # Java Code Analysis!?! — picoCTF 2023 web writeup
 
 > `Java Code Analysis!?!`는 **서버 소스 코드에서 JWT 서명 키를 찾아 관리자 토큰을 위조하는 picoCTF 2023 Web 문제**입니다. 로그인 자체보다, `JwtService.java`와 `SecretGenerator.java`를 읽어 **약한 시크릿 `1234`**를 찾아내는 것이 핵심입니다.
+
+## 참고 URL
+- [zarrarkolachi.medium.com](https://zarrarkolachi.medium.com/java-code-analysis-picoctf-2023-e4ab29d4743e)
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/java-code-analysis)
+- [cseciitb.github.io](https://cseciitb.github.io/posts/PicoCTFJavaCodeAnalysis/)
+- [hackmd.io](https://hackmd.io/@ancorn/HyGTfwQG6)
+
 
 ## 1. 한 줄 요약
 - 로그인 후 응답/요청에 JWT가 사용됩니다.

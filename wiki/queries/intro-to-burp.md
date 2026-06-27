@@ -1,7 +1,7 @@
 ---
 title: IntroToBurp
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, burp, parameter-tampering]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]
@@ -11,6 +11,12 @@ confidence: medium
 # IntroToBurp
 
 > 이 페이지는 **picoCTF 2024 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md)
+- [medium.com](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+
 
 ## 1. 요약
 - 플랫폼: picoCTF 2024

@@ -1,7 +1,7 @@
 ---
 title: Source Inspection + Minification
 created: 2026-06-14
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, source-analysis, inspector]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md, https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md, https://developer.chrome.com/docs/devtools/, https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools]
@@ -10,12 +10,20 @@ confidence: high
 
 # Source Inspection + Minification
 
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md)
+- [medium.com](https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5)
+- [Original source](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md)
+- [Original source](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md)
+- [developer.chrome.com](https://developer.chrome.com/docs/devtools/)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools)
+
 ## 1. 쉬운 비유
 웹페이지를 **인쇄물**이라고 생각하면 쉽습니다. 화면에 보이는 것은 "표지"이고, 실제 내용은 "본문"입니다. 이 문제 유형은 표지를 아무리 봐도 답이 없고, 본문을 직접 열어봐야 답이 나옵니다. 
 
 minification은 글을 숨기는 것이 아니라 **띄어쓰기와 줄바꿈을 줄여서 한 줄로 압축하는 작업**입니다. 즉, 읽기 어려워질 뿐 내용이 사라지지는 않습니다.
 
-연결 개념: [[web-inspector-ctf-patterns]], [[unminify-final-writeup]], [[webdecode-final-writeup]]
+연결 개념: [[web-inspector-ctf-patterns]], [[unminify-final-writeup]], [[webdecode-final-writeup]], [[source-inspection-hidden-file-writeup-survey]], [[hidden-dom-final-writeup]]
 
 ## 2. 시각화
 ![Source Inspection + Minification diagram](../assets/infosec/source-inspection-minification-ctf-patterns.svg)

@@ -1,7 +1,7 @@
 ---
 title: Pachinko — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, burp, parameter-tampering, race-condition]
 sources: [https://medium.com/@divyanshurds.kumar/writeup-picoctf-2025-pachinko-2dcb85b3202f, https://medium.com/@kofikitiabi/pachinko-picoctf-2025-full-walkthrough-beginner-friendly-91f263c801d2, https://medium.com/@ahmednarmer1/ctf-day-24-0e1e8a56b6f6, https://medium.com/@debasissadhu712/how-i-solved-picoctf-2025-pachinko-web-exploitation-full-step-by-step-walkthrough-9f76f069c52f, https://hackmd.io/qE2e4hMiQ06HcBaWWWhkuw]
@@ -11,6 +11,14 @@ confidence: high
 # Pachinko — picoCTF 2025 web writeup
 
 > NAND 시뮬레이터 형태의 웹앱입니다. 공개 writeup들은 `Burp Intruder` 기반 fuzzing 경로와 `race condition` 경로를 함께 보여주며, 이 노트는 **첫 번째 flag용 요청 변조/fuzzing 경로**를 중심으로 정리합니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@divyanshurds.kumar/writeup-picoctf-2025-pachinko-2dcb85b3202f)
+- [medium.com](https://medium.com/@kofikitiabi/pachinko-picoctf-2025-full-walkthrough-beginner-friendly-91f263c801d2)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-24-0e1e8a56b6f6)
+- [medium.com](https://medium.com/@debasissadhu712/how-i-solved-picoctf-2025-pachinko-web-exploitation-full-step-by-step-walkthrough-9f76f069c52f)
+- [hackmd.io](https://hackmd.io/qE2e4hMiQ06HcBaWWWhkuw)
+
 
 ## 1. 핵심 요약
 

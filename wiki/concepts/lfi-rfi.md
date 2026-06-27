@@ -1,7 +1,7 @@
 ---
 title: LFI/RFI (Local/Remote File Inclusion)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, lfi, rfi, file-inclusion, path-traversal]
 sources: [https://owasp.org/www-community/attacks/Path_Traversal]
@@ -12,6 +12,9 @@ confidence: high
 
 > 이 페이지는 LFI/RFI 전체의 **인덱스**입니다.
 > 상세 설명은 [[lfi-rfi-core]]와 [[lfi-rfi-defense]]를 참고합니다.
+
+## 참고 URL
+- [owasp.org](https://owasp.org/www-community/attacks/Path_Traversal)
 
 ## 핵심 페이지
 - [[lfi-rfi-core]] — 공격 원리와 확장

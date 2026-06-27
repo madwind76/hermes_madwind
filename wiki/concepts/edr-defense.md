@@ -1,13 +1,17 @@
 ---
 title: EDR — 운영
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, edr, endpoint, detection, response, xdr, mdr, antivirus, epp]
 sources: [https://ko.wikipedia.org/wiki/엔드포인트_탐지_및_대응, https://ko.wikipedia.org/wiki/안티바이러스_소프트웨어]
 confidence: high
 ---
 > [[edr]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/엔드포인트_탐지_및_대응)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/안티바이러스_소프트웨어)
 
 ## Step 3: 전문 용어 설명 (위키백과 기반)
 ### 자동 대응 (Response Actions) 유형

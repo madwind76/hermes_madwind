@@ -1,7 +1,7 @@
 ---
 title: BitHug — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, git, webhook, access-control, ssrf, picoctf]
 sources: [https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Bithug/README.md, https://www.tjcsec.club/writeups/picoctf-2021-bithug/, https://larry.sh/post/picoctf-2021/]
@@ -11,6 +11,12 @@ confidence: high
 # BitHug — picoCTF 2021 web writeup
 
 > `BitHug`는 **Git 호스팅 서비스의 접근 제어와 웹훅 처리, 그리고 내부 요청 경계를 함께 건드리는 picoCTF 2021 Web 문제**입니다. 핵심은 저장소 접근 규칙을 이해하고, 내부에서만 관리자 취급이 되는 경로를 이용해 보호된 저장소의 `access.conf`를 수정하는 것입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Bithug/README.md)
+- [www.tjcsec.club](https://www.tjcsec.club/writeups/picoctf-2021-bithug/)
+- [larry.sh](https://larry.sh/post/picoctf-2021/)
+
 
 ## 1. 한 줄 요약
 - 서비스는 Git 저장소를 웹으로 제공합니다.

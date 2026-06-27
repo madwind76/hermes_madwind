@@ -1,7 +1,7 @@
 ---
 title: Jinja2 Filter Bypass — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ssti, template-injection, bypass, sandbox-escape, template-engine, rce]
 sources: [https://medium.com/@mihasha/ssti2-write-up-picoctf-2025-5fc53e2320ba, https://www.ehchris.com/blog/picoctf-ssti2-writeup, https://hackmd.io/@mv2XixOkQZyIZHzn48T8Tg/r1XtmrToge, https://0day.work/jinja2-template-injection-filter-bypasses/, https://jinja.palletsprojects.com/en/stable/sandbox/, https://portswigger.net/web-security/server-side-template-injection, https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection]
@@ -9,6 +9,15 @@ confidence: high
 ---
 
 # Jinja2 Filter Bypass — 보안 용어 해설
+
+## 참고 URL
+- [medium.com](https://medium.com/@mihasha/ssti2-write-up-picoctf-2025-5fc53e2320ba)
+- [www.ehchris.com](https://www.ehchris.com/blog/picoctf-ssti2-writeup)
+- [hackmd.io](https://hackmd.io/@mv2XixOkQZyIZHzn48T8Tg/r1XtmrToge)
+- [0day.work](https://0day.work/jinja2-template-injection-filter-bypasses/)
+- [jinja.palletsprojects.com](https://jinja.palletsprojects.com/en/stable/sandbox/)
+- [portswigger.net](https://portswigger.net/web-security/server-side-template-injection)
+- [owasp.org](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

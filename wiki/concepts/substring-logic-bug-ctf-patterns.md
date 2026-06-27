@@ -1,7 +1,7 @@
 ---
 title: Substring logic bug — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, logic-bug, strstr, substring, validation, prng]
 sources: [https://ctftime.org/writeup/33269, https://cryptocat.me/blog/ctf/2022/pico/pwn/rps/]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Substring logic bug — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/33269)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/rps/)
 
 ## Step 1. 단어 풀이
 - **Substring**: 문자열 안에 들어있는 부분 문자열입니다.

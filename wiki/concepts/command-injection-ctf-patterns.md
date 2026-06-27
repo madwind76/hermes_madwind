@@ -1,7 +1,7 @@
 ---
 title: Command Injection CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, command-injection, research]
 sources: []
@@ -9,6 +9,9 @@ confidence: medium
 ---
 
 # Command Injection CTF Patterns
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## 정의
 Web CTF에서 Command Injection은 **서버가 외부 입력을 셸 명령에 연결하는 지점에서 명령 분리가 가능한지 확인하는 문제 유형**입니다.

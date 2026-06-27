@@ -1,7 +1,7 @@
 ---
 title: Web Gauntlet 3 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, sqli, sqlite, filter-bypass, picoctf]
 sources: [https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet3.md, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Web%20Gauntlet%203/README.md, https://ctftime.org/task/15217, https://ctftime.org/writeup/27104]
@@ -11,6 +11,13 @@ confidence: high
 # Web Gauntlet 3 — picoCTF 2021 web writeup
 
 > `Web Gauntlet 3`는 **SQLite SQL Injection + 필터 우회 + 짧은 길이 제한** 문제입니다. 핵심은 `Web Gauntlet 2`와 같은 우회가 그대로 통하고, 이번에는 **25 characters total** 제한까지 만족해야 한다는 점입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet3.md)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Web%20Gauntlet%203/README.md)
+- [CTFtime writeup](https://ctftime.org/task/15217)
+- [CTFtime writeup](https://ctftime.org/writeup/27104)
+
 
 ## 1. 한 줄 요약
 - 로그인 폼이 SQL 쿼리를 직접 만듭니다.

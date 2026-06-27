@@ -1,7 +1,7 @@
 ---
 title: CTF Writeup Ingestion Workflow
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-21
 type: concept
 tags: [ctf, research, training, workflow, wiki]
 sources: [queries/picoctf-web-survey.md, concepts/web-ctf-writeup-topic-map.md, concepts/ctf-challenge-dev-research.md]
@@ -12,6 +12,11 @@ confidence: high
 
 > 공개 CTF writeup을 조사해서 **분류 → 추출 → 재사용 개념화 → 위키 저장**까지 이어가는 자기학습 파이프라인입니다.
 > 목적은 단순 요약이 아니라, 새 writeup을 읽을수록 기존 지식망이 커지게 만드는 것입니다.
+
+## 참고 URL
+- [Reference](queries/picoctf-web-survey.md)
+- [Reference](concepts/web-ctf-writeup-topic-map.md)
+- [Reference](concepts/ctf-challenge-dev-research.md)
 
 ## 1. 왜 이 방식이 필요한가
 CTF writeup을 많이 읽어도 그냥 문장만 쌓이면 재사용성이 낮습니다. 따라서 다음 순서를 고정합니다.

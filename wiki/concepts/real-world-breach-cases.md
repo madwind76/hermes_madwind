@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 기반 실습 교육 — 종합 인덱스
 created: 2026-06-10
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, training, lab, real-world, breach, ransomware, apt, supply-chain, cloud, zero-day]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석, 법정 문서, 회사 공개 자료]
@@ -14,6 +14,13 @@ confidence: high
 > 각 사례는 Docker/VM 기반 실습 가능 여부, 도구 가용성, 교육적 가치로 평가되어 있습니다.
 
 ---
+
+## 참고 URL
+- [Reference](FBI/CISA 경보)
+- [Reference](Mandiant/FireEye 보고서)
+- [Reference](Kaspersky/ESET/CrowdStrike 분석)
+- [Reference](법정 문서)
+- [Reference](회사 공개 자료)
 
 ## 사례 분류 및 링크
 

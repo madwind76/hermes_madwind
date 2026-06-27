@@ -1,7 +1,7 @@
 ---
 title: XPath injection — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, xpath, injection, xml, login-bypass]
 sources: [https://picoctf2021.haydenhousen.com/web-exploitation/x-marks-the-spot, https://ctftime.org/writeup/27158, https://ctftime.org/writeup/27171]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # XPath injection — CTF patterns
+
+## 참고 URL
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/x-marks-the-spot)
+- [CTFtime writeup](https://ctftime.org/writeup/27158)
+- [CTFtime writeup](https://ctftime.org/writeup/27171)
 
 ## 1. 정의
 **XPath injection**은 XML 문서를 질의하는 XPath 식에 사용자 입력이 그대로 결합될 때 발생하는 취약점입니다. SQL injection과 비슷하게 보이지만, 공격 대상은 데이터베이스가 아니라 XML 구조를 탐색하는 식입니다.

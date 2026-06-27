@@ -1,7 +1,7 @@
 ---
 title: WebDecode — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, inspector, base64]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6, https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803]
@@ -11,6 +11,12 @@ confidence: medium
 # WebDecode — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803)
+
 
 ## 1. 문제 요약
 - 플랫폼: picoCTF 2024

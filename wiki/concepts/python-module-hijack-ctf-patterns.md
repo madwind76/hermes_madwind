@@ -1,7 +1,7 @@
 ---
 title: Python module hijack — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 sources: [queries/hijacking-final-writeup.md]
 confidence: medium
@@ -11,6 +11,9 @@ tags: [ctf, pwn, python, module-hijack, import-abuse]
 # Python module hijack — CTF patterns
 
 > Python의 import 검색 경로를 악용해 악성 모듈을 먼저 로드시키는 패턴입니다.
+
+## 참고 URL
+- [Reference](queries/hijacking-final-writeup.md)
 
 ## 핵심 아이디어
 - Python은 import 시 검색 순서를 따릅니다.

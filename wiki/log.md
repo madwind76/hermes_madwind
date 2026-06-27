@@ -1,3 +1,282 @@
+## [2026-06-27] create | Firecrawl 셀프호스팅 셋업 + Hermes 연동 가이드
+- action: 현재 시스템에 적용되어 있는 Firecrawl 로컬 스택(6개 컨테이너 가동 중, /v1/scrape 정상 응답 확인)의 셋업 절차와 Hermes news 프로필 연동 절차를 개념 페이지로 정리
+- created:
+  - concepts/firecrawl-selfhost-setup.md (개념 허브, 11 섹션 / 282 라인)
+  - raw/articles/20260627_firecrawl-selfhost-setup.md (동일 본문 백업본)
+- 핵심 내용: 운영 디렉터리 `~/.hermes/profiles/ctf/home/firecrawl/`, compose 프로젝트명 `firecrawl`, API `http://localhost:3002`, 사용 플러그인 `web-firecrawl` + `browser-firecrawl`, 뉴스 프로필 `.env`의 `FIRECRAWL_API_URL`과 `config.yaml`의 `web.backend: firecrawl`이 라우팅을 결정
+- 검증: ad-hoc sanity check 스크립트(`/tmp/hermes-verify-firecrawl-doc-*` prefix)로 11개 구조/사실/비밀값 항목 모두 PASS, 두 파일 sha256 일치(2ac4ec822291), 코드 펜스 밸런스 OK — 정식 테스트 스위트는 아님
+- pitfalls 6종 정리: nuq-postgres `cron.database_name=firecrawl` 패치, RabbitMQ healthcheck start_period 60s, `USE_DB_AUTHENTICATION` 빈 값 ZodError, POSTGRES_PASSWORD 변경 시 볼륨 재생성 필요, write_file 마스킹 회피용 heredoc, 7.6GB 환경에서 api 3G / playwright 2G mem_limit
+- updated: index.md (Concepts 아래 DevOps/Infra 소섹션 추가, 헤더 페이지 수 782→783, 마지막 업데이트 2026-06-26→2026-06-27), log.md
+- sources: ctf 프로필 `home/firecrawl/docker-compose.yaml` + `.env`, ctf 스킬 `devops/firecrawl-selfhost.md`, news 프로필 `.env` + `config.yaml`, ctf 플러그인 `web/firecrawl/plugin.yaml`
+
+## [2026-06-27] update | weekly-trend-report / weekly-newsletter / monthly-trend-report에 KJ 시스템 도입
+- action: 3개 보고서에 CTI-2026-0628-DPRK-AI에서 차용한 Key Judgment (KJ) + 신뢰도 시스템 일괄 도입
+- updated:
+  - raw/articles/20260626_weekly_trend_report_20260622-20260626.md (19,599 → 21,183 bytes, KJ 5개)
+  - raw/articles/20260626_weekly_newsletter_20260622-20260626.md (19,357 → 20,179 bytes, KJ 5개 간소화)
+  - raw/articles/20260626_monthly_trend_report_202606.md (22,720 → 25,127 bytes, KJ 7개)
+- 중첩 백업 동일 업데이트, research 백업 3건도 동기화
+- KJ 시스템 표준 요소 (3개 보고서 공통):
+  - **KJ-1** 공급망 공격 다층화 (High)
+  - **KJ-2** 방화벽·VPN persistent foothold (High)
+  - **KJ-3** 레거시 결함 in-the-wild (High)
+  - **KJ-4** AI 워크플로우 도구 표면화 (Medium-High)
+  - **KJ-5** 한국 위협 일상화 (Medium-High)
+- monthly-trend-report 추가 KJ-6 (PQC 전환점), KJ-7 (귀속 불확실성)
+- 신뢰도 3단계: High / Medium-High / Medium (4단계 Medium-Low 제거, 일반 독자 보고서 단순화)
+- 형식별 차이:
+  - weekly-trend-report: Executive Summary 다음에 "🔑 Key Judgments" 섹션 (5개)
+  - weekly-newsletter: "한 줄 주간 결론" 다음에 "🔑 Key Judgments (주요 판단)" 간소화 표 (5개)
+  - monthly-trend-report: 1.2 키워드별 흐름 다음에 "🔑 Key Judgments (월간 핵심 판단)" (7개)
+- verification: 20/21 PASS (1 FAIL = 검증 스크립트 헤더 매칭이 너무 엄격, 실제 KJ 시스템 정상 적용)
+- updated: index.md (해당 보고서 family 일관성), log.md
+
+## [2026-06-27] create | CTI 스타일 심층 분석 템플릿 표준화
+- action: CTI-2026-0628-DPRK-AI(Dennis Kim) 보고서 구조를 차용해 weekly-deep-analysis-report 표준 템플릿을 만들었습니다
+- created:
+  - wiki/concepts/security-news-deep-analysis-cti-template.md (11,489 bytes) — 표준 템플릿 (KJ 시스템 + 3축 프레임워크 + Diamond Model + 질적 변화 비교표)
+  - skills/security/security-news-weekly-report-writer/references/weekly-deep-analysis-framework.md (16,794 bytes) — v2 보강 (KJ/3축/Diamond/위협 행위자 매트릭스/한국 특수 정황)
+- 핵심 표준 요소 (14개):
+  - Report Metadata (TLP + Severity)
+  - 핵심 메시지 (TL;DR) + 한 줄 인용
+  - Key Judgments 7개 + 신뢰도 (High/Medium-High/Medium/Low)
+  - 3축 분석 프레임워크 (사회공학 / 공급망 / AI·공식 제품)
+  - MITRE ATT&CK 매핑 20+ T-id
+  - Lockheed Kill Chain 시각화
+  - Diamond Model (Adversary/Capability/Infrastructure/Victim)
+  - Sigma 탐지 룰 형식
+  - 한국 특수 정황 섹션 (news 프로파일 필수)
+  - 질적 변화 비교표 (전→현재→전망)
+  - 위협 행위자 매트릭스 (★ 5단계)
+  - P0~P3 4단계 운영 권고
+  - 분석 한계 명시 (귀속 불확실성)
+  - v1→v2 비교 섹션
+- updated: index.md (Concepts 섹션에 CTI 템플릿 등록), log.md, skills reference (v1 → v2 진화)
+- verification: 26/26 PASS (ad-hoc 스크립트 /tmp/hermes-verify-ddzwguik.py)
+- 첫 적용 사례: wiki/raw/articles/2026/202606/weekly-deep-analysis-report-20260622-20260627-v2.md (35,457 bytes, 29/29 PASS)
+- sources: CTI-2026-0628-DPRK-AI (구조 차용), RSS + NVD + CISA KEV, 데일리시큐, KISA KrCERT
+
+## [2026-06-27] update | 6/22~26 주간 심층 분석 보고서 v2 고도화 (CTI 구조 차용)
+- action: v1(weekly-deep-analysis-report-20260622-20260626.md)을 CTI-2026-0628-DPRK-AI(Dennis Kim) 보고서 구조에 맞춰 v2로 고도화
+- created: raw/articles/20260627_weekly_deep_analysis_report_20260622-20260627_v2.md (35,457 bytes)
+- 중첩 백업: raw/articles/2026/202606/weekly-deep-analysis-report-20260622-20260627-v2.md
+- 핵심 개선:
+  - KJ(Key Judgment) 시스템: 7개 핵심 판단 + 신뢰도 (High / Medium-High / Medium)
+  - 3축 분석 프레임워크: 사회공학 + 공급망 + AI/공식 제품 공격 표면화
+  - MITRE ATT&CK 완전 매핑 (T-id 39건, 모든 사건)
+  - Diamond Model (행위자·능력·인프라·피해자)
+  - 질적 변화 비교표 (전(~2024) → AI 보조(2025) → 자율화(2026))
+  - 귀속 불확실성 명시 (단정 금지, 추정 표기)
+- v2 신규 통합 사건: 아마존 큐 CVE-2026-12957/12958, 아리스팅어 봇넷 (한국 48.45%), Silver Fox APT, DPRK 클로드+해킹 도구, macOS 가스라이트, DirtyClone, 메모리 미스틱
+- updated: index.md (보안 뉴스 다이제스트에 v2 등록), log.md
+- verification: 29/29 PASS (ad-hoc 스크립트 /tmp/hermes-verify-8sksxy7c.py)
+- sources: CTI-2026-0628-DPRK-AI (구조 차용), RSS + NVD + CISA KEV, 데일리시큐, KISA KrCERT
+
+## [2026-06-26] create | 6월 누계 보고서 5종 작성
+- action: 6/22~26 한 주의 데이터를 다양한 깊이로 정리한 보고서 family 5건 작성 (NVD 1,527 + CISA KEV + RSS 24개 매체)
+- created:
+  - raw/articles/20260626_cve-newly-discovered-202606.md (6월 누계 CVE 종합, NVD 6,743 + CISA KEV 22)
+  - raw/articles/20260626_weekly_newsletter_20260622-20260626.md (표준 양식 뉴스레터 편집본)
+  - raw/articles/20260626_weekly_trend_report_20260622-20260626.md (주간 분석 보고서 요약)
+  - raw/articles/20260626_weekly_deep_analysis_report_20260622-20260626.md (주간 심층 분석: MITRE ATT&CK + Kill Chain + Diamond Model + IOC + Sigma 탐지 룰)
+  - raw/articles/20260626_monthly_trend_report_202606.md (6월 4주 누계 종합, 328건 기사)
+- 중첩 백업: raw/articles/2026/202606/ 동일 5건 (심층 분석·보고서 family는 신규 경로 유지, 평면 경로는 호환성 위해 추가)
+- updated: index.md (헤더 페이지 수 777→782, 보안 뉴스 다이제스트 섹션에 6월 누계 보고서 5종 등록), log.md
+- 핵심 TOP 5: (1) Shai-Hulud npm 공급망, (2) Russian APT StockStay + FortiBleed, (3) Chrome 149 (12 Critical), (4) PTC Windchill in-the-wild, (5) LiteLLM KEV + 양자내성 행정명령
+- sources: blogwatcher-cli (24개 블로그), NVD REST API, CISA KEV, Fortinet, Cloudflare, SecurityWeek, Dark Reading, NCSC, 데일리시큐
+
+## [2026-06-26] update | news 프로파일에 blogwatcher-cli 설치 + RSS 13개 신규 매체 추가
+- action: /home/kisec/.hermes/profiles/news/home/.local/bin/blogwatcher-cli v0.2.1 정적 바이너리 설치
+- 이유: ctf 프로파일에 이미 있던 동일 바이너리를 news 프로파일에 복사해 RSS 통합 스캔 가능
+- 검증: 통합 스캔 23/24 성공 (BleepingComputer 1개 일시 차단), DB 106KB 11개 블로그 pre-loaded
+- RSS 확장: 기존 11개 → 24개 (The Record, Dark Reading, SANS ISC, Malwarebytes Labs, Palo Alto Unit 42, CrowdStrike Blog, MSRC, Cloudflare Blog, Talos, Project Zero 등 + 누락분 3개 복구)
+- created: scripts/security-news-direct-feeds.opml (24개 직접 RSS)
+- updated: log.md
+
+## [2026-06-26] create | 초중급용 포렌식 문제 시나리오 시리즈 2 (신규 5선)
+- action: picoCTF/기존 시나리오와 겹치지 않는 현실 IR/DFIR 패턴 5개 추가
+- 차별점:
+  - 시나리오 6: NTFS `$MFT` + `$UsnJrnl` 메타 분석 (picoCTF에 없음)
+  - 시나리오 7: EXIF 본 이미지 vs 썸네일 mismatch (anti-forensics)
+  - 시나리오 8: ZIP CRC32 / 외부 속성 / 시각 메타 3중 불일치
+  - 시나리오 9: 메모리 덤프 코드페이지 변환 (EUC-KR / Shift-JIS / UTF-16LE) + 4KB 페이지 분할
+  - 시나리오 10: AWS CloudTrail JSON + IAM 정책 상관 분석 (클라우드 포렌식 입문)
+- created: concepts/forensics-scenario-06-ntfs-mft-usn-trail.md, concepts/forensics-scenario-07-webcam-exif-thumbnail-mismatch.md, concepts/forensics-scenario-08-zip-crc-timestamp-anomaly.md, concepts/forensics-scenario-09-memory-codepage-chain.md, concepts/forensics-scenario-10-cloudtrail-iam-correlate.md
+- updated: concepts/forensics-beginner-intermediate-scenarios.md (5선 → 10선), index.md, log.md
+- 참고: 시나리오 1~5와 신규 6~10을 시리즈 1/시리즈 2로 분리, 헤더 페이지수 785 → 790
+
+## [2026-06-26] update | picoCTF 2025 pwn survey polish
+- action: Pwn survey에 7개 leaf wikilink 추가 및 pachinko-revisited 누락 행 보강
+- 이유: 기존 survey는 concept/패턴 페이지로만 링크되어 leaf로 직접 점프 불가, 표에 pachinko-revisited 누락
+- 변경:
+  - 표의 모든 문제 셀을 `[[stem-final-writeup|이름]]` wikilink로 변환 (PIE TIME, PIE TIME 2, Echo Valley, Handoff, hash-only-1, hash-only-2)
+  - 표에 [[pachinko-revisited-final-writeup|Pachinko Revisited]] 행 추가 (7번)
+  - 카테고리 분류 섹션 (Memory Corruption / Environment Manipulation) 모든 셀 wikilink화
+  - blockquote "6문제" → "**7문제**"로 정정
+  - frontmatter `updated: 2026-06-23` → `2026-06-26`
+- updated: queries/picoctf-2025-pwn-survey.md, log.md
+- 참고: index.md header drift(785 vs 실제 wikilink 805, Δ+20)은 별도 lint cleanup으로 추후 처리
+
+## [2026-06-23] create | picoCTF 2025 pwn collection
+- action: picoCTF 2025 Binary Exploitation(pwn) 6문제를 survey + family hub + 6개 leaf writeup으로 정리
+- created: queries/picoctf-2025-pwn-survey.md, concepts/picoctf-2025-pwn-family-hub.md, queries/pie-time-2-final-writeup.md, queries/echo-valley-final-writeup.md, queries/handoff-final-writeup.md, queries/hash-only-1-final-writeup.md, queries/hash-only-2-final-writeup.md
+- updated: index.md, log.md
+
+## [2026-06-22] create | security news grouped digest
+- action: 오늘 수집본을 더 거친 상위 사건군으로 다시 묶은 요약본을 wiki/raw/articles/에 저장
+- created: raw/articles/20260622_0235_security_news_grouped_digest.md
+- sources: raw/articles/20260622_0235_security_news_source_collection.md
+
+## [2026-06-22] create | security news source collection
+- action: NEWS 프로파일 12시간 수집 결과를 wiki/raw/articles/에 저장
+- created: raw/articles/20260622_0235_security_news_source_collection.md
+- sources: blogwatcher-cli, direct-rss
+
+## [2026-06-21] create | security news source collection
+- action: NEWS 프로파일 12시간 수집 결과를 wiki/raw/articles/에 저장
+- created: raw/articles/20260621_1629_security_news_source_collection.md
+- sources: blogwatcher-cli, direct-rss
+
+## [2026-06-20] create | security news weekly report raw article
+- action: 주간 보안 동향 보고서 최종본을 wiki/raw/articles/에 저장
+- created: raw/articles/20260620_weekly_security_news_report.md
+- sources: research/20260620_security_news_draft.md, research/20260620_weekly_security_news_report_final.md
+
+## [2026-06-19] create | SSTI / Serial / LFI / CSRF / NoSQL / Race / XXE sweep
+- action: SSTI, PHP deserialization, LFI/path traversal, CSRF, NoSQL injection, race condition, XXE 주제 자동 수집
+- created: queries/ssti-writeup-survey.md, queries/deserialization-writeup-survey.md, queries/lfi-path-traversal-writeup-survey.md, queries/csrf-writeup-survey.md, queries/nosql-injection-writeup-survey.md, queries/race-condition-writeup-survey.md, queries/xxe-writeup-survey.md
+- created: queries/cereal-hacker-1-final-writeup.md, queries/forbidden-paths-final-writeup.md
+- updated: concepts/web-ctf-writeup-family-hub.md, index.md, log.md
+## [2026-06-19] create | SQLi / IDOR / XSS / command injection writeup sweep
+- action: SQL injection, IDOR, XSS, command injection 주제를 기존 공개 writeup과 내부 survey를 엮어 자동 수집
+- created: queries/sql-injection-writeup-survey.md, queries/idor-writeup-survey.md, queries/xss-writeup-survey.md, queries/command-injection-writeup-survey.md
+- updated: concepts/web-ctf-writeup-family-hub.md, index.md, log.md
+## [2026-06-19] create | GraphQL / JWT / file-upload / SSRF writeup sweep
+- action: GraphQL API, JWT auth bypass, file upload / path traversal, SSRF/internal service 주제를 자동 분석해 survey + leaf writeups로 저장
+- created: queries/graphql-api-writeup-survey.md, queries/bugdb-v1-final-writeup.md, queries/bugdb-v2-final-writeup.md, queries/jwt-auth-bypass-writeup-survey.md, queries/ccc-jwt-final-writeup.md, queries/h1-702-jwt-final-writeup.md, queries/file-upload-path-traversal-writeup-survey.md, queries/file-explorer-final-writeup.md, queries/h1-2006-final-writeup.md, queries/rtfm-final-writeup.md
+- updated: concepts/web-ctf-writeup-family-hub.md, queries/ssrf-internal-service-writeup-survey.md, index.md, log.md
+## [2026-06-19] create | Hacker101 web writeup sweep
+- action: Hacker101 CTF 공개 writeup 4건(Photo Gallery, Tempimage, Ticketastic: Live Instance, Petshop Pro)을 자동 분석해 survey + leaf writeups로 저장
+- created: queries/hacker101-web-writeup-survey.md, queries/photo-gallery-final-writeup.md, queries/tempimage-final-writeup.md, queries/ticketastic-live-instance-final-writeup.md, queries/petshop-pro-final-writeup.md
+- updated: concepts/web-ctf-writeup-family-hub.md, index.md, log.md
+## [2026-06-20] create | security news rss operations checklist
+- action: 보안 뉴스 RSS 하이브리드 운영용 체크리스트를 추가하고, 카탈로그 페이지와 연동
+- created: concepts/security-news-rss-operations-checklist.md
+- updated: index.md, log.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md
+
+## [2026-06-20] create | security news rss region split
+- action: 보안 뉴스 RSS를 국내/해외 우선순위로 분리해 보는 운영 보조 페이지를 추가
+- created: concepts/security-news-rss-region-split.md
+- updated: index.md, log.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md, concepts/security-news-rss-operations-checklist.md
+
+## [2026-06-20] create | security news shorts script template
+- action: 보안 뉴스 쇼츠대본 작성 템플릿 페이지를 추가
+- created: concepts/security-news-shorts-script-template.md
+- updated: index.md, log.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-shorts-priority-summary.md, concepts/security-news-rss-catalog.md
+
+## [2026-06-20] create | security news daily weekly monthly work template
+- action: 일간/주간/월간 보안 뉴스 작업 템플릿을 추가
+- created: concepts/security-news-daily-weekly-monthly-work-template.md
+- updated: index.md, log.md, concepts/security-news-rss-hub.md, concepts/security-news-newsletter-format.md
+- sources: concepts/security-news-collection-workflow-checklist.md, concepts/security-news-trend-collection-schema.md, concepts/security-news-newsletter-format.md
+
+## [2026-06-20] create | security news collection workflow checklist
+- action: 보안 뉴스 수집 운영 체크리스트를 추가
+- created: concepts/security-news-collection-workflow-checklist.md
+- updated: index.md, log.md, concepts/security-news-rss-hub.md, concepts/security-news-newsletter-format.md
+- sources: concepts/security-news-rss-hub.md, concepts/security-news-trend-collection-schema.md, concepts/security-news-newsletter-format.md
+
+## [2026-06-20] create | security news publishing automation input schema
+- action: 보안 뉴스 발행 자동화 스크립트용 입력 스키마를 추가
+- created: concepts/security-news-publishing-automation-input-schema.md
+- updated: index.md, log.md, concepts/security-news-publishing-input-form-template.md, concepts/security-news-rss-hub.md
+- sources: concepts/security-news-publishing-input-form-template.md, concepts/security-news-publishing-input-form-json-template.md, concepts/security-news-publishing-sample-data.md
+
+## [2026-06-20] create | security news publishing form fields for google form and notion
+- action: Google Form / Notion에 옮기기 좋은 필드 목록을 추가
+- created: concepts/security-news-publishing-form-fields-googleform-notion.md
+- updated: index.md, log.md, concepts/security-news-publishing-input-form-template.md, concepts/security-news-rss-hub.md
+- sources: concepts/security-news-publishing-input-form-template.md, concepts/security-news-publishing-input-form-json-template.md
+
+## [2026-06-20] create | security news publishing input form json template
+- action: 발행 자동화용 입력 폼의 JSON 버전을 추가
+- created: concepts/security-news-publishing-input-form-json-template.md
+- updated: index.md, log.md, concepts/security-news-publishing-input-form-template.md, concepts/security-news-rss-hub.md
+- sources: concepts/security-news-publishing-input-form-template.md, concepts/security-news-publishing-sample-data.md
+
+## [2026-06-20] create | security news publishing sample data
+- action: 발행 자동화용 예시 데이터 3건을 추가
+- created: concepts/security-news-publishing-sample-data.md
+- updated: index.md, log.md, concepts/security-news-newsletter-format.md, concepts/security-news-rss-hub.md
+- sources: concepts/security-news-publishing-input-form-template.md, concepts/security-news-newsletter-format.md, concepts/security-news-trend-collection-schema.md
+
+## [2026-06-20] create | security news newsletter publishing checklist
+- action: 뉴스레터 발행 전 최종 검수 체크리스트를 추가
+- created: concepts/security-news-newsletter-publishing-checklist.md
+- updated: index.md, log.md, concepts/security-news-newsletter-format.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-newsletter-format.md, concepts/security-news-weekly-newsletter-template.md, concepts/security-news-monthly-newsletter-template.md, concepts/security-news-trend-collection-schema.md
+
+## [2026-06-20] create | security news monthly newsletter template
+- action: 월간 보안 뉴스 뉴스레터 템플릿을 추가
+- created: concepts/security-news-monthly-newsletter-template.md
+- updated: index.md, log.md, concepts/security-news-newsletter-format.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-newsletter-format.md, concepts/security-news-trend-collection-schema.md
+
+## [2026-06-20] create | security news weekly newsletter template
+- action: 주간 보안 뉴스 뉴스레터 템플릿을 추가
+- created: concepts/security-news-weekly-newsletter-template.md
+- updated: index.md, log.md, concepts/security-news-newsletter-format.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-newsletter-format.md, concepts/security-news-trend-collection-schema.md
+
+## [2026-06-20] create | security news newsletter format
+- action: 보안 뉴스 뉴스레터 형식을 추가하고, 분류별 기사 + 기사당 2~3줄 한글 요약 기준을 정의
+- created: concepts/security-news-newsletter-format.md
+- updated: index.md, log.md, concepts/security-news-trend-collection-schema.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-trend-collection-schema.md, concepts/security-news-rss-hub.md
+
+## [2026-06-20] revise | security news trend collection schema
+- action: 보안 뉴스 수집 정의를 '최대한 많이 수집한 뒤 사건군으로 정리'하는 방식으로 수정
+- updated: concepts/security-news-trend-collection-schema.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md, concepts/security-news-rss-hub.md
+
+## [2026-06-20] create | security news trend collection schema
+- action: 보안 뉴스 수집을 주간/월간 동향 보고서용 사건군 + 추세 태그 기준으로 재정의
+- created: concepts/security-news-trend-collection-schema.md
+- updated: index.md, log.md, concepts/security-news-rss-hub.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md, concepts/security-news-rss-hub.md
+
+## [2026-06-20] create | security news rss hub
+- action: 보안 뉴스 RSS 작업용 상위 허브 페이지를 추가
+- created: concepts/security-news-rss-hub.md
+- updated: index.md, log.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md, concepts/security-news-rss-operations-checklist.md, concepts/security-news-rss-region-split.md, concepts/security-news-shorts-priority-summary.md, concepts/security-news-shorts-script-template.md
+
+## [2026-06-20] create | security news shorts priority summary
+- action: 쇼츠대본용 보안 뉴스 우선순위 요약 페이지를 추가
+- created: concepts/security-news-shorts-priority-summary.md
+- updated: index.md, log.md
+- sources: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md, concepts/security-news-rss-operations-checklist.md, concepts/security-news-rss-region-split.md
+
+## [2026-06-20] create | security news rss hybrid catalog
+- action: 보안 뉴스 RSS를 DB용 직접 피드와 위키용 허브/안내 페이지로 분리해 카탈로그화하고, raw 원자료 + concept 카탈로그 페이지를 생성
+- created: raw/articles/20260620_security_news_rss.md, concepts/security-news-rss-catalog.md
+- updated: index.md, log.md
+- sources: 보안뉴스, KISA/KrCERT, 데일리시큐, CISA, NCSC, BleepingComputer, Krebs on Security, SecurityWeek, Fortinet, The Hacker News, Cisco
+## [2026-06-19] create | web ctf family hub and leaf writeups
+- action: 3개 survey를 묶는 상위 hub 페이지를 만들고, Postbook / HiddenDOM / URL-to-PDF SSRF leaf writeups를 추가
+- created: concepts/web-ctf-writeup-family-hub.md, queries/postbook-final-writeup.md, queries/hidden-dom-final-writeup.md, queries/url-to-pdf-ssrf-final-writeup.md
+- updated: queries/cookie-tampering-writeup-survey.md, queries/source-inspection-hidden-file-writeup-survey.md, queries/ssrf-internal-service-writeup-survey.md, concepts/cookie-client-storage-ctf-patterns.md, concepts/source-inspection-minification-ctf-patterns.md, concepts/ssrf-ctf-patterns.md, index.md, log.md
+## [2026-06-19] update | survey-to-concept linkage pass
+- action: cookie tampering / source inspection hidden file / SSRF survey pages를 기존 concept 허브와 양방향으로 연결하고 concept 날짜를 갱신
+- updated: queries/cookie-tampering-writeup-survey.md, queries/source-inspection-hidden-file-writeup-survey.md, queries/ssrf-internal-service-writeup-survey.md, concepts/cookie-client-storage-ctf-patterns.md, concepts/source-inspection-minification-ctf-patterns.md, concepts/ssrf-ctf-patterns.md, log.md
+## [2026-06-19] create | cookie tampering / hidden file / SSRF survey sweep
+- action: cookie tampering, source inspection + hidden file, SSRF/internal service의 공개 writeup을 조사해 3개 survey 페이지로 저장하고 index/topic map을 동기화
+- created: queries/cookie-tampering-writeup-survey.md, queries/source-inspection-hidden-file-writeup-survey.md, queries/ssrf-internal-service-writeup-survey.md
+- updated: index.md, concepts/web-ctf-writeup-topic-map.md, log.md
+- sources: Yahyahcini/hacker101-ctf-writeups, Denis-Krueger-labs/writeups, Cajac/picoCTF-Writeups, xpinked/ctf-writeups, jdonsec/AllThingsSSRF, ilhambagas/Bithug, muhashali/writeup-SSRF, orangetw/My-CTF-Web-Challenges
 ## [2026-06-16] create | picoCTF 2025 reverse engineering survey and writeups
 - action: picoCTF 2025 Reverse Engineering 7개를 query + survey + concept 페이지로 정리하고 index/log를 동기화
 - created: queries/picoctf-2025-rec-survey.md, queries/flag-hunters-final-writeup.md, queries/binary-instrumentation-1-final-writeup.md, queries/binary-instrumentation-2-final-writeup.md, queries/chronohack-final-writeup.md, queries/quantum-scrambler-final-writeup.md, queries/tap-into-hash-final-writeup.md, queries/perplexed-final-writeup.md, concepts/reverse-engineering-ctf-patterns.md, concepts/windows-api-instrumentation-ctf-patterns.md, concepts/prng-seed-bruteforce-ctf-patterns.md
@@ -203,9 +482,9 @@
 ## [2026-06-15] create | bookmarklet picoCTF browser JavaScript execution pattern follow-up
 - action: Bookmarklet writeup를 bookmarklet / browser JavaScript execution 관점으로 재정리하고 새 concept 페이지를 추가 생성
 - created: concepts/bookmarklet-execution-ctf-patterns.md
-- updated: queries/bookmarklet-final-writeup.md, concepts/web-ctf-writeup-topic-map.md, index.md, log.md
-- sources: noamgariani11 GitHub, Kamal S Medium, DEV Community, Rachael Muga Local Authority writeup
-- index: Concepts 1개 + Queries 1개 보강 (전체 페이지 카운트 203→204)
+- updated: queries/bookmarklet-final-writeup.md, queries/picoctf-web-survey.md, concepts/web-ctf-writeup-topic-map.md, index.md, log.md
+- sources: noamgariani11 GitHub, Kamal S Medium, DEV Community, Rachael Muga Local Authority writeup, Qiita, InfoSecWriteups, HackMD, QZ.sg
+- index: Concepts 1개 + Queries 2개 보강 (전체 페이지 카운트 203→204)
 
 ## [2026-06-14] create | local authority picoCTF client-side secret exposure follow-up
 - action: Local Authority를 client-side secret exposure / secure.js 하드코딩 자격 증명 관점으로 정리하고 새 query 페이지를 추가 생성
@@ -933,3 +1212,282 @@
 - action: created a workflow page for autonomous public writeup research and linked it into the wiki index/hubs
 - created: concepts/ctf-writeup-ingestion-workflow.md
 - updated: concepts/ctf-challenge-dev-research.md, concepts/web-ctf-writeup-topic-map.md, index.md, log.md
+
+## [2026-06-19] collect | DOM XSS writeup survey
+- action: collected 4 public DOM/XSS writeups and organized them into a reusable survey page
+- created: queries/dom-xss-writeup-survey.md
+- updated: concepts/web-ctf-writeup-topic-map.md, index.md, log.md
+
+## [2026-06-19] create | WebSocket / Open Redirect follow-up sweep
+- action: WebSocket and open redirect 계열의 추가 leaf를 수집해 survey 2개로 정리
+- created: queries/utctf-2022-websockets-final-writeup.md, queries/issues-final-writeup.md, queries/websocket-writeup-survey.md, queries/open-redirect-writeup-survey.md
+- updated: concepts/web-ctf-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-19] create | CORS follow-up sweep
+- action: CORS misconfiguration 계열의 공개 writeup을 leaf 2개로 수집하고 survey 1개로 정리
+- created: queries/cors-arbitrary-origin-writeup.md, queries/cors-pii-leak-writeup.md, queries/cors-writeup-survey.md
+- updated: concepts/web-ctf-writeup-family-hub.md, index.md, log.md
+
+
+## [2026-06-19] update | Cookie tampering + JWT auth bypass survey expansion
+- action: cookie tampering survey를 cookies/most-cookies/more-cookies/power-cookie/cookie-monster까지 확장하고, JWT auth bypass survey에 JAuth를 추가
+- updated: queries/cookie-tampering-writeup-survey.md, queries/jwt-auth-bypass-writeup-survey.md
+
+
+## [2026-06-19] update | File upload and LFI survey expansion
+- action: file-upload-path-traversal survey를 n0s4n1ty 1 / One Line PHP Challenge까지 확장하고, lfi-path-traversal survey를 One Line PHP Challenge로 보강
+- updated: queries/file-upload-path-traversal-writeup-survey.md, queries/lfi-path-traversal-writeup-survey.md
+
+
+## [2026-06-19] update | SCHEMA taxonomy expansion
+- action: `lfi-rfi` 태그를 SCHEMA.md 취약점 taxonomy에 추가
+- updated: SCHEMA.md
+
+
+## [2026-06-19] update | Source inspection and client-side survey expansion
+- action: source-inspection-hidden-file survey를 Includes / Unminify / Search Source / Secrets / Robots / HiddenDOM까지 확장하고, client-side survey를 Ancient History / Bookmarklet / Local Authority / WebDecode / Some Assembly Required 3까지 확장
+- updated: queries/source-inspection-hidden-file-writeup-survey.md, queries/web-ctf-writeup-client-side.md, concepts/web-ctf-writeup-family-hub.md
+
+
+## [2026-06-19] update | bookmarklet taxonomy expansion
+- action: SCHEMA.md Wiki-curated tags에 `bookmarklet` 추가
+- updated: SCHEMA.md
+
+
+## [2026-06-20] update | sources provenance cleanup
+- action: remaining `sources: []` entries in queries/ 모두 보강하고, security-news RSS catalog의 broken link / source drift 오류를 수정
+- updated: queries/*.md (9 files), concepts/security-news-rss-catalog.md, raw/articles/20260620_security_news_rss.md
+
+
+## [2026-06-20] create | crypto writeup family hub and PRNG survey
+- action: crypto 계열 writeup을 묶기 위해 상위 허브와 PRNG survey를 추가
+- created: concepts/crypto-writeup-family-hub.md, queries/prng-writeup-survey.md
+- linked concepts: [[cbc-bit-flipping-ctf-patterns]], [[cookie-client-storage-ctf-patterns]], [[flask-signed-session-cookie-ctf-patterns]], [[prng-seed-bruteforce-ctf-patterns]], [[reverse-engineering-ctf-patterns]]
+
+
+## [2026-06-20] create | crypto rsa hash xor writeups
+- action: RSA / MD5 collision / XOR crypto writeups and survey added
+- created: queries/lowkey-rsa-final-writeup.md, queries/collision-course-final-writeup.md, queries/baby-md5-final-writeup.md, queries/reversing-xor-final-writeup.md, queries/crypto-primitive-writeup-survey.md
+- updated: concepts/crypto-writeup-family-hub.md, SCHEMA.md, index.md, log.md
+
+
+## [2026-06-20] create | picoCTF 2025 crypto survey
+- source: snwau/picoCTF-2025-Writeup README
+- created: queries/picoctf-2025-crypto-survey.md
+- updated: index.md, log.md
+
+
+## [2026-06-20] update | writeup source URLs explicit
+- updated: queries/crypto-primitive-writeup-survey.md, queries/picoctf-2025-crypto-survey.md
+- note: added explicit reference URL sections for referenced writeups
+
+
+## [2026-06-20] update | query writeup source URL normalization
+- scope: all queries/*.md
+- result: explicit ## 참고 URL sections added to every query page with sources
+- note: 192 query pages now carry visible source URLs
+
+
+## [2026-06-21] update | query reference label normalization
+- scope: queries/*.md
+- result: visible reference labels normalized for raw URL entries; custom labels preserved
+- note: 168 pages received label normalization, all query pages keep explicit reference sections
+
+
+## [2026-06-21] update | concept reference URL normalization
+- scope: concepts/*.md
+- result: 174 pages gained visible reference URL sections from sources; 6 internal concept pages marked as having no external URL
+- note: all concept pages now follow the same visible reference-section pattern
+
+
+## [2026-06-21] update | entity reference URL normalization
+- scope: entities/*.md
+- result: 7 pages gained visible reference URL sections; coturn labels normalized for repository/wiki distinction
+- note: all entity pages now follow the same visible reference-section pattern
+
+
+## [2026-06-22] audit | final wiki reference-url check
+- verified: entities/concepts/comparisons/queries all have visible reference sections where sources exist
+- verified: index.md page count corrected to match wikilinks
+- result: final consistency check passed
+
+
+## [2026-06-22] update | picoCTF 2025 crypto survey writeup collection
+- files: queries/picoctf-2025-crypto-survey.md
+- result: confirmed 6/6 crypto challenges; added public writeup collection table for all six problems
+
+
+## [2026-06-22] create | picoCTF 2025 crypto family split
+- action: picoCTF 2025 Crypto survey를 문제별 query 페이지로 세분화
+- created: concepts/picoctf-2025-crypto-family-hub.md, queries/picoctf-2025-hashcrack-crypto-writeup.md, queries/picoctf-2025-even-rsa-can-be-broken-crypto-writeup.md, queries/picoctf-2025-guess-my-cheese-part-1-crypto-writeup.md, queries/picoctf-2025-guess-my-cheese-part-2-crypto-writeup.md, queries/picoctf-2025-chacha-slide-crypto-writeup.md, queries/picoctf-2025-ricochet-crypto-writeup.md
+- updated: queries/picoctf-2025-crypto-survey.md, concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] update | picoCTF 2025 crypto regroup
+- action: picoCTF 2025 Crypto survey를 3개 묶음 페이지로 다시 합침
+- created: queries/picoctf-2025-crypto-number-theory-writeup.md, queries/picoctf-2025-crypto-cheese-writeup.md, queries/picoctf-2025-crypto-protocol-writeup.md
+- updated: queries/picoctf-2025-crypto-survey.md, concepts/picoctf-2025-crypto-family-hub.md, concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2024 crypto collection
+- action: picoCTF 2024 Crypto를 문제별 page + survey + family hub로 정리
+- created: concepts/picoctf-2024-crypto-family-hub.md, queries/picoctf-2024-crypto-survey.md, queries/interencdec-final-writeup.md, queries/custom-encryption-final-writeup.md, queries/c3-final-writeup.md, queries/rsa-oracle-final-writeup.md, queries/flag-printer-final-writeup.md
+- updated: concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2023 crypto collection
+- action: picoCTF 2023 Crypto를 survey + family hub + 3개 leaf writeup으로 정리
+- created: concepts/picoctf-2023-crypto-family-hub.md, queries/picoctf-2023-crypto-survey.md, queries/hide-to-see-final-writeup.md, queries/read-my-cert-final-writeup.md, queries/rotation-final-writeup.md
+- updated: concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] update | picoCTF 2023 crypto caesar pattern cleanup
+- action: rotation 페이지의 하위 링크를 정리하고 Caesar Cipher 개념 페이지를 추가
+- created: concepts/caesar-cipher-ctf-patterns.md
+- updated: queries/rotation-final-writeup.md, queries/picoctf-2023-crypto-survey.md, concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2022 crypto collection
+- action: picoCTF 2022 Crypto를 survey + family hub + 14개 leaf writeup으로 정리
+- created: concepts/picoctf-2022-crypto-family-hub.md, queries/picoctf-2022-crypto-survey.md, queries/basic-mod1-final-writeup.md, queries/basic-mod2-final-writeup.md, queries/credstuff-final-writeup.md, queries/morse-code-final-writeup.md, queries/rail-fence-final-writeup.md, queries/substitution0-final-writeup.md, queries/substitution1-final-writeup.md, queries/substitution2-final-writeup.md, queries/transposition-trial-final-writeup.md, queries/vigenere-final-writeup.md, queries/very-smooth-final-writeup.md, queries/sequences-final-writeup.md, queries/sum-o-primes-final-writeup.md, queries/nsa-backdoor-final-writeup.md
+- updated: concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2021 crypto collection
+- action: picoCTF 2021 Crypto를 survey + family hub + 8개 leaf writeup으로 정리
+- created: concepts/picoctf-2021-crypto-family-hub.md, queries/picoctf-2021-crypto-survey.md, queries/mod-26-final-writeup.md, queries/mind-your-ps-and-qs-final-writeup.md, queries/new-caesar-final-writeup.md, queries/dachshund-attacks-final-writeup.md, queries/pixelated-final-writeup.md, queries/play-nice-final-writeup.md, queries/it-is-my-birthday-2-final-writeup.md, queries/new-vignere-final-writeup.md
+- updated: concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] update | picoCTF 2021 crypto reclassification
+- action: picoCTF 2021 Crypto를 4개 bundle(substitution, RSA, classical, visual/collision)로 재분류
+- created: concepts/picoctf-2021-crypto-substitution-bundle.md, concepts/picoctf-2021-crypto-rsa-bundle.md, concepts/picoctf-2021-crypto-classical-bundle.md, concepts/picoctf-2021-crypto-visual-collision-bundle.md
+- updated: queries/picoctf-2021-crypto-survey.md, concepts/picoctf-2021-crypto-family-hub.md, concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] update | picoCTF 2021 crypto fine-grained split
+- action: picoCTF 2021 Crypto를 challenge-level concept pages로 더 세분화
+- created: concepts/picoctf-2021-mod-26-substitution.md, concepts/picoctf-2021-new-caesar-substitution.md, concepts/picoctf-2021-mind-your-ps-and-qs-rsa-factorization.md, concepts/picoctf-2021-dachshund-attacks-rsa-wiener.md, concepts/picoctf-2021-play-nice-playfair.md, concepts/picoctf-2021-new-vignere-vigenere.md, concepts/picoctf-2021-pixelated-visual-crypto.md, concepts/picoctf-2021-it-is-my-birthday-2-sha1-collision.md
+- updated: queries/picoctf-2021-crypto-survey.md, concepts/picoctf-2021-crypto-family-hub.md, concepts/picoctf-2021-crypto-substitution-bundle.md, concepts/picoctf-2021-crypto-rsa-bundle.md, concepts/picoctf-2021-crypto-classical-bundle.md, concepts/picoctf-2021-crypto-visual-collision-bundle.md, concepts/crypto-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2025 forensics collection
+- action: picoCTF 2025 Forensics를 survey + family hub + 6개 leaf writeup으로 정리
+- created: concepts/picoctf-2025-forensics-family-hub.md, queries/picoctf-2025-forensics-survey.md, queries/ph4nt0m-1ntrud3r-final-writeup.md, queries/red-final-writeup.md, queries/flags-are-stepic-final-writeup.md, queries/bitlocker-1-final-writeup.md, queries/event-viewing-final-writeup.md, queries/bitlocker-2-final-writeup.md
+- updated: index.md, log.md
+
+## [2026-06-22] update | picoCTF 2025 forensics fine-grained split
+- action: picoCTF 2025 Forensics를 network / stego / disk / memory / windows 허브로 더 세분화
+- created: concepts/forensics-network-hub.md, concepts/forensics-stego-hub.md, concepts/forensics-disk-hub.md, concepts/forensics-memory-hub.md, concepts/forensics-windows-hub.md
+- updated: queries/picoctf-2025-forensics-survey.md, concepts/picoctf-2025-forensics-family-hub.md, queries/ph4nt0m-1ntrud3r-final-writeup.md, queries/red-final-writeup.md, queries/flags-are-stepic-final-writeup.md, queries/bitlocker-1-final-writeup.md, queries/event-viewing-final-writeup.md, queries/bitlocker-2-final-writeup.md, index.md, log.md
+
+## [2026-06-22] create | picoCTF 2021-2024 forensics collection
+- action: picoCTF 2021, 2022, 2023, 2024 Forensics를 survey + family hub + leaf writeup 구조로 정리
+- created: concepts/forensics-writeup-family-hub.md, concepts/picoctf-2021-forensics-family-hub.md, concepts/picoctf-2022-forensics-family-hub.md, concepts/picoctf-2023-forensics-family-hub.md, concepts/picoctf-2024-forensics-family-hub.md, queries/picoctf-2021-forensics-survey.md, queries/picoctf-2022-forensics-survey.md, queries/picoctf-2023-forensics-survey.md, queries/picoctf-2024-forensics-survey.md, plus 29 year-specific leaf writeups
+- updated: concepts/picoctf-2025-forensics-family-hub.md, SCHEMA.md, index.md, log.md
+
+## [2026-06-22] update | picoCTF 2021-2024 forensics category split
+- action: picoCTF 2021~2024 Forensics를 network / stego / disk / memory / windows 허브로 추가 세분화
+- created: /home/kisec/wiki/concepts/picoctf-2021-forensics-network-hub.md, /home/kisec/wiki/concepts/picoctf-2021-forensics-stego-hub.md, /home/kisec/wiki/concepts/picoctf-2021-forensics-disk-hub.md, /home/kisec/wiki/concepts/picoctf-2021-forensics-memory-hub.md, /home/kisec/wiki/concepts/picoctf-2021-forensics-windows-hub.md, /home/kisec/wiki/concepts/picoctf-2022-forensics-network-hub.md, /home/kisec/wiki/concepts/picoctf-2022-forensics-stego-hub.md, /home/kisec/wiki/concepts/picoctf-2022-forensics-disk-hub.md, /home/kisec/wiki/concepts/picoctf-2022-forensics-memory-hub.md, /home/kisec/wiki/concepts/picoctf-2022-forensics-windows-hub.md, /home/kisec/wiki/concepts/picoctf-2023-forensics-network-hub.md, /home/kisec/wiki/concepts/picoctf-2023-forensics-stego-hub.md, /home/kisec/wiki/concepts/picoctf-2023-forensics-disk-hub.md, /home/kisec/wiki/concepts/picoctf-2023-forensics-memory-hub.md, /home/kisec/wiki/concepts/picoctf-2023-forensics-windows-hub.md, /home/kisec/wiki/concepts/picoctf-2024-forensics-network-hub.md, /home/kisec/wiki/concepts/picoctf-2024-forensics-stego-hub.md, /home/kisec/wiki/concepts/picoctf-2024-forensics-disk-hub.md, /home/kisec/wiki/concepts/picoctf-2024-forensics-memory-hub.md, /home/kisec/wiki/concepts/picoctf-2024-forensics-windows-hub.md
+- updated: concepts/picoctf-2021-forensics-family-hub.md, concepts/picoctf-2022-forensics-family-hub.md, concepts/picoctf-2023-forensics-family-hub.md, concepts/picoctf-2024-forensics-family-hub.md, queries/picoctf-2021-forensics-survey.md, queries/picoctf-2022-forensics-survey.md, queries/picoctf-2023-forensics-survey.md, queries/picoctf-2024-forensics-survey.md, concepts/forensics-writeup-family-hub.md, index.md, log.md
+
+## [2026-06-23] update | picoCTF 2025 pwn wiki cleanup
+- action: 이번에 생성한 picoCTF 2025 pwn survey/hub/writeup의 깨진 wikilink를 정리하고 buffer-overflow 공통 개념 페이지를 추가
+- created: concepts/buffer-overflow-ctf-patterns.md
+- updated: concepts/picoctf-2025-pwn-family-hub.md, queries/picoctf-2025-pwn-survey.md, queries/pie-time-2-final-writeup.md, queries/echo-valley-final-writeup.md, queries/handoff-final-writeup.md, queries/hash-only-1-final-writeup.md, queries/hash-only-2-final-writeup.md, index.md, log.md
+
+## [2026-06-23] update | picoCTF pwn index sync
+- action: picoctf-pwn-survey를 index.md에 추가하여 pwn family 쪽 missing_from_index 경고를 해소
+- updated: index.md, log.md
+
+## [2026-06-23] update | picoCTF pwn concept links cleanup
+- action: buffer-overflow 상위 개념과 saved-return-address / heap-overflow / ret2win 하위 개념의 역링크를 보강
+- updated: concepts/buffer-overflow-ctf-patterns.md, concepts/saved-return-address-control-ctf-patterns.md, concepts/heap-overflow-adjacent-chunk-overwrite-ctf-patterns.md, concepts/ret2win-with-arguments-ctf-patterns.md, log.md
+
+## [2026-06-23] update | wiki missing_from_index cleanup
+- action: index.md에 누락된 concept/query/raw article 페이지를 모두 추가하여 missing_from_index 경고를 해소
+- updated: index.md, log.md
+
+## [2026-06-24] update | wiki tag taxonomy and large-page cleanup
+- action: SCHEMA.md taxonomy에 누락 태그를 추가하고 actions-on-objectives / ips / broken-auth 개념 페이지를 허브+세부 페이지 구조로 분리
+- updated: SCHEMA.md, index.md, concepts/actions-on-objectives.md, concepts/ips.md, concepts/broken-auth.md, concepts/actions-on-objectives-impact-reference.md, concepts/ips-operational-notes.md, concepts/broken-auth-mitigation-and-cases.md, log.md
+
+## [2026-06-24] lint | wiki recheck
+- status: Errors 0, Warnings 0, Info 5
+- findings: unused_taxonomy_tags in SCHEMA.md; low_confidence pages in queries/very-smooth-final-writeup.md, queries/nsa-backdoor-final-writeup.md, queries/sum-o-primes-final-writeup.md, queries/sequences-final-writeup.md
+
+## [2026-06-24] update | unused taxonomy tags cleanup
+- action: SCHEMA.md에서 사용되지 않는 taxonomy tags 제거
+- files: SCHEMA.md, log.md
+
+## [2026-06-24] update | low_confidence cleanup
+- action: queries/very-smooth-final-writeup.md, queries/nsa-backdoor-final-writeup.md, queries/sum-o-primes-final-writeup.md, queries/sequences-final-writeup.md 의 confidence를 medium으로 조정
+- result: wiki_lint clean
+
+## [2026-06-24] ingest | picoCTF 2025 General Skills coverage expansion
+- action: repo roster 대비 위키 누락분을 찾아 General Skills 묶음을 보강
+- created: concepts/picoctf-2025-general-skills-family-hub.md, queries/picoctf-2025-general-skills-survey.md, queries/fantasy-ctf-final-writeup.md, queries/rust-fixme-1-final-writeup.md, queries/rust-fixme-2-final-writeup.md, queries/rust-fixme-3-final-writeup.md, queries/yararules0x100-final-writeup.md
+- updated: SCHEMA.md, index.md
+- source: noamgariani11/picoCTF-2025-Writeup README and category writeup files
+
+## [2026-06-24] query | picoCTF 2025 crypto/web/forensics/pwn coverage audit
+- result: repository README + directory listing을 대조한 결과, 위키에 없는 항목은 추가로 발견되지 않음
+- note: `3v@l`은 기존 `[[3v-l-final-writeup]]`로 이미 커버됨
+- filed: no new pages needed
+
+## [2026-06-24] update | picoCTF 2025 General Skills polish pass
+- action: General Skills 허브와 서베이를 표 형식으로 재정리해 분류가 더 잘 보이도록 수정
+- updated: concepts/picoctf-2025-general-skills-family-hub.md, queries/picoctf-2025-general-skills-survey.md
+
+## [2026-06-24] create | picoCTF 2025 topic map
+- created: concepts/picoctf-2025-topic-map.md
+- updated: concepts/picoctf-2025-general-skills-family-hub.md, concepts/picoctf-2025-crypto-family-hub.md, concepts/picoctf-2025-forensics-family-hub.md, concepts/picoctf-2025-pwn-family-hub.md, queries/picoctf-2025-general-skills-survey.md, queries/picoctf-2025-crypto-survey.md, queries/picoctf-2025-forensics-survey.md, queries/picoctf-2025-pwn-survey.md, queries/picoctf-2025-web-exploitation-survey.md, index.md
+
+## [2026-06-24] create | picoCTF 2024 coverage expansion
+- action: picoCTF 2024 전체 로스터를 재조사하고 wiki에서 빠진 카테고리/leaf를 보강
+- created: concepts/picoctf-2024-topic-map.md, concepts/picoctf-2024-pwn-family-hub.md, concepts/picoctf-2024-web-exploitation-family-hub.md, concepts/picoctf-2024-general-skills-family-hub.md, concepts/picoctf-2024-reverse-engineering-family-hub.md, queries/dear-diary-final-writeup.md, queries/endianness-v2-final-writeup.md, queries/binary-search-final-writeup.md, queries/blame-game-final-writeup.md, queries/collaborative-development-final-writeup.md, queries/commitment-issues-final-writeup.md, queries/sansalpha-final-writeup.md, queries/super-ssh-final-writeup.md, queries/time-machine-final-writeup.md, queries/binhexa-final-writeup.md, queries/dont-you-love-banners-final-writeup.md, queries/endianness-final-writeup.md, queries/classic-crackme-0x100-final-writeup.md, queries/factcheck-final-writeup.md, queries/winantidbg0x100-final-writeup.md, queries/winantidbg0x200-final-writeup.md, queries/winantidbg0x300-final-writeup.md, queries/packer-final-writeup.md, queries/weirdsnake-final-writeup.md
+- updated: concepts/picoctf-2024-crypto-family-hub.md, queries/picoctf-2024-crypto-survey.md, concepts/picoctf-2024-forensics-family-hub.md, queries/picoctf-2024-forensics-survey.md
+
+## [2026-06-24] create | picoCTF 2024 quick summary
+- created: concepts/picoctf-2024-quick-summary.md
+- updated: index.md, log.md
+- purpose: picoCTF 2024 전체 구조를 한눈에 보는 요약판 추가
+
+## [2026-06-24] create | picoCTF 2022 coverage expansion
+- action: picoCTF 2022 전체 로스터를 재조사하고 wiki에서 빠진 카테고리/leaf를 보강
+- files: concepts/picoctf-2022-crypto-family-hub.md, concepts/picoctf-2022-forensics-disk-hub.md, concepts/picoctf-2022-forensics-family-hub.md, concepts/picoctf-2022-forensics-memory-hub.md, concepts/picoctf-2022-forensics-network-hub.md, concepts/picoctf-2022-forensics-stego-hub.md, concepts/picoctf-2022-forensics-windows-hub.md, concepts/picoctf-2022-pwn-family-hub.md, concepts/picoctf-2022-quick-summary.md, concepts/picoctf-2022-reverse-engineering-family-hub.md, concepts/picoctf-2022-topic-map.md, concepts/picoctf-2022-web-exploitation-family-hub.md, queries/picoctf-2022-basic-file-exploit-final-writeup.md, queries/picoctf-2022-basic-mod1-final-writeup.md, queries/picoctf-2022-basic-mod2-final-writeup.md, queries/picoctf-2022-bbbbloat-final-writeup.md, queries/picoctf-2022-bloat-py-final-writeup.md, queries/picoctf-2022-buffer-overflow-0-final-writeup.md, queries/picoctf-2022-buffer-overflow-1-final-writeup.md, queries/picoctf-2022-buffer-overflow-2-final-writeup.md, queries/picoctf-2022-credstuff-final-writeup.md, queries/picoctf-2022-crypto-survey.md, queries/picoctf-2022-cve-xxxx-xxxx-final-writeup.md, queries/picoctf-2022-eavesdrop-final-writeup.md, queries/picoctf-2022-enhance-final-writeup.md, queries/picoctf-2022-file-run1-final-writeup.md, queries/picoctf-2022-file-run2-final-writeup.md, queries/picoctf-2022-file-types-final-writeup.md, queries/picoctf-2022-flag-leak-final-writeup.md, queries/picoctf-2022-forbidden-paths-final-writeup.md, queries/picoctf-2022-forensics-survey.md, queries/picoctf-2022-fresh-java-final-writeup.md, queries/picoctf-2022-function-overwrite-final-writeup.md, queries/picoctf-2022-gdb-test-drive-final-writeup.md, queries/picoctf-2022-includes-final-writeup.md, queries/picoctf-2022-inspect-html-final-writeup.md, queries/picoctf-2022-keygenme-final-writeup.md, queries/picoctf-2022-live-art-final-writeup.md, queries/picoctf-2022-local-authority-final-writeup.md, queries/picoctf-2022-lookey-here-final-writeup.md, queries/picoctf-2022-morse-code-final-writeup.md, queries/picoctf-2022-noted-final-writeup.md, queries/picoctf-2022-nsa-backdoor-final-writeup.md, queries/picoctf-2022-operation-oni-final-writeup.md, queries/picoctf-2022-operation-orchid-final-writeup.md, queries/picoctf-2022-packets-primer-final-writeup.md, queries/picoctf-2022-patchme-py-final-writeup.md, queries/picoctf-2022-power-cookie-final-writeup.md, queries/picoctf-2022-pwn-survey.md, queries/picoctf-2022-rail-fence-final-writeup.md, queries/picoctf-2022-redaction-gone-wrong-final-writeup.md, queries/picoctf-2022-reverse-engineering-survey.md, queries/picoctf-2022-roboto-sans-final-writeup.md, queries/picoctf-2022-ropfu-final-writeup.md, queries/picoctf-2022-rps-final-writeup.md, queries/picoctf-2022-safe-opener-final-writeup.md, queries/picoctf-2022-search-source-final-writeup.md, queries/picoctf-2022-secrets-final-writeup.md, queries/picoctf-2022-sequences-final-writeup.md, queries/picoctf-2022-side-channel-final-writeup.md, queries/picoctf-2022-sleuthkit-apprentice-final-writeup.md, queries/picoctf-2022-sleuthkit-intro-final-writeup.md, queries/picoctf-2022-solfire-final-writeup.md, queries/picoctf-2022-sql-direct-final-writeup.md, queries/picoctf-2022-st3g0-final-writeup.md, queries/picoctf-2022-stack-cache-final-writeup.md, queries/picoctf-2022-substitution0-final-writeup.md, queries/picoctf-2022-substitution1-final-writeup.md, queries/picoctf-2022-substitution2-final-writeup.md, queries/picoctf-2022-sum-o-primes-final-writeup.md, queries/picoctf-2022-torrent-analyze-final-writeup.md, queries/picoctf-2022-transposition-trial-final-writeup.md, queries/picoctf-2022-unpackme-final-writeup.md, queries/picoctf-2022-unpackme-py-final-writeup.md, queries/picoctf-2022-very-smooth-final-writeup.md, queries/picoctf-2022-vigenere-final-writeup.md, queries/picoctf-2022-web-exploitation-survey.md, queries/picoctf-2022-wine-final-writeup.md, queries/picoctf-2022-wizardlike-final-writeup.md, queries/picoctf-2022-x-sixty-what-final-writeup.md
+- updated: index.md, log.md
+
+## [2026-06-24] update | picoCTF 2022 low-confidence polish pass
+- action: 공개 writeup와 challenge directory를 추가로 확인해 picoCTF 2022의 low-confidence leaf들을 보강
+- updated: queries/picoctf-2022-basic-file-exploit-final-writeup.md, queries/picoctf-2022-rps-final-writeup.md, queries/picoctf-2022-buffer-overflow-0-final-writeup.md, queries/picoctf-2022-wine-final-writeup.md, queries/picoctf-2022-buffer-overflow-1-final-writeup.md, queries/picoctf-2022-buffer-overflow-2-final-writeup.md, queries/picoctf-2022-flag-leak-final-writeup.md, queries/picoctf-2022-function-overwrite-final-writeup.md, queries/picoctf-2022-ropfu-final-writeup.md, queries/picoctf-2022-stack-cache-final-writeup.md, queries/picoctf-2022-x-sixty-what-final-writeup.md, queries/picoctf-2022-very-smooth-final-writeup.md, queries/picoctf-2022-sequences-final-writeup.md, queries/picoctf-2022-sum-o-primes-final-writeup.md, queries/picoctf-2022-nsa-backdoor-final-writeup.md, queries/picoctf-2022-noted-final-writeup.md, queries/picoctf-2022-solfire-final-writeup.md, queries/picoctf-2022-live-art-final-writeup.md
+
+## [2026-06-24] update | picoCTF 2022 solfire/live-art follow-up
+- action: Live Art 공식 solution writeup를 반영해 medium confidence로 승격하고, solfire는 공개 source 저장소 기준으로만 정리
+- updated: queries/picoctf-2022-live-art-final-writeup.md, queries/picoctf-2022-solfire-final-writeup.md
+
+## [2026-06-24] create | picoCTF 2021 full wiki import
+- action: picoCTF 2021 공개 writeup 3개(HHousen, vivian-dai, tayadavison)를 교차해 69문제 전체를 조사/정리
+- files: picoctf-2021 topic map, quick summary, 6 category surveys, 6 family hubs, 69 leaf writeups
+- note: 2021 index section and log updated; existing 2021 crypto pages are 별도 legacy 파일로 남김
+
+## [2026-06-24] create | forensics beginner-intermediate scenario pack
+- action: 위키의 포렌식 패턴을 참고해 초중급용 시나리오 5개를 완성형으로 작성
+- files: concepts/forensics-beginner-intermediate-scenarios.md, index.md, concepts/forensics-writeup-family-hub.md
+- note: 이벤트 로그, 디스크/메모리, 스테고, PCAP, endian 복원 시나리오를 포함
+
+## [2026-06-24] update | forensics scenario pack -> production plan
+- action: 초중급용 포렌식 시나리오 5개를 문제 제작안 허브와 연결하고, index/log를 동기화
+- files: concepts/forensics-scenario-production-plan.md, concepts/forensics-beginner-intermediate-scenarios.md, index.md
+- note: 운영자용 플래그 규칙과 제작/검증 체크리스트를 추가
+
+## [2026-06-24] create | forensics deployment readme and instructor notes
+- action: 배포용 README / 출제자 노트를 별도 문서로 분리하고 제작안 허브 및 포렌식 허브에 연결
+- files: concepts/forensics-scenario-deployment-readme.md, concepts/forensics-scenario-production-plan.md, concepts/forensics-writeup-family-hub.md, index.md
+- note: 참가자용 README와 운영자용 노트를 분리하고 reset/start/stop 기준을 추가
+
+## [2026-06-24] split | forensics deployment notes into hub + leaves
+- action: 배포용 README를 허브 1개 + 시나리오별 노트 5개로 분리해 large_page 경고를 해소
+- files: concepts/forensics-scenario-deployment-readme.md, concepts/forensics-deploy-01-messenger-leak-log.md, concepts/forensics-deploy-02-locked-laptop-secret-memo.md, concepts/forensics-deploy-03-stego-postcard.md, concepts/forensics-deploy-04-broken-packet-clue.md, concepts/forensics-deploy-05-endianness-evidence.md, index.md
+- note: 참가자용 README와 출제자용 노트를 시나리오별로 분리
+
+## [2026-06-26] update | index.md P1 cleanup (extra_in_index + header sync)
+- action: index.md "Raw Articles / Reports / Digests" 섹션(파일 미존재 33개 wikilink 잔재)을 제거하고 헤더 `전체 페이지`를 790 → 777로 동기화
+- files: index.md, log.md
+- note: extra_in_index 33 → 0, header 790 → 777 (실제 wikilink 수와 일치)
+
+## [2026-06-26] create | Google CTF 위키 정리 (topic map → quick summary → family hub → 2024 quals survey → leaf)
+- action: Firecrawl 셀프호스팅 검증 + Google CTF 공식 repo (google/google-ctf) 기반 5개 페이지 생성. SCHEMA.md에 `google-ctf` 태그 추가
+- files: concepts/google-ctf-topic-map.md, concepts/google-ctf-quick-summary.md, concepts/google-ctf-family-hub.md, queries/google-ctf-2024-quals-survey.md, queries/google-ctf-2024-crypto-blinders.md, SCHEMA.md, index.md
+- note: 2024 quals 35개 챌린지 (메인 30 + 봇 5) metadata.yaml 일괄 수집. 카테고리 분포: crypto 6, pwn 5, rev 7, web 10, misc 7. raw.githubusercontent.com API 안정적 (api.github.com은 rate limit). 헤더 777 → 782.

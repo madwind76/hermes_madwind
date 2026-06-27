@@ -1,7 +1,7 @@
 ---
 title: Trickster
 created: 2026-06-14
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, file-upload, upload-bypass]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md, https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18, https://dev.to/yowise/trickster-picoctf-2024-1j5j, https://brandon-t-elliott.github.io/trickster]
@@ -11,6 +11,13 @@ confidence: high
 # Trickster
 
 > PNG-only 업로드 제한을 **magic bytes**, **더블 확장자**, **웹 실행 가능 업로드 경로**로 우회하는 picoCTF 2024 Web Exploitation 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md)
+- [medium.com](https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18)
+- [dev.to](https://dev.to/yowise/trickster-picoctf-2024-1j5j)
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/trickster)
+
 
 ## 1. 요약
 - 플랫폼: picoCTF 2024

@@ -1,7 +1,7 @@
 ---
 title: DRM (Digital Rights Management)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, drm]
 sources: [https://ko.wikipedia.org/wiki/%EB%94%94%EC%A7%80%ED%84%B8_%EA%B6%8C%EB%A6%AC_%EA%B4%80%EB%A6%AC, https://ko.wikipedia.org/wiki/DRM]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # DRM (Digital Rights Management)
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/%EB%94%94%EC%A7%80%ED%84%B8_%EA%B6%8C%EB%A6%AC_%EA%B4%80%EB%A6%AC)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/DRM)
 
 ## 1. 단어 직역 및 쉬운 비유
 

@@ -1,13 +1,17 @@
 ---
 title: Privilege Escalation — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, privilege-escalation, local, remote, vertical, horizontal, linux, windows, kernel, exploit]
 sources: [https://ko.wikipedia.org/wiki/권한_상승, https://ko.wikipedia.org/wiki/커널_취약점]
 confidence: high
 ---
 > [[privilege-escalation]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/권한_상승)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/커널_취약점)
 
 ## Step 3: 전문 용어 설명 (위키백과/MITRE/업계 표준 기반)
 ### 권한 상승 후 포스트 익스플로잇 (Post-Exploitation)

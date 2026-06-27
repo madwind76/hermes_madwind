@@ -1,7 +1,7 @@
 ---
 title: ret2win with arguments — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, ret2win, function-arguments, x86, stack-layout, cdecl]
 sources: [https://ctftime.org/writeup/32814, https://qiita.com/housu_jp/items/5e05dcb71901a3ca2604, https://musyokaian.medium.com/buffer-overflow-2-picoctf-2022-590cf7b7961f]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # ret2win with arguments — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32814)
+- [qiita.com](https://qiita.com/housu_jp/items/5e05dcb71901a3ca2604)
+- [musyokaian.medium.com](https://musyokaian.medium.com/buffer-overflow-2-picoctf-2022-590cf7b7961f)
 
 ## Step 1. 단어 풀이
 - **ret2win**: 리턴 주소를 덮어 숨겨진 `win()` 함수로 보내는 기법입니다.
@@ -41,6 +46,7 @@ overflow -> saved EIP overwrite -> place arguments -> win(arg1, arg2) -> flag
 - [[buffer-overflow-2-final-writeup]]
 
 ## 같이 보면 좋은 개념
+- [[buffer-overflow-ctf-patterns]]
 - [[stack-leak-ret2win-ctf-patterns]]
 - [[ret2win-64bit-stack-alignment-ctf-patterns]]
 - [[stack-canary-bruteforce-ctf-patterns]]

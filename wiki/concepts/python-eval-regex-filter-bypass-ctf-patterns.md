@@ -1,7 +1,7 @@
 ---
 title: Python eval regex filter bypass — picoCTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, python, eval, regex, injection, rce]
 sources: [https://medium.com/@gbahenrijoel/picoctf-2025-web-3v-l-87fdd25094b4, https://medium.com/@mihasha/3v-l-write-up-picoctf-2025-d84e30c039cf, https://medium.com/@debasissadhu712/picoctf-3v-l-writeup-exploiting-python-eval-for-rce-bypassing-regex-ce85f1dc8c1e]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Python eval regex filter bypass — picoCTF 패턴
+
+## 참고 URL
+- [medium.com](https://medium.com/@gbahenrijoel/picoctf-2025-web-3v-l-87fdd25094b4)
+- [medium.com](https://medium.com/@mihasha/3v-l-write-up-picoctf-2025-d84e30c039cf)
+- [medium.com](https://medium.com/@debasissadhu712/picoctf-3v-l-writeup-exploiting-python-eval-for-rce-bypassing-regex-ce85f1dc8c1e)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **Python `eval()`에 들어가는 사용자 입력이 블랙리스트/정규식 필터로 제한되어 있을 때, `chr()`, `join()`, `__import__()` 같은 동적 구성으로 문자열을 재조립해 필터를 우회하는 문제 유형**입니다.

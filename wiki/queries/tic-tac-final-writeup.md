@@ -11,6 +11,11 @@ sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup]
 
 > `tic-tac`은 **전형적인 버퍼 오버플로우로 제어 흐름을 바꾸는 문제**입니다. 핵심은 **saved return address control**입니다.
 
+## 참고 URL
+- [snwau/picoCTF-2023-Writeup](snwau/picoCTF-2023-Writeup)
+- [DanArmor/picoCTF-2023-writeup](DanArmor/picoCTF-2023-writeup)
+
+
 ## 요약
 - 분류: pwn
 - 핵심 primitive: buffer overflow / saved return address control

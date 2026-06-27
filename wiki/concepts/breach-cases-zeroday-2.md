@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — 제로데이 및 최신 사례 (Part 2)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, zero-day, breach, real-world]
 sources: [CISA KEV, vendor advisories, public incident reports]
@@ -148,6 +148,11 @@ confidence: high
 ---
 
 ---
+
+## 참고 URL
+- [Reference](CISA KEV)
+- [Reference](vendor advisories)
+- [Reference](public incident reports)
 
 ## 관련 위키 링크
 - [[real-world-breach-cases]] — 전체 사례 목록 및 실습 우선순위

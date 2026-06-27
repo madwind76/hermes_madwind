@@ -1,7 +1,7 @@
 ---
 title: Web Gauntlet 2 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, sqli, sqlite, filter-bypass, picoctf]
 sources: [https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet2.md, https://hackmd.io/@fearnot/picoCTF_Web, https://ctftime.org/task/15218]
@@ -11,6 +11,13 @@ confidence: high
 # Web Gauntlet 2 — picoCTF 2021 web writeup
 
 > `Web Gauntlet 2`는 **SQLite SQL Injection + 필터 우회** 문제입니다. 단순한 `' OR 1=1`이 아니라, 차단된 키워드와 연산자를 피하면서 `admin` 조건을 만족시키는 것이 핵심입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md)
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet2.md)
+- [hackmd.io](https://hackmd.io/@fearnot/picoCTF_Web)
+- [CTFtime writeup](https://ctftime.org/task/15218)
+
 
 ## 1. 한 줄 요약
 - 로그인 폼이 SQL 쿼리를 직접 만듭니다.

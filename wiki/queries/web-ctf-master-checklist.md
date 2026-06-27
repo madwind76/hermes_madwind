@@ -1,14 +1,21 @@
 ---
 title: Web CTF Master Checklist
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
-sources: []
+sources: [https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md, https://github.com/noamgariani11/picoCTF-2022-Writeup/blob/main/Web%20Exploitation/Search%20Source/SearchSource.md, https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/Photo%20Gallery/README.md, https://github.com/ilhambagas/Bithug]
 confidence: medium
 ---
 
 # Web CTF Master Checklist
+
+## 참고 URL
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md)
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2022-Writeup/blob/main/Web%20Exploitation/Search%20Source/SearchSource.md)
+- [Original writeup](https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/Photo%20Gallery/README.md)
+- [ilhambagas/Bithug](https://github.com/ilhambagas/Bithug)
+
 
 ## 1. 시작 전
 - [ ] 플랫폼 / 문제명 / URL 기록

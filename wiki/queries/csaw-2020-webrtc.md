@@ -1,7 +1,7 @@
 ---
 title: CSAW Quals 2020 WebRTC
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, webrtc, turn, redis, proxy]
 sources: [https://ctftime.org/task/13011, https://ctftime.org/writeup/23439, https://ctftime.org/writeup/23438, https://ctftime.org/writeup/23407, https://ctftime.org/writeup/23410, https://github.com/team0se7en/CTF-Writeups/blob/master/CsawQuals20/WebRTC/README.md, https://github.com/zoeyg/public-write-ups/blob/master/csaw-2020/web-real-time-chat.md]
@@ -11,6 +11,16 @@ confidence: medium
 # CSAW Quals 2020 WebRTC
 
 > 이 페이지는 **CSAW Quals 2020 WebRTC 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/13011)
+- [CTFtime writeup](https://ctftime.org/writeup/23439)
+- [CTFtime writeup](https://ctftime.org/writeup/23438)
+- [CTFtime writeup](https://ctftime.org/writeup/23407)
+- [CTFtime writeup](https://ctftime.org/writeup/23410)
+- [Original writeup](https://github.com/team0se7en/CTF-Writeups/blob/master/CsawQuals20/WebRTC/README.md)
+- [Original writeup](https://github.com/zoeyg/public-write-ups/blob/master/csaw-2020/web-real-time-chat.md)
+
 
 ## 1. 요약
 - 플랫폼: CSAW CTF Qualification Round 2020

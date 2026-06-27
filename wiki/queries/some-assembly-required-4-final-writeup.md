@@ -1,7 +1,7 @@
 ---
 title: Some Assembly Required 4 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, javascript, wasm, reverse-engineering, picoctf]
 sources: [https://ctftime.org/task/15358, https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-4, https://github.com/nornorhub/some_assembly_required_4, https://www.youtube.com/watch?v=EsnzsnIN0YI]
@@ -11,6 +11,13 @@ confidence: high
 # Some Assembly Required 4 — picoCTF 2021 web writeup
 
 > `Some Assembly Required 4`는 **WebAssembly(WASM) 모듈의 변환 루틴을 되돌리고, 브루트포스/오라클 형태로 flag를 복원하는 picoCTF 2021 Web 문제**입니다. 전작보다 더 직접적으로 `wasmtime`/`WABT`를 사용해 내부 변환을 재현하는 흐름이 핵심입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/15358)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-4)
+- [nornorhub/some_assembly_required_4](https://github.com/nornorhub/some_assembly_required_4)
+- [www.youtube.com](https://www.youtube.com/watch?v=EsnzsnIN0YI)
+
 
 ## 1. 한 줄 요약
 - 페이지는 JS와 WASM 모듈을 로드합니다.

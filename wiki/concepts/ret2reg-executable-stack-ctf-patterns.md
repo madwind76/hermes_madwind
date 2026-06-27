@@ -1,7 +1,7 @@
 ---
 title: ret2reg / executable stack — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, ret2reg, shellcode, executable-stack, stack-overflow, register-control]
 sources: [https://www.ztz0.com/writeups/2025/picoctf/pwn/handoff/, https://recaptcha.team/picoCTF-2025/pwn/Handoff/, https://medium.com/@z.ishan_Ansari/handoff-f6ec74face4d]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # ret2reg / executable stack — CTF patterns
+
+## 참고 URL
+- [www.ztz0.com](https://www.ztz0.com/writeups/2025/picoctf/pwn/handoff/)
+- [recaptcha.team](https://recaptcha.team/picoCTF-2025/pwn/Handoff/)
+- [medium.com](https://medium.com/@z.ishan_Ansari/handoff-f6ec74face4d)
 
 ## Step 1. 단어 풀이
 - **ret2reg**: return 주소를 덮어 특정 **레지스터를 대상으로 하는 점프 가젯**으로 제어를 넘기는 기법입니다.

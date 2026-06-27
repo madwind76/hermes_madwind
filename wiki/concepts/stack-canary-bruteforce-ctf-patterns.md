@@ -1,7 +1,7 @@
 ---
 title: Stack canary brute force — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, stack-canary, brute-force, buffer-overflow, oracle, ret2win]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/buffer-overflow-3, https://qiita.com/housu_jp/items/f6b9e0dedf555f7288ce, https://cryptocat.me/blog/ctf/2022/pico/pwn/buffer_overflow_3/]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Stack canary brute force — CTF patterns
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/buffer-overflow-3)
+- [qiita.com](https://qiita.com/housu_jp/items/f6b9e0dedf555f7288ce)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/buffer_overflow_3/)
 
 ## Step 1. 단어 풀이
 - **Stack canary**: 리턴 주소 앞에 두는 보호값입니다.

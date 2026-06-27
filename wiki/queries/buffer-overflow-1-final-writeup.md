@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 1 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, stack-overflow, ret2win, saved-return-address, picoctf]
 sources: [https://colej.net/picoctf-2022-buffer-overflow-1, https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-1-3e48f4a61876, https://ctftime.org/writeup/32919]
@@ -11,6 +11,12 @@ confidence: high
 # buffer overflow 1 — picoCTF 2022 pwn writeup
 
 > `buffer overflow 1`은 **32-byte 버퍼를 overflow해서 saved return address를 `win()`으로 바꾸는 picoCTF 2022 Binary Exploitation 문제**입니다. 가장 기본적인 **ret2win** 유형입니다.
+
+## 참고 URL
+- [colej.net](https://colej.net/picoctf-2022-buffer-overflow-1)
+- [medium.com](https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-1-3e48f4a61876)
+- [CTFtime writeup](https://ctftime.org/writeup/32919)
+
 
 ## 1. 핵심 요약
 

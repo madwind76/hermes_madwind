@@ -1,7 +1,7 @@
 ---
 title: x-sixty-what — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, stack-overflow, ret2win, x64, nopie, no-canary, picoctf]
 sources: [https://ctftime.org/writeup/32813, https://cryptocat.me/blog/ctf/2022/pico/pwn/x_sixty_what/, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/x-sixty-what/README.md]
@@ -11,6 +11,12 @@ confidence: high
 # x-sixty-what — picoCTF 2022 pwn writeup
 
 > `x-sixty-what`은 **64-bit 스택 버퍼 오버플로로 RIP를 덮어 `flag()` 함수로 점프하는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **x64 calling convention, 8바이트 RIP overwrite, 그리고 함수 prologue 회피**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32813)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/x_sixty_what/)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/x-sixty-what/README.md)
+
 
 ## 1. 핵심 요약
 

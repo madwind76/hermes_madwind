@@ -1,10 +1,10 @@
 ---
 title: Proxy Mirror — Web SSRF Sample
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-21
 type: query
 tags: [ctf, web, ssrf]
-sources: []
+sources: [https://github.com/muhashali/writeup-SSRF, https://github.com/jdonsec/allthingsssrf, https://github.com/orangetw/My-CTF-Web-Challenges]
 confidence: medium
 ---
 
@@ -13,6 +13,12 @@ confidence: medium
 > **상태**: 샘플 기획서 + 구현 초안
 > **분류**: Web CTF
 > **핵심 주제**: [[ssrf]], [[ssrf-core]], [[ssrf-defense]], [[ssrf-ctf-patterns]]
+
+## 참고 URL
+- [muhashali/writeup-SSRF](https://github.com/muhashali/writeup-SSRF)
+- [jdonsec/allthingsssrf](https://github.com/jdonsec/allthingsssrf)
+- [orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
+
 
 ## 1. 문제 개요
 - 문제명: Proxy Mirror

@@ -1,7 +1,7 @@
 ---
 title: format string 2 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, format-string, arbitrary-write, global-variable, picoctf]
 sources: [https://systemweakness.com/format-string-2-picoctf-2024-deep-dive-into-the-logic-behind-payload-construction-3acb72ea6cd8, https://hackmd.io/@Zzzzek/r14x13FRp, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Binary_Exploitation/format_string_2.md]
@@ -11,6 +11,12 @@ confidence: high
 # format string 2 — picoCTF 2024 pwn writeup
 
 > `format string 2`는 **`printf(buf)`와 `%n`을 이용해 전역 변수 `sus`를 바꾸는 문제**입니다.
+
+## 참고 URL
+- [systemweakness.com](https://systemweakness.com/format-string-2-picoctf-2024-deep-dive-into-the-logic-behind-payload-construction-3acb72ea6cd8)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Binary_Exploitation/format_string_2.md)
+
 
 ## 핵심 요약
 - `sus` 초기값은 `0x21737573`입니다.

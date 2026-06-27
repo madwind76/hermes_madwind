@@ -1,7 +1,7 @@
 ---
 title: IDOR CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, idor, research]
 sources: []
@@ -9,6 +9,9 @@ confidence: medium
 ---
 
 # IDOR CTF Patterns
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## 정의
 Web CTF에서 IDOR는 **직접 객체 참조 값이 바뀔 때 다른 사용자의 자원에 접근되는지** 확인하는 문제 유형입니다.

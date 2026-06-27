@@ -1,7 +1,7 @@
 ---
 title: Most Cookies — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, cookies, flask-session, session-forgery, picoctf]
 sources: [https://ctftime.org/writeup/26978, https://ctftime.org/writeup/27376, https://picoctf2021.haydenhousen.com/web-exploitation/most-cookies, https://medium.com/@rwsimpson99/picoctf-most-cookies-f50eb44548ff]
@@ -11,6 +11,13 @@ confidence: high
 # Most Cookies — picoCTF 2021 web writeup
 
 > `Most Cookies`는 **Flask의 signed session cookie를 서버가 약한 secret key로 서명하고, 그 키를 추측하면 세션을 위조할 수 있다는 점**을 보여주는 picoCTF 2021 Web 문제입니다. 핵심은 쿠키를 “읽는” 것이 아니라, **서명 키를 찾아서 올바른 세션 쿠키를 다시 만들어내는 것**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/26978)
+- [CTFtime writeup](https://ctftime.org/writeup/27376)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/most-cookies)
+- [medium.com](https://medium.com/@rwsimpson99/picoctf-most-cookies-f50eb44548ff)
+
 
 ## 1. 한 줄 요약
 - 페이지는 Flask 세션 쿠키를 사용합니다.

@@ -1,7 +1,7 @@
 ---
 title: Delivery (전달) — 사이버 킬 체인 3단계
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, cyber-kill-chain, delivery, phishing, drive-by-download, supply-chain, social-engineering]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/사회공학_(보안)]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Delivery (전달) — 사이버 킬 체인 3단계
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_킬_체인)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사회공학_(보안))
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

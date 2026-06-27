@@ -1,7 +1,7 @@
 ---
 title: GET aHEAD — picoCTF web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, http, method-manipulation, burp, head, get]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-13-2ad289797f14, https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d, https://emilgallajov.medium.com/picoctf-get-ahead-writeup-10ace6190a03]
@@ -11,6 +11,12 @@ confidence: high
 # GET aHEAD — picoCTF web writeup
 
 > HTTP `GET` 요청을 `HEAD`로 바꾸면 응답 본문 대신 헤더 쪽에서 flag가 드러나는 picoCTF Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-13-2ad289797f14)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d)
+- [emilgallajov.medium.com](https://emilgallajov.medium.com/picoctf-get-ahead-writeup-10ace6190a03)
+
 
 ## 1. 한 줄 요약
 - 제목 자체가 힌트입니다.

@@ -1,7 +1,7 @@
 ---
 title: AI CTF 개요 및 유형 분류
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-21
 type: concept
 tags: [ai-ctf, ctf, prompt-injection, adversarial-ml, llm, ctf-challenge]
 sources: [raw/20260610_AI_CTF_challenge_types.md]
@@ -12,6 +12,9 @@ confidence: high
 
 > AI 보안 CTF(Capture The Flag) 문제의 전반적인 분류 체계와 통계를 정리합니다.
 > 조사 대상: GitHub 공개 소스 CTF 문제 (⭐12 이상, 실제 소스코드 포함)
+
+## 참고 URL
+- [Reference](raw/20260610_AI_CTF_challenge_types.md)
 
 ## 개요
 

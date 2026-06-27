@@ -1,7 +1,7 @@
 ---
 title: BBS
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://kt.gy/blog/2018/06/googlectf-2018-quals-web-bbs/, https://ctftime.org/writeup/10369, https://ctftime.org/writeup/10366]
@@ -11,6 +11,12 @@ confidence: medium
 # BBS
 
 > 이 페이지는 **Google CTF 2018 Quals BBS 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [kt.gy](https://kt.gy/blog/2018/06/googlectf-2018-quals-web-bbs/)
+- [CTFtime writeup](https://ctftime.org/writeup/10369)
+- [CTFtime writeup](https://ctftime.org/writeup/10366)
+
 
 ## 1. 요약
 - 플랫폼: Google CTF 2018 Quals

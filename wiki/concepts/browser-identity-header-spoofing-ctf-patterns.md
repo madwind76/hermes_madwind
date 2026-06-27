@@ -1,7 +1,7 @@
 ---
 title: Browser identity / header spoofing — Web CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, http, headers, user-agent, referer, dnt, x-forwarded-for, accept-language]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-41-fe36ae3311b0, https://picoctf2021.haydenhousen.com/web-exploitation/who-are-you, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WhoAreYou.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Browser identity / header spoofing — Web CTF patterns
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-41-fe36ae3311b0)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/who-are-you)
+- [Original source](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WhoAreYou.md)
 
 ## 1. 정의
 **Browser identity / header spoofing**은 서버가 `User-Agent`, `Referer`, `Date`, `DNT`, `X-Forwarded-For`, `Accept-Language` 같은 HTTP 헤더를 신뢰하는 지점을 노리는 Web CTF 유형입니다. 브라우저의 정체성·출처·시간·지역·추적 설정을 직접 바꿔 서버의 분기 조건을 만족시키는 문제가 여기에 들어갑니다.

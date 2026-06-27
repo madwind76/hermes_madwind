@@ -1,7 +1,7 @@
 ---
 title: Flag Leak — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, format-string, stack-leak, printf, picoctf]
 sources: [https://ctftime.org/writeup/32816, https://picoctf2022.haydenhousen.com/binary-exploitation/flag-leak, https://medium.com/@zeyadsalah686/flag-leak-picoctf-writeup-e7b53f3273e2, https://medium.com/@sparshladani/picoctf-challenges-flag-leak-758bbed42e2d]
@@ -11,6 +11,13 @@ confidence: high
 # Flag Leak — picoCTF 2022 pwn writeup
 
 > `Flag Leak`은 **printf 형식 문자열 취약점(format string vulnerability)** 으로 스택에 올라간 `flag.txt` 내용을 읽어내는 picoCTF 2022 Binary Exploitation 문제입니다. 핵심은 버퍼 오버플로가 아니라 **`printf(user_input)` 호출로 인한 스택 읽기**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32816)
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/flag-leak)
+- [medium.com](https://medium.com/@zeyadsalah686/flag-leak-picoctf-writeup-e7b53f3273e2)
+- [medium.com](https://medium.com/@sparshladani/picoctf-challenges-flag-leak-758bbed42e2d)
+
 
 ## 1. 핵심 요약
 

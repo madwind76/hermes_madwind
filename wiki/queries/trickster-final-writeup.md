@@ -1,7 +1,7 @@
 ---
 title: Trickster — picoCTF 2024 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, writeup, file-upload, upload-bypass, rce]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md, https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18, https://dev.to/yowise/trickster-picoctf-2024-1j5j, https://brandon-t-elliott.github.io/trickster]
@@ -11,6 +11,13 @@ confidence: high
 # Trickster — picoCTF 2024 web writeup
 
 > `PNG images only`라는 안내를 **파일명 검사 + magic bytes 검사 + 웹 실행 경로**의 허점을 이용해 우회하는 대표적인 file upload writeup입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md)
+- [medium.com](https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18)
+- [dev.to](https://dev.to/yowise/trickster-picoctf-2024-1j5j)
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/trickster)
+
 
 ## 1. 한 줄 요약
 

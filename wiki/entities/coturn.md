@@ -1,7 +1,7 @@
 ---
 title: Coturn
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: entity
 tags: [tool, coturn, turn, stun, webrtc]
 sources: [https://github.com/coturn/coturn, https://github.com/coturn/coturn/wiki/turnserver, https://ctftime.org/task/13011]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Coturn
+
+## 참고 URL
+- [coturn/coturn repository](https://github.com/coturn/coturn)
+- [coturn turnserver wiki](https://github.com/coturn/coturn/wiki/turnserver)
+- [CTFtime writeup](https://ctftime.org/task/13011)
 
 ## 정의
 Coturn은 TURN/STUN 서버를 구현한 오픈소스 소프트웨어입니다. WebRTC에서 NAT 뒤의 피어를 중계하는 데 사용됩니다.

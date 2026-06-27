@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup — 인증/세션/권한
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, auth, session]
 sources: [https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/, https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md, raw/articles/20260613_web-ctf-writeup-curated.md]
@@ -11,6 +11,12 @@ confidence: high
 # Web CTF Writeup — 인증/세션/권한
 
 > 로그인, 세션 위조, 객체 소유권 검증, 권한 분기 실수를 모아둔 분류입니다.
+
+## 참고 URL
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/)
+- [Original writeup](https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md)
+- [raw/articles/20260613_web-ctf-writeup-curated.md](raw/articles/20260613_web-ctf-writeup-curated.md)
+
 
 ## 1. 핵심 요약
 - 이 분류는 **토큰이 맞는지**보다 **토큰이 누구를 의미하는지**가 중요한 문제를 모읍니다.

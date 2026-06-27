@@ -1,7 +1,7 @@
 ---
 title: Cookies — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, cookies, parameter-tampering, enumeration, picoctf]
 sources: [https://ctftime.org/writeup/27377, https://medium.com/@Kamal_S/picoctf-web-exploitation-cookies-c85d0df3f1d6, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/Cookies.md]
@@ -11,6 +11,12 @@ confidence: high
 # Cookies — picoCTF 2021 web writeup
 
 > `Cookies`는 **서버가 쿠키 값 하나를 상태값처럼 사용하고, 그 값을 열거하면 숨은 응답이나 flag를 얻을 수 있는** picoCTF 2021 Web 문제입니다. 이 문제의 포인트는 복잡한 암호학이 아니라, **클라이언트가 보낸 쿠키를 서버가 그대로 신뢰하는지 확인하는 것**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27377)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-cookies-c85d0df3f1d6)
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/Cookies.md)
+
 
 ## 1. 한 줄 요약
 - 입력값 `snickerdoodle`를 넣으면 쿠키 `name=0`이 설정됩니다.

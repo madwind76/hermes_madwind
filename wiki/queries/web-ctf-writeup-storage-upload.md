@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup — 파일 업로드/스토리지/클라우드
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, file-upload, storage, cloud]
 sources: [https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/, https://blog.arkark.dev/2023/12/28/seccon-finals, raw/articles/20260613_web-ctf-writeup-curated.md]
@@ -11,6 +11,12 @@ confidence: high
 # Web CTF Writeup — 파일 업로드/스토리지/클라우드
 
 > 업로드 검증, 객체 스토리지 권한, multipart 처리, 후속 처리 파이프라인을 다루는 분류입니다.
+
+## 참고 URL
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/)
+- [blog.arkark.dev](https://blog.arkark.dev/2023/12/28/seccon-finals)
+- [raw/articles/20260613_web-ctf-writeup-curated.md](raw/articles/20260613_web-ctf-writeup-curated.md)
+
 
 ## 1. 핵심 요약
 - 이 분류는 **업로드 자체**보다 **업로드 후 처리**에서 터지는 문제를 모읍니다.

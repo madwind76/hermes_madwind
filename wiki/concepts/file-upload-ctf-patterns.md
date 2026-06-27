@@ -1,7 +1,7 @@
 ---
 title: File Upload CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, file-upload, research]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md, https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18, https://dev.to/yowise/trickster-picoctf-2024-1j5j, https://brandon-t-elliott.github.io/trickster]
@@ -9,6 +9,12 @@ confidence: medium
 ---
 
 # File Upload CTF Patterns
+
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Trickster.md)
+- [medium.com](https://medium.com/@niceselol/picoctf-2024-trickster-af90f7476e18)
+- [dev.to](https://dev.to/yowise/trickster-picoctf-2024-1j5j)
+- [brandon-t-elliott.github.io](https://brandon-t-elliott.github.io/trickster)
 
 ## 정의
 Web CTF에서 File Upload는 **업로드된 파일의 검증, 저장, 접근, 실행 흐름 중 약점을 찾는 문제 유형**입니다.

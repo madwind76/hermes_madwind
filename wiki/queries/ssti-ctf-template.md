@@ -1,14 +1,19 @@
 ---
 title: SSTI CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, ssti]
-sources: []
+sources: [https://medium.com/@ahmednarmer1/ctf-day-12-df893a7035fe, https://medium.com/@mihasha/ssti2-write-up-picoctf-2025-5fc53e2320ba]
 confidence: medium
 ---
 
 # SSTI CTF Template
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-12-df893a7035fe)
+- [medium.com](https://medium.com/@mihasha/ssti2-write-up-picoctf-2025-5fc53e2320ba)
+
 
 ## 1. 요약
 - 플랫폼:

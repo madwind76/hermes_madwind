@@ -1,7 +1,7 @@
 ---
 title: Apriti sesamo — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, php, authentication]
 sources: [https://medium.com/@mihasha/apriti-sesamo-picoctf-2025-write-up-7f3d4bfd6085, https://medium.com/@ahmednarmer1/ctf-day-23-595078e28d0f, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/, https://hackmd.io/@fearnot/picoCTF_Web]
@@ -11,6 +11,13 @@ confidence: high
 # Apriti sesamo — picoCTF 2025 web writeup
 
 > PHP 로그인 검증에서 백업 소스 노출과 `sha1()`의 배열 처리 차이를 이용해 `../flag.txt`를 읽는 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@mihasha/apriti-sesamo-picoctf-2025-write-up-7f3d4bfd6085)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-23-595078e28d0f)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+- [hackmd.io](https://hackmd.io/@fearnot/picoCTF_Web)
+
 
 ## 1. 핵심 요약
 

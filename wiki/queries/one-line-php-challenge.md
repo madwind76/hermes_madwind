@@ -1,7 +1,7 @@
 ---
 title: One Line PHP Challenge
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://github.com/orangetw/My-CTF-Web-Challenges, https://blog.kaibro.tw/2018/10/24/HITCON-CTF-2018-Web/, https://hacktricks.wiki/en/pentesting-web/file-inclusion/via-php_session_upload_progress.html]
@@ -11,6 +11,12 @@ confidence: medium
 # One Line PHP Challenge
 
 > 이 페이지는 **HITCON CTF 2018 One Line PHP Challenge 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
+- [blog.kaibro.tw](https://blog.kaibro.tw/2018/10/24/HITCON-CTF-2018-Web/)
+- [hacktricks.wiki](https://hacktricks.wiki/en/pentesting-web/file-inclusion/via-php_session_upload_progress.html)
+
 
 ## 1. 요약
 - 플랫폼: HITCON CTF 2018

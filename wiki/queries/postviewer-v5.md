@@ -1,7 +1,7 @@
 ---
 title: Postviewer v5
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/40351, https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8, https://ctftime.org/event/2718/tasks/]
@@ -11,6 +11,12 @@ confidence: medium
 # Postviewer v5
 
 > 이 페이지는 **Google CTF 2025 Postviewer v5 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/40351)
+- [Gist](https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8)
+- [CTFtime writeup](https://ctftime.org/event/2718/tasks/)
+
 
 ## 1. 요약
 - 플랫폼: Google CTF 2025

@@ -1,7 +1,7 @@
 ---
 title: heap 1 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, heap-overflow, safe_var, adjacent-chunk, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%201/heap%201.md, https://qiita.com/colza_/items/7d4176034f15c4d208fd, https://yun.ng/c/ctf/picoctf/pwn/heap-1]
@@ -11,6 +11,12 @@ confidence: high
 # heap 1 — picoCTF 2024 pwn writeup
 
 > `heap 1`는 `heap 0`의 변형으로, **heap overflow로 `safe_var`를 정확히 `pico`로 맞춰야 하는 문제**입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%201/heap%201.md)
+- [qiita.com](https://qiita.com/colza_/items/7d4176034f15c4d208fd)
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/heap-1)
+
 
 ## 핵심 요약
 - `input_data`와 `safe_var`가 인접한 heap chunk로 배치됩니다.

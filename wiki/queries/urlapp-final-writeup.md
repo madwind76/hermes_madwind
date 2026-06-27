@@ -1,7 +1,7 @@
 ---
 title: urlapp — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/task/10636, https://ctftime.org/writeup/18603, https://whitesnake1004.tistory.com/704, https://furutsuki.hatenablog.com/entry/2020/03/13/112204]
@@ -11,6 +11,13 @@ confidence: medium
 # urlapp — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/10636)
+- [CTFtime writeup](https://ctftime.org/writeup/18603)
+- [whitesnake1004.tistory.com](https://whitesnake1004.tistory.com/704)
+- [furutsuki.hatenablog.com](https://furutsuki.hatenablog.com/entry/2020/03/13/112204)
+
 
 ## 1. 문제 요약
 - 플랫폼: zer0pts CTF 2020

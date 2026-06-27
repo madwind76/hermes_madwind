@@ -1,13 +1,17 @@
 ---
 title: Command Injection — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, command-injection, os-command-injection, shell-injection, rce, owasp, input-validation]
 sources: [https://ko.wikipedia.org/wiki/명령어_주입_공격, https://ko.wikipedia.org/wiki/OWASP]
 confidence: high
 ---
 > [[command-injection]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/명령어_주입_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### Command Injection 방어 기법

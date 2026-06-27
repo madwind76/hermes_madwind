@@ -1,7 +1,7 @@
 ---
 title: WebSocket — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, protocol, api, client-side]
 sources: [https://ko.wikipedia.org/wiki/웹소켓, https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API, https://portswigger.net/web-security/websockets]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # WebSocket — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/웹소켓)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [portswigger.net](https://portswigger.net/web-security/websockets)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

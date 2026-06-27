@@ -14,6 +14,12 @@ confidence: high
 > 현재 위키에는 **최종 writeup 48개**와 **보조 survey / note 문서들**이 정리되어 있습니다.
 > 아래 연도별 묶음은 **제목에 연도가 직접 명시된 최종 writeup 기준**이며, 연도가 적혀 있지 않은 문제는 별도 목록으로 분리했습니다.
 
+## 참고 URL
+- [queries/web-gauntlet-final-writeup.md](queries/web-gauntlet-final-writeup.md)
+- [queries/picoctf-2020-web-survey.md](queries/picoctf-2020-web-survey.md)
+- [queries/picoctf-2025-web-exploitation-survey.md](queries/picoctf-2025-web-exploitation-survey.md)
+
+
 ## 1. 최종 writeup 연도별 현황
 
 | 연도 | 개수 | 대표 항목 |
@@ -49,6 +55,9 @@ confidence: high
 - [[sqlite-sqli-filter-bypass-ctf-patterns]]
 - [[web-ctf-writeup-curation]]
 - [[web-ctf-writeup-topic-map]]
+- [[bookmarklet-execution-ctf-patterns]]
+- [[bookmarklet-final-writeup]]
+- [[local-authority-final-writeup]]
 
 ## 5. 보조 문서
 

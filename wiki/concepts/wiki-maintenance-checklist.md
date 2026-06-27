@@ -1,7 +1,7 @@
 ---
 title: Wiki Maintenance Checklist
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [wiki, maintenance, checklist, workflow]
 sources: [/home/kisec/wiki/concepts/web-ctf-writeup-topic-map.md, /home/kisec/wiki/queries/web-ctf-master-checklist.md, /home/kisec/wiki/index.md, /home/kisec/wiki/log.md]
@@ -12,6 +12,12 @@ confidence: high
 
 > **목적**: wiki link 작업과 데이터 정리를 매일 같은 기준으로 점검하기 위한 실행 체크리스트입니다.
 > **적용 범위**: `concepts/`, `queries/`, `entities/`, `comparisons/`, `index.md`, `log.md`, 연관 asset 파일
+
+## 참고 URL
+- [Reference](/home/kisec/wiki/concepts/web-ctf-writeup-topic-map.md)
+- [Reference](/home/kisec/wiki/queries/web-ctf-master-checklist.md)
+- [Reference](/home/kisec/wiki/index.md)
+- [Reference](/home/kisec/wiki/log.md)
 
 ## 1. 점검 순서
 

@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup 큐레이션
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup]
 sources: [https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/, https://blog.hokyun.dev/posts/google-ctf-2024-quals-writeup/, https://blog.arkark.dev/2023/12/28/seccon-finals, https://blog.drstra.in/posts/assn-wu/, https://blog.s1r1us.ninja/CTF/IuseBing, https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md, raw/articles/20260613_web-ctf-writeup-curated.md]
@@ -12,6 +12,16 @@ confidence: high
 
 > 공개 writeup을 바탕으로 재구성한 Web CTF 학습용 요약 페이지입니다.
 > 상위 지도: [[web-ctf-writeup-topic-map]]
+
+## 참고 URL
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/)
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/google-ctf-2024-quals-writeup/)
+- [blog.arkark.dev](https://blog.arkark.dev/2023/12/28/seccon-finals)
+- [blog.drstra.in](https://blog.drstra.in/posts/assn-wu/)
+- [blog.s1r1us.ninja](https://blog.s1r1us.ninja/CTF/IuseBing)
+- [Original writeup](https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md)
+- [raw/articles/20260613_web-ctf-writeup-curated.md](raw/articles/20260613_web-ctf-writeup-curated.md)
+
 
 ## 1. 빠른 결론
 

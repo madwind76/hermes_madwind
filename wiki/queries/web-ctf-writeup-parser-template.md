@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup — 파서/템플릿/검증기 우회
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, parser, template, injection]
 sources: [https://blog.hokyun.dev/posts/google-ctf-2024-quals-writeup/, https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md, raw/articles/20260613_web-ctf-writeup-curated.md]
@@ -11,6 +11,12 @@ confidence: high
 # Web CTF Writeup — 파서/템플릿/검증기 우회
 
 > 입력값이 같은 문자열처럼 보여도, 서로 다른 파서에서 다르게 해석되는 지점을 모아둔 분류입니다.
+
+## 참고 URL
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/google-ctf-2024-quals-writeup/)
+- [Original writeup](https://github.com/ernw/ctf-writeups/blob/master/csaw2016/mfw/README.md)
+- [raw/articles/20260613_web-ctf-writeup-curated.md](raw/articles/20260613_web-ctf-writeup-curated.md)
+
 
 ## 1. 핵심 요약
 - 이 분류는 **검증 로직과 실행 로직의 불일치**를 노립니다.

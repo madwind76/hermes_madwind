@@ -1,7 +1,7 @@
 ---
 title: Web Inspector
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, inspector, source-analysis]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6, https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803]
@@ -9,6 +9,11 @@ confidence: medium
 ---
 
 # Web Inspector
+
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803)
 
 ## 정의
 브라우저 개발자 도구에서 HTML, CSS, JS, 네트워크 응답을 확인해 숨겨진 정보와 동작을 분석하는 기법입니다.

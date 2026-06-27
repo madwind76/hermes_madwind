@@ -1,7 +1,7 @@
 ---
 title: DoS (Denial of Service) — 서비스 거부 공격
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, dos, denial-of-service, syn-flood, slowloris, ping-of-death]
 sources: [https://ko.wikipedia.org/wiki/서비스_거부_공격, https://ko.wikipedia.org/wiki/분산_서비스_거부_공격, https://ko.wikipedia.org/wiki/SYN_플러드, https://ko.wikipedia.org/wiki/침입_차단_시스템]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # DoS (Denial of Service) — 서비스 거부 공격
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/서비스_거부_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/분산_서비스_거부_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/SYN_플러드)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/침입_차단_시스템)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

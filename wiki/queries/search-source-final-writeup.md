@@ -1,7 +1,7 @@
 ---
 title: Search Source — picoCTF 2022 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, source-inspection, minification, mirror, picoctf]
 sources: [https://zarrarkolachi.medium.com/search-source-picoctf-2022-55897300f239, https://github.com/noamgariani11/picoCTF-2022-Writeup/blob/main/Web%20Exploitation/Search%20Source/SearchSource.md, https://hhyleung.github.io/writeups/picoctf-2022-web/, https://docs.abbasmj.com/ctf-writeups/picoctf-2022]
@@ -11,6 +11,13 @@ confidence: high
 # Search Source — picoCTF 2022 web writeup
 
 > `Search Source`는 **렌더링된 화면이 아니라 소스 파일을 직접 뒤져야 하는 picoCTF 2022 Web 문제**입니다. 플래그는 본문이 아니라 `style.css` 같은 정적 파일에 숨어 있고, 로컬 미러링 후 `grep`으로 찾는 방식도 잘 통합니다.
+
+## 참고 URL
+- [zarrarkolachi.medium.com](https://zarrarkolachi.medium.com/search-source-picoctf-2022-55897300f239)
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2022-Writeup/blob/main/Web%20Exploitation/Search%20Source/SearchSource.md)
+- [hhyleung.github.io](https://hhyleung.github.io/writeups/picoctf-2022-web/)
+- [docs.abbasmj.com](https://docs.abbasmj.com/ctf-writeups/picoctf-2022)
+
 
 ## 1. 한 줄 요약
 - 화면에는 flag가 보이지 않습니다.

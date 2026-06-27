@@ -1,14 +1,19 @@
 ---
 title: IDOR CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, idor]
-sources: []
+sources: [https://raw.githubusercontent.com/Yahyahcini/hacker101-ctf-writeups/main/petshop-pro/README.md, https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md]
 confidence: medium
 ---
 
 # IDOR CTF Template
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/Yahyahcini/hacker101-ctf-writeups/main/petshop-pro/README.md)
+- [Original writeup](https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md)
+
 
 ## 1. 요약
 - 플랫폼:

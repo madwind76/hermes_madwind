@@ -1,7 +1,7 @@
 ---
 title: SafeContentFrame Sandbox
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, client-side, sandbox, race-condition]
 sources: [https://ctftime.org/writeup/40351, https://ctftime.org/writeup/39221, https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8, https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc]
@@ -9,6 +9,12 @@ confidence: medium
 ---
 
 # SafeContentFrame Sandbox
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/40351)
+- [CTFtime writeup](https://ctftime.org/writeup/39221)
+- [terjanq/e66c2843b5b73aa48405b72f4751d5f8](https://gist.github.com/terjanq/e66c2843b5b73aa48405b72f4751d5f8)
+- [terjanq/27230afcee73ee75484ac14ac53e78bc](https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc)
 
 ## 정의
 SafeContentFrame(SCF)은 활성 콘텐츠를 격리하기 위한 iframe 기반 샌드박스입니다.

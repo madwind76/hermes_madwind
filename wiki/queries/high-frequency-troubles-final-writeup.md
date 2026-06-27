@@ -1,7 +1,7 @@
 ---
 title: high frequency troubles — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, heap, top-chunk, mmap, tls, tcache, setcontext, picoctf]
 sources: [https://eth007.me/blog/posts/high-frequency-troubles/, https://hackmd.io/@Zzzzek/r14x13FRp, https://github.com/snwau/picoCTF-2024-Writeup]
@@ -11,6 +11,12 @@ confidence: medium
 # high frequency troubles — picoCTF 2024 pwn writeup
 
 > `high frequency troubles`는 picoCTF 2024에서 가장 어려운 축에 속하는 **고급 heap exploitation** 문제입니다. 공개 writeup 기준으로는 **top chunk corruption → leak → TLS/tcache hijack → setcontext32** 체인이 핵심입니다.
+
+## 참고 URL
+- [eth007.me](https://eth007.me/blog/posts/high-frequency-troubles/)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+- [snwau/picoCTF-2024-Writeup](https://github.com/snwau/picoCTF-2024-Writeup)
+
 
 ## 핵심 요약
 - 정상적인 `free()` 경로가 없거나 제한적입니다.

@@ -1,7 +1,7 @@
 ---
 title: secure-email-service — picoCTF 2025 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, xss, csrf, broken-auth, mime, smime]
 sources: [https://corgi.rip/posts/secure-email-service/, https://hackmd.io/@hibwyli/rJ8K23JT1x, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/]
@@ -11,6 +11,12 @@ confidence: high
 # secure-email-service — picoCTF 2025 web writeup
 
 > **핵심 요약**: 이 문제는 *MIME/메일 파서*, *S/MIME 서명 검증*, *브라우저 렌더링 sink*를 한 체인으로 엮습니다. 공격자는 헤더 인젝션과 MIME 구조 조작으로 HTML 메일을 만들고, 최종적으로 admin bot의 `localStorage` flag를 빼내는 XSS를 완성해야 합니다.
+
+## 참고 URL
+- [corgi.rip](https://corgi.rip/posts/secure-email-service/)
+- [hackmd.io](https://hackmd.io/@hibwyli/rJ8K23JT1x)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
+
 
 ## 1. 문제 한 줄 정의
 

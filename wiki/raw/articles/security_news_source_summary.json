@@ -1,0 +1,48 @@
+{
+  "generated": "2026-06-22T07:33:30.390824+09:00",
+  "raw_total": 415,
+  "unique_total": 155,
+  "processed_files": [
+    "20260620_1824_security_news_source_collection.md",
+    "20260620_1830_security_news_source_collection.md",
+    "20260620_security_news_source_collection.md",
+    "20260621_1629_security_news_source_collection.md",
+    "20260622_0235_security_news_source_collection.md"
+  ],
+  "unique_counts": {
+    "데일리시큐": 53,
+    "Fortinet": 21,
+    "KISA KrCERT": 20,
+    "UK NCSC": 20,
+    "SecurityWeek": 11,
+    "CISA": 11,
+    "Krebs on Security": 10,
+    "보안뉴스": 5,
+    "BleepingComputer": 2,
+    "The Hacker News": 2
+  },
+  "raw_counts": {
+    "데일리시큐": 151,
+    "Fortinet": 61,
+    "UK NCSC": 61,
+    "KISA KrCERT": 40,
+    "SecurityWeek": 32,
+    "CISA": 31,
+    "Krebs on Security": 30,
+    "보안뉴스": 5,
+    "BleepingComputer": 2,
+    "The Hacker News": 2
+  },
+  "aliases": {
+    "Fortinet Blog": "Fortinet",
+    "Fortinet Blogs": "Fortinet",
+    "Fortinet Threat Research": "Fortinet",
+    "CISA": "CISA",
+    "CISA News": "CISA",
+    "National Cyber Security Centre": "UK NCSC",
+    "UK NCSC All RSS feeds": "UK NCSC",
+    "KISA KrCERT": "KISA KrCERT",
+    "KISA KrCERT 보안공지": "KISA KrCERT",
+    "KISA KrCERT 취약점 정보": "KISA KrCERT"
+  }
+}

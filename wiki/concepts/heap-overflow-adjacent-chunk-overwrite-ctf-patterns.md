@@ -1,7 +1,7 @@
 ---
 title: Heap overflow / adjacent chunk overwrite — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, heap-overflow, adjacent-chunk, buffer-overflow, safe_var, heap-layout]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%200/heap%200.md, https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be, https://hackmd.io/@Zzzzek/r14x13FRp]
@@ -11,6 +11,11 @@ confidence: high
 # Heap overflow / adjacent chunk overwrite — CTF patterns
 
 > **힙 오버플로우**는 힙에 할당된 버퍼를 넘어 인접한 chunk의 데이터나 제어 변수를 덮어쓰는 공격 패턴입니다. 스택 오버플로우와 동일하게, **길이 검사가 없는 입력**이 핵심 원인입니다.
+
+## 참고 URL
+- [Original source](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%200/heap%200.md)
+- [medium.com](https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
 
 ## 1. 이 패턴이 자주 나오는 곳
 
@@ -41,6 +46,7 @@ confidence: high
 
 ## 5. 참고 연결
 
+- [[buffer-overflow-ctf-patterns]]
 - [[heap-0-final-writeup]]
 - [[heap-1-final-writeup]]
 - [[heap-2-final-writeup]]

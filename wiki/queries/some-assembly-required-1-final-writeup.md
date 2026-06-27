@@ -1,7 +1,7 @@
 ---
 title: Some Assembly Required 1 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, javascript, wasm, source-inspection, burp, picoctf]
 sources: [https://ctftime.org/writeup/26982, https://medium.com/@Kamal_S/picoctf-web-exploitation-some-assembly-required-1-194e459b73db, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Some%20Assembly%20Required%201/README.md]
@@ -11,6 +11,12 @@ confidence: high
 # Some Assembly Required 1 — picoCTF 2021 web writeup
 
 > `Some Assembly Required 1`는 **오브퓨스케이티드(난독화된) JavaScript가 숨은 리소스를 불러오고, 그 뒤 WebAssembly/WASM 페이로드에서 flag를 찾는 picoCTF 2021 Web 문제**입니다. 겉보기에는 폼 입력 문제처럼 보이지만, 실제 핵심은 **브라우저가 추가로 요청하는 리소스와 응답 내용을 추적하는 것**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/26982)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-some-assembly-required-1-194e459b73db)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Some%20Assembly%20Required%201/README.md)
+
 
 ## 1. 한 줄 요약
 - 화면의 입력값은 거의 의미가 없습니다.

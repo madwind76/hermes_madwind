@@ -1,7 +1,7 @@
 ---
 title: Redis SSRF / Command Injection
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, redis, ssrf, command-injection]
 sources: [https://ctftime.org/task/10636, https://ctftime.org/writeup/18603, https://whitesnake1004.tistory.com/704, https://furutsuki.hatenablog.com/entry/2020/03/13/112204]
@@ -9,6 +9,12 @@ confidence: medium
 ---
 
 # Redis SSRF / Command Injection
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/10636)
+- [CTFtime writeup](https://ctftime.org/writeup/18603)
+- [whitesnake1004.tistory.com](https://whitesnake1004.tistory.com/704)
+- [furutsuki.hatenablog.com](https://furutsuki.hatenablog.com/entry/2020/03/13/112204)
 
 ## 정의
 웹앱이 내부 Redis에 직접 연결하거나, 사용자 입력을 Redis 명령으로 변환해 버리는 문제입니다.

@@ -1,7 +1,7 @@
 ---
 title: Base64 Decoding
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, base64, encoding]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6, https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803]
@@ -9,6 +9,11 @@ confidence: medium
 ---
 
 # Base64 Decoding
+
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/WebDecode.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-webdecode-2fb5f668eae6)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-webdecode-3801d825f803)
 
 ## 정의
 Base64는 바이너리/텍스트 데이터를 ASCII 문자열로 옮기기 위한 인코딩 방식입니다. 암호화가 아닙니다.

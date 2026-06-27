@@ -1,7 +1,7 @@
 ---
 title: Reverse engineering — CTF patterns
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, rev, reverse-engineering, automation, windows, wasm, prng, brute-force]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup, https://github.com/noamgariani11/picoCTF-2025-Writeup, concepts/custom-cpu-reverse-engineering-ctf-patterns.md, concepts/wasm-reverse-engineering-ctf-patterns.md]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # Reverse engineering — CTF patterns
+
+## 참고 URL
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+- [noamgariani11/picoCTF-2025-Writeup](https://github.com/noamgariani11/picoCTF-2025-Writeup)
+- [Reference](concepts/custom-cpu-reverse-engineering-ctf-patterns.md)
+- [Reference](concepts/wasm-reverse-engineering-ctf-patterns.md)
 
 ## 1. 정의
 **Reverse engineering**은 실행 파일, 스크립트, WASM, 앱 동작을 거꾸로 추적해 내부 규칙과 검증 로직을 복원하는 CTF 패턴입니다.

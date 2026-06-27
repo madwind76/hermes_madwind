@@ -1,7 +1,7 @@
 ---
 title: Quantum Scrambler — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, decode, encoding, encryption, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Quantum%20Scrambler/Quantum%20Scrambler.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: high
 # Quantum Scrambler — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 중첩 리스트를 만드는 scramble 함수를 거꾸로 추적해서 flag를 복원하는 reverse engineering 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Quantum%20Scrambler/Quantum%20Scrambler.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - 입력을 중첩 리스트 구조로 바꾸는 `scramble()`가 핵심입니다.

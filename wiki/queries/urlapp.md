@@ -1,7 +1,7 @@
 ---
 title: urlapp
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/task/10636, https://ctftime.org/writeup/18603, https://whitesnake1004.tistory.com/704, https://furutsuki.hatenablog.com/entry/2020/03/13/112204]
@@ -11,6 +11,13 @@ confidence: medium
 # urlapp
 
 > 이 페이지는 **zer0pts CTF 2020 urlapp 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/task/10636)
+- [CTFtime writeup](https://ctftime.org/writeup/18603)
+- [whitesnake1004.tistory.com](https://whitesnake1004.tistory.com/704)
+- [furutsuki.hatenablog.com](https://furutsuki.hatenablog.com/entry/2020/03/13/112204)
+
 
 ## 1. 요약
 - 플랫폼: zer0pts CTF 2020

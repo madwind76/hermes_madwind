@@ -1,13 +1,17 @@
 ---
 title: IDOR — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, idor, broken-access-control, authorization, owasp, horizontal-privilege-escalation, vertical-privilege-escalation]
 sources: [https://ko.wikipedia.org/wiki/OWASP, https://ko.wikipedia.org/wiki/접근_제어]
 confidence: high
 ---
 > [[idor]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/접근_제어)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### IDOR 방어 기법

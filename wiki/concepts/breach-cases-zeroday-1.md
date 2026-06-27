@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — 제로데이 및 최신 사례 (Part 1)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, zero-day, breach, real-world]
 sources: [CISA KEV, vendor advisories, public incident reports]
@@ -50,6 +50,11 @@ confidence: high
 | **배후** | 중국 BERSERK BEAR (APT3, Comment Crew). 2010년 이후 미국 정부 공식 귀속 |
 
 ---
+
+## 참고 URL
+- [Reference](CISA KEV)
+- [Reference](vendor advisories)
+- [Reference](public incident reports)
 
 ## 🆕 2023-2025 최신 사례 (10건)
 

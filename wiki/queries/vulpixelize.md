@@ -1,7 +1,7 @@
 ---
 title: Vulpixelize
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/, https://ctftime.org/task/18312, https://ctftime.org/writeup/31677, https://github.com/orangetw/My-CTF-Web-Challenges]
@@ -11,6 +11,13 @@ confidence: medium
 # Vulpixelize
 
 > 이 페이지는 **HITCON CTF 2021 Vulpixelize 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [blog.nella17.tw](https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/)
+- [CTFtime writeup](https://ctftime.org/task/18312)
+- [CTFtime writeup](https://ctftime.org/writeup/31677)
+- [orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
+
 
 ## 1. 요약
 - 플랫폼: HITCON CTF 2021

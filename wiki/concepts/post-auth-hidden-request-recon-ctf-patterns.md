@@ -1,7 +1,7 @@
 ---
 title: Post-auth hidden request reconnaissance — picoCTF pattern
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, reconnaissance, burp, traffic-inspection, hidden-request, base64]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-25-2c8a7a50e903, https://medium.com/@Kamal_S/picoctf-web-exploitation-findme-a471621624b3]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Post-auth hidden request reconnaissance — picoCTF pattern
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-25-2c8a7a50e903)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-findme-a471621624b3)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **로그인 후에만 발생하는 추가 요청, 숨은 엔드포인트, 또는 Base64로 인코딩된 파라미터를 Burp 같은 프록시로 찾아내는 Web CTF 유형**입니다.

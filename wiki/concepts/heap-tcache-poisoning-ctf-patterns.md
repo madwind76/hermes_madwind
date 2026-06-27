@@ -1,7 +1,7 @@
 ---
 title: Heap tcache poisoning — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 sources: [queries/horsetrack-final-writeup.md]
 confidence: medium
@@ -11,6 +11,9 @@ tags: [ctf, pwn, heap, tcache-poisoning, uaf]
 # Heap tcache poisoning — CTF patterns
 
 > 해제된 chunk가 다시 할당되는 흐름을 이용해 tcache freelist를 오염시키는 패턴입니다.
+
+## 참고 URL
+- [Reference](queries/horsetrack-final-writeup.md)
 
 ## 핵심 아이디어
 - freed chunk의 next 포인터를 덮습니다.

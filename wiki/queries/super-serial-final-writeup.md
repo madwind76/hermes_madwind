@@ -1,7 +1,7 @@
 ---
 title: Super Serial — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, php, deserialization, cookie, object-injection, picoctf]
 sources: [https://ctftime.org/writeup/27159, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Super%20Serial/README.md, https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Super_Serial.md]
@@ -11,6 +11,12 @@ confidence: high
 # Super Serial — picoCTF 2021 web writeup
 
 > `Super Serial`은 **PHP `unserialize()`가 들어간 로그인 쿠키를 조작해 객체 주입을 유도하고, `__toString()`을 통해 flag 파일을 읽는** picoCTF 2021 Web 문제입니다. 핵심은 **unsafe deserialization**과 **gadget chain**의 기초를 보는 데 있습니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27159)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Super%20Serial/README.md)
+- [Original writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Super_Serial.md)
+
 
 ## 1. 한 줄 요약
 - `login` 쿠키는 `urlencode(base64_encode(serialize($perm_res)))` 형태입니다.

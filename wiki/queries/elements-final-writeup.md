@@ -1,7 +1,7 @@
 ---
 title: Elements — picoCTF 2024 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, xss, csp, client-side, picoctf]
 sources: [https://www.justinsteven.com/posts/2024/04/02/picoctf-2024-elements-csp-bypass/, https://blog.jettchen.me/posts/elements/, https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]
@@ -11,6 +11,13 @@ confidence: high
 # Elements — picoCTF 2024 web writeup
 
 > `Elements`는 **XSS + CSP bypass + server-side bot interaction**이 결합된 picoCTF 2024 Web 문제입니다. 단순히 스크립트를 실행하는 것보다, 브라우저 정책과 봇의 동작을 함께 이해해야 합니다.
+
+## 참고 URL
+- [www.justinsteven.com](https://www.justinsteven.com/posts/2024/04/02/picoctf-2024-elements-csp-bypass/)
+- [blog.jettchen.me](https://blog.jettchen.me/posts/elements/)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
+
 
 ## 1. 한 줄 요약
 - 게임 상태는 URL fragment에서 복원됩니다.

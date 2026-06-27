@@ -1,7 +1,7 @@
 ---
 title: eval — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, injection, xss, payload, input-validation]
 sources: [https://ko.wikipedia.org/wiki/Eval, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # eval — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/Eval)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

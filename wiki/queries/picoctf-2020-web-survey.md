@@ -1,7 +1,7 @@
 ---
 title: picoCTF 2020 web survey
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, survey, picoctf, picoctf2020, sqlite, sqli]
 sources: [queries/web-gauntlet-final-writeup.md, https://github.com/onealmond/hacking-lab/blob/master/picoctf-2020/web-gauntlet/writeup.md, https://medium.com/@sobatistacyber/picoctf-writeup-web-gauntlet-7c3b8c7c7946]
@@ -13,6 +13,12 @@ confidence: high
 > picoCTF 2020 Web Exploitation에서 위키에 정리된 문제를 한눈에 보는 요약 페이지입니다.
 > 현재 위키에는 **1/1 문제**가 정리되어 있습니다.
 > 상위 허브: [[picoctf-web-survey]] · [[picoctf-2025-web-exploitation-survey]] · [[picoctf-pwn-survey]]
+
+## 참고 URL
+- [queries/web-gauntlet-final-writeup.md](queries/web-gauntlet-final-writeup.md)
+- [Original writeup](https://github.com/onealmond/hacking-lab/blob/master/picoctf-2020/web-gauntlet/writeup.md)
+- [medium.com](https://medium.com/@sobatistacyber/picoctf-writeup-web-gauntlet-7c3b8c7c7946)
+
 
 ## 문제 목록
 

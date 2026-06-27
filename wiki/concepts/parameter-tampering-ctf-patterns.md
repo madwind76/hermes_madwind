@@ -1,7 +1,7 @@
 ---
 title: Parameter Tampering
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, burp, parameter-tampering]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e, https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99]
@@ -9,6 +9,11 @@ confidence: medium
 ---
 
 # Parameter Tampering
+
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/IntroToBurp.md)
+- [medium.com](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-introtoburp-ecbcfc60272e)
+- [infosecwriteups.com](https://infosecwriteups.com/picoctf-2024-write-up-web-992348f48b99)
 
 ## 정의
 클라이언트가 보내는 파라미터를 값 변경, 삭제, 재배열하여 서버의 검증 허점을 찾는 기법입니다.

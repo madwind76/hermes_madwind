@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 0 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, buffer-overflow, gets, strcpy, sigsegv, picoctf]
 sources: [https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-0-f26e5fc9b31e, https://dev.to/shalintha/exploiting-buffer-overflow-0-step-by-step-picoctf-walkthrough-p83, https://medium.com/@hchilcote/picoctf-buffer-overflow-0-write-up-82dc8ea3bea0]
@@ -11,6 +11,12 @@ confidence: high
 # buffer overflow 0 — picoCTF 2022 pwn writeup
 
 > `buffer overflow 0`는 **작은 버퍼를 overflow해 `sigsegv_handler`를 실행시키면 flag를 출력하는 picoCTF 2022 Binary Exploitation 문제**입니다. 일반적인 ret2win이 아니라 **의도적 크래시**가 핵심입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-0-f26e5fc9b31e)
+- [dev.to](https://dev.to/shalintha/exploiting-buffer-overflow-0-step-by-step-picoctf-walkthrough-p83)
+- [medium.com](https://medium.com/@hchilcote/picoctf-buffer-overflow-0-write-up-82dc8ea3bea0)
+
 
 ## 1. 핵심 요약
 

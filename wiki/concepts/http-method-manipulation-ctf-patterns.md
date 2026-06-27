@@ -1,7 +1,7 @@
 ---
 title: HTTP method manipulation — picoCTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, http, methods, request-manipulation, proxy, burp]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-13-2ad289797f14, https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # HTTP method manipulation — picoCTF 패턴
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-13-2ad289797f14)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **GET, HEAD, POST 같은 HTTP 메서드를 바꿔서 서버가 숨겨 둔 다른 동작이나 응답 헤더를 드러내는 Web CTF 유형**입니다.

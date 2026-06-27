@@ -12,6 +12,12 @@ confidence: high
 
 > picoCTF 2022–2025 Binary Exploitation 문제를 한 번에 훑는 상위 허브입니다. 연도별 survey와 개별 writeup을 연결해 재사용 가능한 primitive를 빠르게 찾도록 정리했습니다.
 
+## 참고 URL
+- [queries/picoctf-2023-pwn-survey.md](queries/picoctf-2023-pwn-survey.md)
+- [queries/pie-time-final-writeup.md](queries/pie-time-final-writeup.md)
+- [queries/heap-0-final-writeup.md](queries/heap-0-final-writeup.md)
+
+
 ## 연도별 survey
 - [[picoctf-2022-pwn-survey]]
 - [[picoctf-2023-pwn-survey]]

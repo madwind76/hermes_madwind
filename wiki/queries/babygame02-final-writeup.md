@@ -11,6 +11,12 @@ sources: [snwau/picoCTF-2023-Writeup, DanArmor/picoCTF-2023-writeup, picoCTF par
 
 > `babygame02`은 **게임 상태를 더 깊게 건드리는 후속 문제**입니다. 핵심은 **out-of-bounds movement + partial overwrite**입니다.
 
+## 참고 URL
+- [snwau/picoCTF-2023-Writeup](snwau/picoCTF-2023-Writeup)
+- [DanArmor/picoCTF-2023-writeup](DanArmor/picoCTF-2023-writeup)
+- [picoCTF participant profiles](picoCTF participant profiles)
+
+
 ## 요약
 - 분류: pwn
 - 핵심 primitive: game-state corruption / partial overwrite

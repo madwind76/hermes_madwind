@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — 제로데이 및 2023-2025 최신
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, zero-day, breach, real-world]
 sources: [CISA KEV, vendor advisories, public incident reports]
@@ -11,6 +11,11 @@ confidence: high
 # 실제 침해 사례 — 제로데이 및 2023-2025 최신
 
 > 이 페이지는 최신 사례 22건을 2개 하위 페이지로 나눈 **인덱스**입니다.
+
+## 참고 URL
+- [Reference](CISA KEV)
+- [Reference](vendor advisories)
+- [Reference](public incident reports)
 
 ## 하위 페이지
 

@@ -1,7 +1,7 @@
 ---
 title: Under Construction — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2023/, https://ctftime.org/writeup/37351, https://ctftime.org/writeup/37549, https://ctftime.org/writeup/37330]
@@ -11,6 +11,13 @@ confidence: medium
 # Under Construction — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [blog.shameerkashif.me](https://blog.shameerkashif.me/blog/2023/writeup-under-construction-google-ctf-2023/)
+- [CTFtime writeup](https://ctftime.org/writeup/37351)
+- [CTFtime writeup](https://ctftime.org/writeup/37549)
+- [CTFtime writeup](https://ctftime.org/writeup/37330)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2023

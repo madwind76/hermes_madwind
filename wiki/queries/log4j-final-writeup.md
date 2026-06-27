@@ -1,7 +1,7 @@
 ---
 title: Log4J — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/34548, https://www.sigflag.at/blog/2022/writeup-googlectf2022-log4j/, https://intrigus.org/research/2022/07/18/google-ctf-2022-log4j2-writeup/]
@@ -11,6 +11,12 @@ confidence: medium
 # Log4J — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/34548)
+- [www.sigflag.at](https://www.sigflag.at/blog/2022/writeup-googlectf2022-log4j/)
+- [intrigus.org](https://intrigus.org/research/2022/07/18/google-ctf-2022-log4j2-writeup/)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2022

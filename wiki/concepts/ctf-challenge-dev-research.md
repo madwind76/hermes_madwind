@@ -1,7 +1,7 @@
 ---
 title: CTF Challenge Development Research — CTF 챌린지 개발 연구
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, ctf, challenge-development, research, education]
 sources: [https://arxiv.org/abs/2601.17543, https://arxiv.org/abs/2603.22511, https://arxiv.org/abs/2603.21551, https://arxiv.org/abs/2512.01233]
@@ -11,6 +11,12 @@ confidence: high
 # CTF Challenge Development Research — CTF 챌린지 개발 연구
 
 CTF(Capture The Flag) 챌린지 개발과 관련된 주요 연구 논문 및 리소스를 정리한 페이지입니다.
+
+## 참고 URL
+- [arxiv.org](https://arxiv.org/abs/2601.17543)
+- [arxiv.org](https://arxiv.org/abs/2603.22511)
+- [arxiv.org](https://arxiv.org/abs/2603.21551)
+- [arxiv.org](https://arxiv.org/abs/2512.01233)
 
 ## 주요 연구 논문
 

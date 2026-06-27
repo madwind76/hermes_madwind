@@ -1,7 +1,7 @@
 ---
 title: Race Condition — 보안 용어 해설과 Web CTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ctf, race-condition, concurrency, timing]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-24-0e1e8a56b6f6, https://www.ztz0.com/writeups/2025/picoctf/web/pachinko/, https://owasp.org/www-community/attacks/Race_condition]
@@ -9,6 +9,11 @@ confidence: medium
 ---
 
 # Race Condition — 보안 용어 해설과 Web CTF 패턴
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-24-0e1e8a56b6f6)
+- [www.ztz0.com](https://www.ztz0.com/writeups/2025/picoctf/web/pachinko/)
+- [owasp.org](https://owasp.org/www-community/attacks/Race_condition)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

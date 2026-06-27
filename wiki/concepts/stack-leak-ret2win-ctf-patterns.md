@@ -1,7 +1,7 @@
 ---
 title: Stack leak / ret2win — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, stack-leak, ret2win, buffer-overflow, rop, aslr]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/stack-cache, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/stack%20cache/script.py]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Stack leak / ret2win — CTF patterns
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/stack-cache)
+- [Original source](https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/stack%20cache/script.py)
 
 ## Step 1. 단어 풀이
 - **Stack leak**: 스택 주소를 외부로 노출하는 취약점입니다.

@@ -1,7 +1,7 @@
 ---
 title: Some Assembly Required 3 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, javascript, wasm, reverse-engineering, picoctf]
 sources: [https://ctftime.org/writeup/27181, https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-3, https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Some_Assembly_Required_3.md]
@@ -11,6 +11,12 @@ confidence: high
 # Some Assembly Required 3 — picoCTF 2021 web writeup
 
 > `Some Assembly Required 3`는 **WebAssembly(WASM) 코드를 디컴파일해 XOR 기반 변환을 되돌리는 picoCTF 2021 Web 문제**입니다. 전작보다 한 단계 더 나아가, 브라우저가 불러온 WASM 내부 로직을 읽고 key array를 역으로 적용해야 합니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27181)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-3)
+- [Original writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Some_Assembly_Required_3.md)
+
 
 ## 1. 한 줄 요약
 - 페이지는 JS와 WASM 모듈을 로드합니다.

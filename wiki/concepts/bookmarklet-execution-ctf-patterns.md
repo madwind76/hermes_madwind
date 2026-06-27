@@ -1,14 +1,23 @@
 ---
 title: Bookmarklet execution — picoCTF pattern
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, client-side, javascript, source-inspection, research]
-sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96, https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c, https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn]
+sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96, https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c, https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn, https://medium.com/@rachael_muga/picoctf-bookmarklet-web-exploitation-3cff31a6c1dc, https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-bookmarklet-506a480fd17f, https://qiita.com/colza_/items/ad51902cf9abc999b227]
 confidence: high
 ---
 
 # Bookmarklet execution — picoCTF pattern
+
+## 참고 URL
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-bookmarklet-9e7d72c97f96)
+- [medium.com](https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c)
+- [dev.to](https://dev.to/davidonlinearchive/bookmarklet-picoctf-24-web-12hn)
+- [medium.com](https://medium.com/@rachael_muga/picoctf-bookmarklet-web-exploitation-3cff31a6c1dc)
+- [medium.com](https://medium.com/@Bl4cky/picoctf-2024-web-exploitation-bookmarklet-506a480fd17f)
+- [qiita.com](https://qiita.com/colza_/items/ad51902cf9abc999b227)
 
 ## 1. 한 줄 정의
 이 패턴은 **페이지가 제공한 JavaScript를 북마크릿(bookmarklet) 또는 브라우저 콘솔에 넣어, 현재 페이지 맥락에서 바로 실행하게 만드는 Web CTF 유형**입니다.
@@ -43,6 +52,7 @@ challenge page -> provided JavaScript 확인 -> 북마크 또는 Console에 코�
 - [[client-side-secret-exposure-ctf-patterns]]
 - [[webdecode-final-writeup]]
 - [[web-ctf-writeup-topic-map]]
+- [[picoctf-web-survey]]
 
 ## 8. 참고 소스
 - [GitHub writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Bookmarklet.md)

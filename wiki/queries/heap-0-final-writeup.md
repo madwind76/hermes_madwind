@@ -1,7 +1,7 @@
 ---
 title: heap 0 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, heap-overflow, adjacency, safe_var, buffer-overflow, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%200/heap%200.md, https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be, https://hackmd.io/@Zzzzek/r14x13FRp]
@@ -11,6 +11,12 @@ confidence: high
 # heap 0 — picoCTF 2024 pwn writeup
 
 > `heap 0`는 **힙에 인접하게 할당된 버퍼를 오버플로우해서 `safe_var`를 덮는 picoCTF 2024 pwn 문제**입니다. 핵심은 **heap overflow + adjacent heap chunk overwrite**입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/heap%200/heap%200.md)
+- [medium.com](https://medium.com/@kenjikun/picoctf-binary-exploitation-2024-f5125b8874be)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+
 
 ## 1. 핵심 요약
 

@@ -1,7 +1,7 @@
 ---
 title: API Security (API 보안) — 실전 대응
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, api, api-security, waf, scanner]
 sources: [https://owasp.org/www-project-api-security/, https://owasp.org/API-Security/editions/2023/en/0x11-t10/]
@@ -11,6 +11,10 @@ confidence: high
 # API Security (API 보안) — 실전 대응
 
 > [[api-security]]의 검증/도구/사고사례를 다루는 분할 페이지입니다.
+
+## 참고 URL
+- [owasp.org](https://owasp.org/www-project-api-security/)
+- [owasp.org](https://owasp.org/API-Security/editions/2023/en/0x11-t10/)
 
 ## Step 3: 전문 용어 설명 (OWASP/PortSwigger/업계 표준 기반)
 ### API 보안 도구/프레임워크

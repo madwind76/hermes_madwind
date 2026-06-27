@@ -1,7 +1,7 @@
 ---
 title: Flag Hunters — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, source-analysis, automation, parser, picoctf]
 sources: [https://raw.githubusercontent.com/noamgariani11/picoCTF-2025-Writeup/main/Reverse%20Engineering/Flag-Hunters.md, https://github.com/noamgariani11/picoCTF-2025-Writeup, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,12 @@ confidence: high
 # Flag Hunters — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 노래 가사처럼 보이는 **Python source code**를 읽고, 세미콜론으로 분리되는 입력이 어떻게 `REFRAIN` / `RETURN` 분기로 흘러가는지 이해하는 reverse engineering 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/noamgariani11/picoCTF-2025-Writeup/main/Reverse%20Engineering/Flag-Hunters.md)
+- [noamgariani11/picoCTF-2025-Writeup](https://github.com/noamgariani11/picoCTF-2025-Writeup)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - 소스 코드에 플래그가 들어 있는 `secret_intro`가 존재합니다.

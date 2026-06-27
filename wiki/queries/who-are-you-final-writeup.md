@@ -1,7 +1,7 @@
 ---
 title: Who are you? — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, headers, user-agent, referer, dnt, x-forwarded-for, accept-language, burp]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-41-fe36ae3311b0, https://picoctf2021.haydenhousen.com/web-exploitation/who-are-you, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WhoAreYou.md, https://ctftime.org/writeup/26905]
@@ -11,6 +11,13 @@ confidence: high
 # Who are you? — picoCTF 2021 web writeup
 
 > `Who are you?`는 서버가 신뢰하는 **HTTP 헤더 묶음**을 순서대로 맞춰서, 브라우저 정체성을 위장하는 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-41-fe36ae3311b0)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/who-are-you)
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WhoAreYou.md)
+- [CTFtime writeup](https://ctftime.org/writeup/26905)
+
 
 ## 1. 한 줄 요약
 - 핵심은 `PicoBrowser`처럼 보이게 만드는 것입니다.

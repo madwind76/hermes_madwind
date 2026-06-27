@@ -1,7 +1,7 @@
 ---
 title: 64-bit ret2win / stack alignment — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, ret2win, x64, stack-alignment, function-prologue, buffer-overflow]
 sources: [https://ctftime.org/writeup/32813, https://cryptocat.me/blog/ctf/2022/pico/pwn/x_sixty_what/, https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/x-sixty-what/README.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # 64-bit ret2win / stack alignment — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32813)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/x_sixty_what/)
+- [Original source](https://github.com/HHousen/PicoCTF-2022/blob/master/Binary%20Exploitation/x-sixty-what/README.md)
 
 ## Step 1. 단어 풀이
 - **ret2win**: 리턴 주소를 덮어서 숨겨진 `win()`/`flag()` 함수로 보내는 기법입니다.

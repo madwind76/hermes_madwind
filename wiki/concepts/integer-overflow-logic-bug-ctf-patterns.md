@@ -1,7 +1,7 @@
 ---
 title: Integer overflow / logic bug — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 sources: [queries/two-sum-final-writeup.md]
 confidence: medium
@@ -11,6 +11,9 @@ tags: [ctf, pwn, integer-overflow, logic-bug]
 # Integer overflow / logic bug — CTF patterns
 
 > 산술 결과가 오버플로우되어 조건문이 잘못 평가되는 패턴입니다.
+
+## 참고 URL
+- [Reference](queries/two-sum-final-writeup.md)
 
 ## 핵심 아이디어
 - 계산은 맞지만, 타입 범위를 넘으면 결과가 깨집니다.

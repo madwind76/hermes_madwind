@@ -1,7 +1,7 @@
 ---
 title: CORS Misconfiguration — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, cors, misconfiguration, same-origin-policy, cross-origin, owasp, api-security]
 sources: [https://ko.wikipedia.org/wiki/교차_출처_리소스_공유, https://ko.wikipedia.org/wiki/동일_출처_정책, https://ko.wikipedia.org/wiki/OWASP]
@@ -10,6 +10,11 @@ confidence: high
 > [[cors-misconfig]]의 후반부입니다.
 
 # CORS Misconfiguration — 방어
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/교차_출처_리소스_공유)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/동일_출처_정책)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### 안전한 CORS 구현 패턴

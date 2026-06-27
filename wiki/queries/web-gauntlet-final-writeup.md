@@ -1,7 +1,7 @@
 ---
 title: Web Gauntlet — picoCTF 2020 web writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, sqlite, sqli, filter-bypass, picoctf]
 sources: [https://github.com/onealmond/hacking-lab/blob/master/picoctf-2020/web-gauntlet/writeup.md, https://medium.com/@sobatistacyber/picoctf-writeup-web-gauntlet-7c3b8c7c7946, https://www.youtube.com/watch?v=ZQj5tSwaG0k]
@@ -11,6 +11,12 @@ confidence: high
 # Web Gauntlet — picoCTF 2020 web writeup
 
 > `Web Gauntlet`는 **SQLite 기반 로그인 폼에서 필터를 우회해 admin으로 로그인하는 picoCTF 2020 Web 문제**입니다. 핵심은 차단된 키워드와 연산자를 피하면서, SQLite의 문자열 결합과 주석 처리 규칙을 이용해 `admin` 조건을 깨는 것입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/onealmond/hacking-lab/blob/master/picoctf-2020/web-gauntlet/writeup.md)
+- [medium.com](https://medium.com/@sobatistacyber/picoctf-writeup-web-gauntlet-7c3b8c7c7946)
+- [www.youtube.com](https://www.youtube.com/watch?v=ZQj5tSwaG0k)
+
 
 ## 1. 한 줄 요약
 - 여러 라운드의 로그인 필터를 통과해야 합니다.

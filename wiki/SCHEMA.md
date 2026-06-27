@@ -37,13 +37,13 @@ sha256: <본문의 SHA256>
 
 ## Tag Taxonomy
 ### 취약점/위협
-- vulnerability, cve, zero-day, rce, lpe, dos, ddos, xss, memory-corruption, uaf, command-injection, path-traversal, file-upload, xxe, ssrf, ssti, csrf, idor, lfi, rfi, file-inclusion, broken-auth, broken-access-control, cors, misconfiguration, denial-of-service, remote-code-execution, directory-traversal, unrestricted-upload, shell-injection, os-command-injection, injection, external-entity, file-read, xml, xpath, template-injection, sandbox-escape, csrf-token, bypass
+- vulnerability, cve, zero-day, rce, lpe, dos, ddos, xss, memory-corruption, uaf, command-injection, path-traversal, file-upload, xxe, ssrf, ssti, csrf, idor, lfi, rfi, lfi-rfi, file-inclusion, broken-auth, broken-access-control, cors, misconfiguration, denial-of-service, remote-code-execution, directory-traversal, unrestricted-upload, shell-injection, os-command-injection, injection, external-entity, file-read, xml, xpath, template-injection, sandbox-escape, csrf-token, bypass
 ### 공격 기법
 - adversarial-ml, prompt-injection, model-inversion, data-poisoning, model-extraction, phishing, supply-chain, social-engineering, spoofing, mitm, amplification, slowloris, syn-flood, shellcode, rop, exploit, payload, drive-by-download, ping-of-death, serialization, osint, recon, active-recon, passive-recon, cloud-metadata
 ### 대상/환경
 - web, cloud, linux, windows, ai-ml, llm, network, kernel, endpoint, database, local, remote, server-side, php, horizontal, vertical, inline
 ### CTF
-- ctf, ctf-challenge, ai-ctf, agent-security, education, research, challenge-development, lab
+- ctf, ctf-challenge, ai-ctf, agent-security, education, research, challenge-development, lab, forensics, disk, network, stego, memory, windows, ntfs, mft, usn, exif, thumbnail, image, antiforensics, archive, zip, crc32, timestamp, codepage, volatility, cloud, aws, cloudtrail, iam, dfir, debugger, outputdebugstring, web-exploitation, google-ctf
 ### 웹 CTF 세부 태그
 - auth, base64, burp, client-side, coturn, csp, cyberchef, decode, dns, encoding, exfiltration, file, inspector, internal-service, localhost, parameter-tampering, parser, race-condition, rebinding, redis, request-manipulation, sandbox, source-analysis, storage, stun, template, turn, webrtc, writeup, xssi
 ### 보안 도구/솔루션
@@ -64,25 +64,31 @@ sha256: <본문의 SHA256>
 규칙: 모든 태그는 이 분류에 있어야 함. 새 태그가 필요하면 여기에 먼저 추가한 후 사용.
 
 ### Wiki-curated tags
-- accept-language, adjacency, adjacent-chunk, arbitrary-write, array-bounds, aslr, automation, bash, binary-exploitation, bit-flipping
-- picoctf2020, picoctf2022, picoctf2024, picoctf2025
-- browser, browser-history, buffer-overflow, cbc, cdecl, checklist, command-abuse, concurrency, control-flow-hijack, cookie
+- accept-language, adjacency, adjacent-chunk, arbitrary-write, array-bounds, aslr, automation, binary-exploitation, bit-flipping
+- picoctf2020, picoctf2021, picoctf2022, picoctf2023, picoctf2024, picoctf2025
+- browser, browser-history, bookmarklet, buffer-overflow, cbc, cdecl, checklist, command-abuse, concurrency, control-flow-hijack, cookie
 - cookies, cpu, crash, crypto, curl, custom-cpu, decompilation, deserialization, directory-discovery, dnt
 - ds-store, email, endianness, enumeration, environment, environment-abuse, eval, executable-stack, execve, filter-bypass
-- flask, flask-session, fmtstr, format-string, function-arguments, function-pointer, function-prologue, game-state, get, gets
+- flask, flask-session, format-string, function-arguments, function-pointer, function-prologue, game-state, get, gets
 - git, global-variable, got-overwrite, hash-collision, head, headers, heap, heap-layout, heap-overflow, hidden-directory
 - hidden-file, hidden-path, hidden-request, history-api, htaccess, http, import-abuse, info-leak, int-0x80, integer-overflow
 - intentional-crash, javascript, jwt, libc-leak, logic-bug, login, login-bypass, maintenance, malleability, md5
 - memory-disclosure, method-manipulation, methods, mime, minification, mirror, mmap, module-hijack, mongodb, movement
 - no-canary, nopie, nosql, nx, nx-bypass, object-injection, onepage, oob, operations, oracle
-- out-of-bounds, parser-template, partial-overwrite, path-hijack, picoctf, picoctf2023, pie, post-auth, printf, prng
-- pwn, python, rbash, referer, regex, register-control, restricted-shell, ret2reg, ret2win, return-address
+- out-of-bounds, parser-template, partial-overwrite, path-hijack, picoctf, picoctf2023, pie, post-auth, printf, prng, rsa, xor
+- pwn, python, referer, regex, register-control, ret2reg, ret2win, return-address
 - rev, reverse-engineering, robots-txt, safe_var, saved-return-address, secrets, segfault, session-forgery, setcontext, setuid
 - shell, signal-handler, signing, sigsegv, smime, soap, source-inspection, sql-injection, sqli, sqlite
 - stack-alignment, stack-canary, stack-layout, stack-leak, stack-overflow, strcpy, strstr, substring, survey, syscalls
 - system-abuse, tampering, tcache, tcache-poisoning, timing, tls, token-forgery, top-chunk, traffic-inspection, type-juggling
 - underflow, union-based-sqli, unserialize, upload-bypass, use-after-free, user-agent, validation, wasm, webhook, websocket
-- wiki, win-function, workflow, x-forwarded-for, x64, x86
+- general-skills, malware-analysis, rust, syntax, terminal, unsafe, yara, borrow-checker, wiki, win-function, workflow, x-forwarded-for, x64, x86
+
+### Wiki-maintenance / reporting
+- certificate, collection, comparison, daily, google-form, hub, json, monthly, newsletter, notion, report, sample, schema, steganography, summary, trend, weekly
+
+### Web writeup / pwn specific
+- caesar, reconstruction, return-address-overwrite, pie-bypass, rotation, substitution
 
 ## Page Types
 

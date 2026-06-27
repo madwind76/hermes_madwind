@@ -1,7 +1,7 @@
 ---
 title: Includes — picoCTF 2022 web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, writeup, client-side, source-analysis, decode, base64]
 sources: [https://ctftime.org/writeup/32843, https://medium.com/@Kamal_S/picoctf-web-exploitation-includes-10228bf124c8, https://github.com/FlyN-Nick/picoGymWriteups/blob/main/Web%20Exploitation/Includes/Includes.md, https://github.com/noamgariani11/picoCTF-2022-Writeup, https://github.com/arvindshima/PicoCTF-2022]
@@ -11,6 +11,14 @@ confidence: high
 # Includes — picoCTF 2022 web writeup
 
 > 페이지 소스와 참조된 정적 파일을 확인하면 flag가 부분적으로 노출되는 아주 전형적인 source-inspection 문제입니다. 공격 포인트는 서버가 아니라 **브라우저가 내려받는 정적 자원**에 있습니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32843)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-includes-10228bf124c8)
+- [Original writeup](https://github.com/FlyN-Nick/picoGymWriteups/blob/main/Web%20Exploitation/Includes/Includes.md)
+- [noamgariani11/picoCTF-2022-Writeup](https://github.com/noamgariani11/picoCTF-2022-Writeup)
+- [arvindshima/PicoCTF-2022](https://github.com/arvindshima/PicoCTF-2022)
+
 
 ## 1. 한 줄 요약
 

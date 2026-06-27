@@ -1,7 +1,7 @@
 ---
 title: Out-of-bounds movement / game-state corruption — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, out-of-bounds, underflow, game-state, array-bounds, movement]
 sources: [https://yun.ng/c/ctf/picoctf/pwn/babygame03, https://hackmd.io/@Zzzzek/r14x13FRp]
@@ -11,6 +11,10 @@ confidence: high
 # Out-of-bounds movement / game-state corruption — CTF patterns
 
 > 그리드형 게임이나 맵 기반 바이너리에서 **경계 밖 이동**이 허용되면, 플레이어 상태가 인접 메모리와 겹치면서 게임 규칙 자체를 무너뜨릴 수 있습니다.
+
+## 참고 URL
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/babygame03)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
 
 ## 패턴
 - 맵 배열의 앞/뒤로 이동해 underflow 또는 overflow를 일으킵니다.

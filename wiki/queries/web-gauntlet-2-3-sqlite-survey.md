@@ -1,7 +1,7 @@
 ---
 title: Web Gauntlet 2/3 — SQLite SQLi Survey
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, sqli, sqlite, filter-bypass, survey, picoctf]
 sources: [https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet2.md, https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet3.md, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Web%20Gauntlet%203/README.md, https://ctftime.org/task/15217, https://ctftime.org/task/15218]
@@ -13,6 +13,15 @@ confidence: high
 > `Web Gauntlet 2`와 `Web Gauntlet 3`는 같은 계열의 **SQLite SQL Injection + 필터 우회** 문제입니다. 3번은 2번의 풀이를 거의 그대로 쓰되, **더 짧은 입력 제한**이 추가된 형태로 보면 이해가 쉽습니다.
 
 > 연결 허브: [[web-ctf-writeup-curation]] · [[web-ctf-writeup-topic-map]]
+
+## 참고 URL
+- [Original writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md)
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet2.md)
+- [Original writeup](https://github.com/ZeroDayTea/PicoCTF-2021-Killer-Queen-Writeups/blob/main/WebExploitation/WebGauntlet3.md)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Web%20Gauntlet%203/README.md)
+- [CTFtime writeup](https://ctftime.org/task/15217)
+- [CTFtime writeup](https://ctftime.org/task/15218)
+
 
 ## 1. 빠른 결론
 

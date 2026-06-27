@@ -1,7 +1,7 @@
 ---
 title: Prompt Injection (프롬프트 인젝션) — CTF 문제 유형
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: ctf-challenge
 tags: [ai-ctf, ctf, prompt-injection, llm, ctf-challenge, adversarial-ml]
 sources: [raw/20260610_AI_CTF_challenge_types.md]
@@ -11,6 +11,9 @@ confidence: high
 # Prompt Injection (프롬프트 인젝션) — CTF 문제 유형
 
 > AI CTF의 가장 기본적이면서도 핵심 유형. 전체 AI CTF 문제의 **~47%**를 차지합니다.
+
+## 참고 URL
+- [Reference](raw/20260610_AI_CTF_challenge_types.md)
 
 ## 개요
 

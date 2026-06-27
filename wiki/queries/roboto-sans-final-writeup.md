@@ -1,7 +1,7 @@
 ---
 title: Roboto Sans — picoCTF web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, reconnaissance, robots-txt, hidden-path, source-inspection]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-29-7f76f92d5fb5, https://azt3c.medium.com/picoctf-2022-roboto-sans-challenge-writeup-59156b94fdc7]
@@ -11,6 +11,11 @@ confidence: high
 # Roboto Sans — picoCTF web writeup
 
 > `robots.txt`와 숨겨진 경로를 조합해 flag로 이어지는 페이지를 찾아내는 picoCTF Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-29-7f76f92d5fb5)
+- [azt3c.medium.com](https://azt3c.medium.com/picoctf-2022-roboto-sans-challenge-writeup-59156b94fdc7)
+
 
 ## 1. 한 줄 요약
 - 핵심은 **`robots.txt`를 통해 숨은 경로를 찾는 것**입니다.

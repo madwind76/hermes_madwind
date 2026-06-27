@@ -1,7 +1,7 @@
 ---
 title: PHP object injection / unsafe deserialization — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, php, deserialization, object-injection, unserialize, cookie]
 sources: [https://ctftime.org/writeup/27159, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Super%20Serial/README.md, https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Super_Serial.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # PHP object injection / unsafe deserialization — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27159)
+- [Original source](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/Super%20Serial/README.md)
+- [Original source](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Super_Serial.md)
 
 ## 1. 정의
 **PHP object injection**은 신뢰할 수 없는 입력이 `unserialize()`에 들어가면서, 공격자가 임의의 PHP 객체를 주입하거나 객체의 속성을 바꿀 수 있는 취약점입니다. 보통 `__wakeup()`, `__destruct()`, `__toString()` 같은 magic method와 결합됩니다.

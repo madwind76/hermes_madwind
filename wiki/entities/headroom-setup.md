@@ -1,7 +1,7 @@
 ---
 title: Headroom — 설치 및 아키텍처
 created: 2026-06-10
-updated: 2026-06-13
+updated: 2026-06-21
 type: tool
 tags: [tool, llm, ai-ml, optimization, proxy, mcp]
 sources: [raw/20260610_Headroom_완전분석.md]
@@ -16,6 +16,9 @@ confidence: high
 > ⭐ 20,138 · Apache 2.0 · github.com/chopratejas/headroom
 > 로컬 설치 완료: `headroom-ai v0.24.0` (Hermes venv)
 > 공식문서: https://headroom-docs.vercel.app/docs
+
+## 참고 URL
+- [Internal raw source](raw/20260610_Headroom_완전분석.md)
 
 ## 개요
 

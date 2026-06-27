@@ -1,7 +1,7 @@
 ---
 title: SQLite SQLi filter bypass — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, sqlite, sqli, filter-bypass, parameter-tampering]
 sources: [https://ctftime.org/writeup/27015, https://ctf.zeyu2001.com/2021/picoctf/startup-company-180, https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # SQLite SQLi filter bypass — CTF patterns
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27015)
+- [ctf.zeyu2001.com](https://ctf.zeyu2001.com/2021/picoctf/startup-company-180)
+- [Original source](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Web_Gauntlet_2.md)
 
 ## 1. 정의
 **SQLite SQLi filter bypass**는 입력 필터가 따옴표, 공백, 특정 키워드만 막는 상황에서 SQLite 문법과 함수(`||`, `GROUP_CONCAT`, 서브쿼리, `sqlite_master`)를 이용해 필터를 우회하는 공격 패턴입니다.

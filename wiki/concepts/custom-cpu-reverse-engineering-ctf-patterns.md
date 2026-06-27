@@ -1,7 +1,7 @@
 ---
 title: custom CPU reverse engineering — picoCTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, rev, wasm, reverse-engineering, cpu]
 sources: [https://unvariant.pages.dev/writeups/picoctf-2025/pwn-pachinko-revisited/, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -9,6 +9,10 @@ confidence: medium
 ---
 
 # custom CPU reverse engineering — picoCTF 패턴
+
+## 참고 URL
+- [unvariant.pages.dev](https://unvariant.pages.dev/writeups/picoctf-2025/pwn-pachinko-revisited/)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
 
 ## Step 1. 단어 풀이
 - **Custom CPU**: 일반적인 x86/ARM이 아니라, 문제를 위해 따로 설계된 작은 명령 집합입니다.

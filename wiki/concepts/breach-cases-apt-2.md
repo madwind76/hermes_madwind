@@ -1,7 +1,7 @@
 ---
 title: 실제 침해 사례 — APT / 데이터 유출 (Part 2)
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, breach, apt, data-exfiltration, real-world]
 sources: [FBI/CISA 경보, Mandiant/FireEye 보고서, Kaspersky/ESET/CrowdStrike 분석]
@@ -105,6 +105,11 @@ confidence: high
 ---
 
 ---
+
+## 참고 URL
+- [Reference](FBI/CISA 경보)
+- [Reference](Mandiant/FireEye 보고서)
+- [Reference](Kaspersky/ESET/CrowdStrike 분석)
 
 ## 관련 위키 링크
 - [[real-world-breach-cases]] — 전체 사례 목록 및 실습 우선순위

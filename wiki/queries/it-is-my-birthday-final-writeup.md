@@ -1,7 +1,7 @@
 ---
 title: It is my Birthday — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, md5, hash-collision, file-upload, integrity, picoctf]
 sources: [https://ctftime.org/writeup/26974, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/It%20is%20my%20Birthday/README.md, https://github.com/corkami/collisions]
@@ -11,6 +11,12 @@ confidence: high
 # It is my Birthday — picoCTF 2021 web writeup
 
 > `It is my Birthday`는 **서로 다른 두 PDF 파일이 같은 MD5 해시를 갖도록 만든 뒤 업로드 검증을 통과하는** picoCTF 2021 Web 문제입니다. 핵심은 “같은 해시 = 같은 파일”이라는 잘못된 가정을 깨는 **MD5 collision**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/26974)
+- [Original writeup](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/It%20is%20my%20Birthday/README.md)
+- [corkami/collisions](https://github.com/corkami/collisions)
+
 
 ## 1. 한 줄 요약
 - 서버는 두 파일이 **다르면서도** MD5는 같아야 통과시킵니다.

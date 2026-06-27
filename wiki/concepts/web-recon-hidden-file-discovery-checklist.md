@@ -1,7 +1,7 @@
 ---
 title: 정찰형 Web CTF 체크리스트
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, reconnaissance, checklist, robots-txt, hidden-file, directory-discovery]
 sources: [/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md, /home/kisec/wiki/concepts/hidden-directory-discovery-ctf-patterns.md, /home/kisec/wiki/queries/web-ctf-master-checklist.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # 정찰형 Web CTF 체크리스트
+
+## 참고 URL
+- [Reference](/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md)
+- [Reference](/home/kisec/wiki/concepts/hidden-directory-discovery-ctf-patterns.md)
+- [Reference](/home/kisec/wiki/queries/web-ctf-master-checklist.md)
 
 ## Step 1. 한 줄 정의
 이 체크리스트는 **웹 CTF에서 `robots.txt`, 숨은 경로, 숨김 파일, 소스 코드, 디렉터리 구조를 체계적으로 확인해 문제 유형을 빠르게 특정하기 위한 점검표**입니다.

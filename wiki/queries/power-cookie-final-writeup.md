@@ -1,7 +1,7 @@
 ---
 title: Power Cookie — picoCTF 2022 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, cookies, session, auth, burp, tampering]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-27-1e6bb61eb835, https://ctftime.org/writeup/32830, https://github.com/arvindshima/PicoCTF-2022/blob/main/Web%20Exploitation/power-cookie.md, https://github.com/wasi-master/picoCTF-2022/blob/main/web_exploitation/power_cookie.md]
@@ -11,6 +11,13 @@ confidence: high
 # Power Cookie — picoCTF 2022 web writeup
 
 > `Power Cookie`는 브라우저 쿠키에 들어 있는 **권한 플래그를 직접 바꾸면 통과되는** 전형적인 클라이언트 신뢰 오류 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-27-1e6bb61eb835)
+- [CTFtime writeup](https://ctftime.org/writeup/32830)
+- [Original writeup](https://github.com/arvindshima/PicoCTF-2022/blob/main/Web%20Exploitation/power-cookie.md)
+- [Original writeup](https://github.com/wasi-master/picoCTF-2022/blob/main/web_exploitation/power_cookie.md)
+
 
 ## 1. 한 줄 요약
 - 핵심은 **`isAdmin=0` → `isAdmin=1`** 입니다.

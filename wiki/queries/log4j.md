@@ -1,7 +1,7 @@
 ---
 title: Log4J
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/34548, https://www.sigflag.at/blog/2022/writeup-googlectf2022-log4j/, https://intrigus.org/research/2022/07/18/google-ctf-2022-log4j2-writeup/]
@@ -11,6 +11,12 @@ confidence: medium
 # Log4J
 
 > 이 페이지는 **Google CTF 2022 Log4J 공개 writeup**을 바탕으로 정리한 학습용 진행 노트입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/34548)
+- [www.sigflag.at](https://www.sigflag.at/blog/2022/writeup-googlectf2022-log4j/)
+- [intrigus.org](https://intrigus.org/research/2022/07/18/google-ctf-2022-log4j2-writeup/)
+
 
 ## 1. 요약
 - 플랫폼: Google CTF 2022

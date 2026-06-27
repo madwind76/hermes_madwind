@@ -1,14 +1,19 @@
 ---
 title: BoomShop
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
-sources: []
+sources: [https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md, https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/petshop-pro/README.md]
 confidence: medium
 ---
 
 # BoomShop
+
+## 참고 URL
+- [Original writeup](https://github.com/atomicmemory/llm-wiki/blob/main/examples/boomshop-final-writeup.md)
+- [Original writeup](https://github.com/Yahyahcini/hacker101-ctf-writeups/blob/main/petshop-pro/README.md)
+
 
 ## 1. 요약
 - 플랫폼: Example CTF

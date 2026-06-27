@@ -1,7 +1,7 @@
 ---
 title: Time-seeded PRNG brute force — CTF patterns
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, reverse-engineering, prng, brute-force, timing, token-forgery, automation]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup, https://github.com/noamgariani11/picoCTF-2025-Writeup]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Time-seeded PRNG brute force — CTF patterns
+
+## 참고 URL
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+- [noamgariani11/picoCTF-2025-Writeup](https://github.com/noamgariani11/picoCTF-2025-Writeup)
 
 ## 1. 정의
 **Time-seeded PRNG brute force**는 현재 시각으로 seed를 잡는 난수 생성기를 대상으로, seed 오차를 좁혀 동일한 출력 시퀀스를 재현하는 CTF 패턴입니다.

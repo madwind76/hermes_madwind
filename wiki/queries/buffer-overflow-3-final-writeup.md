@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 3 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, stack-canary, brute-force, buffer-overflow, win-function, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/buffer-overflow-3, https://qiita.com/housu_jp/items/f6b9e0dedf555f7288ce, https://cryptocat.me/blog/ctf/2022/pico/pwn/buffer_overflow_3/]
@@ -11,6 +11,12 @@ confidence: high
 # buffer overflow 3 — picoCTF 2022 pwn writeup
 
 > `buffer overflow 3`는 **스택 카나리를 byte-by-byte로 맞춰가며 brute force한 뒤, 리턴 주소를 `win()`으로 바꾸는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **canary leak 없이도 가능한 반응 기반 brute force**입니다.
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/buffer-overflow-3)
+- [qiita.com](https://qiita.com/housu_jp/items/f6b9e0dedf555f7288ce)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/buffer_overflow_3/)
+
 
 ## 1. 핵심 요약
 

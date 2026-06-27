@@ -1,7 +1,7 @@
 ---
 title: format string 3 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, format-string, got-overwrite, libc-leak, picoctf]
 sources: [https://blog.thecyberthesis.com/blog/writeups/picoCTF/pwn/format-string-3, https://hackmd.io/@Zzzzek/r14x13FRp, https://yun.ng/c/ctf/picoctf/pwn/format-string-3]
@@ -11,6 +11,12 @@ confidence: high
 # format string 3 — picoCTF 2024 pwn writeup
 
 > `format string 3`는 **libc leak 후 GOT overwrite로 `puts`를 `system`으로 바꾸는 문제**입니다.
+
+## 참고 URL
+- [blog.thecyberthesis.com](https://blog.thecyberthesis.com/blog/writeups/picoCTF/pwn/format-string-3)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/format-string-3)
+
 
 ## 핵심 요약
 - `hello()`가 `setvbuf` 주소를 출력해줍니다.

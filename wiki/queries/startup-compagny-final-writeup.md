@@ -1,7 +1,7 @@
 ---
 title: Startup Compagny — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, sqlite, sqli, filter-bypass, parameter-tampering, picoctf]
 sources: [https://ctftime.org/writeup/27015, https://ctftime.org/writeup/27374, https://ctf.zeyu2001.com/2021/picoctf/startup-company-180]
@@ -11,6 +11,12 @@ confidence: high
 # Startup Compagny — picoCTF 2021 web writeup
 
 > `Startup Compagny`는 숫자 입력을 **HTML `number` 타입에만 의존**하게 만들어 둔 뒤, 브라우저 개발자도구로 `text`로 바꾸고 SQLite SQL injection을 수행하는 picoCTF 2021 Web 문제입니다. 핵심은 **클라이언트 측 제한은 방어가 아니다**라는 점과, SQLite에서 `GROUP_CONCAT`/서브쿼리를 이용해 데이터를 빠르게 덤프하는 방법입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27015)
+- [CTFtime writeup](https://ctftime.org/writeup/27374)
+- [ctf.zeyu2001.com](https://ctf.zeyu2001.com/2021/picoctf/startup-company-180)
+
 
 ## 1. 한 줄 요약
 - 겉보기에는 숫자만 넣을 수 있는 입력입니다.

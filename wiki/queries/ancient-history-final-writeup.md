@@ -1,7 +1,7 @@
 ---
 title: Ancient History — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, browser-history, client-side, history-api, picoctf]
 sources: [https://ctftime.org/writeup/27367, https://picoctf2021.haydenhousen.com/web-exploitation/ancient-history, https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Ancient_History.md]
@@ -11,6 +11,12 @@ confidence: high
 # Ancient History — picoCTF 2021 web writeup
 
 > `Ancient History`는 **브라우저 history stack을 역이용해 숨겨진 flag 상태를 되찾는** picoCTF 2021 Web 문제입니다. 핵심은 페이지가 생성한 여러 상태 중 일부가 브라우저 history에 남아 있고, `window.history.back()` 같은 동작으로 이전 상태를 다시 볼 수 있다는 점입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27367)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/ancient-history)
+- [Original writeup](https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/Ancient_History.md)
+
 
 ## 1. 한 줄 요약
 - 페이지가 여러 상태를 DOM에 쌓습니다.

@@ -1,7 +1,7 @@
 ---
 title: Wiki Maintenance Operations
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [wiki, maintenance, operations, automation]
 sources: [/home/kisec/wiki/concepts/wiki-maintenance-checklist.md, /home/kisec/wiki/queries/web-ctf-master-checklist.md, /home/kisec/wiki/index.md, /home/kisec/wiki/log.md]
@@ -13,6 +13,12 @@ confidence: high
 > **목적**: 매일 새벽 4시에 수행되는 wiki 자동 점검 작업의 운영 규칙을 세분화한 실행 문서입니다.
 > **적용 대상**: `concepts/`, `queries/`, `entities/`, `comparisons/`, `index.md`, `log.md`, asset 파일, reciprocal links
 > **기준 문서**: [[wiki-maintenance-checklist]]
+
+## 참고 URL
+- [Reference](/home/kisec/wiki/concepts/wiki-maintenance-checklist.md)
+- [Reference](/home/kisec/wiki/queries/web-ctf-master-checklist.md)
+- [Reference](/home/kisec/wiki/index.md)
+- [Reference](/home/kisec/wiki/log.md)
 
 ## 1. 운영 원칙
 

@@ -1,7 +1,7 @@
 ---
 title: XXE (XML External Entity, XML 외부 엔터티 주입) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, xxe, xml, external-entity, xpath, dos, file-read, ssrf, owasp]
 sources: [https://ko.wikipedia.org/wiki/XML_외부_엔터티_공격, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # XXE (XML External Entity, XML 외부 엔터티 주입) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/XML_외부_엔터티_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

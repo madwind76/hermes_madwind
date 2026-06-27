@@ -1,7 +1,7 @@
 ---
 title: Unminify
 created: 2026-06-14
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, source-analysis, minification]
 sources: [https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md, https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md]
@@ -11,6 +11,13 @@ confidence: high
 # Unminify
 
 > 화면에는 보이지 않지만 **page source / DOM / curl 출력**에 플래그가 숨어 있는 picoCTF 2024 Web 문제입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify.md)
+- [medium.com](https://medium.com/@erichdryn/unminify-picoctf-writeup-d62cfd67b8f5)
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/Unminify/Unminify.md)
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/Unminify.md)
+
 
 ## 1. 요약
 - 플랫폼: picoCTF 2024

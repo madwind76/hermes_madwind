@@ -1,7 +1,7 @@
 ---
 title: Hidden directory discovery — picoCTF pattern
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, directory-discovery, reconnaissance, path-traversal, source-inspection]
 sources: [https://medium.com/@erichdryn/secrets-picoctf-writeup-bcfa26143bb1, https://medium.com/@moromerx/picoctf-secrets-web-exploitation-explained-3e8d41b40a2a, https://medium.com/@ahmednarmer1/ctf-day-26-4760e9b83079]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Hidden directory discovery — picoCTF pattern
+
+## 참고 URL
+- [medium.com](https://medium.com/@erichdryn/secrets-picoctf-writeup-bcfa26143bb1)
+- [medium.com](https://medium.com/@moromerx/picoctf-secrets-web-exploitation-explained-3e8d41b40a2a)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-26-4760e9b83079)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **페이지 소스, 개발자 도구, 디렉터리 구조, 그리고 URL 경로를 이용해 숨은 디렉터리와 페이지를 순차적으로 찾아가는 Web CTF 유형**입니다. 상위 허브는 [[web-recon-hidden-file-discovery-ctf-hub]]입니다.

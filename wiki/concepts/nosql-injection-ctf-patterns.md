@@ -1,7 +1,7 @@
 ---
 title: NoSQL injection — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, nosql, mongodb, injection, auth]
 sources: [https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/, https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/No-Sql-Injection.md, https://medium.com/@ahmednarmer1/ctf-day-34-8334270d207b]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # NoSQL injection — CTF patterns
+
+## 참고 URL
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2024-web-exploitation-writeups/)
+- [Original source](https://github.com/noamgariani11/picoCTF-2024-Writeup/blob/main/Web%20Exploitation/No-Sql-Injection.md)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-34-8334270d207b)
 
 ## 1. 정의
 **NoSQL injection**은 MongoDB 같은 NoSQL 백엔드에서, 문자열이 아니라 **JSON/객체 쿼리**를 주입해 인증이나 조회 조건을 바꾸는 패턴입니다. SQL injection과 목적은 비슷하지만, 문법과 오퍼레이터가 다릅니다.

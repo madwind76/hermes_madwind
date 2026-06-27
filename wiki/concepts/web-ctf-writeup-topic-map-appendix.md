@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup Topic Map Appendix
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [web, ctf, research, reference]
 sources: [concepts/web-ctf-writeup-topic-map.md]
@@ -40,6 +40,9 @@ confidence: high
 - [[get-ahead-final-writeup]] — GET aHEAD — picoCTF web writeup
 - [[web-gauntlet-final-writeup]] — Web Gauntlet — picoCTF 2020 web writeup
 - [[web-gauntlet-2-final-writeup]] — Web Gauntlet 2 — picoCTF 2021 web writeup
+
+## 참고 URL
+- [Reference](concepts/web-ctf-writeup-topic-map.md)
 
 ## 10. picoCTF 2025 묶음
 

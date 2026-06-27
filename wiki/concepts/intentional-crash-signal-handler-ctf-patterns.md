@@ -1,7 +1,7 @@
 ---
 title: Intentional crash / signal handler — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, signal-handler, intentional-crash, segfault, buffer-overflow, gets, strcpy]
 sources: [https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-0-f26e5fc9b31e, https://dev.to/shalintha/exploiting-buffer-overflow-0-step-by-step-picoctf-walkthrough-p83, https://medium.com/@hchilcote/picoctf-buffer-overflow-0-write-up-82dc8ea3bea0]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Intentional crash / signal handler — CTF patterns
+
+## 참고 URL
+- [medium.com](https://medium.com/@muranyi.levente/picoctf-2022-buffer-overflow-0-f26e5fc9b31e)
+- [dev.to](https://dev.to/shalintha/exploiting-buffer-overflow-0-step-by-step-picoctf-walkthrough-p83)
+- [medium.com](https://medium.com/@hchilcote/picoctf-buffer-overflow-0-write-up-82dc8ea3bea0)
 
 ## Step 1. 단어 풀이
 - **Intentional crash**: 프로그램을 일부러 비정상 종료시키는 것입니다.

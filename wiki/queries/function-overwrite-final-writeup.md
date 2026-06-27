@@ -1,7 +1,7 @@
 ---
 title: Function Overwrite — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, arbitrary-write, function-pointer, out-of-bounds, picoctf]
 sources: [https://picoctf2022.haydenhousen.com/binary-exploitation/function-overwrite, https://cryptocat.me/blog/ctf/2022/pico/pwn/function_overwrite/]
@@ -11,6 +11,11 @@ confidence: high
 # Function Overwrite — picoCTF 2022 pwn writeup
 
 > `Function Overwrite`는 **배열 인덱스 검사가 불완전해서 음수 인덱스로 함수 포인터를 덮고, `easy_checker`로 제어 흐름을 바꾸는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **arbitrary-ish write + function pointer hijack**입니다.
+
+## 참고 URL
+- [picoctf2022.haydenhousen.com](https://picoctf2022.haydenhousen.com/binary-exploitation/function-overwrite)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/function_overwrite/)
+
 
 ## 1. 핵심 요약
 

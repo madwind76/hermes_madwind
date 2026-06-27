@@ -1,7 +1,7 @@
 ---
 title: Web reconnaissance and hidden file discovery — picoCTF hub
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, reconnaissance, robots-txt, hidden-file, directory-discovery, source-inspection]
 sources: [https://medium.com/@hasnain_abid/where-are-the-robots-picoctf-web-exploitation-writeup-82a121cfd935, https://medium.com/@Kamal_S/picoctf-web-exploitation-where-are-the-robots-399111c4dc8e, https://medium.com/@ahmednarmer1/ctf-day-29-7f76f92d5fb5, https://medium.com/@ahmednarmer1/ctf-day-17-24ec4fd7a7e5, https://medium.com/@tolentinojesusanthony/scavenger-hunt-picoctf-dc37004ed0e3, https://medium.com/@bl0ss0mx5/picogym-web-exploitation-writeup-scavenger-hunt-easy-picoctf-bf254302f920]
@@ -9,6 +9,14 @@ confidence: high
 ---
 
 # Web reconnaissance and hidden file discovery — picoCTF hub
+
+## 참고 URL
+- [medium.com](https://medium.com/@hasnain_abid/where-are-the-robots-picoctf-web-exploitation-writeup-82a121cfd935)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-where-are-the-robots-399111c4dc8e)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-29-7f76f92d5fb5)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-17-24ec4fd7a7e5)
+- [medium.com](https://medium.com/@tolentinojesusanthony/scavenger-hunt-picoctf-dc37004ed0e3)
+- [medium.com](https://medium.com/@bl0ss0mx5/picogym-web-exploitation-writeup-scavenger-hunt-easy-picoctf-bf254302f920)
 
 ## Step 1. 한 줄 정의
 이 허브는 **웹 CTF에서 정답이 취약점 자체보다도 `robots.txt`, 숨은 경로, 숨김 파일, 소스 코드, 디렉터리 구조 같은 정찰 단서에 숨어 있는 문제들**을 묶어 보는 상위 개념입니다.

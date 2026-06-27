@@ -1,7 +1,7 @@
 ---
 title: Environment / command abuse — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 sources: [queries/vne-final-writeup.md]
 confidence: medium
@@ -11,6 +11,9 @@ tags: [ctf, pwn, environment, shell, command-abuse]
 # Environment / command abuse — CTF patterns
 
 > 환경 변수, 셸, 상대경로 호출을 악용하는 패턴입니다.
+
+## 참고 URL
+- [Reference](queries/vne-final-writeup.md)
 
 ## 핵심 아이디어
 - `system()`은 셸을 호출하므로 환경 변수의 영향을 받습니다.

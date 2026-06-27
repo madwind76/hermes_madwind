@@ -1,7 +1,7 @@
 ---
 title: buffer overflow 2 — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, ret2win, function-arguments, x86, stack-overflow, picoctf]
 sources: [https://ctftime.org/writeup/32814, https://qiita.com/housu_jp/items/5e05dcb71901a3ca2604, https://musyokaian.medium.com/buffer-overflow-2-picoctf-2022-590cf7b7961f]
@@ -11,6 +11,12 @@ confidence: high
 # buffer overflow 2 — picoCTF 2022 pwn writeup
 
 > `buffer overflow 2`는 **32-bit 스택 오버플로로 `win(arg1, arg2)`를 호출해야 하는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **리턴 주소 덮기 + 함수 인자 두 개를 정확히 스택에 배치**하는 것입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/32814)
+- [qiita.com](https://qiita.com/housu_jp/items/5e05dcb71901a3ca2604)
+- [musyokaian.medium.com](https://musyokaian.medium.com/buffer-overflow-2-picoctf-2022-590cf7b7961f)
+
 
 ## 1. 핵심 요약
 

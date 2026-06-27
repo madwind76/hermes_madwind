@@ -1,13 +1,17 @@
 ---
 title: C2 — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, cyber-kill-chain, c2, command-and-control, beacon, implant, c2-framework, covert-channel]
 sources: [https://ko.wikipedia.org/wiki/사이버_킬_체인, https://ko.wikipedia.org/wiki/명령_제어]
 confidence: high
 ---
 > [[command-and-control]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/사이버_킬_체인)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/명령_제어)
 
 ## Step 3: 전문 용어 설명 (위키백과 기반)
 ### 대표 C2 프레임워크 비교

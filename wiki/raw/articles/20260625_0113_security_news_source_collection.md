@@ -1,0 +1,51 @@
+---
+title: 20260625_0113 Security News Source Collection
+created: 2026-06-25
+updated: 2026-06-25
+type: source-collection
+scope: blogwatcher-12h
+sources: [blogwatcher-cli, direct-rss]
+---
+
+# 20260625_0113 보안 뉴스 수집본
+
+> 기준: blogwatcher-cli로 수집한 unread 기사만 사용합니다.
+> RSS 피드 URL은 수집 인프라용이며, 아래 표에는 원본 기사 URL만 기록합니다.
+
+## 수집 결과
+
+- import: Imported 0 blog(s), skipped 14 duplicate(s)
+- scan: scan done
+- unread_articles: 21
+
+## 기사 목록
+
+| 제목 | 매체 | 태그 | 발행일 | 원본 기사 URL | 분류 | 요약 |
+|---|---|---|---|---|---|---|
+| FortiSASE Training Builds Skills for Secure Access Success | Fortinet Blogs | Fortinet | 2026-06-24 | https://feeds.fortinet.com/~/958368557/0/fortinet/blogs~FortiSASE-Training-Builds-Skills-for-Secure-Access-Success |  | Learn how FortiSASE training helps customers and partners build practical skills for SASE deployment, ZTNA, endpoint control, and secure access.… Learn how FortiSASE training helps customers and partners build practical skills for SASE deployment, ZTNA, endpoint control, and secure access. 추가 세부 내용은 원문을 확인해 주세요. |
+| New CISA Guide Assists Federal Agencies with Transitioning to Modernized Zero Trust Architectures | CISA News | CISA | 2026-06-24 | https://www.cisa.gov/news-events/news/new-cisa-guide-assists-federal-agencies-transitioning-modernized-zero-trust-architectures |  | An official website of the United States government Here’s how you know 추가 세부 내용은 원문을 확인해 주세요. |
+| 스피어에이엑스, 미국 반도체 기업 블레이즈와 맞손...엣지 AI 컴퓨팅 협력 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207303 |  | 스피어에이엑스가 미국 캘리포니아주에 본사를 둔 글로벌 AI 반도체 기업 블레이즈(Blaize)와 전략적 업무협약(MOU)을 체결했다. 이번 협약은 피지컬 AI 분 스피어에이엑스가 미국 캘리포니아주에 본사를 둔 글로벌 AI 반도체 기업 블레이즈(Blaize)와 전략적 업무협약(MOU)을 체결했다. 이번 협약은 피지컬 AI 분야 시장에서 입지를 확보하기 위해 AI 반도체 기반 제품을 공동 개발하고 상용화하는 것을 골자로 한다. |
+| 한·일 IT 협회 도쿄서 AI 비즈니스 대화 개최...협력 방안 모색 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207302 |  | 한국정보산업연합회와 일본정보서비스산업협회(JISA)가 6월 24일 일본 도쿄에서 '한-일 AI 비즈니스 대화'를 공동 개최했다. 이번 행사는 양국 IT 산업을 대 한국정보산업연합회와 일본정보서비스산업협회(JISA)가 6월 24일 일본 도쿄에서 '한-일 AI 비즈니스 대화'를 공동 개최했다. 이번 행사는 양국 IT 산업을 대표하는 협회가 AI 분야의 정보 공유와 비즈니스 협력을 촉진하기 위해 매년 교대로 개최하는 자리다. |
+| [보안칼럼] API 보안의 사각지대: 자격증명 관리에서 런타임 보호까지 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207301 |  | 최근 API와 관련된 개인정보 유출 사례와 규제기관의 권고를 살펴보면, 이제 API 보안은 단순히 키를 안전하게 보관하거나 기존 웹 보안 장비로 트래픽을 필터링하 최근 API와 관련된 개인정보 유출 사례와 규제기관의 권고를 살펴보면, 이제 API 보안은 단순히 키를 안전하게 보관하거나 기존 웹 보안 장비로 트래픽을 필터링하는 수준을 넘어섰음을 알 수 있다. API는 클라우드, 모바일 서비스, 파트너 연동, 내부 업무 시스템, 데이터 플랫폼을 연결하는 핵심 경계가 되었고, 이 경계에서 발생하는 보안 사각지대는 자격증명 노출, 권한 검증 실패, 과도한 데이터 반환, 런타임 이상행위로 이어질 수 있다. |
+| 씨큐비스타, 차세대 NDR 플랫폼 패킷사이버 v3.0 출시 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207300 |  | 씨큐비스타가 23일 서울 서초구 엘타워에서 신제품 발표회를 열고 차세대 NDR 플랫폼 패킷사이버 v3.0을 공개했다. 이번 행사에는 아이플래넷, 티사이언티픽, D 씨큐비스타가 23일 서울 서초구 엘타워에서 신제품 발표회를 열고 차세대 NDR 플랫폼 패킷사이버 v3.0을 공개했다. 이번 행사에는 아이플래넷, 티사이언티픽, DB INC, 젠트넷정보기술 등 주요 파트너사와 보안 업계 관계자 130여 명이 참석했다. |
+| 수산아이앤티 '디바이스 인증 서비스', 국제 표준 보안 인증 ISO/IEC 27001 획득 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207299 |  | 수산아이앤티가 국내 통신사에 공급 중인 디바이스 인증 서비스가 정보보호 경영시스템 국제 표준인 ISO/IEC 27001 인증을 받았다.ISO/IEC 27001은 수산아이앤티가 국내 통신사에 공급 중인 디바이스 인증 서비스가 정보보호 경영시스템 국제 표준인 ISO/IEC 27001 인증을 받았다. 추가 세부 내용은 원문을 확인해 주세요. |
+| “파일과 단말을 신뢰하지 마라”…인섹시큐리티, 파일 보안 세미나 성황리 개최 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207298 |  | 인섹시큐리티(대표 김종광)는 6월 23일 서울 독산동 인섹시큐리티 교육센터에서 글로벌 사이버보안 기업 옵스왓(OPSWAT)과 ‘제로 트러스트 기반 파일 보안 세미 인섹시큐리티(대표 김종광)는 6월 23일 서울 독산동 인섹시큐리티 교육센터에서 글로벌 사이버보안 기업 옵스왓(OPSWAT)과 ‘제로 트러스트 기반 파일 보안 세미나’를 개최했다고 24일 밝혔다. 추가 세부 내용은 원문을 확인해 주세요. |
+| KISA, 필리핀 국가사이버안전센터 구축 사업 착수…4년간 2,560만 달러 규모 ODA 추진 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207297 |  | 한국인터넷진흥원은 한국국제협력단이 추진하는 ‘필리핀 사이버 위기 대응 역량 강화를 위한 국가사이버안전센터 구축 사업’의 수행기관으로 최종 선정돼 사업을 본격적으로 한국인터넷진흥원은 한국국제협력단이 추진하는 ‘필리핀 사이버 위기 대응 역량 강화를 위한 국가사이버안전센터 구축 사업’의 수행기관으로 최종 선정돼 사업을 본격적으로 시작한다고 24일 밝혔다. 추가 세부 내용은 원문을 확인해 주세요. |
+| 금융보안원-인터넷은행 3사, 국내 최초 ‘보이스피싱 탐지 AI 공동모델’ 상용화 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207296 |  | 금융권이 보이스피싱 범죄 대응을 위해 인공지능 공동 방어 체계를 구축했다.금융보안원과 카카오뱅크, 토스뱅크, 케이뱅크는 연합학습(Federated Learning 금융권이 보이스피싱 범죄 대응을 위해 인공지능 공동 방어 체계를 구축했다. 추가 세부 내용은 원문을 확인해 주세요. |
+| S2W, 일본 현지법인 출범…공공·민간 시장 동시 공략 나선다 | 데일리시큐 | 데일리시큐 | 2026-06-24 | https://www.dailysecu.com/news/articleView.html?idxno=207295 |  | 빅데이터 분석 인공지능 기업 S2W⁠(대표 서상덕)가 일본 시장 공략을 위한 현지법인 설립을 공식화했다. 회사는 일본 도쿄에서 기자간담회와 개소식을 열고 현지 사 빅데이터 분석 인공지능 기업 S2W⁠(대표 서상덕)가 일본 시장 공략을 위한 현지법인 설립을 공식화했다. 회사는 일본 도쿄에서 기자간담회와 개소식을 열고 현지 사업 전략과 운영 계획을 공개하며 일본 시장 확대에 본격적으로 나섰다. |
+| Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/ | Cybercrime, Malware & Threats, Tracking & Law Enforcement, Amadey, cybercrime, Europol, law enforcement, malware, Microsoft, StealC, takedown | Microsoft, law enforcement, and cybersecurity companies take down infrastructure shared by Amadey and StealC malware. Hundreds of C&C servers were disrupted in an operation involving law enforcement and several cybersecurity companies. |
+| Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/exclusive-meet-aivex-a-new-triage-model-built-to-reduce-supply-chain-threat-and-risk/ | Artificial Intelligence, Vulnerabilities, AIVEX, Featured, SBOM | Researcher Devashri Datta introduces AIVEX and SRIL, new approaches designed to bring context-aware risk analysis to software supply chains. The new framework seeks to help security teams identify which software supply chain vulnerabilities pose the greatest operational, safety, and business risks in AI-driven environments. |
+| macOS Weaknesses Chained to Silently Disable Endpoint Security Agents | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/macos-weaknesses-chained-to-silently-disable-endpoint-security-agents/ | Endpoint Security, disable security, endpoint security, macOS, security product vulnerability | A macOS attack technique allows a standard, non-administrative user account to silently disable enterprise endpoint security tools A standard non-admin account is sufficient to conduct an attack that exploits legitimate OS behavior rather than software vulnerabilities. 추가 세부 내용은 원문을 확인해 주세요. |
+| Third DraftKings Hacker Sentenced to 18 Months in Prison | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/third-draftkings-hacker-sentenced-to-18-months-in-prison/ | Cybercrime, cybercrime, DraftKings, hacker, sentenced | A third man charged for his role in a 2022 hacking attack on the sports and betting website DraftKings has been sentenced to prison Nathan Austad has been ordered to pay roughly $1.8 million in forfeiture and restitution, and the sentence also includes 3 years of supervised release. 추가 세부 내용은 원문을 확인해 주세요. |
+| Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/ | Vulnerabilities, CISA KEV, exploited, Ubiquiti, vulnerability | Threat actors are exploiting CVE-2026-34908, CVE-2026-34909, and CVE-2026-34910, critical vulnerabilities in Ubiquiti devices. The flaws allow remote, unauthenticated attackers to make system changes, access underlying accounts, and inject commands. |
+| Agentic AI Security: Wrong Context, Wrong Decisions at Machine Speed | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/agentic-ai-security-wrong-context-wrong-decisions-at-machine-speed/ | Artificial Intelligence, agentic AI, AI, context, Featured | AI systems that don’t have the correct context cannot make correct decisions, but experts propose some solutions. Context is the central plank of AI in general, and agentic AI in particular. If an AI system doesn’t have the correct context, it cannot make the correct decisions. |
+| New ‘Mistic’ RAT Opens Door to Several Ransomware Families | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/ | Malware & Threats, backdoor, cybercrime, initial access broker, malware, Mistic, RAT | Woodgnat, an IAB for Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta ransomware, is using Mistic RAT in new attacks. Mistic is used by Woodgnat, an initial access broker working with Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta. |
+| Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/ | Application Security, Vulnerabilities, CI/CD, Cordyceps, repository, vulnerability | Cordyceps, a systemic class of exploitable CI/CD vulnerabilities, allows unauthenticated attackers to hijack developer workflows. The security defects allow unauthenticated users to take control of the open source software supply chain. |
+| BeyondTrust, LastPass Impacted by Klue-Salesforce Incident | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/beyondtrust-lastpass-impacted-by-klue-salesforce-incident/ | Data Breaches, data breach, Klue, Salesforce | Nearly a dozen cybersecurity firms have confirmed having business data stolen from their Salesforce instances during the Klue hack. Over a dozen Klue customers have confirmed that hackers stole data from their Salesforce instances. |
+| Webinar Today: Modern Exposure Validation in the AI Era | SecurityWeek | SecurityWeek | 2026-06-24 | https://www.securityweek.com/webinar-today-modern-exposure-validation-in-the-ai-era/ | Vulnerabilities | Proving which vulnerabilities an attacker could actually use, and deciding the right call on evidence, is the hard part. The exploit timeline collapsed. Make sure your validation didn't. |
+
+## 메모
+
+- RSS 피드 URL은 제외했습니다.
+- 수집 후 unread 상태의 기사만 기록했습니다.
+- 다음 실행을 위해 unread 항목은 read-all 처리합니다.

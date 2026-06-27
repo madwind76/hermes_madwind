@@ -1,7 +1,7 @@
 ---
 title: Headroom — 운영 및 모니터링
 created: 2026-06-10
-updated: 2026-06-13
+updated: 2026-06-21
 type: tool
 tags: [tool, llm, ai-ml, optimization, proxy, mcp]
 sources: [raw/20260610_Headroom_완전분석.md]
@@ -10,6 +10,9 @@ confidence: high
 > [[headroom]]의 분할 페이지입니다.
 
 # Headroom — 운영 및 모니터링
+
+## 참고 URL
+- [Internal raw source](raw/20260610_Headroom_완전분석.md)
 
 ## 성능 벤치마크
 

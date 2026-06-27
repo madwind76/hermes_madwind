@@ -1,7 +1,7 @@
 ---
 title: Windows API instrumentation — CTF patterns
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, windows, reverse-engineering, automation, rev]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup, https://github.com/noamgariani11/picoCTF-2025-Writeup]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Windows API instrumentation — CTF patterns
+
+## 참고 URL
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+- [noamgariani11/picoCTF-2025-Writeup](https://github.com/noamgariani11/picoCTF-2025-Writeup)
 
 ## 1. 정의
 **Windows API instrumentation**은 Frida, debugger, hook script로 `Sleep`, `CreateFileA`, `WriteFile` 같은 Win32 API 호출을 가로채 동작을 관찰하는 CTF 패턴입니다.

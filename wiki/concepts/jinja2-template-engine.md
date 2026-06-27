@@ -1,7 +1,7 @@
 ---
 title: Jinja2 Template Engine — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, template-engine, template, ssti, injection, server-side]
 sources: [https://jinja.palletsprojects.com/, https://jinja.palletsprojects.com/en/stable/sandbox/, https://portswigger.net/web-security/server-side-template-injection, https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # Jinja2 Template Engine — 보안 용어 해설
+
+## 참고 URL
+- [jinja.palletsprojects.com](https://jinja.palletsprojects.com/)
+- [jinja.palletsprojects.com](https://jinja.palletsprojects.com/en/stable/sandbox/)
+- [portswigger.net](https://portswigger.net/web-security/server-side-template-injection)
+- [owasp.org](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server_Side_Template_Injection)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

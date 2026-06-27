@@ -1,7 +1,7 @@
 ---
 title: Local Authority — picoCTF web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, client-side, javascript, source-inspection, login, secrets, curl]
 sources: [https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c, https://medium.com/@rachael_muga/picoctf-local-authority-web-exploitation-4eb654fa9702, https://hackmd.io/@sunfrancis12/HJpCC9Sph]
@@ -12,6 +12,12 @@ confidence: high
 
 > 겉보기에는 평범한 로그인 문제지만, 실제 핵심은 **클라이언트 측 `secure.js`** 에 숨겨진 인증 로직과 하드코딩된 자격 증명입니다.
 > DevTools로 JS를 열어보면 `checkPassword` 흐름과 관리자 해시를 바로 확인할 수 있습니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@rwsimpson99/picoctf-local-authority-9026cd92436c)
+- [medium.com](https://medium.com/@rachael_muga/picoctf-local-authority-web-exploitation-4eb654fa9702)
+- [hackmd.io](https://hackmd.io/@sunfrancis12/HJpCC9Sph)
+
 
 ## 1. 한 줄 요약
 - UI는 평범한 로그인 폼처럼 보이지만, 실제 정답은 **`secure.js` / `login.php` 소스**에 있습니다.

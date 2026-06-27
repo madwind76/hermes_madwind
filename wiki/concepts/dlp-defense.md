@@ -1,13 +1,17 @@
 ---
 title: DLP — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, dlp, data-loss-prevention, data-exfiltration, compliance, gdpr, hipaa, insider-threat]
 sources: [https://ko.wikipedia.org/wiki/데이터_유출_방지, https://ko.wikipedia.org/wiki/정보_보호]
 confidence: high
 ---
 > [[dlp]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/데이터_유출_방지)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/정보_보호)
 
 ## Step 3: 전문 용어 설명 (위키백과 기반)
 ### 컴플라이언스 및 규제 연계 (Compliance Mapping)

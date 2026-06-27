@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f8612db956228391",
+        "id": "3bae0f7ffe2290ed",
         "type": "tabs",
         "children": [
           {
-            "id": "e40bfe442f3b5b58",
+            "id": "a989b82178139ef3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/rce.md",
+                "file": "raw/articles/2026/202606/weekly-deep-analysis-report-20260622-20260626.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rce"
+              "title": "weekly-deep-analysis-report-20260622-20260626"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:picoctf tag:#web  ",
+                "query": "monthly-trend",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5,
-    "collapsed": true
+    "width": 475.5
   },
   "right": {
     "id": "51c317a744ede651",
@@ -181,34 +180,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "e40bfe442f3b5b58",
+  "active": "a989b82178139ef3",
   "lastOpenFiles": [
-    "concepts/ctf-writeup-ingestion-workflow.md",
-    "queries/proxy-mirror-final-writeup.md",
-    "concepts/exploitation.md",
-    "queries/babygame02-final-writeup.md",
-    "queries/perplexed-final-writeup.md",
-    "queries/tap-into-hash-final-writeup.md",
-    "queries/quantum-scrambler-final-writeup.md",
-    "queries/chronohack-final-writeup.md",
-    "queries/binary-instrumentation-2-final-writeup.md",
-    "queries/binary-instrumentation-1-final-writeup.md",
-    "queries/flag-hunters-final-writeup.md",
-    "queries/picoctf-2025-rec-survey.md",
-    "concepts/prng-seed-bruteforce-ctf-patterns.md",
-    "concepts/windows-api-instrumentation-ctf-patterns.md",
-    "concepts/reverse-engineering-ctf-patterns.md",
-    "concepts/oob-movement-game-state-corruption-ctf-patterns.md",
-    "index.md",
-    "queries/web-ctf-writeup-internal-service.md",
-    "concepts/redis-ssrf-command-injection-ctf-patterns.md",
-    "queries/urlapp.md",
-    "queries/web-ctf-starter.md",
-    "queries/picoctf-pwn-survey.md",
-    "queries/picoctf-2022-pwn-survey.md",
-    "queries/heap-1-final-writeup.md",
-    "queries/ancient-history-final-writeup.md",
-    "queries/super-serial-final-writeup.md",
+    "queries/google-ctf-2024-crypto-blinders.md",
+    "queries/google-ctf-2024-quals-survey.md",
+    "concepts/google-ctf-family-hub.md",
+    "concepts/google-ctf-quick-summary.md",
+    "concepts/google-ctf-topic-map.md",
+    "raw/articles/20260627_0705_security_news_source_collection.md",
+    "raw/articles/2026/202606/monthly-trend-report-202606.md",
+    "raw/articles/2026/202606/cve-newly-discovered-202606.md",
+    "raw/articles/20260626_monthly_trend_report_202606.md",
+    "queries/event-viewing-final-writeup.md",
+    "raw/articles/20260626_weekly_deep_analysis_report_20260622-20260626.md",
+    "raw/articles/20260626_weekly_trend_report_20260622-20260626.md",
+    "raw/articles/20260626_weekly_newsletter_20260622-20260626.md",
+    "raw/articles/20260626_cve-newly-discovered-202606.md",
+    "concepts/forensics-deploy-05-endianness-evidence.md",
+    "concepts/forensics-deploy-04-broken-packet-clue.md",
+    "concepts/forensics-deploy-03-stego-postcard.md",
+    "concepts/forensics-deploy-02-locked-laptop-secret-memo.md",
+    "concepts/forensics-deploy-01-messenger-leak-log.md",
+    "concepts/forensics-scenario-deployment-readme.md",
+    "raw/articles/20260626_1315_security_news_source_collection.md",
+    "concepts/forensics-windows-hub.md",
+    "concepts/forensics-stego-hub.md",
+    "concepts/forensics-scenario-production-plan.md",
+    "concepts/forensics-scenario-01-messenger-leak-log.md",
+    "raw/articles/security_news_source_summary.md",
+    "scripts/__pycache__/security_news_source_pipeline.cpython-311.pyc",
+    "scripts/__pycache__",
+    "raw/articles/security_news_source_summary.json",
+    "scripts/security_news_source_pipeline.py",
+    "scripts",
     "assets/infosec/source-inspection-minification-ctf-patterns.svg",
     "assets/infosec/jinja2-filter-bypass.svg",
     "assets/infosec/jinja2-template-engine.svg",

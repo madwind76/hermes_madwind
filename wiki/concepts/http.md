@@ -1,7 +1,7 @@
 ---
 title: HTTP — 보안 용어 해설
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, protocol, api]
 sources: [https://ko.wikipedia.org/wiki/HTTP, https://developer.mozilla.org/en-US/docs/Web/HTTP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # HTTP — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/HTTP)
+- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

@@ -1,7 +1,7 @@
 ---
 title: Heap Dump — 보안 용어 해설과 Web CTF 패턴
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ctf, storage, data-exfiltration, api]
 sources: [https://nodejs.org/learn/diagnostics/memory/using-heap-snapshot, https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots, https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/head-dump/head-dump.md, https://medium.com/@rahmeez/picoctf-head-dump-writeup-2455761c362d]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # Heap Dump — 보안 용어 해설과 Web CTF 패턴
+
+## 참고 URL
+- [nodejs.org](https://nodejs.org/learn/diagnostics/memory/using-heap-snapshot)
+- [developer.chrome.com](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots)
+- [Original source](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/head-dump/head-dump.md)
+- [medium.com](https://medium.com/@rahmeez/picoctf-head-dump-writeup-2455761c362d)
 
 ## Step 1. 단어 직역과 쉬운 비유
 

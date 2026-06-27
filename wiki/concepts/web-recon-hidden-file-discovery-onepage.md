@@ -1,7 +1,7 @@
 ---
 title: 정찰형 Web CTF 실전 1페이지 요약
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, reconnaissance, onepage, robots-txt, hidden-file, directory-discovery]
 sources: [/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-checklist.md, /home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # 정찰형 Web CTF 실전 1페이지 요약
+
+## 참고 URL
+- [Reference](/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-checklist.md)
+- [Reference](/home/kisec/wiki/concepts/web-recon-hidden-file-discovery-ctf-hub.md)
 
 ## 1. 이 페이지의 목적
 이 페이지는 **`robots.txt`, 숨은 경로, 숨김 파일, 소스 코드 단서**를 빠르게 점검할 때 보는 실전용 요약판입니다.

@@ -1,7 +1,7 @@
 ---
 title: Flask signed session cookie forgery — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, flask, cookies, session, signing, authentication]
 sources: [https://palletsprojects.com/p/flask/, https://itsdangerous.palletsprojects.com/, https://picoctf2021.haydenhousen.com/web-exploitation/most-cookies]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Flask signed session cookie forgery — CTF patterns
+
+## 참고 URL
+- [palletsprojects.com](https://palletsprojects.com/p/flask/)
+- [itsdangerous.palletsprojects.com](https://itsdangerous.palletsprojects.com/)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/most-cookies)
 
 ## 1. 정의
 **Flask signed session cookie forgery**는 Flask가 `secret_key`로 서명하는 세션 쿠키를 CTF 공격면으로 보는 패턴입니다. 쿠키 값이 암호화되지 않았더라도, 서명 키가 약하면 공격자가 세션을 다시 만들어 관리자 권한이나 다른 사용자 상태를 위조할 수 있습니다.

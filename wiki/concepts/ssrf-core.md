@@ -1,7 +1,7 @@
 ---
 title: SSRF (Server-Side Request Forgery, 서버 측 요청 위조) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ssrf, server-side, request-forgery, cloud-metadata, bypass, owasp]
 sources: [https://ko.wikipedia.org/wiki/SSRF, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # SSRF (Server-Side Request Forgery, 서버 측 요청 위조) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/SSRF)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

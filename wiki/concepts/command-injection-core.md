@@ -1,7 +1,7 @@
 ---
 title: Command Injection (명령어 주입, OS 명령어 주입) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, command-injection, os-command-injection, shell-injection, rce, owasp, input-validation]
 sources: [https://ko.wikipedia.org/wiki/명령어_주입_공격, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Command Injection (명령어 주입, OS 명령어 주입) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/명령어_주입_공격)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

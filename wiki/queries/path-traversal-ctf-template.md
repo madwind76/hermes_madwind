@@ -1,14 +1,20 @@
 ---
 title: Path Traversal CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, path-traversal]
-sources: []
+sources: [https://github.com/siunam321/ctf-writeups/blob/main/picoCTF-2022/Web-Exploitation/Forbidden-Paths.md, https://medium.com/@ahmednarmer1/ctf-day-38-89735a37ed5f, https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/One%20Line%20PHP%20Challenge.md]
 confidence: medium
 ---
 
 # Path Traversal CTF Template
+
+## 참고 URL
+- [Original writeup](https://github.com/siunam321/ctf-writeups/blob/main/picoCTF-2022/Web-Exploitation/Forbidden-Paths.md)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-38-89735a37ed5f)
+- [Original writeup](https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Web_Exploitation/One%20Line%20PHP%20Challenge.md)
+
 
 ## 1. 요약
 - 플랫폼:

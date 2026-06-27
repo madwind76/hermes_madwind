@@ -1,14 +1,21 @@
 ---
 title: File Upload CTF Template
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, web, file-upload]
-sources: []
+sources: [https://medium.com/cyberx/ctf-hacker101-tempimage-27f397893408, https://www.snyk.io/blog/fetch-the-flag-ctf-2022-writeup-file-explorer/, https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md, https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a]
 confidence: medium
 ---
 
 # File Upload CTF Template
+
+## 참고 URL
+- [medium.com](https://medium.com/cyberx/ctf-hacker101-tempimage-27f397893408)
+- [www.snyk.io](https://www.snyk.io/blog/fetch-the-flag-ctf-2022-writeup-file-explorer/)
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/n0s4n1ty%201/n0s4n1ty%201.md)
+- [medium.com](https://medium.com/@pragusga/picoctf-2025-n0s4n1ty-1-file-upload-to-rce-82f458e7706a)
+
 
 ## 1. 요약
 - 플랫폼:

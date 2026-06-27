@@ -1,7 +1,7 @@
 ---
 title: MD5 collision / upload integrity bypass — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, file-upload, md5, hash-collision, integrity]
 sources: [https://www.mscs.dal.ca/~selinger/md5collision/, https://ctftime.org/writeup/26974, https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/It%20is%20my%20Birthday/README.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # MD5 collision / upload integrity bypass — CTF patterns
+
+## 참고 URL
+- [www.mscs.dal.ca](https://www.mscs.dal.ca/~selinger/md5collision/)
+- [CTFtime writeup](https://ctftime.org/writeup/26974)
+- [Original source](https://github.com/HHousen/PicoCTF-2021/blob/master/Web%20Exploitation/It%20is%20my%20Birthday/README.md)
 
 ## 1. 정의
 **MD5 collision / upload integrity bypass**는 업로드된 두 파일이 서로 다르지만 같은 MD5 해시를 갖는 점을 이용해, 서버의 무결성 검사를 우회하는 패턴입니다. 파일 형식 검사와 해시 검사가 함께 있어도, 알고리즘 자체가 충돌에 약하면 공격자가 검증을 통과할 수 있습니다.

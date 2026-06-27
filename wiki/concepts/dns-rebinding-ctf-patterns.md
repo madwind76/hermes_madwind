@@ -1,7 +1,7 @@
 ---
 title: DNS Rebinding
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, dns, rebinding, localhost]
 sources: [https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/, https://ctftime.org/task/18312, https://ctftime.org/writeup/31677, https://github.com/orangetw/My-CTF-Web-Challenges]
@@ -9,6 +9,12 @@ confidence: medium
 ---
 
 # DNS Rebinding
+
+## 참고 URL
+- [blog.nella17.tw](https://blog.nella17.tw/p/hitcon-ctf-2021-writeups/)
+- [CTFtime writeup](https://ctftime.org/task/18312)
+- [CTFtime writeup](https://ctftime.org/writeup/31677)
+- [orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
 
 ## 정의
 DNS rebinding은 같은 도메인이 시간이 지나며 다른 IP로 해석되도록 만들어 브라우저의 동일 출처 판단을 흔드는 기법입니다.

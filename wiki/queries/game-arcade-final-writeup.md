@@ -1,7 +1,7 @@
 ---
 title: Game Arcade — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://ctftime.org/writeup/39221, https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc, https://ctftime.org/task/28606]
@@ -11,6 +11,12 @@ confidence: medium
 # Game Arcade — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/39221)
+- [Gist](https://gist.github.com/terjanq/27230afcee73ee75484ac14ac53e78bc)
+- [CTFtime writeup](https://ctftime.org/task/28606)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2024

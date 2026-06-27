@@ -1,7 +1,7 @@
 ---
 title: Scavenger Hunt — picoCTF web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, reconnaissance, robots-txt, htaccess, ds-store, source-inspection]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-17-24ec4fd7a7e5, https://medium.com/@tolentinojesusanthony/scavenger-hunt-picoctf-dc37004ed0e3, https://medium.com/@bl0ss0mx5/picogym-web-exploitation-writeup-scavenger-hunt-easy-picoctf-bf254302f920]
@@ -11,6 +11,12 @@ confidence: high
 # Scavenger Hunt — picoCTF web writeup
 
 > 웹페이지 곳곳에 흩어진 단서를 모아 `robots.txt`, 숨은 경로, `.htaccess`, `.DS_Store` 등을 따라가며 flag를 찾는 picoCTF Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-17-24ec4fd7a7e5)
+- [medium.com](https://medium.com/@tolentinojesusanthony/scavenger-hunt-picoctf-dc37004ed0e3)
+- [medium.com](https://medium.com/@bl0ss0mx5/picogym-web-exploitation-writeup-scavenger-hunt-easy-picoctf-bf254302f920)
+
 
 ## 1. 한 줄 요약
 - 핵심은 **한 번에 끝내는 취약점**이 아니라 **흩어진 단서 수집**입니다.

@@ -1,7 +1,7 @@
 ---
 title: RCE (Remote Code Execution) — 원격 코드 실행
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, rce, remote-code-execution, vulnerability, critical]
 sources: [https://ko.wikipedia.org/wiki/원격_코드_실행, https://ko.wikipedia.org/wiki/임의_코드_실행, https://ko.wikipedia.org/wiki/버퍼_오버플로, https://ko.wikipedia.org/wiki/Log4Shell]
@@ -9,6 +9,12 @@ confidence: high
 ---
 
 # RCE (Remote Code Execution) — 원격 코드 실행
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/원격_코드_실행)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/임의_코드_실행)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/버퍼_오버플로)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/Log4Shell)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 

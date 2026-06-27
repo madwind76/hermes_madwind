@@ -1,7 +1,7 @@
 ---
 title: heap 2 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, heap-overflow, function-pointer, endianness, picoctf]
 sources: [https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Explotation/heap-2.md, https://qiita.com/colza_/items/8ce95eb48a45f28be3e1, https://yun.ng/c/ctf/picoctf/pwn/heap-2]
@@ -11,6 +11,12 @@ confidence: high
 # heap 2 — picoCTF 2024 pwn writeup
 
 > `heap 2`는 **heap overflow로 함수 포인터를 덮어서 `win()`을 호출하는 문제**입니다.
+
+## 참고 URL
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Explotation/heap-2.md)
+- [qiita.com](https://qiita.com/colza_/items/8ce95eb48a45f28be3e1)
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/heap-2)
+
 
 ## 핵심 요약
 - `safe_var`가 함수 포인터처럼 사용됩니다.

@@ -1,7 +1,7 @@
 ---
 title: PIE TIME — picoCTF 2025 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, binary-exploitation, pie, aslr, function-pointer, picoctf]
 sources: [https://medium.com/@routbiswajit70681/picoctf-write-up-pie-time-37ffcdc29b71, https://systemweakness.com/pie-time-picoctf-2025-dbec42ba0857, https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Binary%20Exploitation/PIE%20TIME/PIE%20TIME.md]
@@ -11,6 +11,12 @@ confidence: high
 # PIE TIME — picoCTF 2025 pwn writeup
 
 > `PIE TIME`은 **PIE(Position Independent Executable)로 인해 바뀌는 함수 주소를, `main()` 주소 누출과 고정 오프셋 계산으로 역산해서 `win()`으로 점프하는 picoCTF 2025 Binary Exploitation 문제**입니다. 핵심은 버퍼 오버플로가 아니라 **함수 포인터 점프와 ASLR/PIE 대응**입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@routbiswajit70681/picoctf-write-up-pie-time-37ffcdc29b71)
+- [systemweakness.com](https://systemweakness.com/pie-time-picoctf-2025-dbec42ba0857)
+- [Original writeup](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Binary%20Exploitation/PIE%20TIME/PIE%20TIME.md)
+
 
 ## 1. 핵심 요약
 

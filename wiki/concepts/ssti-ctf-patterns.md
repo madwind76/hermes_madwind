@@ -1,7 +1,7 @@
 ---
 title: SSTI CTF Patterns
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, ssti, research]
 sources: []
@@ -9,6 +9,9 @@ confidence: medium
 ---
 
 # SSTI CTF Patterns
+
+## 참고 URL
+- 외부 원문 URL 없음 (내부 정리 페이지)
 
 ## 정의
 Web CTF에서 SSTI는 **사용자 입력이 템플릿 엔진의 문법으로 해석되는지** 확인하는 문제 유형입니다.

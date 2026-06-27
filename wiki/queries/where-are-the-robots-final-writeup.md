@@ -1,7 +1,7 @@
 ---
 title: Where Are the Robots? — picoCTF web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, reconnaissance, robots-txt, hidden-path, source-inspection]
 sources: [https://medium.com/@hasnain_abid/where-are-the-robots-picoctf-web-exploitation-writeup-82a121cfd935, https://medium.com/@Kamal_S/picoctf-web-exploitation-where-are-the-robots-399111c4dc8e, https://medium.com/@vanya.verma31/where-are-the-robots-856b904fdc5d]
@@ -11,6 +11,12 @@ confidence: high
 # Where Are the Robots? — picoCTF web writeup
 
 > `robots.txt`에 숨겨진 경로를 따라가며 flag를 찾는 picoCTF Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@hasnain_abid/where-are-the-robots-picoctf-web-exploitation-writeup-82a121cfd935)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-where-are-the-robots-399111c4dc8e)
+- [medium.com](https://medium.com/@vanya.verma31/where-are-the-robots-856b904fdc5d)
+
 
 ## 1. 한 줄 요약
 - 핵심은 **웹사이트의 공개 안내 파일인 `robots.txt`** 를 확인하는 것입니다.

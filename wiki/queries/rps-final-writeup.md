@@ -1,7 +1,7 @@
 ---
 title: RPS — picoCTF 2022 pwn writeup
 created: 2026-06-15
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, logic-bug, strstr, prng, picoctf]
 sources: [https://ctftime.org/writeup/33269, https://cryptocat.me/blog/ctf/2022/pico/pwn/rps/, https://hhyleung.github.io/writeups/picoctf-2022-binary/]
@@ -11,6 +11,12 @@ confidence: high
 # RPS — picoCTF 2022 pwn writeup
 
 > `RPS`는 **Rock/Paper/Scissors 게임 로직에서 `strstr()`와 `rand()`를 함께 사용해 승리 조건을 속이는 picoCTF 2022 Binary Exploitation 문제**입니다. 핵심은 **메모리 손상이 아니라 로직 결함**입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/33269)
+- [cryptocat.me](https://cryptocat.me/blog/ctf/2022/pico/pwn/rps/)
+- [hhyleung.github.io](https://hhyleung.github.io/writeups/picoctf-2022-binary/)
+
 
 ## 1. 핵심 요약
 

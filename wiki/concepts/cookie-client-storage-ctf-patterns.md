@@ -1,7 +1,7 @@
 ---
 title: Cookie client storage — Web CTF patterns
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, session, storage, client-side]
 sources: [https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/Cookie%20Monster%20Secret%20Recipe/Cookie%20Monster%20Secret%20Recipe.md, https://medium.com/@Kamal_S/picoctf-web-exploitation-cookie-monster-secret-recipe-4c1776da9251, https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Cookie client storage — Web CTF patterns
+
+## 참고 URL
+- [Original source](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Web%20Exploitation/Cookie%20Monster%20Secret%20Recipe/Cookie%20Monster%20Secret%20Recipe.md)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-cookie-monster-secret-recipe-4c1776da9251)
+- [blog.qz.sg](https://blog.qz.sg/picoctf-2025-web-exploitation-writeups/)
 
 ## 1. 정의
 **Cookie client storage**는 브라우저가 서버 도메인별로 저장·전송하는 쿠키 값을 CTF 공격면으로 보는 패턴입니다. 쿠키 자체는 정상 기능이지만, CTF에서는 플래그·역할·세션 상태가 쿠키에 그대로 또는 인코딩된 형태로 저장되는 경우가 많습니다.
@@ -38,6 +43,10 @@ confidence: high
 picoCTF 2025 `Cookie Monster Secret Recipe`는 로그인 우회 문제가 아니라 **쿠키 검사 문제**입니다. 임의 자격 증명으로 로그인하면 `Access Denied` 응답과 함께 “Have you checked your cookies lately?”라는 힌트가 나오고, 브라우저 쿠키 저장소에 `secret_recipe` 값이 남습니다. 이 값은 URL 인코딩과 Base64 인코딩이 겹쳐 있어 `URL decode → Base64 decode` 순서로 읽으면 flag 형식 문자열이 복원됩니다.
 
 관련 정리: [[cookies-final-writeup]], [[cookie-monster-secret-recipe-final-writeup]], [[power-cookie-final-writeup]], [[more-cookies-final-writeup]]
+
+추가 survey: [[cookie-tampering-writeup-survey]]
+
+leaf writeup: [[postbook-final-writeup]]
 
 ## 6. 방어 관점
 - 민감 정보는 클라이언트 쿠키에 평문 또는 단순 인코딩으로 저장하지 않습니다.

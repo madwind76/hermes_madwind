@@ -1,14 +1,20 @@
 ---
 title: SSRF CTF Template
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-06-21
 type: query
 tags: [ctf, web, ssrf]
-sources: []
+sources: [https://github.com/muhashali/writeup-SSRF, https://github.com/jdonsec/allthingsssrf, https://github.com/orangetw/My-CTF-Web-Challenges]
 confidence: medium
 ---
 
 # SSRF CTF Template
+
+## 참고 URL
+- [muhashali/writeup-SSRF](https://github.com/muhashali/writeup-SSRF)
+- [jdonsec/allthingsssrf](https://github.com/jdonsec/allthingsssrf)
+- [orangetw/My-CTF-Web-Challenges](https://github.com/orangetw/My-CTF-Web-Challenges)
+
 
 ## 1. 요약
 - 플랫폼:

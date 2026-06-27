@@ -1,7 +1,7 @@
 ---
 title: PIE/ASLR function offset — CTF patterns
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: concept
 tags: [ctf, pwn, binary-exploitation, pie, aslr, info-leak, function-pointer]
 sources: [https://medium.com/@routbiswajit70681/picoctf-write-up-pie-time-37ffcdc29b71, https://systemweakness.com/pie-time-picoctf-2025-dbec42ba0857, https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Binary%20Exploitation/PIE%20TIME/PIE%20TIME.md]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # PIE/ASLR function offset — CTF patterns
+
+## 참고 URL
+- [medium.com](https://medium.com/@routbiswajit70681/picoctf-write-up-pie-time-37ffcdc29b71)
+- [systemweakness.com](https://systemweakness.com/pie-time-picoctf-2025-dbec42ba0857)
+- [Original source](https://github.com/snwau/picoCTF-2025-Writeup/blob/main/Binary%20Exploitation/PIE%20TIME/PIE%20TIME.md)
 
 ## Step 1. 단어 풀이
 - **PIE (Position Independent Executable)**: 실행될 때마다 코드 영역의 기준 주소가 달라지도록 만든 실행 파일 형식입니다.

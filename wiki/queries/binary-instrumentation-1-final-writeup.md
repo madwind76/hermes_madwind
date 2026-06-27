@@ -1,7 +1,7 @@
 ---
 title: Binary Instrumentation 1 — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, windows, automation, rev, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Binary%20Instrumentation%201/Binary%20Instrumentation%201.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: high
 # Binary Instrumentation 1 — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 Windows API 호출을 Frida로 가로채서 `Sleep`이 어디서 호출되는지 확인하는 reverse engineering 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Binary%20Instrumentation%201/Binary%20Instrumentation%201.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - 바이너리는 실행 직후 긴 `Sleep`으로 사용자를 기다리게 만듭니다.

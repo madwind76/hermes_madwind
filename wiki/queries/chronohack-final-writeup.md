@@ -1,7 +1,7 @@
 ---
 title: Chronohack — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, prng, brute-force, timing, token-forgery, automation, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Chronohack/Chronohack.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: high
 # Chronohack — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 시간 기반 seed로 생성되는 토큰을 맞추는 reverse engineering / brute force 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Chronohack/Chronohack.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - 서버는 현재 시각을 seed로 PRNG를 초기화합니다.

@@ -1,7 +1,7 @@
 ---
 title: perplexed — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, brute-force, automation, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/perplexed/perplexed.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: high
 # perplexed — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 Ghidra로 검증 조건을 읽고, 제한된 입력 길이를 바탕으로 brute force를 섞어 맞추는 reverse engineering 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/perplexed/perplexed.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - `main()`은 문자열을 입력받아 `check()`에 넘깁니다.

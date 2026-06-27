@@ -11,6 +11,12 @@ sources: [snwau/picoCTF-2023-Writeup, participant profile, Horsetrack writeups]
 
 > `Horsetrack`은 **heap exploitation 문제**로, 외부 writeup들에서는 **tcache poisoning 계열**로 설명됩니다.
 
+## 참고 URL
+- [snwau/picoCTF-2023-Writeup](snwau/picoCTF-2023-Writeup)
+- [participant profile](participant profile)
+- [Horsetrack writeups](Horsetrack writeups)
+
+
 ## 요약
 - 분류: pwn
 - 핵심 primitive: heap exploitation / tcache poisoning

@@ -1,7 +1,7 @@
 ---
 title: Tap into Hash — picoCTF 2025 reverse engineering writeup
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-21
 type: query
 tags: [ctf, reverse-engineering, decode, encoding, encryption, picoctf]
 sources: [https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Tap%20into%20Hash/Tap%20into%20Hash.md, https://github.com/snwau/picoCTF-2025-Writeup]
@@ -11,6 +11,11 @@ confidence: medium
 # Tap into Hash — picoCTF 2025 reverse engineering writeup
 
 > 이 문제는 source file과 encrypted payload를 함께 보고, XOR/변환 루틴을 거꾸로 적용해 평문을 되살리는 문제입니다.
+
+## 참고 URL
+- [raw source](https://raw.githubusercontent.com/snwau/picoCTF-2025-Writeup/main/Reverse%20Engineering/Tap%20into%20Hash/Tap%20into%20Hash.md)
+- [snwau/picoCTF-2025-Writeup](https://github.com/snwau/picoCTF-2025-Writeup)
+
 
 ## 1. 핵심 요약
 - `block_chain.py`가 주어진 입력을 여러 단계로 변형합니다.

@@ -1,13 +1,17 @@
 ---
 title: File Upload — 방어
 created: 2026-06-12
-updated: 2026-06-13
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, file-upload, unrestricted-upload, webshell, malware, owasp, mime-type, magic-bytes]
 sources: [https://ko.wikipedia.org/wiki/파일_업로드_취약점, https://ko.wikipedia.org/wiki/웹_애플리케이션_보안]
 confidence: high
 ---
 > [[file-upload]]의 후반부입니다.
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/파일_업로드_취약점)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/웹_애플리케이션_보안)
 
 ## Step 3: 전문 용어 설명 (위키백과/OWASP/PortSwigger 기반)
 ### 언어/프레임워크별 안전한 파일 업로드 구현

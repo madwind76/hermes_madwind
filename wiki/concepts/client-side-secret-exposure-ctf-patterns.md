@@ -1,7 +1,7 @@
 ---
 title: Client-side secret exposure — picoCTF pattern
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, client-side, javascript, source-inspection, base64, secrets]
 sources: [https://medium.com/@ahmednarmer1/ctf-day-37-9587a06c6498, https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d, https://medium.com/@Kamal_S/picoctf-web-exploitation-includes-10228bf124c8]
@@ -9,6 +9,11 @@ confidence: high
 ---
 
 # Client-side secret exposure — picoCTF pattern
+
+## 참고 URL
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-37-9587a06c6498)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-get-ahead-fb9fa30d8f3d)
+- [medium.com](https://medium.com/@Kamal_S/picoctf-web-exploitation-includes-10228bf124c8)
 
 ## Step 1. 한 줄 정의
 이 패턴은 **HTML, JavaScript, CSS 같은 클라이언트 측 리소스 안에 자격 증명, flag 조각, 숨은 토큰이 들어 있어, source inspection만으로도 비밀을 찾을 수 있는 Web CTF 유형**입니다.

@@ -1,7 +1,7 @@
 ---
 title: XSSI / File Exfiltration
 created: 2026-06-13
-updated: 2026-06-16
+updated: 2026-06-21
 type: concept
 tags: [ctf, web, xssi, file, exfiltration]
 sources: [https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508, https://ctftime.org/event/2718/tasks/, https://www.mozilla.org/en-US/security/advisories/mfsa2025-42/#CVE-2025-5263]
@@ -9,6 +9,11 @@ confidence: medium
 ---
 
 # XSSI / File Exfiltration
+
+## 참고 URL
+- [terjanq/4cb40653760c1ba8c33ee06be098d508](https://gist.github.com/terjanq/4cb40653760c1ba8c33ee06be098d508)
+- [CTFtime writeup](https://ctftime.org/event/2718/tasks/)
+- [www.mozilla.org](https://www.mozilla.org/en-US/security/advisories/mfsa2025-42/#CVE-2025-5263)
 
 ## 정의
 XSSI는 외부 스크립트 포함을 악용해 내부 데이터가 예상치 못한 형태로 노출되는 문제입니다.

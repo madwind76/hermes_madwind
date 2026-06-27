@@ -1,7 +1,7 @@
 ---
 title: babygame03 — picoCTF 2024 pwn writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, pwn, out-of-bounds, underflow, game-state, memory-corruption, picoctf]
 sources: [https://yun.ng/c/ctf/picoctf/pwn/babygame03, https://hackmd.io/@Zzzzek/r14x13FRp, https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/babygame03/babygame03.md]
@@ -11,6 +11,12 @@ confidence: high
 # babygame03 — picoCTF 2024 pwn writeup
 
 > `babygame03`는 **그리드 밖으로 이동하는 out-of-bounds/underflow를 이용해 게임 상태를 바꾸는 문제**입니다.
+
+## 참고 URL
+- [yun.ng](https://yun.ng/c/ctf/picoctf/pwn/babygame03)
+- [hackmd.io](https://hackmd.io/@Zzzzek/r14x13FRp)
+- [Original writeup](https://github.com/snwau/picoCTF-2024-Writeup/blob/main/Binary%20Exploitation/babygame03/babygame03.md)
+
 
 ## 핵심 요약
 - 플레이어 정보가 맵 근처에 배치됩니다.

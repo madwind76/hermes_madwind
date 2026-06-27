@@ -1,7 +1,7 @@
 ---
 title: Broken Authentication (인증 체계 결함) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-16
+updated: 2026-06-24
 type: concept
 tags: [security, glossary, web, broken-auth, authentication, session, owasp, credential-stuffing, brute-force, mfa-bypass]
 sources: [https://ko.wikipedia.org/wiki/인증, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # Broken Authentication (인증 체계 결함) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/인증)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 
@@ -86,96 +90,10 @@ confidence: high
 
 **정의**: **Broken Authentication(인증 체계 결함)**은 애플리케이션의 **인증(Authentication)과 세션 관리(Session Management) 기능이 제대로 구현되지 않아, 공격자가 정상 사용자의 신원을 도용하거나 인증 절차를 우회하여 시스템에 무단 접근할 수 있게 하는 취약점 클래스**이다. OWASP Top 10에서 **2017년 A2 (2위), 2021년 A07 (Identification and Authentication Failures, 7위)** 로 선정될 만큼 빈도와 영향이 크다.
 
-### 주요 결함 유형 및 공격 기법
-
-| 결함 분류 | 구체적 결함 |攻击 기법 | 영향 |
-|----------|------------|----------|------|
-| **약한 자격증명 정책** | 짧은/단순 비밀번호 허용, 흔한 비밀번호 차단 안 함 | 크리덴셜 스터핑(Credential Stuffing), 패스워드 스프레이(Password Spraying), 브루트포스 | 대량 계정 탈취, 수평 이동 |
-| | 비밀번호 복잡도/히스토리/만료 정책 없음 | 사전 공격(Dictionary Attack), 레인보우 테이블 | 단일 계정 탈취 |
-| **세션 관리 결함** | 세션 ID 예측 가능/짧음/엔트로피 낮음 | 세션 예측(Session Prediction), 세션 고정(Session Fixation) | 세션 하이재킹 |
-| | 로그아웃/타임아웃 후 세션 무효화 안 함 | 세션 재사용, 공용 PC에서 세션 탈취 | 계정 지속적 접근 |
-| | 세션 ID URL 노출 / HttpOnly/Secure 플래그 없음 | XSS로 세션 쿠키 탈취, 중간자 공격(HTTPS 미사용) | 세션 쿠키 탈취 → 계정 탈취 |
-| | 동시 세션 제한 없음 / 기기별 세션 관리 안 함 | 다중 기기 동시 로그인 감지 안 함 | 다중 위치 동시 접근 |
-| **인증 우회/논리 결함** | 비밀번호 재설정 토큰 예측 가능/재사용 가능 | 토큰 예측, 토큰 재사용, 이메일/전화 인증 우회 | 계정 탈취 (비밀번호 재설정) |
-| | 2FA/MFA 부재 또는 우회 가능 | SIM 스와핑, 푸시 피로 공격(MFA Fatigue), 백업 코드 유출, TOTP 시드 유출 | 2FA 우회 → 계정 탈취 |
-| | 인증 후 권한 검사 누락 (IDOR과 결합) | 인증된 사용자가 타인 리소스 접근 | 수평/수직 권한 상승 |
-| **브루트포스/자동화 방어 부재** | 로그인 시도 횟수 제한 없음 / 계정 잠금 없음 | 무차별 대입(Brute Force), 크리덴셜 스터핑(대량 자격증명 대입) | 대량 계정 탈취 |
-| | CAPTCHA/WAF/속도 제한 없음 | 자동화 도구(SELENIUM, Puppeteer, Hydra, Burp Intruder) 무력화 | 대규모 자동화 공격 |
-| | IP/디바이스/지문 기반 차단 없음 | 분산 공격(프록시/봇넷), 회전 프록시 | 방어 회피 |
-| **취약한 구현/구성** | 기본/관리자 계정 비활성화 안 함, 기본 비밀번호 변경 안 함 | `admin/admin`, `root/root`, `admin/123456` 등 기본값 시도 | 관리자 권한 탈취 |
-| | JWT/토큰 서명 검증 안 함, 알고리즘 혼란(Algorithm Confusion) | `none` 알고리즘, 약한 시크릿, 키 혼동 | 토큰 위조 → 인증 우회 |
-| | OAuth/SAML/OIDC 구현 결함 | Redirect URI 검증 안 함, State 파라미터 없음, PKCE 미사용 | 토큰 탈취, 계정 연결 탈취 |
-
-### 공격 시나리오별 실전 예시
-
-| 시나리오 | 공격 절차 | 피해 |
-|----------|-----------|------|
-| **크리덴셜 스터핑** | 1. 타 사이트 유출 DB(이메일:비번) 확보<br>2. 타겟 사이트 로그인 폼에 자동 대입<br>3. 성공 시 계정 탈취 | 대량 계정 탈취, 동일 비밀번호 재사용 피해자 다수 |
-| **패스워드 스프레이** | 1. 사용자명 리스트 확보<br>2. 공통 비번 몇 개(`Password1`, `Welcome123`)로 전체 시도<br>3. 계정 잠금 회피 (한 계정당 1회 시도) | 계정 잠금 회피, 탐지 회피, 다수 계정 탈취 |
-| **세션 고정(Session Fixation)** | 1. 공격자가 세션 ID 발급받음<br>2. 피해자에게 해당 세션 ID 링크 전송<br>3. 피해자 로그인 → 같은 세션 ID로 인증됨<br>4. 공격자 같은 세션 ID로 접근 | 피해자 모르게 계정 공유/탈취 |
-| **비밀번호 재설정 토큰 예측** | 1. `reset?token=123456` 형태 예측 가능<br>2. 순차/시간 기반 토큰 브루트포스<br>3. 피해자 계정 비밀번호 재설정 | 계정 탈취, 이메일 접근 불필요 |
-| **MFA 우회 (푸시 피로/MFA Fatigue)** | 1. 피해자 자격증명 확보<br>2. MFA 푸시 알림 연속 전송 (수십 회)<br>3. 피해자 짜증/실수로 '승인' 누름 | 2FA 우회, 계정 탈취 (Uber, Microsoft 등 실제 사례) |
-| **JWT 알고리즘 혼란** | 1. 서버가 `alg: none` 또는 `HS256` 공개키 검증<br>2. 공격자 `{"alg":"none"}` 또는 공개키로 서명<br>3. 임의 클레임(payload) 토큰 생성 | 임의 사용자/관리자 권한 토큰 위조 |
-
-### Broken Authentication 방어 기법
-
-| 방어 영역 | 기법 | 구현 예시 | 효과/비고 |
-|----------|------|-----------|-----------|
-| **자격증명 정책** | **강력한 비밀번호 정책** | 최소 12자, 대소문자/숫자/특수문자, 흔한 비번 차단(HaveIBeenPwned API 연동), 히스토리 5개 이상 기억 | NIST 800-63B 권장 사항 준수 |
-| | **비밀번호 해시** | Argon2id (메모리 하드), bcrypt (cost≥12), scrypt, PBKDF2 (반복≥310,000) | **절대 평문/MD5/SHA1 저장 금지** |
-| | **비밀번호 노출 확인** | HaveIBeenPwned API / 내부 DB로 유출 비번 차단 | 크리덴셜 스터핑 선제 차단 |
-| **다단계 인증 (MFA/2FA)** | **필수 MFA 적용** | TOTP (Google Authenticator, Authy), FIDO2/WebAuthn (YubiKey, Passkey), 푸시 알림 (Duo, Microsoft Authenticator) | **가장 강력한 단일 방어** — SMS/이메일 OTP는 SIM 스와핑/피싱 취약 |
-| | **적응형/위험 기반 MFA** | 새 기기/위치/시간/행위 분석 시 MFA 요구 | UX와 보안 균형 |
-| **세션 관리** | **안전한 세션 쿠키** | `Secure; HttpOnly; SameSite=Strict; Path=/` | XSS/CSRF/중간자 공격 차단 |
-| | **세션 생성/갱신/무효화** | 로그인 시 새 세션 ID 발급(고정 방지), 유휴/절대 타임아웃(예: 15분/4시간), 로그아웃 시 서버/클라이언트 동시 무효화 | 세션 하이재킹/고정 방지 |
-| | **동시 세션 제어** | 사용자당 최대 세션 수 제한, 기기별 세션 목록 제공/원격 로그아웃 | 계정 공유/탈취 탐지 |
-| **브루트포스/자동화 방어** | **속도 제한 (Rate Limiting)** | IP/사용자/디바이스별 분당/시간당 시도 제한 (예: 5회/분), 계정 잠금 (5회 실패 시 15분) | 브루트포스/스프레이 차단 |
-| | **CAPTCHA/봇 탐지** | reCAPTCHA v3, hCaptcha, Turnstile, 행동 기반 봇 탐지 | 자동화 도구 차단 |
-| | **계정 잠금/알림** | 실패 임계값 초과 시 계정 잠금 + 소유자 이메일/푸시 알림 | 공격 조기 탐지, 피해자 인지 |
-| **비밀번호 재설정/복구** | **안전한 토큰** | 암호학적으로 안전한 랜덤 토큰 (32바이트+), 1회용, 짧은 만료(15~30분), 사용 즉시 무효화 | 토큰 예측/재사용 방지 |
-| | **다중 채널 인증** | 이메일 + SMS/푸시 동시 요구, 보안 질문(답변 해시 저장) | 단일 채널 탈취 시에도 방어 |
-| **토큰/JWT 보안** | **강력한 서명/검증** | RS256/ES256 (비대칭), 시크릿 256비트+, `alg` 강제 지정, `none` 알고리즘 거부 | 알고리즘 혼란/위조 방지 |
-| | **짧은 만료/리프레시 토큰 로테이션** | Access Token 15~30분, Refresh Token 1회용 + 로테이션 + 감시 | 토큰 탈취 시 피해 최소화 |
-| **모니터링/탐지** | **이상 로그인 탐지** | 새 기기/위치/시간/ISP/브라우저 지문 변경 시 알림/차단 | UEBA(User and Entity Behavior Analytics) |
-| | **실패 로그/알림** | 연속 실패 IP/계정/사용자 기록, 임계값 초과 시 SIEM/SOAR 연계 | 조기 탐지, 자동 대응 |
-
-### 프레임워크/언어별 안전한 인증 구현 체크리스트
-
-| 프레임워크 | 핵심 보안 기능 | 설정 예시 |
-|-----------|----------------|-----------|
-| **Django** | 내장 인증 시스템, `django-allauth`, `django-rest-framework-simplejwt` | `AUTH_PASSWORD_VALIDATORS`, `SESSION_COOKIE_SECURE=True`, `CSRF_COOKIE_SAMESITE='Strict'` |
-| **Spring Security** | `PasswordEncoder`(BCrypt/Argon2), `SessionManagementFilter`, `OAuth2ResourceServer` | `SecurityFilterChain`, `BCryptPasswordEncoder(12)`, `JwtAuthenticationFilter` |
-| **Node.js (Express)** | `bcryptjs`/`argon2`, `express-session` + `connect-redis`, `passport.js`, `express-rate-limit` | `session: {secure: true, httpOnly: true, sameSite: 'strict'}`, `helmet()` |
-| **ASP.NET Core** | `Identity`, `JwtBearer`, `DataProtection`, `Antiforgery` | `services.AddIdentity<>(), .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)` |
-| **Go** | `golang.org/x/crypto/bcrypt`, `golang.org/x/crypto/argon2`, `gorilla/sessions`, `go-jwt-middleware` | `bcrypt.GenerateFromPassword(pwd, bcrypt.DefaultCost)` |
-
-### 주요 Broken Authentication 사고 사례
-
-| 사고 | 연도 | 공격 벡터 | 피해 |
-|------|------|-----------|------|
-| **Yahoo** | 2013-2014 | 약한 해시(MD5), 비밀번호 힌트 노출, 세션 쿠키 위조 | 30억 계정 유출 (역대 최대) |
-| **LinkedIn** | 2012 | SHA1 단일 해시, 솔트 없음 | 1억 6,400만 계정 해시 유출 |
-| **Adobe** | 2013 | 3DES ECB 모드 암호화(복호화 가능), 비밀번호 힌트 평문 저장 | 1억 5,300만 계정 유출 |
-| **Dropbox** | 2012 | 직원 계정 크리덴셜 스터핑 → 내부 문서 접근 | 6,800만 계정 유출 |
-| **MyFitnessPal** | 2018 | bcrypt(일부 SHA1) 해시, 이메일/비번 유출 | 1억 5,000만 계정 유출 |
-| **Facebook** | 2018 | "View As" 기능 버그 → 액세스 토큰 탈취 | 5,000만 계정 토큰 유출 (세션 관리 결함) |
-
-### 관련 표준 및 참고
-
-| 표준/문서 | 내용 |
-|----------|------|
-| **OWASP Top 10 2021 A07** | Identification and Authentication Failures |
-| **OWASP Authentication Cheat Sheet** | 인증 구현 종합 가이드 |
-| **NIST SP 800-63B** | 디지털 인증 가이드라인 (비밀번호, MFA, 세션 등) |
-| **NIST SP 800-63C** | 페더레이션/어설션 가이드라인 (OAuth/OIDC/SAML) |
-| **CWE-287** | Improper Authentication |
-| **CWE-384** | Session Fixation |
-| **CWE-306** | Missing Authentication for Critical Function |
-
----
+## 심화 자료
+- [[broken-auth-mitigation-and-cases]] — 결함 유형, 방어 기법, 사례, 표준 정리
 
 ## 관련 위키 링크
-
 - [[csrf]] — CSRF (비밀번호 변경 시 CSRF로 인증 우회 가능)
 - [[ssrf]] — SSRF (인증 우회 후 내부망 접근 체인)
 - [[xxe]] — XXE (인증 우회 후 파일 읽기/SSRF 체인)

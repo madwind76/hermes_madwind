@@ -1,7 +1,7 @@
 ---
 title: gCalc — Final Writeup Sample
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research]
 sources: [https://blog.orange.tw/2018/06/google-ctf-2018-quals-web-gcalc.html, https://orange-tw.blogspot.com/2018/06/?m=1, https://github.com/eskildsen/google-ctf-2018, https://github.com/EmpireCTF/empirectf/blob/master/writeups/2018-06-23-Google-CTF-Quals/README.md]
@@ -11,6 +11,13 @@ confidence: medium
 # gCalc — Final Writeup Sample
 
 > 이 문서는 **공개 writeup을 바탕으로 재구성한 최종 요약 예시**입니다.
+
+## 참고 URL
+- [blog.orange.tw](https://blog.orange.tw/2018/06/google-ctf-2018-quals-web-gcalc.html)
+- [orange-tw.blogspot.com](https://orange-tw.blogspot.com/2018/06/?m=1)
+- [eskildsen/google-ctf-2018](https://github.com/eskildsen/google-ctf-2018)
+- [Original writeup](https://github.com/EmpireCTF/empirectf/blob/master/writeups/2018-06-23-Google-CTF-Quals/README.md)
+
 
 ## 1. 문제 요약
 - 플랫폼: Google CTF 2018 Quals

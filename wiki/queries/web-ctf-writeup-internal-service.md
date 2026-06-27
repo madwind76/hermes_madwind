@@ -1,7 +1,7 @@
 ---
 title: Web CTF Writeup — 내부 서비스/프로토콜 악용
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, research, writeup, ssrf, protocol, internal-service]
 sources: [https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/, https://github.com/hyperreality/best-web-ctf-writeups, raw/articles/20260613_web-ctf-writeup-curated.md]
@@ -11,6 +11,12 @@ confidence: high
 # Web CTF Writeup — 내부 서비스/프로토콜 악용
 
 > 서버가 외부 입력으로 내부 요청을 대신 보내는 구조를 다루는 분류입니다.
+
+## 참고 URL
+- [blog.hokyun.dev](https://blog.hokyun.dev/posts/csaw-ctf-2024-quals-writeup/)
+- [hyperreality/best-web-ctf-writeups](https://github.com/hyperreality/best-web-ctf-writeups)
+- [raw/articles/20260613_web-ctf-writeup-curated.md](raw/articles/20260613_web-ctf-writeup-curated.md)
+
 
 ## 1. 핵심 요약
 - 이 분류는 **서버가 대신 말해주는 요청**을 만드는 문제입니다.

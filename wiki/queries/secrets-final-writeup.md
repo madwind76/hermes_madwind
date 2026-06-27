@@ -1,7 +1,7 @@
 ---
 title: Secrets — picoCTF web writeup
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-21
 type: query
 tags: [ctf, web, reconnaissance, directory-traversal, source-inspection, hidden-directory]
 sources: [https://medium.com/@erichdryn/secrets-picoctf-writeup-bcfa26143bb1, https://medium.com/@moromerx/picoctf-secrets-web-exploitation-explained-3e8d41b40a2a, https://medium.com/@ahmednarmer1/ctf-day-26-4760e9b83079]
@@ -11,6 +11,12 @@ confidence: high
 # Secrets — picoCTF web writeup
 
 > 페이지 소스와 디렉터리 힌트를 따라 `secret/hidden/superhidden` 경로를 찾아가며 flag를 얻는 picoCTF Web Exploitation 문제입니다.
+
+## 참고 URL
+- [medium.com](https://medium.com/@erichdryn/secrets-picoctf-writeup-bcfa26143bb1)
+- [medium.com](https://medium.com/@moromerx/picoctf-secrets-web-exploitation-explained-3e8d41b40a2a)
+- [medium.com](https://medium.com/@ahmednarmer1/ctf-day-26-4760e9b83079)
+
 
 ## 1. 한 줄 요약
 - 핵심은 **숨은 디렉터리 탐색**입니다.

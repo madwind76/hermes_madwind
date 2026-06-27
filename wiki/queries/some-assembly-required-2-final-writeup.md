@@ -1,7 +1,7 @@
 ---
 title: Some Assembly Required 2 — picoCTF 2021 web writeup
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-21
 type: query
 tags: [ctf, web, javascript, wasm, reverse-engineering, picoctf]
 sources: [https://ctftime.org/writeup/27180, https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-2, https://medium.com/@abdullahimtiazyousafzai/some-assembly-required-2-picoctf-writeup-0e45b0bf2390]
@@ -11,6 +11,12 @@ confidence: high
 # Some Assembly Required 2 — picoCTF 2021 web writeup
 
 > `Some Assembly Required 2`는 **난독화된 JavaScript가 WebAssembly(WASM) 모듈을 로드하고, 입력을 XOR-8으로 변환한 뒤 비교하는 picoCTF 2021 Web 문제**입니다. 전작과 비슷하지만, 이번에는 **WASM 내부의 변환 로직과 암호화된 기대 문자열**을 되돌리는 것이 핵심입니다.
+
+## 참고 URL
+- [CTFtime writeup](https://ctftime.org/writeup/27180)
+- [picoctf2021.haydenhousen.com](https://picoctf2021.haydenhousen.com/web-exploitation/some-assembly-required-2)
+- [medium.com](https://medium.com/@abdullahimtiazyousafzai/some-assembly-required-2-picoctf-writeup-0e45b0bf2390)
+
 
 ## 1. 한 줄 요약
 - 페이지는 JS와 WASM 파일을 로드합니다.

@@ -1,7 +1,7 @@
 ---
 title: SSTI (Server-Side Template Injection, 서버 사이드 템플릿 주입) — 보안 용어 해설
 created: 2026-06-12
-updated: 2026-06-14
+updated: 2026-06-21
 type: concept
 tags: [security, glossary, web, ssti, template-injection, rce, owasp, template-engine, sandbox-escape]
 sources: [https://ko.wikipedia.org/wiki/템플릿_인젝션, https://ko.wikipedia.org/wiki/OWASP]
@@ -9,6 +9,10 @@ confidence: high
 ---
 
 # SSTI (Server-Side Template Injection, 서버 사이드 템플릿 주입) — 보안 용어 해설
+
+## 참고 URL
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/템플릿_인젝션)
+- [ko.wikipedia.org](https://ko.wikipedia.org/wiki/OWASP)
 
 ## Step 1: 단어 직역 및 쉬운 비유
 
